@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Chapter 1 on Bamboofx&#39;s or NTVFX&#39;s Site</title>
-    <link>http://bamboofx.github.io/ai-with-python/chapter1/</link>
+    <link>https://bamboofx.github.io/ai-with-python/chapter1/</link>
     <description>Recent content in Chapter 1 on Bamboofx&#39;s or NTVFX&#39;s Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://bamboofx.github.io/ai-with-python/chapter1/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://bamboofx.github.io/ai-with-python/chapter1/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
