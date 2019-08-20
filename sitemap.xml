@@ -3,53 +3,33 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://bamboofx.github.io/</loc>
+    <loc>https://bamboofx.github.io/ai-with-python/</loc>
+  </url>
+  
+  <url>
+    <loc>https://bamboofx.github.io/about/</loc>
     <lastmod>2008-09-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://bamboofx.github.io/</loc>
-    <lastmod>2008-09-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bamboofx.github.io/tags/blog/</loc>
     <lastmod>2008-09-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://bamboofx.github.io/categories/</loc>
-    <lastmod>2008-09-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bamboofx.github.io/tags/css/</loc>
-    <lastmod>2008-09-28T00:00:00+00:00</lastmod>
+    <loc>https://bamboofx.github.io/ai-with-python/chapter1/</loc>
   </url>
   
   <url>
-    <loc>https://bamboofx.github.io/categories/development/</loc>
-    <lastmod>2008-09-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bamboofx.github.io/categories/learning/</loc>
-    <lastmod>2008-09-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bamboofx.github.io/tags/something/</loc>
-    <lastmod>2008-09-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bamboofx.github.io/tags/tag/</loc>
-    <lastmod>2008-09-28T00:00:00+00:00</lastmod>
+    <loc>https://bamboofx.github.io/ai-with-python/chapter2/</loc>
   </url>
   
   <url>
     <loc>https://bamboofx.github.io/tags/</loc>
-    <lastmod>2008-09-28T00:00:00+00:00</lastmod>
   </url>
   
 </urlset>
