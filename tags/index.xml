@@ -6,9 +6,46 @@
     <description>Recent content in Tags on Bamboofx&#39;s or NTVFX&#39;s Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Sun, 28 Sep 2008 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://bamboofx.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>blog</title>
+      <link>https://bamboofx.github.io/tags/blog/</link>
+      <pubDate>Sun, 28 Sep 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://bamboofx.github.io/tags/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>css</title>
+      <link>https://bamboofx.github.io/tags/css/</link>
+      <pubDate>Sun, 28 Sep 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://bamboofx.github.io/tags/css/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>something</title>
+      <link>https://bamboofx.github.io/tags/something/</link>
+      <pubDate>Sun, 28 Sep 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://bamboofx.github.io/tags/something/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tag</title>
+      <link>https://bamboofx.github.io/tags/tag/</link>
+      <pubDate>Sun, 28 Sep 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://bamboofx.github.io/tags/tag/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>
