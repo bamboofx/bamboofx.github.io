@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.57.2" />
+    <meta name="description" content="">
+
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>NumPy cơ bản :: Bamboofx&#39;s or NTVFX&#39;s Site</title>
+
+    
+    <link href="/css/nucleus.css?1568111768" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1568111768" rel="stylesheet">
+    <link href="/css/hybrid.css?1568111768" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1568111768" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1568111768" rel="stylesheet">
+    <link href="/css/auto-complete.css?1568111768" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1568111768" rel="stylesheet">
+    <link href="/css/theme.css?1568111768" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1568111768" rel="stylesheet">
+    
+      <link href="/css/theme-blue.css?1568111768" rel="stylesheet">
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1568111768"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/numpy/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="https://bamboofx.github.io/">
+  <img src="https://bamboofx.github.io/images/logo.png "> </img>
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1568111768"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1568111768"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/bamboofx.github.io\/";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1568111768"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/ai-with-python/" title="AI with Python (Prateek Joshi)" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/ai-with-python/">
+          AI with Python (Prateek Joshi)
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ai-with-python/chapter1/" title="Chapter 1" class="dd-item ">
+        <a href="/ai-with-python/chapter1/">
+        Chapter 1
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ai-with-python/chapter2/" title="Chapter 2" class="dd-item ">
+        <a href="/ai-with-python/chapter2/">
+        Chapter 2
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/numpy/" title="NumPy cơ bản" class="dd-item 
+        parent
+        active
+        
+        ">
+      <a href="/numpy/">
+          NumPy cơ bản
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/about/" title="about" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/about/">
+          About
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            <a href='/'>Site</a> > NumPy cơ bản
+          
+         
+          
+        
+                 
+                  </span>
+                </div>
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+          <div id="chapter">
+        
+        <div id="body-inner">
+          
+
+        
+
+
+
+
+	  
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=utf-8" /><link href="style.css" rel="stylesheet" type="text/css" /><title>NumPyGuide quickstart</title></head><body><div class="calibre" id="calibre_link-0">
+	<p class="block_">NumPy trong Python cơ bản</p>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_2">Lời nói đầu</p>
+	<p class="block_3">Trước khi đọc học về numPy bạn cần phải cài đặt python và package numPy. Nhanh nhất là cài pycharm vào settings-&gt; cài package numPy</p>
+	<p class="block_2">Cơ Bản</p>
+	<p class="block_3">Về cơ bản dễ hiểu thì NumPy chính là một mảng đa chiều đồng nhất. Nó là một bảng gồm các thành phần (thường là số), và có cùng định dạng, được chỉ định các mục bởi số nguyên dương. Trong Numpy các chiều được gọi là <i class="calibre1">axes.</i></p>
+	<p class="block_3">Ví dụ . ta có 1 tọa độ của một điểm trong không gian 3D [1,2,1] có 1 trục(axis). Trục này có 3 thành phần trên nó nên ta nói nó có độ dài là 3. </p>
+	<p class="block_3">Ta có ví dụ khác:</p>
+	<div class="frame_"><p class="block_4">[[1.,0.,0.],</p><p class="block_5">[0.,1.,2.]]</p></div>
+	<p class="block_3">ở ví dụ này ta có một array gồm 2 trục(axes). trục đầu tieen có độ dài là 2 và trục thứ 2 có độ dài là 3.</p>
+	<p class="block_3">NumPy array class được gọi là ndarrray. chú ý <i class="calibre1">numpy.array</i> không giống với <i class="calibre1">array.array</i> trong Python Lybrary vì <i class="calibre1">array.array </i>chỉ có 1 chiều. Những thuộc tính quan trọng nhất trong ndarray object là:</p>
+	<ul class="list_">
+	<li class="block_6"><b class="calibre2">ndarray.ndim:<span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></b>số các trục(axes) hay còn gọi là số chiều của array</li>
+	<li class="block_7"><b class="calibre2">ndarray.shape</b>: đây là chiều của array. Đây là 1 số nguyên tuple ( số tuple được biểu diễn dưới dạng (1,2) cơ bản nó giống array.array nhưng không thể thêm hay loại bỏ thành phần) chỉ ra các chiều array vd shape(n,m) đây là một matrix có n hàng và m cột</li>
+	<li class="block_7"><b class="calibre2">ndarray.size:</b> Tổng số thành phần có trong numPy.array. Nó cũng bằng tổng của 2 số có trong shape()</li>
+	<li class="block_7"><b class="calibre2">ndarrray.dtype:</b> Đây là số để định dạng các thành phần trong array. nó nhận tất cả các giá trị dtype có trong Python và ngoài ra numPy cũng có một số định dạng riêng như numpy.int32,numpy.int16,numpy.float64.</li>
+	<li class="block_7"><b class="calibre2">ndarray.itemsize:</b> Đây là size dưới dạng bytes của mỗi element của array. Ví dụ một array có định dạng của thành phần là float64 thì nó có itemsize=8(=64/8). trong khi số phức có itemsize =4 complex32(32/8=4). Số này cũng tương đương với giá trị cảu ndarray.dtype.itemsize</li>
+	<li class="block_8"><b class="calibre2">ndarray.data:</b> Bộ đệm chứa các thành phần thực sự của array. Bình thưởng chúng ta không cần sử dụng thuộc tính này bởi vì chúng ta sẽ truy cập vào các thành phần trong array sử dụng index.</li>
+</ul>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_9"><span class="text_">import </span><span class="text_1">numpy </span><span class="text_"><span class="calibre3">as  </span></span><span class="text_1">np<br class="calibre4" /></span><span class="text_">def </span><span class="text_2">mprint</span><span class="text_1">(str):<br class="calibre4" /><span class="calibre3">    </span></span><span class="text_3">print</span><span class="text_1">(</span><span class="text_4">"x"</span><span class="text_1">*</span><span class="text_5">30</span><span class="text_">,</span><span class="text_1">str</span><span class="text_">,</span><span class="text_4">"x"</span><span class="text_1">*</span><span class="text_5">30</span><span class="text_1">)<br class="calibre4" />mprint(</span><span class="text_4">"Cơ bản về về Numpy:"</span><span class="text_1">)<br class="calibre4" />mprint(</span><span class="text_4">"Tạo mảng một chiều từ list"</span><span class="text_1">)<br class="calibre4" />a = np.array([</span><span class="text_5">1</span><span class="text_">, </span><span class="text_5">2</span><span class="text_">, </span><span class="text_5">3</span><span class="text_1">])<br class="calibre4" /></span><span class="text_3">print</span><span class="text_1">(</span><span class="text_3">type</span><span class="text_1">(a)) </span><span class="text_6">#&lt;class 'numpy.ndarray'&gt;<br class="calibre4" /><br class="calibre4" /></span><span class="text_3">print</span><span class="text_1">(a.shape) </span><span class="text_6">#(3,)<br class="calibre4" /></span><span class="text_1">a[</span><span class="text_5">0</span><span class="text_1">] = </span><span class="text_5">5<br class="calibre4" /></span><span class="text_3">print</span><span class="text_1">(a) </span><span class="text_6">#[5 2 3]<br class="calibre4" /></span><span class="text_1">b = np.array([[</span><span class="text_5">1</span><span class="text_">, </span><span class="text_5">2</span><span class="text_">, </span><span class="text_5">3</span><span class="text_1">]</span><span class="text_">, </span><span class="text_1">[</span><span class="text_5">4</span><span class="text_">, </span><span class="text_5">5</span><span class="text_">, </span><span class="text_5">6</span><span class="text_1">]])<br class="calibre4" /></span><span class="text_3">print</span><span class="text_1">(b.size) </span><span class="text_6">#6<br class="calibre4" /></span><span class="text_3">print</span><span class="text_1">(b)<br class="calibre4" /></span><span class="text_6"># Tạo mảng từ khoảng cho trước<br class="calibre4" /></span><span class="text_1">u = np.arange(</span><span class="text_5">3.0</span><span class="text_1">)<br class="calibre4" /></span><span class="text_3">print</span><span class="text_1">(u) </span><span class="text_6">#[0. 1. 2.]<br class="calibre4" /></span><span class="text_1">v = np.arange(</span><span class="text_5">3</span><span class="text_">, </span><span class="text_5">7</span><span class="text_1">)<br class="calibre4" /></span><span class="text_3">print</span><span class="text_1">(v) </span><span class="text_6">#[3 4 5 6]</span></p>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_3">Một lỗi thường gặp trong khi khởi tạo numPy</p>
+	<div class="frame_"><p class="block_4">a=np.array(<span class="calibre3">1,2,3)   # =&gt; </span>Sai</p><p class="block_5">a=np.array([1,2,3]) # =&gt; Đúng</p></div>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_3">Thường thì các thành phần trong một array không xác định, nhưng size thì phải biết trước. Vì thế NumPy đưa cho chúng ta một vài hàm để tạo mảng</p>
+	<div class="frame_"><p class="block_10"><span class="text_7"><br class="calibre4" /></span><span class="text_1"># np.zeros tạo ma trận số 0 với shape(số cột,số hàng)<br class="calibre4" /></span><span class="text_7">a = np.zeros((</span><span class="text_5">5</span><span class="text_">, </span><span class="text_5">3</span><span class="text_7">))<br class="calibre4" /></span><span class="text_3">print</span><span class="text_7">(a)<br class="calibre4" /></span><span class="text_1">#[[0. 0. 0.]<br class="calibre4" /># [0. 0. 0.]<br class="calibre4" /># [0. 0. 0.]<br class="calibre4" /># [0. 0. 0.]<br class="calibre4" /># [0. 0. 0.]]<br class="calibre4" />#np.ones tạo mảng 2 chiều số 1 tương tự zeros<br class="calibre4" /></span><span class="text_7">b = np.ones((</span><span class="text_5">5</span><span class="text_">, </span><span class="text_5">2</span><span class="text_7">))<br class="calibre4" /></span><span class="text_1"># np.full() tạo mảng hằng số tham số tương tự như trên với shape gồm shape(số hàng,số cột), và tham số thứ 2 là hằng số cần tạo<br class="calibre4" /></span><span class="text_7">c = np.full((</span><span class="text_5">3</span><span class="text_">, </span><span class="text_5">5</span><span class="text_7">)</span><span class="text_">, </span><span class="text_5">3</span><span class="text_7">)<br class="calibre4" /></span><span class="text_3">print</span><span class="text_7">(c)<br class="calibre4" /></span><span class="text_1"># [[3 3 3 3 3]<br class="calibre4" /># [3 3 3 3 3]<br class="calibre4" /># [3 3 3 3 3]]<br class="calibre4" />#np.eye(N,M,k) tạo ma trận chéo với N hàng và M cột<span class="calibre3">,  </span></span><span class="text_1">nếu không gán giá trị M thì mặc định M sẽ = N<br class="calibre4" /></span><span class="text_7">d = np.eye(</span><span class="text_5">5</span><span class="text_7">)<br class="calibre4" /></span><span class="text_3">print</span><span class="text_7">(d)<br class="calibre4" /></span><span class="text_1">#[[1. 0. 0. 0. 0.]<br class="calibre4" /># [0. 1. 0. 0. 0.]<br class="calibre4" /># [0. 0. 1. 0. 0.]<br class="calibre4" /># [0. 0. 0. 1. 0.]<br class="calibre4" /># [0. 0. 0. 0. 1.]]<br class="calibre4" /></span><span class="text_3">print</span><span class="text_7">(</span><span class="text_4">"-"</span><span class="text_7">*</span><span class="text_5">45</span><span class="text_7">)<br class="calibre4" /></span><span class="text_1"># np.random.random((N.M)) Tạo ma trận ngẫu nhiên với N hàng M cột, với giá trị ngẫu nhiên từ 0-&gt;1<br class="calibre4" /></span><span class="text_7">e=np.random.random((</span><span class="text_5">2</span><span class="text_">,</span><span class="text_5">3</span><span class="text_7">))<br class="calibre4" /></span><span class="text_3">print</span><span class="text_7">(e)<br class="calibre4" /></span><span class="text_1">#[[0.67471134 0.96878567 0.13359926]<br class="calibre4" /><span class="calibre3"># [0.98475084 0.7250046  0.00370332]]</span></span><span class="text_1"><br class="calibre4" /></span><span class="text_3">print</span><span class="text_7">(np.empty((</span><span class="text_5">2</span><span class="text_">,</span><span class="text_5">3</span><span class="text_7">))</span><span class="text_">,</span><span class="text_4">"Tạo mảng với np.empty cũng tương tự như với np.random.random"</span><span class="text_7">)<br class="calibre4" /></span><span class="text_1"># Để tạo một dãy số NumPy có một hàm tương tự với range trong Python là np.arange, nó trả về một array thay vì là một list số nguyên như range<br class="calibre4" /></span><span class="text_3">print</span><span class="text_7">(np.arange(</span><span class="text_5">10</span><span class="text_">,</span><span class="text_5">30</span><span class="text_">,</span><span class="text_5">5</span><span class="text_7">)</span><span class="text_">,</span><span class="text_4">"Tạo mảng từ 10 - tới 30 với số bước là 5"</span><span class="text_7">)<br class="calibre4" /></span><span class="text_3">print</span><span class="text_7">(np.arange(</span><span class="text_5">0</span><span class="text_">,</span><span class="text_5">3</span><span class="text_">,</span><span class="text_5">0.3</span><span class="text_7">)</span><span class="text_">,</span><span class="text_4">" np.arange cũng chấp nhận giá trị là số float"</span><span class="text_7">)<br class="calibre4" /></span><span class="text_1"># Khi dùng float làm tham số cho arange. Nó thường tạo ra một dãy số không thể xác định nên ta thường sử dụng thêm np.linspace để mặc định số phần tử được tạo ra thay vì số bước<br class="calibre4" /></span><span class="text_3">print</span><span class="text_7">(np.linspace(</span><span class="text_5">0</span><span class="text_">,</span><span class="text_5">2</span><span class="text_">,</span><span class="text_5">9</span><span class="text_7">)</span><span class="text_">,</span><span class="text_4">"np.linspace(0,2,9) Tạo ra 9 phần tử là số float từ 0-2"</span><span class="text_7">)<br class="calibre4" /></span><span class="text_3">print</span><span class="text_7">(np.linspace(</span><span class="text_5">0</span><span class="text_">,</span><span class="text_7">np.pi</span><span class="text_">,</span><span class="text_5">180</span><span class="text_7">)</span><span class="text_">,</span><span class="text_4">"hoặc lấy số điểm trong 1 hình tròn"</span><span class="text_7">)</span></p><p class="block_11"></p></div>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_2">Các phép tính cơ bản trong NumPy</p>
+	<div class="frame_"><p class="block_10"><span class="text_1">x = np.array([[</span><span class="text_5">1</span><span class="text_">, </span><span class="text_5">2</span><span class="text_1">]</span><span class="text_">, </span><span class="text_1">[</span><span class="text_5">3</span><span class="text_">, </span><span class="text_5">4</span><span class="text_1">]]</span><span class="text_">, </span><span class="text_8">dtype</span><span class="text_1">=np.float64)<br class="calibre4" />y = np.array([[</span><span class="text_5">5</span><span class="text_">, </span><span class="text_5">6</span><span class="text_1">]</span><span class="text_">, </span><span class="text_1">[</span><span class="text_5">7</span><span class="text_">, </span><span class="text_5">8</span><span class="text_1">]]</span><span class="text_">, </span><span class="text_8">dtype</span><span class="text_1">=np.float64)<br class="calibre4" /></span><span class="text_3">print</span><span class="text_1">(</span><span class="text_4">"ma trận x:"</span><span class="text_">,</span><span class="text_1">x)<br class="calibre4" /></span><span class="text_3">print</span><span class="text_1">(</span><span class="text_4">"ma trận y:"</span><span class="text_">,</span><span class="text_1">y)<br class="calibre4" /></span><span class="text_3">print</span><span class="text_1">(np.add(x</span><span class="text_">, </span><span class="text_1">y) </span><span class="text_">, </span><span class="text_4">"phép cộng"</span><span class="text_1">)<br class="calibre4" /><br class="calibre4" /></span><span class="text_3">print</span><span class="text_1">(np.subtract(x</span><span class="text_">, </span><span class="text_1">y)</span><span class="text_">,</span><span class="text_4">"phép trừ"</span><span class="text_1">)<br class="calibre4" /></span><span class="text_3">print</span><span class="text_1">(np.divide(x</span><span class="text_">, </span><span class="text_5">2</span><span class="text_1">)</span><span class="text_">,</span><span class="text_4">"phép chia mảng 1 cho 2 "</span><span class="text_1">)<br class="calibre4" /></span><span class="text_3">print</span><span class="text_1">(np.divide(x</span><span class="text_">, </span><span class="text_1">y)</span><span class="text_">,</span><span class="text_4">"phép chia 2 mảng"</span><span class="text_1">)<br class="calibre4" /></span><span class="text_3">print</span><span class="text_1">(np.multiply(x</span><span class="text_">, </span><span class="text_1">y)</span><span class="text_">,</span><span class="text_4">"phép nhân 2 mảng"</span><span class="text_1">)<br class="calibre4" /></span><span class="text_3">print</span><span class="text_1">(np.sqrt(x)</span><span class="text_">,</span><span class="text_4">"phép khai căn trên 1 mảng "</span><span class="text_1">)<br class="calibre4" /></span><span class="text_3">print</span><span class="text_1">(np.sqrt((x</span><span class="text_">,</span><span class="text_1">y))</span><span class="text_">,</span><span class="text_4">"phép khai căn trên 2 mảng "</span><span class="text_1">)<br class="calibre4" /><br class="calibre4" />mprint(</span><span class="text_4">" Phép toán trên hàng và cột "</span><span class="text_1">)<br class="calibre4" /></span><span class="text_3">print</span><span class="text_1">(np.sum(x)</span><span class="text_">,</span><span class="text_4">" Tổng các giá trị trong ma trận x"</span><span class="text_1">)<br class="calibre4" /></span><span class="text_3">print</span><span class="text_1">(x.T</span><span class="text_">,</span><span class="text_4">"phép chuyển vị ma trận x"</span><span class="text_1">)<br class="calibre4" />mprint(</span><span class="text_4">"Phép toán nhân ma trận: Tích trong (inner Product)"</span><span class="text_1">)<br class="calibre4" />x = np.array([[</span><span class="text_5">1</span><span class="text_">, </span><span class="text_5">2</span><span class="text_1">]</span><span class="text_">, </span><span class="text_1">[</span><span class="text_5">3</span><span class="text_">, </span><span class="text_5">4</span><span class="text_1">]])<br class="calibre4" />y = np.array([[</span><span class="text_5">5</span><span class="text_">, </span><span class="text_5">6</span><span class="text_1">]</span><span class="text_">, </span><span class="text_1">[</span><span class="text_5">7</span><span class="text_">, </span><span class="text_5">8</span><span class="text_1">]])<br class="calibre4" />v = np.array([</span><span class="text_5">9</span><span class="text_">, </span><span class="text_5">10</span><span class="text_1">])<br class="calibre4" />w = np.array([</span><span class="text_5">11</span><span class="text_">, </span><span class="text_5">12</span><span class="text_1">])<br class="calibre4" />d = np.array([</span><span class="text_5">3</span><span class="text_">, </span><span class="text_5">4</span><span class="text_1">])<br class="calibre4" /></span><span class="text_3">print</span><span class="text_1">(</span><span class="text_4">"Ma trận x:</span><span class="text_">\n</span><span class="text_4">"</span><span class="text_">,</span><span class="text_1">x)<br class="calibre4" /></span><span class="text_3">print</span><span class="text_1">(</span><span class="text_4">"Ma trận y:</span><span class="text_">\n</span><span class="text_4">"</span><span class="text_">,</span><span class="text_1">y)<br class="calibre4" /></span><span class="text_3">print</span><span class="text_1">(</span><span class="text_4">"Ma trận v:</span><span class="text_">\n</span><span class="text_4">"</span><span class="text_">,</span><span class="text_1">v)<br class="calibre4" /></span><span class="text_3">print</span><span class="text_1">(</span><span class="text_4">"Ma trận w:</span><span class="text_">\n</span><span class="text_4">"</span><span class="text_">,</span><span class="text_1">w)<br class="calibre4" /></span><span class="text_3">print</span><span class="text_1">(</span><span class="text_4">"Ma trận d:</span><span class="text_">\n</span><span class="text_4">"</span><span class="text_">,</span><span class="text_1">d)<br class="calibre4" /><br class="calibre4" /></span><span class="text_3">print</span><span class="text_1">(np.dot(v</span><span class="text_">, </span><span class="text_1">w)</span><span class="text_">,</span><span class="text_4">"= 9*11+10*12"</span><span class="text_1">)<br class="calibre4" /></span><span class="text_3">print</span><span class="text_1">(np.matmul(x</span><span class="text_">, </span><span class="text_1">v)</span><span class="text_">,</span><span class="text_4">"= [9*1+10*2,9*3+10*4]"</span><span class="text_1">)<br class="calibre4" /></span><span class="text_3">print</span><span class="text_1">(np.dot(v</span><span class="text_">, </span><span class="text_1">d)</span><span class="text_">,</span><span class="text_4">" = 9*3+10*4"</span><span class="text_1">)<br class="calibre4" /></span><span class="text_3">print</span><span class="text_1">(np.matmul(x</span><span class="text_">, </span><span class="text_1">y)</span><span class="text_">,</span><span class="text_4">"= [[5*1+7*2,6*1+8*2],[5*3+7*4,6*3+8*4]]"</span><span class="text_1">)<br class="calibre4" /></span><span class="text_3">print</span><span class="text_1">(np.multiply(x</span><span class="text_">, </span><span class="text_1">y)</span><span class="text_">,</span><span class="text_4">"= [[1*5,2*6],[3*7+8*4]]"</span><span class="text_1">)</span></p><p class="block_11"></p></div>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_1"><span class="text_9"># Một vài phép toán giống như là </span><span class="text_10">+= </span><span class="text_9"> hay</span><span class="text_10"> *= </span><span class="text_9">thường thay đổi các thành phần trong array chứ không tạo một array mới</span></p>
+	<div class="frame_"><p class="block_10"><span class="text_11">a = np.ones((</span><span class="text_12">2</span><span class="text_13">,</span><span class="text_12">3</span><span class="text_11">)</span><span class="text_13">, </span><span class="text_14">dtype</span><span class="text_11">=</span><span class="text_15">int</span><span class="text_11">)<br class="calibre4" />b = np.random.random((</span><span class="text_12">2</span><span class="text_13">,</span><span class="text_12">3</span><span class="text_11">))<br class="calibre4" />a *= </span><span class="text_12">3<br class="calibre4" /></span><span class="text_15">print</span><span class="text_11">(a)<br class="calibre4" /></span><span class="text_16">#[[3, 3, 3],<br class="calibre4" /><span class="calibre3">#       [3, 3, 3]]</span></span><span class="text_16"><br class="calibre4" /></span><span class="text_11">b += a<br class="calibre4" /></span><span class="text_15">print</span><span class="text_11">(b)<br class="calibre4" /></span><span class="text_16"><span class="calibre3">#[[ 3.417022  ,  3.72032449,  3.00011437],</span></span><span class="text_16"><br class="calibre4" /><span class="calibre3">#       [ 3.30233257,  3.14675589,  3.09233859]]</span></span><span class="text_16"><br class="calibre4" /></span><span class="text_17">try</span><span class="text_18">:<br class="calibre4" /><span class="calibre3">    a+=b</span></span><span class="text_18"><br class="calibre4" /></span><span class="text_17">except </span><span class="text_16">TypeError</span><span class="text_18">:<br class="calibre4" /><span class="calibre3">    </span></span><span class="text_19">print</span><span class="text_18">(</span><span class="text_20">"ta không thể dùng thế này a += b, vì b là số float không tự động chuyển thành số nguyên nên sẽ báo lỗi TypeError"</span><span class="text_18">)<br class="calibre4" /></span><span class="text_21">#TypeError: Cannot cast ufunc add output from dtype('float64') to dtype('int64') with casting rule 'same_kind'</span></p><p class="block_12"><span class="text_1"># Khi ta thực hiên phép toán trên các array với các định dạng khác nhau thì định dạng ở kết quả sẽ tự động lấy giá trị là các định dạng có tính chi tiết hơn<br class="calibre4" /></span><span class="text_7">a = np.ones(</span><span class="text_5">3</span><span class="text_">, </span><span class="text_8">dtype</span><span class="text_7">=np.int32)<br class="calibre4" />b = np.linspace(</span><span class="text_5">0</span><span class="text_">,</span><span class="text_7">np.pi</span><span class="text_">,</span><span class="text_5">3</span><span class="text_7">)<br class="calibre4" /></span><span class="text_3">print</span><span class="text_7">(b.dtype.name)<br class="calibre4" /></span><span class="text_1">#'float64'<br class="calibre4" /></span><span class="text_7">c = a+b<br class="calibre4" /></span><span class="text_3">print</span><span class="text_7">(c)<br class="calibre4" /></span><span class="text_1"><span class="calibre3">#[ 1.        ,  2.57079633,  4.14159265])</span></span><span class="text_1"><br class="calibre4" /></span><span class="text_3">print</span><span class="text_7">(c.dtype.name)<br class="calibre4" /></span><span class="text_1">#'float64'<br class="calibre4" /></span><span class="text_7">d = np.exp(c*</span><span class="text_5">1j</span><span class="text_7">)<br class="calibre4" /></span><span class="text_3">print</span><span class="text_7">(d)<br class="calibre4" /></span><span class="text_1">#[ 0.54030231+0.84147098j, -0.84147098+0.54030231j,<br class="calibre4" /><span class="calibre3">#       -0.54030231-0.84147098j]</span></span><span class="text_1"><br class="calibre4" /></span><span class="text_3">print</span><span class="text_7">(d.dtype.name)<br class="calibre4" /></span><span class="text_1"># complex128<br class="calibre4" />#Một vài phép tính thực hiện trong các phần tử của array như sum(), hay lấy min,max<br class="calibre4" /></span><span class="text_7">a = np.random.random((</span><span class="text_5">2</span><span class="text_">,</span><span class="text_5">3</span><span class="text_7">))<br class="calibre4" /></span><span class="text_3">print</span><span class="text_7">(a.sum())<br class="calibre4" /></span><span class="text_1">#2.5718191614547998<br class="calibre4" /></span><span class="text_3">print</span><span class="text_7">(a.min())<br class="calibre4" /></span><span class="text_1">#0.1862602113776709<br class="calibre4" /></span><span class="text_3">print</span><span class="text_7">(a.max())<br class="calibre4" /></span><span class="text_1">#0.6852195003967595<br class="calibre4" /><br class="calibre4" />#Mặc định là những phép toán trên sẽ tính toán tất cả các phần tử của array không cần biết định dạng của nó là gì. Nhưng chúng ta cũng có thể chỉ định<br class="calibre4" /># nó tính toán theo hàng hoặc cột của array<br class="calibre4" /></span><span class="text_7">b=np.arange(</span><span class="text_5">12</span><span class="text_7">).reshape(</span><span class="text_5">3</span><span class="text_">,</span><span class="text_5">4</span><span class="text_7">)<br class="calibre4" /></span><span class="text_3">print</span><span class="text_7">(b.sum(</span><span class="text_8">axis</span><span class="text_7">=</span><span class="text_5">0</span><span class="text_7">)</span><span class="text_">,</span><span class="text_4">"= 1 array tính tổng trên mỗi cột"</span><span class="text_7">)<br class="calibre4" /></span><span class="text_3">print</span><span class="text_7">(b.min(</span><span class="text_8">axis</span><span class="text_7">=</span><span class="text_5">1</span><span class="text_7">)</span><span class="text_">,</span><span class="text_4">"= 1 array số nhỏ nhất thuộc mỗi hàng "</span><span class="text_7">)<br class="calibre4" /></span><span class="text_3">print</span><span class="text_7">(b.cumsum(</span><span class="text_8">axis</span><span class="text_7">=</span><span class="text_5">1</span><span class="text_7">)</span><span class="text_">,</span><span class="text_4">"= 1 array giữ nguyên định dạng với mỗi hàng được tính lũy tiến"</span><span class="text_7">)</span></p><p class="block_11"></p></div>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_3">Trong NumPy cũng có một số hàm toán cơ bản như sin,cos,và exp. Và chúng được gọi là "universal functions) <i class="calibre1">ufunc</i></p>
+	<p class="block_2">Indexing(lấy phần tử dựa vào index), Slicing(cắt) and Iterating(lặp)</p>
+	<p class="block_3">array 1 chiều có thể lấy index,slice hay lặp giống như list trong Python</p>
+	<div class="frame_"><p class="block_10"><span class="text_7"><br class="calibre4" />a=np.arange(</span><span class="text_5">10</span><span class="text_7">)**</span><span class="text_5">3<br class="calibre4" /></span><span class="text_3">print</span><span class="text_7">(a</span><span class="text_">,</span><span class="text_1">"Mảng a được tạo với 10 phần tử từ 0-&gt;10 và toán tử ** lấy số mũ mỗi phần tử"</span><span class="text_7">)<br class="calibre4" /></span><span class="text_6"># INDEXED<br class="calibre4" /></span><span class="text_3">print</span><span class="text_7">(a[</span><span class="text_5">2</span><span class="text_7">]</span><span class="text_">,</span><span class="text_1">" vị trí thứ 3 index tính từ vị trí 0"</span><span class="text_7">)<br class="calibre4" /></span><span class="text_3">print</span><span class="text_7">(a[</span><span class="text_5">2</span><span class="text_7">:</span><span class="text_5">5</span><span class="text_7">]</span><span class="text_">,</span><span class="text_1">" lấy giá trị từ vị trí 3-&gt;vị trí 4"</span><span class="text_7">)<br class="calibre4" /></span><span class="text_6"># Gán<br class="calibre4" /></span><span class="text_7">a[:</span><span class="text_5">6</span><span class="text_7">:</span><span class="text_5">2</span><span class="text_7">]=-</span><span class="text_5">1000<br class="calibre4" /></span><span class="text_6"># Dấu : tượng trưng cho bắt đầu từ vị trí 0 tới vị trí số 6 cách mỗi 2 bước thì gán giá trị đó =-1000<br class="calibre4" /></span><span class="text_3">print</span><span class="text_7">(a</span><span class="text_">,</span><span class="text_1">"Dấu : tượng trưng cho bắt đầu từ vị trí 0 tới vị trí số 6 cách mỗi 2 bước thì gán giá trị đó =-1000"</span><span class="text_7">)<br class="calibre4" />a=a[: : -</span><span class="text_5">1</span><span class="text_7">]<br class="calibre4" /></span><span class="text_3">print</span><span class="text_7">(a</span><span class="text_">,</span><span class="text_1">"Đảo các phần tử từ cuối lên đầu ndarray"</span><span class="text_7">)<br class="calibre4" /></span><span class="text_6"># Duyệt qua tất cả các phần tử trong mảng với for và thực hiện phép tính với phần tử<br class="calibre4" /></span><span class="text_">for </span><span class="text_7">i </span><span class="text_">in </span><span class="text_3">enumerate</span><span class="text_7">(a):<br class="calibre4" /><span class="calibre3">    d=</span></span><span class="text_7">i[-</span><span class="text_5">1</span><span class="text_7">]**(</span><span class="text_5">1</span><span class="text_7">/</span><span class="text_5">3.</span><span class="text_7">)<br class="calibre4" /><span class="calibre3">    </span></span><span class="text_3">print</span><span class="text_7">(</span><span class="text_3">str</span><span class="text_7">(</span><span class="text_3">round</span><span class="text_7">(d</span><span class="text_">,</span><span class="text_5">2</span><span class="text_7">))</span><span class="text_">,</span><span class="text_3">str</span><span class="text_7">(i[-</span><span class="text_5">1</span><span class="text_7">])</span><span class="text_">,</span><span class="text_1">"lũy thừa "</span><span class="text_">,</span><span class="text_3">str</span><span class="text_7">(</span><span class="text_3">round</span><span class="text_7">(</span><span class="text_5">1</span><span class="text_7">/</span><span class="text_5">3.</span><span class="text_">,</span><span class="text_5">2</span><span class="text_7">))</span><span class="text_">,</span><span class="text_1">" của phần tử thứ : "</span><span class="text_7">+</span><span class="text_3">str</span><span class="text_7">(i[</span><span class="text_5">0</span><span class="text_7">]))</span></p><p class="block_11"></p></div>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_3">File ví dụ lấy ở đây <a class="text_22" href="NumpyTest.py">NumpyTest.py</a></p>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_1">&nbsp;</p>
+
+</div>
+
+</body></html>
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+            </div> 
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/ai-with-python/chapter2/" title="Chapter 2"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/about/" title="about" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1568111768"></script>
+    <script src="/js/perfect-scrollbar.min.js?1568111768"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1568111768"></script>
+    <script src="/js/jquery.sticky.js?1568111768"></script>
+    <script src="/js/featherlight.min.js?1568111768"></script>
+    <script src="/js/highlight.pack.js?1568111768"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1568111768"></script>
+    <script src="/js/learn.js?1568111768"></script>
+    <script src="/js/hugo-learn.js?1568111768"></script>
+
+    <link href="/mermaid/mermaid.css?1568111768" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1568111768"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>
