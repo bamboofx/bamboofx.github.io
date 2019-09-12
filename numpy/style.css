@@ -190,6 +190,20 @@
     padding-right: 4pt;
     padding-top: 0
     }
+.block_13 {
+    background-color: yellow;
+    color: #2E74B5;
+    display: block;
+    line-height: 1.2;
+    margin-bottom: 8pt;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0
+    }
 .calibre {
     color: #5A5A5A;
     display: block;
@@ -216,6 +230,23 @@
     }
 .calibre4 {
     display: block
+    }
+.calibre5 {
+    display: block;
+    line-height: 1.2
+    }
+.calibre6 {
+    line-height: 1.2;
+    white-space: pre-wrap
+    }
+.calibre7 {
+    line-height: 1.2;
+    text-decoration: none
+    }
+.calibre8 {
+    height: 194pt;
+    line-height: 1.2;
+    width: 229pt
     }
 .frame_ {
     border-bottom-color: black;
@@ -339,6 +370,15 @@
     font-size: 0.83333em
     }
 .text_22 {
+    color: #808080;
+    line-height: 1.2
+    }
+.text_23 {
+    color: #F00;
+    line-height: 1.2;
+    text-decoration: underline
+    }
+.text_24 {
     color: #0563C1;
     line-height: 1.2;
     text-decoration: underline
