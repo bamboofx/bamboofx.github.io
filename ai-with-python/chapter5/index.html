@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.57.2" />
+    <meta name="description" content="">
+
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>C5: Building Recommender Systems :: Bamboofx&#39;s or NTVFX&#39;s Site</title>
+
+    
+    <link href="/css/nucleus.css?1572408723" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1572408723" rel="stylesheet">
+    <link href="/css/hybrid.css?1572408723" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1572408723" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1572408723" rel="stylesheet">
+    <link href="/css/auto-complete.css?1572408723" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1572408723" rel="stylesheet">
+    <link href="/css/theme.css?1572408723" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1572408723" rel="stylesheet">
+    
+      <link href="/css/theme-blue.css?1572408723" rel="stylesheet">
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1572408723"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/ai-with-python/chapter5/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="https://bamboofx.github.io/">
+  <img src="https://bamboofx.github.io/images/logo.png "> </img>
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1572408723"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1572408723"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/bamboofx.github.io\/";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1572408723"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/ai-with-python/" title="AI with Python (Prateek Joshi)" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/ai-with-python/">
+          AI with Python (Prateek Joshi)
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ai-with-python/chapter1/" title="C1: Trí thông minh nhân tạo là gì?" class="dd-item ">
+        <a href="/ai-with-python/chapter1/">
+        C1: Trí thông minh nhân tạo là gì?
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ai-with-python/chapter2/" title="C2: Classification and Regression" class="dd-item ">
+        <a href="/ai-with-python/chapter2/">
+        C2: Classification and Regression
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ai-with-python/chapter3/" title="C3: Ensemble Learing" class="dd-item ">
+        <a href="/ai-with-python/chapter3/">
+        C3: Ensemble Learing
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ai-with-python/chapter4/" title="C4: Detecting Patterns with Unsupervised Learning" class="dd-item ">
+        <a href="/ai-with-python/chapter4/">
+        C4: Detecting Patterns with Unsupervised Learning
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ai-with-python/chapter5/" title="C5: Building Recommender Systems" class="dd-item active">
+        <a href="/ai-with-python/chapter5/">
+        C5: Building Recommender Systems
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ai-with-python/chapter6/" title="C6: Logic Programing" class="dd-item ">
+        <a href="/ai-with-python/chapter6/">
+        C6: Logic Programing
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ai-with-python/chapter7/" title="C7: Tìm kiếm Heuristic" class="dd-item ">
+        <a href="/ai-with-python/chapter7/">
+        C7: Tìm kiếm Heuristic
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ai-with-python/chapter8/" title="C8: Thuật toán di truyền - Genetic Alogrithms" class="dd-item ">
+        <a href="/ai-with-python/chapter8/">
+        C8: Thuật toán di truyền - Genetic Alogrithms
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ai-with-python/chapter9/" title="C9: Xây dựng game cùng với AI" class="dd-item ">
+        <a href="/ai-with-python/chapter9/">
+        C9: Xây dựng game cùng với AI
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ai-with-python/chapter10/" title="C10: Natural Language Processing" class="dd-item ">
+        <a href="/ai-with-python/chapter10/">
+        C10: Natural Language Processing
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ai-with-python/chapter11/" title="C11: Sequential Data" class="dd-item ">
+        <a href="/ai-with-python/chapter11/">
+        C11: Sequential Data
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ai-with-python/chapter12/" title="C12: Speech Recognizer" class="dd-item ">
+        <a href="/ai-with-python/chapter12/">
+        C12: Speech Recognizer
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ai-with-python/chapter13/" title="C13: Object Detection and Tracking" class="dd-item ">
+        <a href="/ai-with-python/chapter13/">
+        C13: Object Detection and Tracking
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/numpy/" title="NumPy cơ bản" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/numpy/">
+          NumPy cơ bản
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/about/" title="about" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/about/">
+          About
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>Site</a> > <a href='/ai-with-python/'>AI with Python (Prateek Joshi)</a> > C5: Building Recommender Systems
+          
+         
+          
+         
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              C5: Building Recommender Systems
+            </h1>
+          
+
+        
+
+
+
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=utf-8" /><link href="style.css" rel="stylesheet" type="text/css" /><title>PythonAI Chapter5</title></head><body><div class="calibre" id="calibre_link-0">
+	<p class="block_">5</p>
+	<p class="block_">Xây dựng hệ thống </p>
+	<p class="block_">gợi ý, giới thiệu</p>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_2">Trong chương này chúng ta sẽ học về các xây dựng một hệ thống gợi ý video. Chúng ta sẽ thảo luận về cách xây dựng một đường ống training (training pipeline) có thể train cùng với tham số tùy biến. Chúng ta sẽ học về bộ phân loại Nearest Neighbors và xem làm thế nào để thực hiện nó. Chúng ta sẽ dùng những khái niệm để thảo luận hợp tác các bộ lọc và sau đó sử dụng nó để xây dựng một recmmender system.</p>
+	<p class="block_2">Sauk hi học xong chương này chúng ta sẽ học được những thứ sau:</p>
+	<ul class="list_">
+	<li class="block_3">Tạo một training pipeline</li>
+	<li class="block_4">Tách những điểm dữ liệu hàng xóm gần nhất (Nearest Neighbors)</li>
+	<li class="block_4">Xây dựng một bộ phân loại K Nearest Neighbors</li>
+	<li class="block_4">Tính điểm tương tự trong bộ dữ liệu</li>
+	<li class="block_4">Tìm những người dùng giống nhau sử dụng bộ lọc tích hợp</li>
+	<li class="block_5">Xây dựng một hệ thống gợi ý xem phim</li>
+</ul>
+	<p class="block_6">Tạo một training pipeline</p>
+	<p class="block_2"><span class="calibre1">Những hệ thống Machine-Learning thường được xây dựng bằng cách sử dụng nhiều modules khác nhau. Những modules này được kết hợp theo một cách riêng để đạt được mục đích cuối cùng.  Thư viện sckit-learn có những hàm có thể giúp chúng ta xây dựng </span>những<span class="calibre1"> đường ống  </span><span class="calibre1">bằng cách nối những modules khác nhau vào với nhau. Chúng ta chỉ phải chỉ định những modules cùng với cái thông số tương ứng. Sau đó nó sẽ xây dựng một đường ống bằng cách sử dụng những modules  để sử lý và huấn luyện dữ liệu hệ thống.</span></p>
+	<p class="block_2">Các đường ống này có thể bao gồm các modules để thực hiện các chức năng khác nhau như lựa chọn tính năng (feature selection), xử lý thô (preprocessing), random forest, phân nhóm, và nhiều thứ như vậy. Trong phần này, chúng ta sẽ thực hiện xây dựng một đường ống để chọn tính năng K-top từ một điểm dữ liệu input và sau đó phân loại chúng sử dụng một bộ phân loại Extremely Random Forest.</p>
+	<div class="frame_"><p class="block_7"><span class="text_">from </span><span class="text_1">sklearn.datasets </span><span class="text_">import </span><span class="text_1">samples_generator<br class="calibre2" /></span><span class="text_">from </span><span class="text_1">sklearn.feature_selection </span><span class="text_">import </span><span class="text_1">SelectKBest</span><span class="text_">,</span><span class="text_1">f_regression<br class="calibre2" /></span><span class="text_">from </span><span class="text_1">sklearn.pipeline </span><span class="text_">import </span><span class="text_1">Pipeline<br class="calibre2" /></span><span class="text_">from </span><span class="text_1">sklearn.ensemble </span><span class="text_">import </span><span class="text_1">ExtraTreesRegressor<br class="calibre2" /></span><span class="text_2"># Giờ thì hãy tạo một vài nhãn từ dữ liệu cho trước để train và test. Trong scikit-learn có một functions có thể thực hiện nó.<br class="calibre2" /># Trong chỗ này chúng ta sẽ tạo 150 điểm dữ liệu, tại mỗi điểm dữ liệu có một vector 25 chiều.<br class="calibre2" /># Những số trong mỗi vector này sẽ được tạo ra bằng cách sử dụng một bộ tạo số ngẫu nhiên. Mỗi điểm dữ liệu có 6 thông tin tính năng và không có tính năng thừa.<br class="calibre2" />#n_sample điểm dữ liệu<br class="calibre2" />#n_feature số vector trong điểm dữ liệu<br class="calibre2" />#n_class số lớp<br class="calibre2" />#n_informative số thông tin trên điểm dữ liệu<br class="calibre2" /><br class="calibre2" /></span><span class="text_1">X</span><span class="text_">,</span><span class="text_1">y=samples_generator.make_classification(</span><span class="text_3">n_samples</span><span class="text_1">=</span><span class="text_4">150</span><span class="text_">,</span><span class="text_3">n_features</span><span class="text_1">=</span><span class="text_4">25</span><span class="text_">,</span><span class="text_3">n_classes</span><span class="text_1">=</span><span class="text_4">3</span><span class="text_">,</span><span class="text_3">n_informative</span><span class="text_1">=</span><span class="text_4">6</span><span class="text_">,</span><span class="text_3">n_redundant</span><span class="text_1">=</span><span class="text_4">0</span><span class="text_">,</span><span class="text_3">random_state</span><span class="text_1">=</span><span class="text_4">7</span><span class="text_1">)<br class="calibre2" /><br class="calibre2" /></span><span class="text_2"># Khối đầu tiên trong đường ống là bộ chọn tính năng. Khối này sẽ chọn số K tính năng tốt nhất.<br class="calibre2" /># Hãy đặt giá trị của số K là 9<br class="calibre2" /></span><span class="text_1">k_best_selector=SelectKBest(f_regression</span><span class="text_">,</span><span class="text_3">k</span><span class="text_1">=</span><span class="text_4">9</span><span class="text_1">)<br class="calibre2" /></span><span class="text_2"># Khối tiếp theo trong đường ống là một bộ phân loại Extremely Random Forest<br class="calibre2" />#n_estimator số lần ước tính<br class="calibre2" />#max_depth độ cao lớn nhất của cây phân loại<br class="calibre2" /></span><span class="text_1">classifier=ExtraTreesRegressor(</span><span class="text_3">n_estimators</span><span class="text_1">=</span><span class="text_4">60</span><span class="text_">,</span><span class="text_3">max_depth</span><span class="text_1">=</span><span class="text_4">4</span><span class="text_1">)<br class="calibre2" /><br class="calibre2" /></span><span class="text_2"># Giờ thì xây dựng một đường ống bằng cách nối những khối riêng biệt bên trên chúng ta đã tạo. Chúng ta có thể đặt tên cho từng khối để theo dõi:<br class="calibre2" /><br class="calibre2" /></span><span class="text_1">processor_pipeline=Pipeline([(</span><span class="text_5">'selector'</span><span class="text_">,</span><span class="text_1">k_best_selector)</span><span class="text_">,</span><span class="text_1">(</span><span class="text_5">'erf'</span><span class="text_">,</span><span class="text_1">classifier)])<br class="calibre2" /><br class="calibre2" /></span><span class="text_2"># Chúng ta có thể thay đổi tham số của những nhóm riêng biệt này. Hãy thử thay đổi giá trị của số K trong khối đầu tiên thành 7 và số lần tính của khối 2 thành 30.<br class="calibre2" /># Chúng ta sẽ dụng tên chúng ta đã gán phần trước để làm:<br class="calibre2" /></span><span class="text_1">processor_pipeline.set_params(</span><span class="text_3">selector__k</span><span class="text_1">=</span><span class="text_4">5</span><span class="text_">,</span><span class="text_3">erf__n_estimators</span><span class="text_1">=</span><span class="text_4">30</span><span class="text_1">)<br class="calibre2" /></span><span class="text_2"># Train đường ống này sử dụng dữ liệu ví dụ<br class="calibre2" /></span><span class="text_1">processor_pipeline.fit(X</span><span class="text_">,</span><span class="text_1">y)<br class="calibre2" /></span><span class="text_2"># Dự đoán kết quả đầu ra cho tất cả dữ liệu nhập và in nó:<br class="calibre2" /></span><span class="text_1">output=processor_pipeline.predict(X)<br class="calibre2" /></span><span class="text_6">print</span><span class="text_1">(</span><span class="text_5">'Dự đoán đầu ra:'</span><span class="text_">,</span><span class="text_1">output)<br class="calibre2" /></span><span class="text_2"># Tính điểm sử dụng nhãn dữ liệu đã dduwwocj gán<br class="calibre2" /></span><span class="text_6">print</span><span class="text_1">(</span><span class="text_5">"Điểm số: "</span><span class="text_">,</span><span class="text_1">processor_pipeline.score(X</span><span class="text_">,</span><span class="text_1">y))<br class="calibre2" /></span><span class="text_2"># Phân tách những tính năng được chọn bởi bộ chọn khối. Chúng ta chỉ định chúng ta muốn chọn 7 tính năng trong số 25 tính năng<br class="calibre2" /></span><span class="text_1">status=processor_pipeline.named_steps[</span><span class="text_5">'selector'</span><span class="text_1">].get_support()<br class="calibre2" /></span><span class="text_6">print</span><span class="text_1">(status)<br class="calibre2" />selected=[i </span><span class="text_">for </span><span class="text_1">i</span><span class="text_">,</span><span class="text_1">x </span><span class="text_">in </span><span class="text_6">enumerate</span><span class="text_1">(status) </span><span class="text_">if </span><span class="text_1">x]<br class="calibre2" /></span><span class="text_6">print</span><span class="text_1">(</span><span class="text_5">"Chỉ số của các tính năng được chọn: "</span><span class="text_">,</span><span class="text_5">', '</span><span class="text_1">.join(</span><span class="text_6">str</span><span class="text_1">(x) </span><span class="text_">for </span><span class="text_1">x </span><span class="text_">in </span><span class="text_1">selected))</span></p><p class="block_8"></p></div>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_9">Dự đoán đầu ra: [0.72580607 1.48776254 1.57350286 0.16845332 1.63143811 0.28419715</p>
+	<p class="block_10"> 1.75438204 0.85543849 0.20870588 0.76611338 0.91033707 1.45821884</p>
+	<p class="block_10"><span class="calibre3"> 1.07736331 0.46991242 1.60225032 1.38814221 0.9318791  0.34375345</span></p>
+	<p class="block_10"><span class="calibre3"> 0.62729184 0.80638229 0.29684763 1.58691235 0.9449351  0.97980186</span></p>
+	<p class="block_10"><span class="calibre3"> 1.613547   1.54260186 0.54987841 0.25793025 1.29203871 1.12941252</span></p>
+	<p class="block_10"> 0.72099818 1.18018859 1.28317036 0.23628288 1.52248457 1.5537845</p>
+	<p class="block_10"> 0.81060883 1.03988114 1.82119663 1.86657518 1.50205423 0.48127497</p>
+	<p class="block_10"> 0.73752893 1.15401467 1.73428078 0.67778417 1.44112959 1.78170262</p>
+	<p class="block_10"><span class="calibre3"> 0.8867858  0.31649897 0.89994623 1.7522823  1.1798259  1.3315383</span></p>
+	<p class="block_10"><span class="calibre3"> 1.50206304 0.2391394  1.78071697 1.62861004 0.27189563 1.82601046</span></p>
+	<p class="block_10"> 1.58085223 0.30161375 1.01566276 0.38762182 1.59002443 1.14571478</p>
+	<p class="block_10"><span class="calibre3"> 0.59566876 0.82466357 1.00773185 1.70603515 0.975447   0.85403612</span></p>
+	<p class="block_10"> 0.22619174 1.78244246 0.55902649 0.27046838 0.86079451 1.28609422</p>
+	<p class="block_10"> 1.74811993 0.11410267 0.12870315 1.27552995 1.29504346 1.46579916</p>
+	<p class="block_10"><span class="calibre3"> 1.12245889 0.80675573 0.2941248  0.34417039 1.32394419 1.39283537</span></p>
+	<p class="block_10"> 1.47331864 1.17032674 1.80521567 0.71298127 1.79290549 1.01303105</p>
+	<p class="block_10"><span class="calibre3"> 1.45748857 1.02292709 0.62299891 0.4167403  0.86323926 0.77563993</span></p>
+	<p class="block_10"> 0.79056248 0.96381714 1.85775872 1.40334825 1.17785629 1.72186092</p>
+	<p class="block_10"><span class="calibre3"> 0.43689893 0.89294742 1.0053075  0.18375809 1.60450265 0.44927514</span></p>
+	<p class="block_10"> 0.51530143 0.47989225 0.84356646 0.78441825 0.84729926 0.81339102</p>
+	<p class="block_10"><span class="calibre3"> 0.31165777 0.67248316 0.2571075  1.10245832 1.54534611 0.3781706</span></p>
+	<p class="block_10"> 0.48948835 0.43782342 1.65147322 0.78225598 1.66001697 0.30721129</p>
+	<p class="block_10"> 0.29983231 0.81797258 0.55205279 0.95097526 0.78301223 0.75155813</p>
+	<p class="block_10"><span class="calibre3"> 0.74325836 0.62748663 0.68803258 1.06119408 1.2500917  1.20557905</span></p>
+	<p class="block_10"> 0.60565937 0.78766494 1.50937821 0.63082446 1.27099315 1.26319842]</p>
+	<p class="block_10"><span class="calibre3">Điểm số:  0.6754705760516474</span></p>
+	<p class="block_10"><span class="calibre3">[False False False False  True False False  True False False False False</span></p>
+	<p class="block_10"><span class="calibre3">  True False False False False  True False False False False  True False</span></p>
+	<p class="block_10"> False]</p>
+	<p class="block_11"><span class="calibre3">Chỉ số của các tính năng được chọn:  4, 7, 12, 17, 22</span></p>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_2">Danh sách output cho thấy các nhãn được dự đoán sử dụng bộ xử lý. Điểm số là hiệu quả của phép phân tích. và cuối cùng là các chỉ số của các tính năng được chọn</p>
+	<p class="block_6">Trích xuất nearest neighbors</p>
+	<p class="block_2">Hệ thống Recommender system sử dụng khái niệm nearest neighbors để tìm những khuyến nghị tốt nhất. Nearest neighbors( hàng xóm gần nhất) đề cập đến quá trình xử lý tìm kiếm những điểm dữ liệu gần nhất với điểm dữ liệu đầu vào từ bộ dữ liệu cho trước. Nó thường được dùng để xây dựng hệt thống phân loại để phân loại một điểm dữ liệu dựa trên những điểm tương tự của tập dữ liệu input tới các lớp khác nhau. </p>
+	<div class="frame_"><p class="block_7"><span class="text_"><span class="calibre3">import  </span></span><span class="text_1">numpy </span><span class="text_">as </span><span class="text_1">np<br class="calibre2" /></span><span class="text_">import </span><span class="text_1">matplotlib.pyplot </span><span class="text_">as </span><span class="text_1">plt<br class="calibre2" /></span><span class="text_">from </span><span class="text_1">sklearn.neighbors </span><span class="text_">import </span><span class="text_1">NearestNeighbors<br class="calibre2" /><br class="calibre2" /></span><span class="text_2"># Tạo một bộ dữ liệu 2D<br class="calibre2" /></span><span class="text_1">X=np.array([[</span><span class="text_4">2.1</span><span class="text_">,</span><span class="text_4">1.3</span><span class="text_1">]</span><span class="text_">,</span><span class="text_1">[</span><span class="text_4">1.3</span><span class="text_">, </span><span class="text_4">3.2</span><span class="text_1">]</span><span class="text_">, </span><span class="text_1">[</span><span class="text_4">2.9</span><span class="text_">, </span><span class="text_4">2.5</span><span class="text_1">]</span><span class="text_">, </span><span class="text_1">[</span><span class="text_4">2.7</span><span class="text_">, </span><span class="text_4">5.4</span><span class="text_1">]</span><span class="text_">, </span><span class="text_1">[</span><span class="text_4">3.8</span><span class="text_">, </span><span class="text_4">0.9</span><span class="text_1">]</span><span class="text_">,</span><span class="text_1">[</span><span class="text_4">7.3</span><span class="text_">, </span><span class="text_4">2.1</span><span class="text_1">]</span><span class="text_">,</span><span class="text_1">[</span><span class="text_4">4.2</span><span class="text_">, </span><span class="text_4">6.5</span><span class="text_1">]</span><span class="text_">, </span><span class="text_1">[</span><span class="text_4">3.8</span><span class="text_">, </span><span class="text_4">3.7</span><span class="text_1">]</span><span class="text_">, </span><span class="text_1">[</span><span class="text_4">2.5</span><span class="text_">, </span><span class="text_4">4.1</span><span class="text_1">]</span><span class="text_">, </span><span class="text_1">[</span><span class="text_4">3.4</span><span class="text_">, </span><span class="text_4">1.9</span><span class="text_1">]</span><span class="text_">,</span><span class="text_1">[</span><span class="text_4">5.7</span><span class="text_">, </span><span class="text_4">3.5</span><span class="text_1">]</span><span class="text_">, </span><span class="text_1">[</span><span class="text_4">6.1</span><span class="text_">, </span><span class="text_4">4.3</span><span class="text_1">]</span><span class="text_">, </span><span class="text_1">[</span><span class="text_4">5.1</span><span class="text_">, </span><span class="text_4">2.2</span><span class="text_1">]</span><span class="text_">, </span><span class="text_1">[</span><span class="text_4">6.2</span><span class="text_">, </span><span class="text_4">1.1</span><span class="text_1">]])<br class="calibre2" /></span><span class="text_2"># Định nghĩa một điểm nearest neighbors chúng ta muốn tách<br class="calibre2" /></span><span class="text_1">k=</span><span class="text_4">5<br class="calibre2" /></span><span class="text_2"># tạo một bộ dữ liệu test<br class="calibre2" /></span><span class="text_1">test_datapoint=[</span><span class="text_4">4.3</span><span class="text_">,</span><span class="text_4">2.7</span><span class="text_1">]<br class="calibre2" /></span><span class="text_2"># Vẽ dữ liệu input<br class="calibre2" /></span><span class="text_1">plt.figure()<br class="calibre2" />plt.title(</span><span class="text_5">"Dữ liệu nhập"</span><span class="text_1">)<br class="calibre2" />plt.scatter(X[:</span><span class="text_">,</span><span class="text_4">0</span><span class="text_1">]</span><span class="text_">,</span><span class="text_1">X[:</span><span class="text_">,</span><span class="text_4">1</span><span class="text_1">]</span><span class="text_">,</span><span class="text_3">marker</span><span class="text_1">=</span><span class="text_5">'o'</span><span class="text_">,</span><span class="text_3">s</span><span class="text_1">=</span><span class="text_4">75</span><span class="text_">,</span><span class="text_3">color</span><span class="text_1">=</span><span class="text_5">'r'</span><span class="text_1">)<br class="calibre2" /><br class="calibre2" /></span><span class="text_2"># Tạo và huấn luyện một mô hình điểm K Nearest Neigbors sử dụng dữ liệu nhập.<br class="calibre2" /></span><span class="text_1">knn_model=NearestNeighbors(</span><span class="text_3">n_neighbors</span><span class="text_1">=k</span><span class="text_">,</span><span class="text_3">algorithm</span><span class="text_1">=</span><span class="text_5">'ball_tree'</span><span class="text_1">)<br class="calibre2" />knn_model.fit(X)<br class="calibre2" /></span><span class="text_2"># Sử dụng mô hình này để tách dữ liệu nearest neighbors dựa trên điểm dữ liệu test<br class="calibre2" /></span><span class="text_1">distance</span><span class="text_">,</span><span class="text_1">indices=knn_model.kneighbors([test_datapoint])<br class="calibre2" /></span><span class="text_6">print</span><span class="text_1">(</span><span class="text_5">'K Nearest Neighbors'</span><span class="text_1">)<br class="calibre2" /></span><span class="text_">for </span><span class="text_1">rank</span><span class="text_">,</span><span class="text_1">i </span><span class="text_">in </span><span class="text_6">enumerate</span><span class="text_1">(indices[</span><span class="text_4">0</span><span class="text_1">][:k]</span><span class="text_">,</span><span class="text_3">start</span><span class="text_1">=</span><span class="text_4">1</span><span class="text_1">):<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_6">print</span><span class="text_1">(</span><span class="text_6">str</span><span class="text_1">(rank)+</span><span class="text_5">"==&gt;"</span><span class="text_">,</span><span class="text_1">X[i])<br class="calibre2" /><br class="calibre2" /></span><span class="text_2"># Vẽ đồ thị điểm gần nhất:<br class="calibre2" /></span><span class="text_1">plt.figure()<br class="calibre2" />plt.title(</span><span class="text_5">'Nearest neighbors'</span><span class="text_1">)<br class="calibre2" />plt.scatter(X[:</span><span class="text_">,</span><span class="text_4">0</span><span class="text_1">]</span><span class="text_">,</span><span class="text_1">X[:</span><span class="text_">,</span><span class="text_4">1</span><span class="text_1">]</span><span class="text_">,</span><span class="text_3">marker</span><span class="text_1">=</span><span class="text_5">'o'</span><span class="text_">,</span><span class="text_3">s</span><span class="text_1">=</span><span class="text_4">75</span><span class="text_">,</span><span class="text_3">color</span><span class="text_1">=</span><span class="text_5">'r'</span><span class="text_1">)<br class="calibre2" />plt.scatter(X[indices][</span><span class="text_4">0</span><span class="text_1">][:][:</span><span class="text_">, </span><span class="text_4">0</span><span class="text_1">]</span><span class="text_">, </span><span class="text_1">X[indices][</span><span class="text_4">0</span><span class="text_1">][:][:</span><span class="text_">, </span><span class="text_4">1</span><span class="text_1">]</span><span class="text_">,</span><span class="text_3">marker</span><span class="text_1">=</span><span class="text_5">'H'</span><span class="text_">,</span><span class="text_3">s</span><span class="text_1">=</span><span class="text_4">350</span><span class="text_">,</span><span class="text_3">color</span><span class="text_1">=</span><span class="text_5">"c"</span><span class="text_">,</span><span class="text_3">facecolor</span><span class="text_1">=</span><span class="text_5">'none'</span><span class="text_1">)<br class="calibre2" />plt.scatter(test_datapoint[</span><span class="text_4">0</span><span class="text_1">]</span><span class="text_">,</span><span class="text_1">test_datapoint[</span><span class="text_4">1</span><span class="text_1">]</span><span class="text_">,</span><span class="text_3">marker</span><span class="text_1">=</span><span class="text_5">'x'</span><span class="text_">,</span><span class="text_3">s</span><span class="text_1">=</span><span class="text_4">75</span><span class="text_">,</span><span class="text_3">color</span><span class="text_1">=</span><span class="text_5">'y'</span><span class="text_1">)<br class="calibre2" />plt.show();</span></p><p class="block_8"></p></div>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_2">Kết quả:</p>
+	<p class="block_2"><img alt="Image" src="images/000005.png" class="calibre4" /><img alt="Image" src="images/000003.png" class="calibre4" /></p>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_9">K Nearest Neighbors</p>
+	<p class="block_10">1==&gt; [5.1 2.2]</p>
+	<p class="block_10">2==&gt; [3.8 3.7]</p>
+	<p class="block_10">3==&gt; [3.4 1.9]</p>
+	<p class="block_10">4==&gt; [2.9 2.5]</p>
+	<p class="block_11">5==&gt; [5.7 3.5]</p>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_2">Dựa vào hình ta tìm thấy năm điểm gần nhất với điểm dữ liệu test </p>
+	<p class="block_6">Xây dựng một bộ phân loại K-nearest Neighbors</p>
+	<p class="block_2">Một bộ phân loại K-Nearest Neighbors là một mô hình phân loại sử dụng thuật toán tìm hàng xóm gần nhất của một điểm dữ liệu cho trước. Thuật toán này tìm những điểm K gần nhất trong bộ dữ liệu training để nhận diện thể loại của điểm dữ liệu input. Nó sẽ đặt một class cho điểm dự liệu này dựa trên một phương pháp bầu chọn đa số. Từ danh sách của những điểm K này, chúng ta sẽ nhìn vào những lớp tương ứng và chọn lấy một cùng với số phiếu bầu cao nhất. </p>
+	<p class="block_2">Code nào:</p>
+	<p class="block_1">&nbsp;</p>
+	<div class="frame_"><p class="block_7"><span class="text_">import </span><span class="text_1">numpy </span><span class="text_">as </span><span class="text_1">np<br class="calibre2" /></span><span class="text_">import </span><span class="text_1">matplotlib.pyplot </span><span class="text_">as </span><span class="text_1">plt<br class="calibre2" /></span><span class="text_">import </span><span class="text_1">matplotlib.cm </span><span class="text_">as </span><span class="text_1">cm<br class="calibre2" /></span><span class="text_">from </span><span class="text_1">sklearn </span><span class="text_">import </span><span class="text_1">datasets<br class="calibre2" /></span><span class="text_">from </span><span class="text_1">sklearn.neighbors </span><span class="text_">import </span><span class="text_1">KNeighborsClassifier<br class="calibre2" /><br class="calibre2" /></span><span class="text_2"># lấy dữ liệu từ file chap5/data.txt<br class="calibre2" /></span><span class="text_1">data=np.loadtxt(</span><span class="text_5">"data/chap5/data.txt"</span><span class="text_">,</span><span class="text_3">delimiter</span><span class="text_1">=</span><span class="text_5">','</span><span class="text_1">)<br class="calibre2" />X</span><span class="text_">,</span><span class="text_1">y=data[:</span><span class="text_">,</span><span class="text_1">:-</span><span class="text_4">1</span><span class="text_1">]</span><span class="text_">,</span><span class="text_1">data[:</span><span class="text_">,</span><span class="text_1">-</span><span class="text_4">1</span><span class="text_1">].astype(np.int)<br class="calibre2" /></span><span class="text_2"># Vẽ dữ liệu nhập<br class="calibre2" /></span><span class="text_1">plt.figure()<br class="calibre2" />plt.title(</span><span class="text_5">"Dữ liệu input"</span><span class="text_1">)<br class="calibre2" />marker=</span><span class="text_5">'v^os'<br class="calibre2" /></span><span class="text_1">marker=[marker[i] </span><span class="text_">for </span><span class="text_1">i </span><span class="text_">in </span><span class="text_1">y]<br class="calibre2" /><br class="calibre2" /></span><span class="text_">for </span><span class="text_1">i </span><span class="text_">in </span><span class="text_6">range</span><span class="text_1">(X.shape[</span><span class="text_4">0</span><span class="text_1">]):<br class="calibre2" /><span class="calibre3">    plt.scatter(X[i</span></span><span class="text_">,</span><span class="text_4">0</span><span class="text_1">]</span><span class="text_">,</span><span class="text_1">X[i</span><span class="text_">,</span><span class="text_4">1</span><span class="text_1">]</span><span class="text_">,</span><span class="text_3">marker</span><span class="text_1">=marker[i]</span><span class="text_">,</span><span class="text_3">s</span><span class="text_1">=</span><span class="text_4">75</span><span class="text_">,</span><span class="text_3">edgecolors</span><span class="text_1">=</span><span class="text_5">'r'</span><span class="text_">,</span><span class="text_3">facecolors</span><span class="text_1">=</span><span class="text_5">'none'</span><span class="text_1">)<br class="calibre2" /><br class="calibre2" /></span><span class="text_2"># Định nghĩa số điểm lân cận mà ta muốn lấy<br class="calibre2" /></span><span class="text_1">num_neighbors=</span><span class="text_4">12<br class="calibre2" /></span><span class="text_2"># Định nghĩa khoảng cách mỗi ô lưới mà chúng ta sẽ vẽ<br class="calibre2" /></span><span class="text_1">grid_step=</span><span class="text_4">0.01<br class="calibre2" /></span><span class="text_2"># Tọa một bộ phân loại K_nearest Neigbors<br class="calibre2" /></span><span class="text_1">classifier=KNeighborsClassifier(</span><span class="text_3">n_neighbors</span><span class="text_1">=num_neighbors</span><span class="text_">,</span><span class="text_3">weights</span><span class="text_1">=</span><span class="text_5">'distance'</span><span class="text_1">)<br class="calibre2" /></span><span class="text_2"># Train mô hình<br class="calibre2" /></span><span class="text_1">classifier.fit(X</span><span class="text_">,</span><span class="text_1">y)<br class="calibre2" /></span><span class="text_2"># tạo một lưới giá trị mà ta sẽ sử dụng để vẽ đồ thị<br class="calibre2" /></span><span class="text_1">x_min</span><span class="text_">,</span><span class="text_1">x_max=X[:</span><span class="text_">,</span><span class="text_4">0</span><span class="text_1">].min()-</span><span class="text_4">1</span><span class="text_">,</span><span class="text_1">X[:</span><span class="text_">,</span><span class="text_4">0</span><span class="text_1">].max()+</span><span class="text_4">1<br class="calibre2" /></span><span class="text_1">y_min</span><span class="text_">,</span><span class="text_1">y_max=X[:</span><span class="text_">,</span><span class="text_4">1</span><span class="text_1">].min()-</span><span class="text_4">1</span><span class="text_">,</span><span class="text_1">X[:</span><span class="text_">,</span><span class="text_4">1</span><span class="text_1">].max()+</span><span class="text_4">1<br class="calibre2" /></span><span class="text_1">x_values</span><span class="text_">,</span><span class="text_1">y_values=np.meshgrid(np.arange(x_min</span><span class="text_">,</span><span class="text_1">x_max</span><span class="text_">,</span><span class="text_1">grid_step)</span><span class="text_">,</span><span class="text_1">np.arange(y_min</span><span class="text_">,</span><span class="text_1">y_max</span><span class="text_">,</span><span class="text_1">grid_step))<br class="calibre2" /></span><span class="text_2"># Đánh giá bộ phân loại trên tất cả các điểm trên lưới để vẽ đồ thị<br class="calibre2" /></span><span class="text_1">output=classifier.predict(np.c_[x_values.ravel()</span><span class="text_">,</span><span class="text_1">y_values.ravel()])<br class="calibre2" />output=output.reshape(x_values.shape)<br class="calibre2" />plt.figure()<br class="calibre2" />plt.pcolormesh(x_values</span><span class="text_">,</span><span class="text_1">y_values</span><span class="text_">,</span><span class="text_1">output</span><span class="text_">,</span><span class="text_3">cmap</span><span class="text_1">=cm.Paired)<br class="calibre2" /><br class="calibre2" /></span><span class="text_2"># Phủ dữ liệu train lên lưới<br class="calibre2" /></span><span class="text_">for </span><span class="text_1">i </span><span class="text_">in </span><span class="text_6">range</span><span class="text_1">(X.shape[</span><span class="text_4">0</span><span class="text_1">]):<br class="calibre2" /><span class="calibre3">    plt.scatter(X[i</span></span><span class="text_">,</span><span class="text_4">0</span><span class="text_1">]</span><span class="text_">,</span><span class="text_1">X[i</span><span class="text_">,</span><span class="text_4">1</span><span class="text_1">]</span><span class="text_">,</span><span class="text_3">marker</span><span class="text_1">=marker[i]</span><span class="text_">,</span><span class="text_3">s</span><span class="text_1">=</span><span class="text_4">50</span><span class="text_">,</span><span class="text_3">edgecolors</span><span class="text_1">=</span><span class="text_5">"c"</span><span class="text_">,</span><span class="text_3">facecolors</span><span class="text_1">=</span><span class="text_5">'none'</span><span class="text_1">)<br class="calibre2" /></span><span class="text_2"># Đặt giới hạn trục X và Y<br class="calibre2" /></span><span class="text_1">plt.xlim(x_values.min()</span><span class="text_">,</span><span class="text_1">x_values.max())<br class="calibre2" />plt.ylim(y_values.min()</span><span class="text_">,</span><span class="text_1">y_values.max())<br class="calibre2" />plt.title(</span><span class="text_5">'Mô hình phân loại K Nearest Neighbors'</span><span class="text_1">)<br class="calibre2" /></span><span class="text_2"># Tạo một testpoint để xem bộ phân loại làm việc<br class="calibre2" /></span><span class="text_1">test_datapoint=[</span><span class="text_4">5.1</span><span class="text_">,</span><span class="text_4">3.6</span><span class="text_1">]<br class="calibre2" /></span><span class="text_2"># Tạo đò thị cùng với dữ liệu trên ning và kiểm thử testpoint xem nó nằm ở chỗ nào<br class="calibre2" /></span><span class="text_1">plt.figure()<br class="calibre2" />plt.title(</span><span class="text_5">'Test point'</span><span class="text_1">)<br class="calibre2" /></span><span class="text_">for </span><span class="text_1">i </span><span class="text_">in </span><span class="text_6">range</span><span class="text_1">(X.shape[</span><span class="text_4">0</span><span class="text_1">]):<br class="calibre2" /><span class="calibre3">    plt.scatter(X[i</span></span><span class="text_">,</span><span class="text_4">0</span><span class="text_1">]</span><span class="text_">,</span><span class="text_1">X[i</span><span class="text_">,</span><span class="text_4">1</span><span class="text_1">]</span><span class="text_">,</span><span class="text_3">marker</span><span class="text_1">=marker[i]</span><span class="text_">,</span><span class="text_3">s</span><span class="text_1">=</span><span class="text_4">80</span><span class="text_">,</span><span class="text_3">edgecolors</span><span class="text_1">=</span><span class="text_5">'black'</span><span class="text_">,</span><span class="text_3">facecolors</span><span class="text_1">=</span><span class="text_5">'none'</span><span class="text_1">)<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_1">plt.scatter(test_datapoint[</span><span class="text_4">0</span><span class="text_1">]</span><span class="text_">,</span><span class="text_1">test_datapoint[</span><span class="text_4">1</span><span class="text_1">]</span><span class="text_">,</span><span class="text_3">marker</span><span class="text_1">=</span><span class="text_5">'x'</span><span class="text_">,</span><span class="text_3">s</span><span class="text_1">=</span><span class="text_4">200</span><span class="text_">,</span><span class="text_3">facecolors</span><span class="text_1">=</span><span class="text_5">'black'</span><span class="text_1">)<br class="calibre2" /></span><span class="text_2">#Tách điểm dữ liệu lân cận K (K Nearét Neighbors) để test dữ liệu dựa trên mô hình phân loại:<br class="calibre2" /></span><span class="text_1">_</span><span class="text_">,</span><span class="text_1">indices=classifier.kneighbors([test_datapoint])<br class="calibre2" />indices=indices.astype(np.int)[</span><span class="text_4">0</span><span class="text_1">]<br class="calibre2" /></span><span class="text_2"># Vẽ điểm K lân cận lên biểu đồ<br class="calibre2" /></span><span class="text_1">plt.figure()<br class="calibre2" />plt.title(</span><span class="text_5">'K Nearest Neighbors'</span><span class="text_1">)<br class="calibre2" /></span><span class="text_">for </span><span class="text_1">i </span><span class="text_">in </span><span class="text_1">indices:<br class="calibre2" /><span class="calibre3">    plt.scatter(X[i</span></span><span class="text_">,</span><span class="text_4">0</span><span class="text_1">]</span><span class="text_">,</span><span class="text_1">X[i</span><span class="text_">,</span><span class="text_4">1</span><span class="text_1">]</span><span class="text_">,</span><span class="text_3">marker</span><span class="text_1">=marker[i]</span><span class="text_">,</span><span class="text_3">linewidths</span><span class="text_1">=</span><span class="text_4">3</span><span class="text_">,</span><span class="text_3">s</span><span class="text_1">=</span><span class="text_4">100</span><span class="text_">,</span><span class="text_3">facecolors</span><span class="text_1">=</span><span class="text_5">'none'</span><span class="text_1">)<br class="calibre2" /></span><span class="text_2"># Biểu diễn điểm dữ liệu test<br class="calibre2" /></span><span class="text_1">plt.scatter(test_datapoint[</span><span class="text_4">0</span><span class="text_1">]</span><span class="text_">,</span><span class="text_1">test_datapoint[</span><span class="text_4">1</span><span class="text_1">]</span><span class="text_">,</span><span class="text_3">marker</span><span class="text_1">=</span><span class="text_5">'x'</span><span class="text_">,</span><span class="text_3">linewidths</span><span class="text_1">=</span><span class="text_4">10</span><span class="text_">,</span><span class="text_3">edgecolors</span><span class="text_1">=</span><span class="text_5">'r'</span><span class="text_1">)<br class="calibre2" /></span><span class="text_2"># Bểu diễn dữ liệu input<br class="calibre2" /></span><span class="text_">for </span><span class="text_1">i </span><span class="text_">in </span><span class="text_6">range</span><span class="text_1">(X.shape[</span><span class="text_4">0</span><span class="text_1">]):<br class="calibre2" /><span class="calibre3">    plt.scatter(X[i</span></span><span class="text_">,</span><span class="text_4">0</span><span class="text_1">]</span><span class="text_">,</span><span class="text_1">X[i</span><span class="text_">,</span><span class="text_4">1</span><span class="text_1">]</span><span class="text_">,</span><span class="text_3">marker</span><span class="text_1">=marker[y[i]]</span><span class="text_">,</span><span class="text_3">s</span><span class="text_1">=</span><span class="text_4">75</span><span class="text_">,</span><span class="text_3">edgecolors</span><span class="text_1">=</span><span class="text_5">'c'</span><span class="text_">,</span><span class="text_3">facecolors</span><span class="text_1">=</span><span class="text_5">'none'</span><span class="text_1">)<br class="calibre2" /></span><span class="text_2"># Print dữ liệu ra terminal<br class="calibre2" /></span><span class="text_6">print</span><span class="text_1">(</span><span class="text_5">'Predict output'</span><span class="text_">,</span><span class="text_1">classifier.predict([test_datapoint])[</span><span class="text_4">0</span><span class="text_1">])<br class="calibre2" />plt.show()</span></p><p class="block_8"></p></div>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_2">Kết quả</p>
+	<p class="block_12"><img alt="Image" src="images/000000.png" class="calibre5" /><span class="calibre1">                     </span></p>
+	<p class="block_12"><img alt="Image" src="images/000006.png" class="calibre6" /></p>
+	<p class="block_13">Biên giới của bộ phân loại</p>
+	<p class="block_12"><img alt="Image" src="images/000004.png" class="calibre6" /><span class="calibre1">   </span></p>
+	<p class="block_12">Dấu X là điểm dữ liệu test trong dữ liệu input để tìm Knearest Neighbors</p>
+	<p class="block_14">&nbsp;</p>
+	<p class="block_12"><span class="calibre1">            </span><img alt="Image" src="images/000001.png" class="calibre6" /></p>
+	<p class="block_12">12 điểm dữ liệu gần nhất với điểm test data chúng ta chọn được tô màu xanh</p>
+	<p class="block_2">Output ở terminal</p>
+	<p class="block_15">Predict output: 1</p>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_6">Tính điểm tương tự (similarity scores)</p>
+	<p class="block_2">Để xây dựng một hệ thống <b class="calibre7">gợi ý</b>, điều quan trọng cần hiểu là làm sao có thể so sánh những đối tượng khác nhau trong bộ dữ liệu của chúng ta. Giả sử bộ dữ liệu của chúng ta gồm những người và những sở thích xem phim khác nhau. Để gợi ý một bộ phim nào đó, chúng ta cần phải so sánh sở thích mỗi 2 người với nhau. Đây là lúc mà những điểm tương tự cần được chú ý một cách cẩn thận. Những điểm tương đồng cho chúng ta một ý tưởng về tính tương tự của 2 đối tượng.</p>
+	<p class="block_2">Có 2 điểm số chúng ta thường sử dụng trong trường hợp này</p>
+	<ul class="list_">
+	<li class="block_3">Euclidean Score ( điểm số Euclidean) sử dụng khoảng cách Euclidean giữa 2 điểm dữ liệu để tính điểm. Nếu bạn cần xem thêm về cách tính khoảng cách Euclidean thì lên wiki tại địa chỉ <a href="https://en.wikipedia.org/wiki/Euclidean_distance" class="text_7">https://en.wikipedia.org/wiki/Euclidean_distance</a>. Giá trị của khoảng cách Euclidean có thể không có giới hạn. Vì thế chúng ta lấy giá trị của nó và chuyển nó về thành điểm số Euclidean có giá trị từ 0-&gt;1. Nếu khoảng cách Euclidean giữa 2 đối tượng là quá lớn thì điểm số Euclidean sẽ nhỏ bởi vì điểm số nhỏ tương ứng với việc 2 đối tượng này không giống nhau. Vì vậy khoản cách Euclidean tỉ lệ nghịch với điểm Euclidean</li>
+	<li class="block_16"><span class="calibre1">Pearson Score ( điểm số Pearson) là đo khoảng cách tương quan giữa 2 đối tượng. Nó dùng hiệp phương sai (covariance) giữa 2 đối tượng cùng với độ lệch chuẩn của chúng để tính điểm. ĐIểm số này có khoảng cách từ -1 -&gt; 1. Điểm số càng gần với +1  thì tính chất của chúng càng giống nhau còn càng gần với -1 thì càng không giống. Điểm số bằng 0 có nghĩa là 2 đối tượng chẳng liên quan gì mấy. </span></li>
+</ul>
+	<div class="frame_"><p class="block_7"><span class="text_">import </span><span class="text_8">argparse<br class="calibre2" /></span><span class="text_">import </span><span class="text_8">json<br class="calibre2" /></span><span class="text_">import </span><span class="text_8">numpy </span><span class="text_">as </span><span class="text_8">np<br class="calibre2" /></span><span class="text_1"># Xây dựng mộ bộ phân tích cú pháp xử lý tham số input. nó sẽ chấp nhận 2 người dùng và dạng điểm số nó cần đử sử dụng tính toán điểm tương đồng:<br class="calibre2" /></span><span class="text_">def </span><span class="text_9">build_arg_parser</span><span class="text_8">():<br class="calibre2" /><span class="calibre3">    paser=argparse.ArgumentParser(</span></span><span class="text_3">description</span><span class="text_8">=</span><span class="text_5">'Tính toán điểm tương đồng'</span><span class="text_8">)<br class="calibre2" /><span class="calibre3">    paser.add_argument(</span></span><span class="text_5">'--user1'</span><span class="text_">,</span><span class="text_3">dest</span><span class="text_8">=</span><span class="text_5">'user1'</span><span class="text_">,</span><span class="text_3">required</span><span class="text_8">=</span><span class="text_">True,</span><span class="text_3">help</span><span class="text_8">=</span><span class="text_5">'First User'</span><span class="text_8">)<br class="calibre2" /><span class="calibre3">    paser.add_argument(</span></span><span class="text_5">'--user2'</span><span class="text_">,</span><span class="text_3">dest</span><span class="text_8">=</span><span class="text_5">'user2'</span><span class="text_">,</span><span class="text_3">required</span><span class="text_8">=</span><span class="text_">True,</span><span class="text_3">help</span><span class="text_8">=</span><span class="text_5">'Second User'</span><span class="text_8">)<br class="calibre2" /><span class="calibre3">    paser.add_argument(</span></span><span class="text_5">'--score-type'</span><span class="text_">,</span><span class="text_3">dest</span><span class="text_8">=</span><span class="text_5">'score_type'</span><span class="text_">,</span><span class="text_3">required</span><span class="text_8">=</span><span class="text_">True,</span><span class="text_3">choices</span><span class="text_8">=[</span><span class="text_5">'Euclidean'</span><span class="text_">,</span><span class="text_5">'Pearson'</span><span class="text_">,</span><span class="text_5">'Both'</span><span class="text_8">]</span><span class="text_">,</span><span class="text_3">help</span><span class="text_8">=</span><span class="text_5">'Sử dụng thước đo nào'</span><span class="text_8">)<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_">return </span><span class="text_8">paser<br class="calibre2" /></span><span class="text_1"># Tạo một hàm để tính toán điểm số Euclidean giữa 2 dùng. Nếu người dùng không có trong dữ liệu thì báo lỗi<br class="calibre2" /></span><span class="text_">def </span><span class="text_9">euclidean_score</span><span class="text_8">(dataset</span><span class="text_">,</span><span class="text_8">user1</span><span class="text_">,</span><span class="text_8">user2):<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_">if </span><span class="text_8">user1 </span><span class="text_">not in </span><span class="text_8">dataset:<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_">raise </span><span class="text_6">TypeError</span><span class="text_8">(</span><span class="text_5">' Không tìm thấy '</span><span class="text_8">+ user1+</span><span class="text_5">'Trong bảng dữ liệu '</span><span class="text_8">)<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_">if </span><span class="text_8">user2 </span><span class="text_">not in </span><span class="text_8">dataset:<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_">raise </span><span class="text_6">TypeError</span><span class="text_8">(</span><span class="text_5">' Không tìm thấy '</span><span class="text_8">+ user2+</span><span class="text_5">'Trong bảng dữ liệu '</span><span class="text_8">)<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_1"># Tạo một object để theo dõi phim được đánh giá bởi cả 2 user:<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_8">common_movies={}<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_1"># Tách những bộ phim được đánh giá bởi 2 user:<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_">for </span><span class="text_8">item </span><span class="text_">in </span><span class="text_8">dataset[user1]:<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_">if </span><span class="text_8">item </span><span class="text_">in </span><span class="text_8">dataset[user2]:<br class="calibre2" /><span class="calibre3">            common_movies[item]=</span></span><span class="text_4">1<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_1"># Nếu không có phim nào gióng nhau chúng ta không thể tính toán điểm số:<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_">if </span><span class="text_6">len</span><span class="text_8">(common_movies) ==</span><span class="text_4">0</span><span class="text_8">:<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_">return </span><span class="text_4">0<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_1"># Tính sai số giữa các xếp hạng và dùng nó để tính điểm số Euclidean:<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_8">square_diff=[]<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_">for </span><span class="text_8">item </span><span class="text_">in </span><span class="text_8">dataset[user1]:<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_">if </span><span class="text_8">item </span><span class="text_">in </span><span class="text_8">dataset[user2]:<br class="calibre2" /><span class="calibre3">            square_diff.append(np.square(dataset[user1][item]-dataset[user2][item]))</span></span><span class="text_8"><br class="calibre2" /><span class="calibre3">    </span></span><span class="text_">return </span><span class="text_4">1</span><span class="text_8">/(</span><span class="text_4">1</span><span class="text_8">+np.sqrt(np.sum(square_diff)))<br class="calibre2" /></span><span class="text_1"># Tạo một hàm để tính điểm số Pearson giữa 2 số<br class="calibre2" /></span><span class="text_">def </span><span class="text_9">pearson_score</span><span class="text_8">(dataset</span><span class="text_">,</span><span class="text_8">user1</span><span class="text_">,</span><span class="text_8">user2):<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_">if </span><span class="text_8">user1 </span><span class="text_">not in </span><span class="text_8">dataset:<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_">raise </span><span class="text_6">TypeError</span><span class="text_8">(</span><span class="text_5">' Không tìm thấy '</span><span class="text_8">+ user1+</span><span class="text_5">'Trong bảng dữ liệu '</span><span class="text_8">)<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_">if </span><span class="text_8">user2 </span><span class="text_">not in </span><span class="text_8">dataset:<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_">raise </span><span class="text_6">TypeError</span><span class="text_8">(</span><span class="text_5">' Không tìm thấy '</span><span class="text_8">+ user2+</span><span class="text_5">'Trong bảng dữ liệu '</span><span class="text_8">)<br class="calibre2" /><br class="calibre2" /><span class="calibre3">    common_movies={}</span></span><span class="text_8"><br class="calibre2" /><span class="calibre3">    </span></span><span class="text_">for </span><span class="text_8">item </span><span class="text_">in </span><span class="text_8">dataset[user1]:<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_">if </span><span class="text_8">item </span><span class="text_">in </span><span class="text_8">dataset[user2]:<br class="calibre2" /><span class="calibre3">            common_movies[item]=</span></span><span class="text_4">1<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_8">num_ratings=</span><span class="text_6">len</span><span class="text_8">(common_movies)<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_">if </span><span class="text_8">num_ratings==</span><span class="text_4">0</span><span class="text_8">:<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_">return </span><span class="text_4">0<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_8">user1_sum=np.sum([dataset[user1][item] </span><span class="text_">for </span><span class="text_8">item </span><span class="text_">in </span><span class="text_8">common_movies])<br class="calibre2" /><span class="calibre3">    user2_sum = np.sum([dataset[user2][item] </span></span><span class="text_">for </span><span class="text_8">item </span><span class="text_">in </span><span class="text_8">common_movies])<br class="calibre2" /><span class="calibre3">    user1_square_sum=np.sum([np.square(dataset[user1][item]) </span></span><span class="text_">for </span><span class="text_8">item </span><span class="text_">in </span><span class="text_8">common_movies])<br class="calibre2" /><span class="calibre3">    user2_square_sum=np.sum([np.square(dataset[user2][item]) </span></span><span class="text_">for </span><span class="text_8">item </span><span class="text_">in </span><span class="text_8">common_movies])<br class="calibre2" /><span class="calibre3">    sum_of_products=np.sum([dataset[user1][item]*dataset[user2][item] </span></span><span class="text_">for </span><span class="text_8">item </span><span class="text_">in </span><span class="text_8">common_movies])<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_1"># Tính toán những tham số khác nhau để tính điểm số Pearson sử dụng những kết quả bên trên<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_8">Sxy=sum_of_products-(user1_sum*user2_sum)/num_ratings<br class="calibre2" /><span class="calibre3">    Sxx=user1_square_sum-np.square(user1_sum)/num_ratings</span></span><span class="text_8"><br class="calibre2" /><span class="calibre3">    Syy=user2_square_sum-np.square(user2_sum)/num_ratings</span></span><span class="text_8"><br class="calibre2" /><span class="calibre3">    </span></span><span class="text_1"># Nếu không có độ sai lệch thì điểm số =0 :<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_">if </span><span class="text_8">Sxx*Syy==</span><span class="text_4">0</span><span class="text_8">:<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_">return </span><span class="text_4">0<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_1"># trả về điểm số Pearson<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_">return </span><span class="text_8">Sxy/np.sqrt(Sxx*Syy)<br class="calibre2" /></span><span class="text_1"># Tạo hàm Main để gán tham số khi chạy file python<br class="calibre2" /></span><span class="text_">if </span><span class="text_8">__name__==</span><span class="text_5">'__main__'</span><span class="text_8">:<br class="calibre2" /><span class="calibre3">    args=build_arg_parser().parse_args()</span></span><span class="text_8"><br class="calibre2" /><span class="calibre3">    user1=args.user1</span></span><span class="text_8"><br class="calibre2" /><span class="calibre3">    user2=args.user2</span></span><span class="text_8"><br class="calibre2" /><span class="calibre3">    score_type=args.score_type</span></span><span class="text_8"><br class="calibre2" /><span class="calibre3">    ratings_file=</span></span><span class="text_5">'data/chap5/ratings.json'<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_">with </span><span class="text_6">open</span><span class="text_8">(ratings_file</span><span class="text_">,</span><span class="text_5">'r'</span><span class="text_8">)</span><span class="text_">as </span><span class="text_8">f:<br class="calibre2" /><span class="calibre3">        data=json.loads(f.read())</span></span><span class="text_8"><br class="calibre2" /><span class="calibre3">        </span></span><span class="text_">if </span><span class="text_8">score_type==</span><span class="text_5">'Euclidean'</span><span class="text_8">:<br class="calibre2" /><span class="calibre3">            </span></span><span class="text_6">print</span><span class="text_8">(</span><span class="text_5">'Điểm số Euclidean:'</span><span class="text_8">)<br class="calibre2" /><span class="calibre3">            </span></span><span class="text_6">print</span><span class="text_8">(euclidean_score(data</span><span class="text_">,</span><span class="text_8">user1</span><span class="text_">,</span><span class="text_8">user2))<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_">elif </span><span class="text_8">score_type==</span><span class="text_5">'Pearson'</span><span class="text_8">:<br class="calibre2" /><span class="calibre3">            </span></span><span class="text_6">print</span><span class="text_8">(</span><span class="text_5">'Điểm số Pearson:'</span><span class="text_8">)<br class="calibre2" /><span class="calibre3">            </span></span><span class="text_6">print</span><span class="text_8">(pearson_score(data</span><span class="text_">,</span><span class="text_8">user1</span><span class="text_">,</span><span class="text_8">user2))<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_">else</span><span class="text_8">:<br class="calibre2" /><span class="calibre3">            </span></span><span class="text_6">print</span><span class="text_8">(</span><span class="text_5">'Điểm số Pearson:'</span><span class="text_8">)<br class="calibre2" /><span class="calibre3">            </span></span><span class="text_6">print</span><span class="text_8">(pearson_score(data</span><span class="text_">, </span><span class="text_8">user1</span><span class="text_">, </span><span class="text_8">user2))<br class="calibre2" /><span class="calibre3">            </span></span><span class="text_6">print</span><span class="text_8">(</span><span class="text_5">'Điểm số Euclidean:'</span><span class="text_8">)<br class="calibre2" /><span class="calibre3">            </span></span><span class="text_6">print</span><span class="text_8">(euclidean_score(data</span><span class="text_">, </span><span class="text_8">user1</span><span class="text_">, </span><span class="text_8">user2))</span></p><p class="block_8"></p></div>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_2">Kết quả output:</p>
+	<p class="block_9">Điểm số Pearson:</p>
+	<p class="block_10">0.9909924304103233</p>
+	<p class="block_10">Điểm số Euclidean:</p>
+	<p class="block_11">0.585786437626905</p>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_6">Tìm người dùng giống nhau sử dụng bộ lọc kết hợp </p>
+	<p class="block_2">Lọc kết hợp là xử lý xác định các mẫu trong các đối tượng trong một bộ dữ liệu để đưa ra quyết định về một đối tượng mới. Trong bối cảnh này , chúng ta sử dụng lọc hết hợp để cung cấp một sự giới thiệu bởi tìm những người dùng giống nhay trong bộ dữ liệu.</p>
+	<ul class="list_">
+	<li class="block_17">Bằng cách thu thập các thông tin của những người dùng khác nhau trong bộ dữ liệu, chúng ta kết hợp các thông tin đó để lọc người dùng. Do đó nó có tên là lọc kết hợp.</li>
+</ul>
+	<p class="block_2">Giả định ở đây có 2 người có sự bầu chọn giống nhau cho những bộ phim, sau đó lựa chọn của họ cho một bộ phim mới cũng tương tự. Bằng cách xác định mô hình trong những bộ phim giống nhau, chúng ta làm một dự đoán. Ở phần trước chúng ta học về cách so sánh 2 người dùng khác nhau trong một bộ dữ liệu. Chúng ta sẽ sử dụng những kỹ thuật cách tính điểm đó để tìm những người dùng giống nhau trong dữ liệu của chúng ta. Lọc kết hợp là một dạng sử dụng khi phải đối mặt với bộ dữ liệu lớn. Những phương pháp này có thể dùng trong nhiều ngành khác nhau như tài chính, mua bán online, marketing, …..</p>
+	<p class="block_2">Code:</p>
+	<div class="frame_"><p class="block_7"><span class="text_">import </span><span class="text_1">argparse<br class="calibre2" /></span><span class="text_">import </span><span class="text_1">json<br class="calibre2" /></span><span class="text_">import </span><span class="text_1">numpy </span><span class="text_">as </span><span class="text_1">np<br class="calibre2" /></span><span class="text_">from </span><span class="text_1">compute_score </span><span class="text_">import </span><span class="text_1">pearson_score<br class="calibre2" /></span><span class="text_2"># Tạo một hàm để tách tham số input. Chỉ có một tham số input để lấy tên của người dùng:<br class="calibre2" /></span><span class="text_">def </span><span class="text_9">build_arg_parser</span><span class="text_1">():<br class="calibre2" /><span class="calibre3">    parser=argparse.ArgumentParser(</span></span><span class="text_3">description</span><span class="text_1">=</span><span class="text_5">"Tìm user giống với thằng này"</span><span class="text_1">)<br class="calibre2" /><span class="calibre3">    parser.add_argument(</span></span><span class="text_5">'--user'</span><span class="text_">,</span><span class="text_3">dest</span><span class="text_1">=</span><span class="text_5">'user'</span><span class="text_">,</span><span class="text_3">required</span><span class="text_1">=</span><span class="text_">True,</span><span class="text_3">help</span><span class="text_1">=</span><span class="text_5">'Thằng input'</span><span class="text_1">)<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_">return </span><span class="text_1">parser<br class="calibre2" /><br class="calibre2" /></span><span class="text_2">#Tạo một hàm để tìm người dùng trong bộ dữ liệu giống với thằng vừa input. Nếu thằng đó không có trong dữ liệu thì báo lỗi:<br class="calibre2" /></span><span class="text_">def </span><span class="text_9">find_similar_users</span><span class="text_1">(dataset</span><span class="text_">,</span><span class="text_1">user</span><span class="text_">,</span><span class="text_1">num_user):<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_">if </span><span class="text_1">user </span><span class="text_">not in </span><span class="text_1">dataset:<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_">raise </span><span class="text_6">TypeError</span><span class="text_1">(</span><span class="text_5">'Méo tìm thấy thằng '</span><span class="text_1">+user+</span><span class="text_5">' trong cơ sở dữ liệu'</span><span class="text_1">)<br class="calibre2" /></span><span class="text_2"># Chúng ta đã import hàm để tính điểm số Pearson. Giờ dùng hàm đó để tính thằng input với những thằng khác trong dataset:<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_1">score=np.array([[x</span><span class="text_">,</span><span class="text_1">pearson_score(dataset</span><span class="text_">,</span><span class="text_1">user</span><span class="text_">,</span><span class="text_1">x)] </span><span class="text_">for </span><span class="text_1">x </span><span class="text_">in </span><span class="text_1">dataset </span><span class="text_">if </span><span class="text_1">x != user])<br class="calibre2" /></span><span class="text_2"># Sắp xếp điểm theo thứ tự giảm dần và lấy giá trị thấp nhất<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_1">scores_sortted=np.argsort(score[:</span><span class="text_">,</span><span class="text_4">1</span><span class="text_1">])[::-</span><span class="text_4">1</span><span class="text_1">]<br class="calibre2" /></span><span class="text_2"># Tách số lượng num_user hàng đầu bởi tham số input ban đầu và return array:<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_1">top_user=scores_sortted[:num_user]<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_">return </span><span class="text_1">score[top_user]<br class="calibre2" /></span><span class="text_2"># Tạo hàm main để nhận tách tham số đầu vào.<br class="calibre2" /></span><span class="text_">if </span><span class="text_1">__name__==</span><span class="text_5">'__main__'</span><span class="text_1">:<br class="calibre2" /><span class="calibre3">    args=build_arg_parser().parse_args()</span></span><span class="text_1"><br class="calibre2" /><span class="calibre3">    user=args.user</span></span><span class="text_1"><br class="calibre2" /></span><span class="text_2"># Lấy dữ liệu từ file rating.json. File này có tên và bầu chọn của họ cho những bộ phim khác nhau.<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_">with </span><span class="text_6">open</span><span class="text_1">(</span><span class="text_5">"data/chap5/ratings.json"</span><span class="text_">,</span><span class="text_5">'r'</span><span class="text_1">) </span><span class="text_">as </span><span class="text_1">f:<br class="calibre2" /><span class="calibre3">        data=json.loads(f.read())</span></span><span class="text_1"><br class="calibre2" /></span><span class="text_2"># Tim 3 user những thằng mà giống nhất với user được chỉ định bởi tham số input. Bạn có thể thay đổi số lượng tùy ý. Và in tên những thằng đó ra cùng với điểm số:<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_6">print</span><span class="text_1">(</span><span class="text_5">'Những thằng user có bình chọn giống thằng '</span><span class="text_1">+user)<br class="calibre2" /><span class="calibre3">        similar_user=find_similar_users(data</span></span><span class="text_">,</span><span class="text_1">user</span><span class="text_">,</span><span class="text_4">3</span><span class="text_1">)<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_6">print</span><span class="text_1">(</span><span class="text_5">'User</span><span class="text_">\t\t\t\t\t</span><span class="text_5">Điểm số'</span><span class="text_1">)<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_6">print</span><span class="text_1">(</span><span class="text_5">'-'</span><span class="text_1">*</span><span class="text_4">41</span><span class="text_1">)<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_">for </span><span class="text_1">item </span><span class="text_">in </span><span class="text_1">similar_user:<br class="calibre2" /><span class="calibre3">            </span></span><span class="text_6">print</span><span class="text_1">(item[</span><span class="text_4">0</span><span class="text_1">]</span><span class="text_">,</span><span class="text_5">'</span><span class="text_">\t\t\t</span><span class="text_5">'</span><span class="text_">,</span><span class="text_6">round</span><span class="text_1">(</span><span class="text_6">float</span><span class="text_1">(item[</span><span class="text_4">1</span><span class="text_1">])</span><span class="text_">,</span><span class="text_4">2</span><span class="text_1">))</span></p><p class="block_8"></p></div>
+	<p class="block_2">chạy đoạn code trên với tham số --user "Bill Duffy" bạn sẽ thấy output ở terminal như sau:</p>
+	<p class="block_9">Những thằng user có bình chọn giống thằng Bill Duffy</p>
+	<p class="block_18"><span class="text_10">User<span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span class="text_10"><span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span class="text_10"><span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span class="text_10"><span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span class="text_10"><span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Điểm số</span></p>
+	<p class="block_10">-----------------------------------------</p>
+	<p class="block_18"><span class="text_10">David Smith <span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span class="text_10"><span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span class="text_10"><span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> 0.99</span></p>
+	<p class="block_18"><span class="text_10">Samuel Miller <span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span class="text_10"><span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span class="text_10"><span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> 0.88</span></p>
+	<p class="block_19"><span class="text_10">Adam Cohen <span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span class="text_10"><span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span class="text_10"><span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> 0.86</span></p>
+	<p class="block_6">Xây dựng một hệ thống gợi ý xem phim</p>
+	<p class="block_2">Bây giờ ta có tất cả các thành phần cần thiết để xây dựng một hệ thống gợi ý xem phim. Chúng ta đã học tất cả những khái niệm cơ bản cần để xây dựng một hệ thống gợi ý. Trong phần này chúng ta sẽ xây dựng một hệ thống gợi ý xem phim dựa trên cơ sở dữ liệu có trong file <i class="calibre8">ratings.json </i>. Khi chúng ta cần tìm một gợi ý phim cho một người dùng chúng ta sẽ cần tìm những người dùng giống với người đó trong cơ sở dữ liệu và gợi ý cho họ theo người vừa tìm đc:</p>
+	<p class="block_2">Let's build:</p>
+	<div class="frame_"><p class="block_7"><span class="text_">import </span><span class="text_1">argparse<br class="calibre2" /></span><span class="text_">import </span><span class="text_1">json<br class="calibre2" /></span><span class="text_">import </span><span class="text_1">numpy </span><span class="text_">as </span><span class="text_1">np<br class="calibre2" /><br class="calibre2" /></span><span class="text_">from </span><span class="text_1">compute_score </span><span class="text_">import </span><span class="text_1">pearson_score<br class="calibre2" /><br class="calibre2" /></span><span class="text_2"># Tạo một hàm để lấy tham số đầu vào.<br class="calibre2" /></span><span class="text_">def </span><span class="text_9">build_arg_parser</span><span class="text_1">():<br class="calibre2" /><span class="calibre3">    parser=argparse.ArgumentParser(</span></span><span class="text_3">description</span><span class="text_1">=</span><span class="text_5">'Tìm film cho thằng này'</span><span class="text_1">)<br class="calibre2" /><span class="calibre3">    parser.add_argument(</span></span><span class="text_5">'--user'</span><span class="text_">,</span><span class="text_3">dest</span><span class="text_1">=</span><span class="text_5">'user'</span><span class="text_">,</span><span class="text_3">required</span><span class="text_1">=</span><span class="text_">True,</span><span class="text_3">help</span><span class="text_1">=</span><span class="text_5">'Input User'</span><span class="text_1">)<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_">return </span><span class="text_1">parser<br class="calibre2" /></span><span class="text_2"># Tạo một hàm để lấy phim gợi ý cho thằng vừa nhập. nếu thằng này không tồn tại trong cơ sở dữ liệu thì báo lỗi:<br class="calibre2" /></span><span class="text_">def </span><span class="text_9">get_recommendations</span><span class="text_1">(dataset</span><span class="text_">,</span><span class="text_1">user):<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_">if </span><span class="text_1">user </span><span class="text_">not in </span><span class="text_1">dataset:<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_">raise </span><span class="text_6">TypeError</span><span class="text_1">(</span><span class="text_5">'Không có thằng '</span><span class="text_1">+user+</span><span class="text_5">" Trong cơ sở dữ liệu"</span><span class="text_1">)<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_2"># Tạo biến để theo dõi điểm:<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_1">overall_scores={}<br class="calibre2" /><span class="calibre3">    similarity_scores={}</span></span><span class="text_1"><br class="calibre2" /><span class="calibre3">    </span></span><span class="text_">for </span><span class="text_1">u </span><span class="text_">in </span><span class="text_1">[x </span><span class="text_">for </span><span class="text_1">x </span><span class="text_">in </span><span class="text_1">dataset </span><span class="text_">if </span><span class="text_1">x!=user]:<br class="calibre2" /><span class="calibre3">        similarity_score=pearson_score(dataset</span></span><span class="text_">,</span><span class="text_1">user</span><span class="text_">,</span><span class="text_1">u)<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_2">#Nếu điểm số similarity nhỏ hơn hoặc bằng 0, thì tìm thằng user khác trong dataset:<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_">if </span><span class="text_1">similarity_score&lt;=</span><span class="text_4">0</span><span class="text_1">:<br class="calibre2" /><span class="calibre3">            </span></span><span class="text_">continue<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_2"># Lấy danh sách phim mà thằng user vừa lấy được đã bầu chọn nhưng thằng input chưa bầu chọn:<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_1">filtered_list=[x </span><span class="text_">for </span><span class="text_1">x </span><span class="text_">in </span><span class="text_1">dataset[u] </span><span class="text_">if </span><span class="text_1">x </span><span class="text_">not in </span><span class="text_1">dataset[user] </span><span class="text_">or </span><span class="text_1">dataset[user][x]==</span><span class="text_4">0</span><span class="text_1">]<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_2"># Lặp lại để tìm kiếm trong filtered_líst theo dõi để đánh giá dựa trên điểm similarity_score. Và cũng đặt một item vào object similarity_scores<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_">for </span><span class="text_1">item </span><span class="text_">in </span><span class="text_1">filtered_list:<br class="calibre2" /><span class="calibre3">            overall_scores.update({item:dataset[u][item]*similarity_score})</span></span><span class="text_1"><br class="calibre2" /><span class="calibre3">            similarity_scores.update({item:similarity_score})</span></span><span class="text_1"><br class="calibre2" /><span class="calibre3">        </span></span><span class="text_2"># Nếu không có phim nào giống nhau thì chúng ta không thể gợi ý cái giề cả:<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_">if </span><span class="text_6">len</span><span class="text_1">(overall_scores)==</span><span class="text_4">0</span><span class="text_1">:<br class="calibre2" /><span class="calibre3">            </span></span><span class="text_">return </span><span class="text_1">[</span><span class="text_5">'Không có gợi ý phim nào cho thằng này'</span><span class="text_1">]<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_2"># Đơn giản hóa số điểm dựa trên điểm similarity:<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_1">movie_scores=np.array([[score/similarity_scores[item]</span><span class="text_">,</span><span class="text_1">item] </span><span class="text_">for </span><span class="text_1">item</span><span class="text_">,</span><span class="text_1">score </span><span class="text_">in </span><span class="text_1">overall_scores.items()])<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_2"># Sắp xếp điểm số và lấy phim gợi ý:<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_1">movie_scores=movie_scores[np.argsort(movie_scores[:</span><span class="text_">,</span><span class="text_4">0</span><span class="text_1">])[::-</span><span class="text_4">1</span><span class="text_1">]]<br class="calibre2" /><span class="calibre3">        movie_recommends=[movie </span></span><span class="text_">for </span><span class="text_1">_</span><span class="text_">,</span><span class="text_1">movie </span><span class="text_">in </span><span class="text_1">movie_scores]<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_">return </span><span class="text_1">movie_recommends<br class="calibre2" /></span><span class="text_2"># Tạo hàm main để lấy tham số input:<br class="calibre2" /></span><span class="text_">if </span><span class="text_1">__name__==</span><span class="text_5">"__main__"</span><span class="text_1">:<br class="calibre2" /><span class="calibre3">    args=build_arg_parser().parse_args()</span></span><span class="text_1"><br class="calibre2" /><span class="calibre3">    user=args.user</span></span><span class="text_1"><br class="calibre2" /><span class="calibre3">    </span></span><span class="text_2"># Lấy dữ liệu từ file<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_">with </span><span class="text_6">open</span><span class="text_1">(</span><span class="text_5">"data/chap5/ratings.json"</span><span class="text_">,</span><span class="text_5">'r'</span><span class="text_1">) </span><span class="text_">as </span><span class="text_1">f:<br class="calibre2" /><span class="calibre3">        data=json.loads(f.read())</span></span><span class="text_1"><br class="calibre2" /><span class="calibre3">        movies=get_recommendations(data</span></span><span class="text_">,</span><span class="text_1">user)<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_6">print</span><span class="text_1">(</span><span class="text_5">'Danh sách phim đề cử cho thằng'</span><span class="text_">,</span><span class="text_1">user</span><span class="text_">,</span><span class="text_5">'là'</span><span class="text_1">)<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_">for </span><span class="text_1">i</span><span class="text_">,</span><span class="text_1">movie </span><span class="text_">in </span><span class="text_6">enumerate</span><span class="text_1">(movies):<br class="calibre2" /><span class="calibre3">            </span></span><span class="text_6">print</span><span class="text_1">(</span><span class="text_6">str</span><span class="text_1">(i + </span><span class="text_4">1</span><span class="text_1">)</span><span class="text_">,</span><span class="text_5">'. '</span><span class="text_">,</span><span class="text_1">movie)</span></p><p class="block_8"></p></div>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_2">Chạy file trên với tham số --user "Bill Duffy":</p>
+	<p class="block_9">Danh sách phim đề cử cho thằng Bill Duffy là</p>
+	<p class="block_11"><span class="calibre3">1 .  Raging Bull</span></p>
+	<p class="block_2">Thay bằng &ndash;user "Chris Duncan"</p>
+	<p class="block_9">Danh sách phim đề cử cho thằng Chris Duncan là</p>
+	<p class="block_10"><span class="calibre3">1 .  Goodfellas</span></p>
+	<p class="block_10"><span class="calibre3">2 .  Scarface</span></p>
+	<p class="block_11"><span class="calibre3">3 .  Vertigo</span></p>
+	<p class="block_6">Tổng kết :</p>
+	<p class="block_2">Trong chương này chúng ta đã học về cách làm thế nào để tạo một đường ống xử lý dữ liệu có thể dùng để train một hệ thống Machine-learning. Chúng ta đã học về cách phân tách điểm K-gần nhất cho bất kỳ điểm dữ liệu nào trong một bộ dữ liệu. Sau đó chúng ta dùng cách này để xây dựng một hệ thống phân loại K-Nearest-Neighbors. Chúng ta đã thảo luận về cách sử dụng bộ lọc kết hợp để tìm điểm giống nhau giữa các người dùng trong một bộ dữ liệu và từ dó xây dựng một hệ thống gợi ý xem phim.</p>
+	<p class="block_2">Trong chương tiếp theo chúng ta sẽ học về lập trình logic và làm thế nào để xây dựng một động cơ suy diễn có thể giải quyết vấn đề trong thực tế.</p>
+	<p class="block_1">&nbsp;</p>
+
+</div>
+
+</body></html>
+
+<footer class=" footline" >
+	
+</footer>
+
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/ai-with-python/chapter4/" title="C4: Detecting Patterns with Unsupervised Learning"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/ai-with-python/chapter6/" title="C6: Logic Programing" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1572408723"></script>
+    <script src="/js/perfect-scrollbar.min.js?1572408723"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1572408723"></script>
+    <script src="/js/jquery.sticky.js?1572408723"></script>
+    <script src="/js/featherlight.min.js?1572408723"></script>
+    <script src="/js/highlight.pack.js?1572408723"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1572408723"></script>
+    <script src="/js/learn.js?1572408723"></script>
+    <script src="/js/hugo-learn.js?1572408723"></script>
+
+    <link href="/mermaid/mermaid.css?1572408723" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1572408723"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>
+

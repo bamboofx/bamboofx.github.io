@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.57.2" />
+    <meta name="description" content="">
+
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>C12: Speech Recognizer :: Bamboofx&#39;s or NTVFX&#39;s Site</title>
+
+    
+    <link href="/css/nucleus.css?1572408723" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1572408723" rel="stylesheet">
+    <link href="/css/hybrid.css?1572408723" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1572408723" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1572408723" rel="stylesheet">
+    <link href="/css/auto-complete.css?1572408723" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1572408723" rel="stylesheet">
+    <link href="/css/theme.css?1572408723" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1572408723" rel="stylesheet">
+    
+      <link href="/css/theme-blue.css?1572408723" rel="stylesheet">
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1572408723"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/ai-with-python/chapter12/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="https://bamboofx.github.io/">
+  <img src="https://bamboofx.github.io/images/logo.png "> </img>
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1572408723"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1572408723"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/bamboofx.github.io\/";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1572408723"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/ai-with-python/" title="AI with Python (Prateek Joshi)" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/ai-with-python/">
+          AI with Python (Prateek Joshi)
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ai-with-python/chapter1/" title="C1: Trí thông minh nhân tạo là gì?" class="dd-item ">
+        <a href="/ai-with-python/chapter1/">
+        C1: Trí thông minh nhân tạo là gì?
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ai-with-python/chapter2/" title="C2: Classification and Regression" class="dd-item ">
+        <a href="/ai-with-python/chapter2/">
+        C2: Classification and Regression
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ai-with-python/chapter3/" title="C3: Ensemble Learing" class="dd-item ">
+        <a href="/ai-with-python/chapter3/">
+        C3: Ensemble Learing
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ai-with-python/chapter4/" title="C4: Detecting Patterns with Unsupervised Learning" class="dd-item ">
+        <a href="/ai-with-python/chapter4/">
+        C4: Detecting Patterns with Unsupervised Learning
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ai-with-python/chapter5/" title="C5: Building Recommender Systems" class="dd-item ">
+        <a href="/ai-with-python/chapter5/">
+        C5: Building Recommender Systems
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ai-with-python/chapter6/" title="C6: Logic Programing" class="dd-item ">
+        <a href="/ai-with-python/chapter6/">
+        C6: Logic Programing
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ai-with-python/chapter7/" title="C7: Tìm kiếm Heuristic" class="dd-item ">
+        <a href="/ai-with-python/chapter7/">
+        C7: Tìm kiếm Heuristic
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ai-with-python/chapter8/" title="C8: Thuật toán di truyền - Genetic Alogrithms" class="dd-item ">
+        <a href="/ai-with-python/chapter8/">
+        C8: Thuật toán di truyền - Genetic Alogrithms
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ai-with-python/chapter9/" title="C9: Xây dựng game cùng với AI" class="dd-item ">
+        <a href="/ai-with-python/chapter9/">
+        C9: Xây dựng game cùng với AI
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ai-with-python/chapter10/" title="C10: Natural Language Processing" class="dd-item ">
+        <a href="/ai-with-python/chapter10/">
+        C10: Natural Language Processing
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ai-with-python/chapter11/" title="C11: Sequential Data" class="dd-item ">
+        <a href="/ai-with-python/chapter11/">
+        C11: Sequential Data
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ai-with-python/chapter12/" title="C12: Speech Recognizer" class="dd-item active">
+        <a href="/ai-with-python/chapter12/">
+        C12: Speech Recognizer
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ai-with-python/chapter13/" title="C13: Object Detection and Tracking" class="dd-item ">
+        <a href="/ai-with-python/chapter13/">
+        C13: Object Detection and Tracking
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/numpy/" title="NumPy cơ bản" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/numpy/">
+          NumPy cơ bản
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/about/" title="about" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/about/">
+          About
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>Site</a> > <a href='/ai-with-python/'>AI with Python (Prateek Joshi)</a> > C12: Speech Recognizer
+          
+         
+          
+         
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              C12: Speech Recognizer
+            </h1>
+          
+
+        
+
+
+
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=utf-8" /><link href="style.css" rel="stylesheet" type="text/css" /><title>PythonAI Chapter12</title></head><body><div class="calibre" id="calibre_link-0">
+	<p class="block_">12</p>
+	<p class="block_">Xây dựng hệ thống nhận dạng giọng nói(Speech Recognizer)</p>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_2">Trong chương này chúng ta sẽ học về nhận dạng giọng nói. Chúng ta sẽ thảo luận làm thế nào để làm việc cùng với những tín hiệu giọng nói và hiểu cách làm sao để biểu diễn những song âm này. Bằng cách tận dụng những kỹ thuật khác nhau để xử lý tín hiệu giọng nói, Chúng ta sẽ học cách làm sao để xây dựng một hệ thống nhận dạng giọng nói.</p>
+	<p class="block_2">Các phần bạn sẽ học trong phần này:</p>
+	<ul class="list_">
+	<li class="block_3">Xử lý tín hiệu giọng nói</li>
+	<li class="block_4">Biểu diễn các tín hiệu âm thanh</li>
+	<li class="block_4">Chuyển đổi tín hiệu âm thanh thành dữ liệu chuỗi liên tục</li>
+	<li class="block_4">Tạo tín hiệu âm thanh</li>
+	<li class="block_4">Tổng hợp âm</li>
+	<li class="block_4"><span class="calibre1">Trích  xuất các tính năng giọng nói</span></li>
+	<li class="block_5">Nhận dạng những từ được nói</li>
+</ul>
+	<p class="block_6">Xử lý các tín hiệu giọng nói</p>
+	<p class="block_2">Nhận dạng giọng nói là quá trình xử lý để có thể hiểu được những từ được nói bởi con người. Những tín hiệu giọng nói được lấy bằng cách sử dụng mic và hệ thống cố gắng hiểu được những từ đã nhận. Nhận dạng giọng nói được sử dụng rộng rãi trong những lĩnh vực tương tác giữa người và máy, smartphones, dịch, hệ thống sinh trắc, bảo mật …..</p>
+	<p class="block_2">Điều quan trọng là chúng ta phải hiểu bản chất của tín hiệu ngôn ngữ trước khi chúng ta phân tích chúng. Những tín hiệu nhận được là hỗn hợp phức tạp của các tín hiệu khác nhau. Có rất nhiều âm vực của tín hiệu lời nói nên làm nó càng thêm phức tạp. Những thứ đó có thể hiểu là tâm trạng của người nói, ngữ điệu, ngôn ngữ, tiếng ồn ….</p>
+	<p class="block_2">Vì thế việc xác định một bộ quy tắc để phân tích những tín hiệu lời nó là khá khó khan. Nhưng con người có thể hiểu được điều đó một cách tự nhiên. Chúng ta dường như làm điều đó một cách rất dễ dàng. Nếu chúng ta muốn những cố máy làm những việc tương tự như thế chúng ta cần phải giúp chúng hiểu được lời nói như chúng ta đã làm.</p>
+	<p class="block_2">Nghiên cứu từ vụng trên những khía cạnh khác nhau và ứng dụng của giọng nói, giống như là hiểu những từ được đánh vần, nhận dạng ai là người nói, nhận dạng tâm trạng, xác định dấu câu ( hay ngữ điệu của câu)… Trong chương này chúng ta sẽ chỉ tập trung vào cách hiểu nhận dạng những từ được nói ra. Nhận dạng giọng nói là một bước quan trọng trong lĩnh vực tương tác giữa máy tính và con người, chúng cần nói cho chúng ta bằng ngôn ngữ tự nhiên. Đây là lý do tự động nhận diện giọng nói là trung tâm chú ý cho nhiều lĩnh vực nghiên cứu trong những năm vừa qua. </p>
+	<p class="block_6">Biểu diễn tín hiệu âm thanh</p>
+	<p class="block_2">Trước tiên chúng ta hãy học cách biểu diễn một tín hiệu audio. Chúng ta sẽ học về cách đọc một tín hiệu audio từ 1 file và làm việc cùng với nó. Việc này sẽ giúp chúng ta hiểu cấu trúc của 1 tín hiệu audio. Khi chúng ta ghi lại âm thanh từ microphone, chúng ta đang lấy các mẫu tín hiệu âm thanh và số hóa chúng. Các tín hiệu âm thanh được biểu diễn theo dạng sóng và có giá trị liên tục, và chúng ta không thể lưu trữ chúng như thế được. Chúng ta cần lấy mẫu tín hiệu tần số và chuyển đổi nó thành dạng số rời rạc.</p>
+	<p class="block_2">Thông dụng nhất, tín hiệu lời nói được lấy mẫu ở tần số 44,100Hz. Nó có nghĩa là mỗi giây tín hiệu tiếng nói được chia thành 44.100 phần và giá trị tại mỗi điểm thời gian này được lưu trữ ở file đầu ra. Chúng ta lưu giá trị của tín hiệu âm thanh sau 1/44,100 giây. Trong phần này chúng ta lấy mẫu tín hiệu của âm thanh là 44,100Hz. Bằng cách chọn tần số mãu cao, nó sẽ xuất hiện như tín hiệu âm thanh liên tục khi con người nghe nó. GIờ thì tử biểu diễn một tín hiệu âm thanh.</p>
+	<div class="frame_"><p class="block_7"><span class="text_">import </span><span class="text_1">numpy </span><span class="text_">as </span><span class="text_1">np<br class="calibre2" /></span><span class="text_">import </span><span class="text_1">matplotlib.pyplot </span><span class="text_">as </span><span class="text_1">plt<br class="calibre2" /></span><span class="text_">from </span><span class="text_1">scipy.io </span><span class="text_">import </span><span class="text_1">wavfile<br class="calibre2" /><br class="calibre2" /></span><span class="text_2"># đọc file audio đã tạo sẵn. bạn có thể dùng window recoder hoặc recoder của điện thoại để lưu file dưới dạng wave<br class="calibre2" /># Sử dụng hàm wavefile.read. Nó sẽ trả về 2 giá trị.<br class="calibre2" /><span class="calibre3">#       sampling frequency - tần số lấy mẫu</span></span><span class="text_2"><br class="calibre2" /><span class="calibre3">#       audio signal- tín hiệu âm thanh</span></span><span class="text_2"><br class="calibre2" /></span><span class="text_1">sampling_freq</span><span class="text_">,</span><span class="text_1">signal=wavfile.read(</span><span class="text_3">"../data/chap12/abc.wav"</span><span class="text_1">)<br class="calibre2" /></span><span class="text_2"># In ra terminal dạng của tín hiệu, định dạng dữ liệu, và thời gian của tín hiệu âm thanh<br class="calibre2" /></span><span class="text_4">print</span><span class="text_1">(</span><span class="text_3">"Dạng tín hiệu: "</span><span class="text_">,</span><span class="text_1">signal.shape)<br class="calibre2" /></span><span class="text_4">print</span><span class="text_1">(</span><span class="text_3">"Định dạng dữ liệu (datatype): "</span><span class="text_">,</span><span class="text_1">signal.dtype)<br class="calibre2" /></span><span class="text_4">print</span><span class="text_1">(</span><span class="text_3">"Thời gian của tín hiệu âm thanh: "</span><span class="text_">,</span><span class="text_4">round</span><span class="text_1">(signal.shape[</span><span class="text_5">0</span><span class="text_1">]/</span><span class="text_4">float</span><span class="text_1">(sampling_freq)</span><span class="text_">,</span><span class="text_5">2</span><span class="text_1">)</span><span class="text_">,</span><span class="text_3">" giây"</span><span class="text_1">)<br class="calibre2" /></span><span class="text_2"># Đơn giản lại tín hiệu âm thanh<br class="calibre2" /></span><span class="text_1">signal=signal/np.power(</span><span class="text_5">3</span><span class="text_">,</span><span class="text_5">5</span><span class="text_1">)<br class="calibre2" /></span><span class="text_2"># Tách lấy khoảng 500 giá trị từ tín hiệu âm thanh để biểu diễn đồ thị (tại vì tín hiệu âm thanh của mình đoạn đầu là không có nên tín hiệu sẽ thẳng ----- nên mình sẽ lấy từ giây thứ 0.1 :<br class="calibre2" /></span><span class="text_1">signal=signal[</span><span class="text_5">24500</span><span class="text_1">:</span><span class="text_5">25000</span><span class="text_1">]<br class="calibre2" /></span><span class="text_2"># Xây dựng cột thời gian<br class="calibre2" /></span><span class="text_1">time_axis=</span><span class="text_5">1000</span><span class="text_1">*np.arange(</span><span class="text_5">0</span><span class="text_">,</span><span class="text_4">len</span><span class="text_1">(signal)</span><span class="text_">,</span><span class="text_5">1</span><span class="text_1">)/</span><span class="text_4">float</span><span class="text_1">(sampling_freq)<br class="calibre2" /></span><span class="text_2"># Biểu diễn tín hiệu âm thanh<br class="calibre2" /></span><span class="text_1">plt.plot(time_axis</span><span class="text_">,</span><span class="text_1">signal</span><span class="text_">,</span><span class="text_6">color</span><span class="text_1">=</span><span class="text_3">'black'</span><span class="text_1">)<br class="calibre2" />plt.xlabel(</span><span class="text_3">'Thời gian(mili giây)'</span><span class="text_1">)<br class="calibre2" />plt.ylabel(</span><span class="text_3">'Biên độ'</span><span class="text_1">)<br class="calibre2" />plt.title(</span><span class="text_3">'Biểu diễn tín hiệu âm thanh'</span><span class="text_1">)<br class="calibre2" />plt.show()</span></p><p class="block_8"></p></div>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_2">Kết quả vẽ đồ thị</p>
+	<p class="block_9"><img src="images/000004.png" alt="Image" class="calibre4" /></p>
+	<p class="block_2">Kết quả đồ thị này ở mỗi file âm thanh hay đoạn thời gian khác nhau sẽ có hình dạng khác nhau</p>
+	<p class="block_2">kết quả ở Terminal :</p>
+	<p class="block_10"><span class="calibre3">Dạng tín hiệu:  (196608,)</span></p>
+	<p class="block_11"><span class="calibre3">Định dạng dữ liệu (datatype):  int16</span></p>
+	<p class="block_12"><span class="calibre3">Thời gian của tín hiệu âm thanh:  4.1  giây</span></p>
+	<p class="block_2">Vì mình sử dụng file có tần số lấy mẫu là (48,000Hz) nên dạng tín hiệu( Signal Type) là 196608</p>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_6">Chuyển đổi tín hiệu âm thanh thành tần số liên tục</p>
+	<p class="block_2">Trong quá trình tìm hiểu và phân tích tín hiệu ân thanh chúng ta cần phải hiểu những điều cơ bản về tần số. Nó sẽ giúp chúng ta hiểu rõ hơn làm cách nào để tách những thông tin có ích từ tín hiệu âm thanh. Tín hiệu âm thanh bao gồm một hỗn hợp các sóng hình sin có nhiều tần số, pha, biên độ khác nhau .</p>
+	<p class="block_2">Nếu chúng ta khảo sát về các thành phần của tần số, Chúng ta có thể nhận ra được rất nhiều nét đặc trưng riêng. Mỗi tín hiệu âm thanh đều có nét đặc trưng riêng bởi sự phân bổ của nó trong 1 dải tần số. Để chuyển đổi tín hiệu dải thời gian thành một dải tần số, chúng ta cần sử dụng những phép toán going như Fourier Transform. Nếu bạn cần tìm hiểu thêm về Fourier Transform <a href="http://www.thefouriertransform.com/" class="text_7">http://www.thefouriertransform.com/</a> .</p>
+	<p class="block_2">Let's code:</p>
+	<div class="frame_"><p class="block_7"><span class="text_">import </span><span class="text_1">numpy </span><span class="text_">as </span><span class="text_1">np<br class="calibre2" /></span><span class="text_">import </span><span class="text_1">matplotlib.pyplot </span><span class="text_">as </span><span class="text_1">plt<br class="calibre2" /></span><span class="text_">from </span><span class="text_1">scipy.io </span><span class="text_">import </span><span class="text_1">wavfile<br class="calibre2" /><br class="calibre2" /></span><span class="text_2"># Tải file phát âm từ apple hoặc bạn có thể dùng file tao.wav bằng tiếng việt<br class="calibre2" /></span><span class="text_1">sampling_freq</span><span class="text_">,</span><span class="text_1">signal=wavfile.read(</span><span class="text_3">'../data/chap12/tao.wav'</span><span class="text_1">)<br class="calibre2" /></span><span class="text_2"># Normalize tín hiệu âm<br class="calibre2" /></span><span class="text_1">signal=signal/np.power(</span><span class="text_5">2</span><span class="text_">,</span><span class="text_5">15</span><span class="text_1">)<br class="calibre2" /></span><span class="text_2"># Lấy độ dài của signal và chia nửa lấy 1/2<br class="calibre2" /></span><span class="text_1">len_signal=</span><span class="text_4">len</span><span class="text_1">(signal)<br class="calibre2" />len_half=np.ceil((len_signal+</span><span class="text_5">1</span><span class="text_1">)/</span><span class="text_5">2.0</span><span class="text_1">).astype(np.int)<br class="calibre2" /></span><span class="text_2"># áp dụng biến đổi Fourier Transform<br class="calibre2" /></span><span class="text_1">freq_signal=np.fft.fft(signal)<br class="calibre2" /></span><span class="text_2"># Giảm tần số tín hiệu và lấy bình phương của nó<br class="calibre2" /></span><span class="text_1">freq_signal=</span><span class="text_4">abs</span><span class="text_1">(freq_signal[</span><span class="text_5">0</span><span class="text_1">:len_half])/len_signal<br class="calibre2" />freq_signal**=</span><span class="text_5">2<br class="calibre2" /></span><span class="text_2"># chia tín hiệu biến đổi thành chẵn và lẻ<br class="calibre2" /></span><span class="text_1">len_fts=</span><span class="text_4">len</span><span class="text_1">(freq_signal)<br class="calibre2" /></span><span class="text_">if </span><span class="text_1">len_signal%</span><span class="text_5">2</span><span class="text_1">:<br class="calibre2" /><span class="calibre3">    freq_signal[</span></span><span class="text_5">1</span><span class="text_1">:len_fts]*=</span><span class="text_5">2<br class="calibre2" /></span><span class="text_">else</span><span class="text_1">:<br class="calibre2" /><span class="calibre3">    freq_signal[</span></span><span class="text_5">1</span><span class="text_1">:len_fts-</span><span class="text_5">1</span><span class="text_1">]*=</span><span class="text_5">2<br class="calibre2" /></span><span class="text_2"># tính độ lớn của tín hiệu đo bằng dB (decibel)<br class="calibre2" /></span><span class="text_1">signal_power=</span><span class="text_5">10</span><span class="text_1">*np.log10(freq_signal)<br class="calibre2" /></span><span class="text_2"># Tạo trục x đây là trục tần số được đo bằng kHz (kilog hertz):<br class="calibre2" /></span><span class="text_1">x_axis=np.arange(</span><span class="text_5">0</span><span class="text_">,</span><span class="text_1">len_half</span><span class="text_">,</span><span class="text_5">1</span><span class="text_1">)*(sampling_freq/len_signal)/</span><span class="text_5">1000.0<br class="calibre2" /></span><span class="text_2"># Vẽ đồ thị<br class="calibre2" /></span><span class="text_1">plt.figure()<br class="calibre2" />plt.plot(x_axis</span><span class="text_">,</span><span class="text_1">signal_power</span><span class="text_">,</span><span class="text_6">color</span><span class="text_1">=</span><span class="text_3">'red'</span><span class="text_1">)<br class="calibre2" />plt.title(</span><span class="text_3">'Biến đổi tín hiệu âm thanh'</span><span class="text_1">)<br class="calibre2" />plt.xlabel(</span><span class="text_3">'Tần số (kHz)'</span><span class="text_1">)<br class="calibre2" />plt.ylabel(</span><span class="text_3">'Độ lớn (dB)'</span><span class="text_1">)<br class="calibre2" />plt.show()</span></p><p class="block_8"></p></div>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_2">Kết quả thu được:</p>
+	<p class="block_9"><img src="images/000000.png" alt="Image" class="calibre4" /></p>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_6">Tạo tín hiệu âm thanh</p>
+	<p class="block_2">Giờ chúng ta đã biết cách tín hiệu âm thanh làm việc thế nào, giờ thì hãy xem làm cách nào để chúng ta tạo ra một đoạn tín hiệu ?:o? Chúng ta có thể sử dụng NumPy để tạo ra một vài tín hiệu âm thanh. Khi đã biết âm thanh là một hỗn hợp hình sin, chúng ta có thể dựa vào đó để tạo ra một tín hiệu âm thanh dựa vào một vài tham số.</p>
+	<div class="frame_"><p class="block_7"><span class="text_">import </span><span class="text_1">numpy </span><span class="text_">as </span><span class="text_1">np<br class="calibre2" /></span><span class="text_">import </span><span class="text_1">matplotlib.pyplot </span><span class="text_">as </span><span class="text_1">plt<br class="calibre2" /></span><span class="text_">from </span><span class="text_1">scipy.io.wavfile </span><span class="text_">import </span><span class="text_1">write<br class="calibre2" /><br class="calibre2" /></span><span class="text_2"># Định nghĩa tên cho file đầu ra<br class="calibre2" /></span><span class="text_1">output_file=</span><span class="text_3">'generated_audio.wav'<br class="calibre2" /></span><span class="text_2"># Xác định một vài tham số như độ dài, tần số mẫu, tần số cao độ, giá trị thấp nhất và giá trị cao nhất<br class="calibre2" /></span><span class="text_1">duration=</span><span class="text_5">4 </span><span class="text_2"># Đây là tính giây<br class="calibre2" /></span><span class="text_1">sampling_freq=</span><span class="text_5">44100</span><span class="text_2"># Tính theo Hz<br class="calibre2" /></span><span class="text_1">tone_freq=</span><span class="text_5">784<br class="calibre2" /></span><span class="text_1">min_val=-</span><span class="text_5">4</span><span class="text_1">*np.pi<br class="calibre2" />max_val=</span><span class="text_5">4</span><span class="text_1">*np.pi<br class="calibre2" /></span><span class="text_2">#Tạo tín hiệu âm thanh sử dụng những tham số trên<br class="calibre2" /></span><span class="text_1">t=np.linspace(min_val</span><span class="text_">,</span><span class="text_1">max_val</span><span class="text_">,</span><span class="text_1">duration*sampling_freq)<br class="calibre2" />signal=np.sin(</span><span class="text_5">2</span><span class="text_1">*np.pi*tone_freq*t)<br class="calibre2" /></span><span class="text_2"># Tạo thêm độ nhiễu cho âm thanh (lên xuoogns 1 tẹo)<br class="calibre2" /></span><span class="text_1">noise=</span><span class="text_5">1001.1</span><span class="text_1">*np.random.rand(duration*sampling_freq)<br class="calibre2" />signal+=noise<br class="calibre2" /></span><span class="text_2"># Giảm cường độ âm thanh và kéo dãn tín hiệu<br class="calibre2" /></span><span class="text_1">scaling_factor=np.power(</span><span class="text_5">2</span><span class="text_">,</span><span class="text_5">15</span><span class="text_1">)-</span><span class="text_5">1<br class="calibre2" /></span><span class="text_1">signal_normalize=signal/np.max(np.abs(signal))<br class="calibre2" />signal_scaled=np.int16(signal_normalize*scaling_factor)<br class="calibre2" /></span><span class="text_2"># Ghi tín hiệu âm thanh thành file<br class="calibre2" /></span><span class="text_1">write(output_file</span><span class="text_">,</span><span class="text_1">sampling_freq</span><span class="text_">,</span><span class="text_1">signal_scaled)<br class="calibre2" /><br class="calibre2" /></span><span class="text_2"># vẽ tín hiệu âm thanh thành biểu đồ<br class="calibre2" /># Chỉ lấy 200 giá trị đầu tiên để biểu diễn cho đẹp<br class="calibre2" /></span><span class="text_1">signal=signal[:</span><span class="text_5">200</span><span class="text_1">]<br class="calibre2" />time_axis=</span><span class="text_5">1000</span><span class="text_1">*np.arange(</span><span class="text_5">0</span><span class="text_">,</span><span class="text_4">len</span><span class="text_1">(signal)</span><span class="text_">,</span><span class="text_5">1</span><span class="text_1">)/</span><span class="text_4">float</span><span class="text_1">(sampling_freq) </span><span class="text_2">#Trục X<br class="calibre2" /></span><span class="text_1">plt.figure()<br class="calibre2" />plt.plot(time_axis</span><span class="text_">,</span><span class="text_1">signal</span><span class="text_">,</span><span class="text_6">color</span><span class="text_1">=</span><span class="text_3">'red'</span><span class="text_1">)<br class="calibre2" />plt.xlabel(</span><span class="text_3">'Time milisecond'</span><span class="text_1">)<br class="calibre2" />plt.ylabel(</span><span class="text_3">'Biên độ'</span><span class="text_1">)<br class="calibre2" />plt.title(</span><span class="text_3">'Âm thanh được tạo bằng code'</span><span class="text_1">)<br class="calibre2" />plt.show()</span></p><p class="block_8"></p></div>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_2">Kết quả:</p>
+	<p class="block_9"><img src="images/000002.png" alt="Image" class="calibre4" /></p>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_6">Tổng hợp âm để tạo nhạc</p>
+	<p class="block_2">Ở phần trước chúng ta đã biết cách tạo ra âm thanh, nhưng nó là âm thanh mono chỉ có 1 cao độ duy nhất và điều đó không có ích. đó là do chỉ có một tần số duy nhất suốt toàn bộ tín hiệu. Giờ thì ta vẫn sử dụng nguyên tắc đó nhưng tổng hợp lại bằng cách ghép các tone (cao độ âm thanh) khác nhau dể tạo ra âm nhạc. Chúng ta sẽ sử dụng các tone thông thường như ( tone La (A), Đô(C),Sol(G),Fa(F)… để tạo ra nhạc. Để biết thêm về các tần số áp dụng cho các âm thanh trên bạn nên xem thêm ở đây : <a href="https://pages.mtu.edu/~suits/notefreqs.html" class="text_7">https://pages.mtu.edu/~suits/notefreqs.html</a></p>
+	<div class="frame_"><p class="block_7"><span class="text_">import </span><span class="text_1">json<br class="calibre2" /></span><span class="text_">import </span><span class="text_1">numpy </span><span class="text_">as </span><span class="text_1">np<br class="calibre2" /></span><span class="text_">import </span><span class="text_1">matplotlib.pyplot </span><span class="text_">as </span><span class="text_1">plt<br class="calibre2" /><br class="calibre2" /></span><span class="text_">from </span><span class="text_1">scipy.io.wavfile </span><span class="text_">import </span><span class="text_1">write<br class="calibre2" /><br class="calibre2" /></span><span class="text_2"># Tạo một hàm để tạo ra một tone (cao độ node âm thanh) dựa trên những tham số như tần số, thời gian, biên độ, tần số hz<br class="calibre2" /></span><span class="text_">def </span><span class="text_8">tone_synthesizer</span><span class="text_1">(freq</span><span class="text_">,</span><span class="text_1">duration</span><span class="text_">,</span><span class="text_1">amplitude=</span><span class="text_5">1.0</span><span class="text_">,</span><span class="text_1">sampling_freq=</span><span class="text_5">44100</span><span class="text_1">):<br class="calibre2" /><span class="calibre3">    time_axis=np.linspace(</span></span><span class="text_5">0</span><span class="text_">,</span><span class="text_1">duration</span><span class="text_">,</span><span class="text_4">int</span><span class="text_1">(duration*sampling_freq))<br class="calibre2" /><br class="calibre2" /><span class="calibre3">    </span></span><span class="text_2"># Xây dựng cấu trúc tín hiệu âm thanh sử dụng những tham số được chỉ định và trả về giá trị dưới dạng npint16<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_1">signal=amplitude*np.sin(</span><span class="text_5">2</span><span class="text_1">*np.pi*freq*time_axis)<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_">return </span><span class="text_1">signal.astype(np.int16)<br class="calibre2" /><br class="calibre2" /></span><span class="text_">if </span><span class="text_1">__name__==</span><span class="text_3">"__main__"</span><span class="text_1">:<br class="calibre2" /><span class="calibre3">    file_tone_single=</span></span><span class="text_3">'fa.wav'</span><span class="text_2">#input("Tên file muốn lưu")<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_1">file_tone_sequence=</span><span class="text_3">'generated_tone_sequence.wav'<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_2"># Chúng ta sử dụng file chứa tone map chứa tên nốt (tone node - La Si Do) để tạo tần số âm thanh<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_1">mapping_file=</span><span class="text_3">'../data/chap12/tone_mapping.json'<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_2"># Tải file vào lấy tonemap từ file<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_">with </span><span class="text_4">open</span><span class="text_1">(mapping_file</span><span class="text_">,</span><span class="text_3">'r'</span><span class="text_1">) </span><span class="text_">as </span><span class="text_1">f:<br class="calibre2" /><span class="calibre3">        tone_map=json.loads(f.read())</span></span><span class="text_1"><br class="calibre2" /><span class="calibre3">    </span></span><span class="text_2">#Tạo nốt Fa (F) trong 3 giây:<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_1">tone_name=</span><span class="text_3">'D'<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_1">duration=</span><span class="text_5">0.5<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_1">amplitude=</span><span class="text_5">12000<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_1">sampling_freq=</span><span class="text_5">44100<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_2"># lấy tần số tương ứng từ map<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_1">tone_freq=tone_map[tone_name]<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_2"># Tạo tone sử dụng hàm tổng hợp đã tạo bên trên<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_1">synthesized_tone=tone_synthesizer(tone_freq</span><span class="text_">,</span><span class="text_1">duration</span><span class="text_">,</span><span class="text_1">amplitude</span><span class="text_">,</span><span class="text_1">sampling_freq)<br class="calibre2" /><span class="calibre3">    write(file_tone_single</span></span><span class="text_">,</span><span class="text_1">sampling_freq</span><span class="text_">,</span><span class="text_1">synthesized_tone)<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_2"># Thử tạo một chuỗi nốt nhạc để làm cho âm thanh hay hơn.<br class="calibre2" /><span class="calibre3">    #Tạo chuỗi nốt âm thanh với thời gian tương ứng</span></span><span class="text_2"><br class="calibre2" /><span class="calibre3">    </span></span><span class="text_1">tone_squence=[(</span><span class="text_3">'G'</span><span class="text_">,</span><span class="text_5">0.4</span><span class="text_1">)</span><span class="text_">,</span><span class="text_1">(</span><span class="text_3">'G'</span><span class="text_">,</span><span class="text_5">0.4</span><span class="text_1">)</span><span class="text_">,</span><span class="text_1">(</span><span class="text_3">'G'</span><span class="text_">,</span><span class="text_5">0.4</span><span class="text_1">)</span><span class="text_">,</span><span class="text_1">(</span><span class="text_3">'C'</span><span class="text_">,</span><span class="text_5">0.6</span><span class="text_1">)</span><span class="text_">,</span><span class="text_1">(</span><span class="text_3">'G'</span><span class="text_">,</span><span class="text_5">0.4</span><span class="text_1">)</span><span class="text_">,</span><span class="text_1">(</span><span class="text_3">'G'</span><span class="text_">,</span><span class="text_5">0.4</span><span class="text_1">)</span><span class="text_">,</span><span class="text_1">(</span><span class="text_3">'G'</span><span class="text_">,</span><span class="text_5">0.4</span><span class="text_1">)</span><span class="text_">,</span><span class="text_1">(</span><span class="text_3">'G'</span><span class="text_">,</span><span class="text_5">0.4</span><span class="text_1">)</span><span class="text_">,</span><span class="text_1">(</span><span class="text_3">'C'</span><span class="text_">,</span><span class="text_5">0.8</span><span class="text_1">)</span><span class="text_">,</span><span class="text_1">(</span><span class="text_3">'D'</span><span class="text_">,</span><span class="text_5">0.4</span><span class="text_1">)]<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_2"># Xây dựng âm thanh dựa trên chuỗi nốt âm thanh<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_1">signal=np.array([])<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_">for </span><span class="text_1">item </span><span class="text_">in </span><span class="text_1">tone_squence:<br class="calibre2" /><span class="calibre3">        tone_name=item[</span></span><span class="text_5">0</span><span class="text_1">]<br class="calibre2" /><span class="calibre3">        freq=tone_map[tone_name]</span></span><span class="text_1"><br class="calibre2" /><span class="calibre3">        duration=item[</span></span><span class="text_5">1</span><span class="text_1">]<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_4">print</span><span class="text_1">(freq</span><span class="text_">, </span><span class="text_1">duration</span><span class="text_">, </span><span class="text_1">amplitude</span><span class="text_">, </span><span class="text_1">sampling_freq)<br class="calibre2" /><span class="calibre3">        synthesized_tone=tone_synthesizer(freq</span></span><span class="text_">,</span><span class="text_1">duration</span><span class="text_">,</span><span class="text_1">amplitude</span><span class="text_">,</span><span class="text_1">sampling_freq)<br class="calibre2" /><span class="calibre3">        signal=np.append(signal</span></span><span class="text_">,</span><span class="text_1">synthesized_tone)<br class="calibre2" /><span class="calibre3">    write(file_tone_sequence</span></span><span class="text_">,</span><span class="text_1">sampling_freq</span><span class="text_">,</span><span class="text_1">signal.astype(np.int16))<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_2">#<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_1">signal=signal[</span><span class="text_5">2000</span><span class="text_1">:</span><span class="text_5">5000</span><span class="text_1">]<br class="calibre2" /><span class="calibre3">    plt.figure()</span></span><span class="text_1"><br class="calibre2" /><span class="calibre3">    time_axis = </span></span><span class="text_5">1000 </span><span class="text_1">* np.arange(</span><span class="text_5">0</span><span class="text_">, </span><span class="text_4">len</span><span class="text_1">(signal)</span><span class="text_">, </span><span class="text_5">1</span><span class="text_1">) / </span><span class="text_4">float</span><span class="text_1"><span class="calibre3">(sampling_freq)  </span></span><span class="text_2"># Trục X<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_1">plt.plot(time_axis</span><span class="text_">,</span><span class="text_1">signal)<br class="calibre2" /><span class="calibre3">    plt.show()</span></span></p><p class="block_8"></p></div>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_6">Trích xuất các tính năng giọng nói</p>
+	<p class="block_2">Chúng ta đã học cách chuyển từ tín hiệu thời gian thành tần số. Tính năng tần số được dùng rộng rãi trong tất cả các hệ thống nhận dạng giọng nói. Những khái niệm chúng ta đã thảo luận trước đây đã một phần giới thiệu về ý tưởng này, nhưng trên thực tế tính tần số (frequency) có một chút phức tạp hơn. Mỗi lần chúng ta chuyển đồi từ tín hiệu thành tần số, chúng ta cần chắc chắn chúng sử dụng được dưới dạng một vector tính năng. Đây là lúc chúng ta cần biết thêm về khái niệm <b class="calibre5">Mel Frequency Cepstral Coefficients(MFCCs)</b>. MFCC là một tiện ích được sử dụng để phân tích tần số từ một tín hiệu âm thanh.</p>
+	<p class="block_2">Để phân tách một tần số từ một tín hiệu âm thanh, MFCC đầu tiên sẽ tách độ lớn của dải âm thanh. Nó sẽ dùng những bộ lọc và một <b class="calibre5">biến đổi cos rời rạc</b> (<b class="calibre5">discrete cosine transform-DCT)</b> để phân tách những vector tính năng tần số. Nếu bạn cảm thấy muốn đọc thêm về MFCC bạn có thể xem trên link sau: <a href="http://practicalcryptography.com/miscellaneous/machine-learning/guide-mel-frequency-cepstral-coefficients-mfccs/" class="text_7">http://practicalcryptography.com/miscellaneous/machine-learning/guide-mel-frequency-cepstral-coefficients-mfccs/</a></p>
+	<p class="block_2">Chúng ta sẽ sử dụng một package gọi là<i class="calibre6"> python_speech_features </i>để phân tách MFCC. package này có thể download tại đây : <a href="https://python-speech-features.readthedocs.io/en/latest/" class="text_7">https://python-speech-features.readthedocs.io/en/latest/</a></p>
+	<div class="frame_"><p class="block_7"><span class="text_">import </span><span class="text_2">numpy </span><span class="text_">as </span><span class="text_2">np<br class="calibre2" /></span><span class="text_">import </span><span class="text_2">matplotlib.pyplot </span><span class="text_">as </span><span class="text_2">plt<br class="calibre2" /><br class="calibre2" /></span><span class="text_">from </span><span class="text_2">scipy.io </span><span class="text_">import </span><span class="text_2">wavfile<br class="calibre2" /></span><span class="text_">from </span><span class="text_2">features </span><span class="text_">import </span><span class="text_2">mfcc</span><span class="text_">,</span><span class="text_2">logfbank<br class="calibre2" /><br class="calibre2" /></span><span class="text_9"># Load wave file<br class="calibre2" /></span><span class="text_2">sampling_freq</span><span class="text_">,</span><span class="text_2">signal=wavfile.read(</span><span class="text_3">'../data/chap12/apple01.wav'</span><span class="text_2">)<br class="calibre2" /></span><span class="text_9"># Lấy 10,000 mẫu đầu tiên trong signal để phân tích<br class="calibre2" /><br class="calibre2" /></span><span class="text_2">signal=signal[:</span><span class="text_5">10000</span><span class="text_2">]<br class="calibre2" /><br class="calibre2" /></span><span class="text_9"># dùng hàm mfcc để phân tích MFCC<br class="calibre2" /></span><span class="text_2">features_mfcc=mfcc(signal</span><span class="text_">,</span><span class="text_2">sampling_freq)<br class="calibre2" /></span><span class="text_9"># In tham số MFCC ra terminal:<br class="calibre2" /></span><span class="text_4">print</span><span class="text_2">(</span><span class="text_3">'MFCC:</span><span class="text_">\n</span><span class="text_3">Số lượng ô ='</span><span class="text_">,</span><span class="text_2">features_mfcc.shape[</span><span class="text_5">0</span><span class="text_2">])<br class="calibre2" /></span><span class="text_4">print</span><span class="text_2">(</span><span class="text_3">'Độ lớn của mỗi features ='</span><span class="text_">,</span><span class="text_2">features_mfcc.shape[</span><span class="text_5">1</span><span class="text_2">])<br class="calibre2" /></span><span class="text_9">#Vẽ các tính năng (features) MFCC<br class="calibre2" /></span><span class="text_2">features_mfcc=features_mfcc.T<br class="calibre2" />plt.matshow(features_mfcc)<br class="calibre2" />plt.title(</span><span class="text_3">'MFCC'</span><span class="text_2">)<br class="calibre2" /><br class="calibre2" /></span><span class="text_9">#Phân tách các bộ lọc<br class="calibre2" /></span><span class="text_2">features_fb=logfbank(signal</span><span class="text_">,</span><span class="text_2">sampling_freq)<br class="calibre2" /></span><span class="text_4">print</span><span class="text_2">(</span><span class="text_3">'Bộ lọc:</span><span class="text_">\n</span><span class="text_3">Số lượng ô: ='</span><span class="text_">,</span><span class="text_2">features_fb.shape[</span><span class="text_5">0</span><span class="text_2">])<br class="calibre2" /></span><span class="text_4">print</span><span class="text_2">(</span><span class="text_3">'Độ lớn của mỗi features ='</span><span class="text_">,</span><span class="text_2">features_fb.shape[</span><span class="text_5">1</span><span class="text_2">])<br class="calibre2" /></span><span class="text_9">#Vẽ lên biểu đồ<br class="calibre2" /></span><span class="text_2">features_fb=features_fb.T<br class="calibre2" />plt.matshow(features_fb)<br class="calibre2" />plt.title(</span><span class="text_3">'Filter Bank'</span><span class="text_2">)<br class="calibre2" />plt.show()</span></p><p class="block_8"></p></div>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_9"><img src="images/000005.png" alt="Image" class="calibre7" /></p>
+	<p class="block_9"><img src="images/000003.png" alt="Image" class="calibre8" /></p>
+	<p class="block_2">Terminal:</p>
+	<p class="block_10">MFCC:</p>
+	<p class="block_11">Số lượng ô = 33</p>
+	<p class="block_11">Độ lớn của mỗi features = 13</p>
+	<p class="block_11">Bộ lọc:</p>
+	<p class="block_11">Số lượng ô: = 33</p>
+	<p class="block_12">Độ lớn của mỗi features = 26</p>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_6">Nhận dạng từ trong tín hiệu âm thanh</p>
+	<p class="block_2">Giờ thì chúng ta đã học hầu hết các kỹ thuật để phân tích tín hiệu âm thanh, giờ thì hãy đối đầu với việc chúng ta phải nhận dạng được những từ được nói ở trong đó. Hệ thống nhận dạng giọng nói lấy tín hiệu âm thanh như là tín hiệu đầu vào và nhận dạng từ được nói ở tín hiệu đầu ra. Chúng ta sẽ dùng mô hình Hidden Markov (HMMs) để làm nhiệm vụ này.</p>
+	<p class="block_2">Như chúng ta đã thảo luận ở chương trước, HMMs là mô hình rất tốt để phân tích dữ liệu có tần suất liên tục. Một tín hiệu âm thanh là một tín hiệu liên tục, nó cũng được hiểu là một dữ liệu chuỗi ( dữ liệu tần suất liên tục theo thời gian). Giả định các đàu ra được tạo ra bởi hệ thống trải qua một loạt các trạng thái ẩn (hidden states). Nhiệm vụ của chúng ta là tìm ra những trạng thái ân này và định dạng những từ xuất hiện trong tín hiệu âm thanh. Nếu bạn muốn đào sâu thêm hãy tìm hiểu ở đây : <a href="https://hmmlearn.readthedocs.io/en/latest/" class="text_7">https://hmmlearn.readthedocs.io/en/latest/</a></p>
+	<p class="block_2">Chúng ta đã sử dụng hmmlearn ở chương trước nên bạn không cần phải cài nhưng nếu bạn nhảy từ đâu đó vào chương này thì hãy xem lại cách cài đặt.</p>
+	<p class="block_2">Để train hệ thống nhận dạng giọng nói, chúng ta cần một bộ dữ liệu âm thanh cho mỗi từ. bạn có thể sử dụng bộ dữ liệu âm thanh của hmmlearn tại đây : <a href="https://code.google.com/archive/p/hmm-speech-recognition/downloads" class="text_7">https://code.google.com/archive/p/hmm-speech-recognition/downloads</a></p>
+	<p class="block_2">Bộ dữ liệu này gồm 7 từ khác nhau. mỗi từ này được chia vào các folder riêng biệt và mỗi folder này chứa 15 file âm thanh để đọc từ đó một cách khác nhau. Chúng ta sẽ sử dụng 14 file để train và 1 file để test trong mỗi folder. Chú ý, ở đây là một một bộ dữ liệu rất nhỏ, trong thực tế bạn sẽ phải sử dụng một bộ thư viện khổng lồ để có thể xây dựng một hệ thống nhận dạng giọng nói. Chúng ta sẽ sử dụng bộ dữ liệu này để tạo ra một hệ thống nhận dạng giọng nói cơ bản với những từ được tạo.</p>
+	<p class="block_2">Trước tiên chúng ta sẽ xây dựng một mô hình HMM cho mỗi từ. Chúng ta sẽ lưu những mô hình này để làm tài liệu tham khảo. Khi chúng ta muốn nhận dạng một từ không biết trong một file âm thanh, chúng ta sẽ cho nó chạy thử qua tất cả các mô hình và chọn mô hình cho điểm số cao nhất. Giờ thì bắt tay vào code nào:</p>
+	<div class="frame_"><p class="block_7"><span class="text_">import </span><span class="text_2">os<br class="calibre2" /></span><span class="text_">import </span><span class="text_2">argparse<br class="calibre2" /></span><span class="text_">import </span><span class="text_2">warnings<br class="calibre2" /><br class="calibre2" /></span><span class="text_">import </span><span class="text_2">numpy </span><span class="text_">as </span><span class="text_2">np<br class="calibre2" /></span><span class="text_">from </span><span class="text_2">scipy.io </span><span class="text_">import </span><span class="text_2">wavfile<br class="calibre2" /><br class="calibre2" /></span><span class="text_">from </span><span class="text_2">hmmlearn </span><span class="text_">import </span><span class="text_2">hmm<br class="calibre2" /></span><span class="text_">from </span><span class="text_2">features </span><span class="text_">import </span><span class="text_2">mfcc<br class="calibre2" /><br class="calibre2" /></span><span class="text_9"># Tạo class để train sử dụng HMM:<br class="calibre2" /></span><span class="text_">class </span><span class="text_2">ModelHMM(</span><span class="text_4">object</span><span class="text_2">):<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_">def </span><span class="text_10">__init__</span><span class="text_2">(</span><span class="text_11">self</span><span class="text_">,</span><span class="text_2">num_components=</span><span class="text_5">4</span><span class="text_">,</span><span class="text_2">num_iter=</span><span class="text_5">1000</span><span class="text_2">):<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_11">self</span><span class="text_2">.n_iter=num_iter<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_11">self</span><span class="text_2">.n_components=num_components<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_11">self</span><span class="text_2">.cov_type=</span><span class="text_3">'diag'<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_11">self</span><span class="text_2">.model_names=</span><span class="text_3">'GaussianHMM'<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_9"># Tạo biến làm nơi chúng ta sẽ lưu những model của từng từ<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_11">self</span><span class="text_2">.models=[]<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_11">self</span><span class="text_2">.model=hmm.GaussianHMM(</span><span class="text_6">n_components</span><span class="text_2">=</span><span class="text_11">self</span><span class="text_2">.n_components</span><span class="text_">,</span><span class="text_6">covariance_type</span><span class="text_2">=</span><span class="text_11">self</span><span class="text_2">.cov_type</span><span class="text_">,</span><span class="text_6">n_iter</span><span class="text_2">=</span><span class="text_11">self</span><span class="text_2">.n_iter)<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_9">#Tạo hàm để train model<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_">def </span><span class="text_8">train</span><span class="text_2">(</span><span class="text_11">self</span><span class="text_">,</span><span class="text_2">training_data):<br class="calibre2" /><span class="calibre3">        np.seterr(</span></span><span class="text_6">all</span><span class="text_2">=</span><span class="text_3">'ignore'</span><span class="text_2">)<br class="calibre2" /><span class="calibre3">        cur_model=</span></span><span class="text_11">self</span><span class="text_2">.model.fit(training_data)<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_11">self</span><span class="text_2">.models.append(cur_model)<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_9">#Tạo một hàm để tính toán điểm số cho dữ liệu đầu vào:<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_">def </span><span class="text_8">compute_score</span><span class="text_2">(</span><span class="text_11">self</span><span class="text_">,</span><span class="text_2">input_data):<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_">return </span><span class="text_11">self</span><span class="text_2">.model.score(input_data)<br class="calibre2" /></span><span class="text_9">#Tạo một hàm để xây dựng một model cho mỗi từ trong dữ liệu training<br class="calibre2" /></span><span class="text_">def </span><span class="text_8">build_models</span><span class="text_2">(input_folder):<br class="calibre2" /><span class="calibre3">    speech_models=[]</span></span><span class="text_2"><br class="calibre2" /><span class="calibre3">    </span></span><span class="text_9"># phân tích dữ liệu thư mục input:<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_">for </span><span class="text_2">dir_name </span><span class="text_">in </span><span class="text_2">os.listdir(input_folder):<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_9">#Lấy tên của sub foler<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_2">subfolder=os.path.join(input_folder</span><span class="text_">,</span><span class="text_2">dir_name)<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_">if not </span><span class="text_2">os.path.isdir(subfolder):<br class="calibre2" /><span class="calibre3">            </span></span><span class="text_">continue<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_9"># Lấy nhãn<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_2">label=subfolder[subfolder.rfind(</span><span class="text_3">'</span><span class="text_">\\</span><span class="text_3">'</span><span class="text_2">)+</span><span class="text_5">1</span><span class="text_2">:]<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_9"># Tạo biến X để lưu dữ liệu train<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_2">X=np.array([])<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_9"># Tạo list file sử dụng để train<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_2">training_files=[x </span><span class="text_">for </span><span class="text_2">x </span><span class="text_">in </span><span class="text_2">os.listdir(subfolder) </span><span class="text_">if </span><span class="text_2">x.endswith(</span><span class="text_3">'.wav'</span><span class="text_2">)][:-</span><span class="text_5">1</span><span class="text_2">]<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_9"># Tạo vòng lặp tới khi train xong và xây dựng được models<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_">for </span><span class="text_2">mfilename </span><span class="text_">in </span><span class="text_2">training_files:<br class="calibre2" /><span class="calibre3">            file_path=os.path.join(subfolder</span></span><span class="text_">,</span><span class="text_2">mfilename)<br class="calibre2" /><span class="calibre3">            </span></span><span class="text_9"># Lấy tín hiệu (signal) âm thanh từ file hiện tại<br class="calibre2" /><span class="calibre3">            </span></span><span class="text_2">sampling_freq</span><span class="text_">,</span><span class="text_2">signal=wavfile.read(file_path)<br class="calibre2" /><span class="calibre3">            </span></span><span class="text_9"># Tách các MFCC features<br class="calibre2" /><span class="calibre3">            #print(len(signal),sampling_freq)</span></span><span class="text_9"><br class="calibre2" /><span class="calibre3">            </span></span><span class="text_">with </span><span class="text_2">warnings.catch_warnings():<br class="calibre2" /><span class="calibre3">                warnings.simplefilter(</span></span><span class="text_3">'ignore'</span><span class="text_2">)<br class="calibre2" /><span class="calibre3">                features_mfcc = mfcc(signal</span></span><span class="text_">, </span><span class="text_2">sampling_freq)<br class="calibre2" /><span class="calibre3">            </span></span><span class="text_">if </span><span class="text_4">len</span><span class="text_2">(X)==</span><span class="text_5">0</span><span class="text_2">:<br class="calibre2" /><span class="calibre3">                X=features_mfcc</span></span><span class="text_2"><br class="calibre2" /><span class="calibre3">            </span></span><span class="text_">else</span><span class="text_2">:<br class="calibre2" /><span class="calibre3">                X=np.append(X</span></span><span class="text_">,</span><span class="text_2">features_mfcc</span><span class="text_">,</span><span class="text_6">axis</span><span class="text_2">=</span><span class="text_5">0</span><span class="text_2">)<br class="calibre2" /><span class="calibre3">        model=ModelHMM()</span></span><span class="text_2"><br class="calibre2" /><span class="calibre3">        model.train(X)</span></span><span class="text_2"><br class="calibre2" /><span class="calibre3">        speech_models.append((model</span></span><span class="text_">,</span><span class="text_2">label))<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_9">model</span><span class="text_2">=</span><span class="text_">None<br class="calibre2" /><span class="calibre3">    return </span></span><span class="text_2">speech_models<br class="calibre2" /></span><span class="text_9"># Tạo hàm để chạy thử nghiệm treen dữ liệu test:<br class="calibre2" /></span><span class="text_">def </span><span class="text_8">run_test</span><span class="text_2">(tes_files):<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_9"># Phân loại dữu liệu input<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_">for </span><span class="text_2">test_file </span><span class="text_">in </span><span class="text_2">tes_files:<br class="calibre2" /><span class="calibre3">        sampling_freq</span></span><span class="text_">,</span><span class="text_2">signal=wavfile.read(test_file)<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_">with </span><span class="text_2">warnings.catch_warnings():<br class="calibre2" /><span class="calibre3">            warnings.simplefilter(</span></span><span class="text_3">'ignore'</span><span class="text_2">)<br class="calibre2" /><span class="calibre3">            feature_mfcc=mfcc(signal</span></span><span class="text_">,</span><span class="text_2">sampling_freq)<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_9">#Tạo số điểm max_score ở mức âm vô cùng và nhãn dự đoán<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_2">max_score=-</span><span class="text_4">float</span><span class="text_2">(</span><span class="text_3">'inf'</span><span class="text_2">)<br class="calibre2" /><span class="calibre3">        predicted_label=</span></span><span class="text_">None<br class="calibre2" /><span class="calibre3">        for </span></span><span class="text_2">item </span><span class="text_">in </span><span class="text_2">speech_models:<br class="calibre2" /><span class="calibre3">            model</span></span><span class="text_">,</span><span class="text_2">label=item<br class="calibre2" /><span class="calibre3">            score=model.compute_score(feature_mfcc)</span></span><span class="text_2"><br class="calibre2" /><span class="calibre3">            </span></span><span class="text_">if </span><span class="text_2">score&gt;max_score:<br class="calibre2" /><span class="calibre3">                </span></span><span class="text_9"># Chọn điểm tại mức điểm lớn nhất hiện tại trong số tất cả model<br class="calibre2" /><span class="calibre3">                </span></span><span class="text_2">max_score=score<br class="calibre2" /><span class="calibre3">                predicted_label=label</span></span><span class="text_2"><br class="calibre2" /><span class="calibre3">        start_index=test_file.find(</span></span><span class="text_3">'</span><span class="text_">\\</span><span class="text_3">'</span><span class="text_2">)+</span><span class="text_5">1<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_2">end_index=test_file.rfind(</span><span class="text_3">'</span><span class="text_">\\</span><span class="text_3">'</span><span class="text_2">)<br class="calibre2" /><br class="calibre2" /><span class="calibre3">        </span></span><span class="text_9">#print(test_files)<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_2">original_label=test_file[start_index:end_index]<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_4">print</span><span class="text_2">(</span><span class="text_3">'Tên gốc:'</span><span class="text_">,</span><span class="text_2">original_label)<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_4">print</span><span class="text_2">(</span><span class="text_3">'Tên dự đoán: '</span><span class="text_">,</span><span class="text_2">predicted_label)<br class="calibre2" /><br class="calibre2" /></span><span class="text_9">#Tạo hàm main<br class="calibre2" /></span><span class="text_">if </span><span class="text_2">__name__==</span><span class="text_3">'__main__'</span><span class="text_2">:<br class="calibre2" /><span class="calibre3">    input_folder=</span></span><span class="text_4">input</span><span class="text_2">(</span><span class="text_3">'datafolder'</span><span class="text_2">)<br class="calibre2" /><span class="calibre3">    speech_models=build_models(input_folder)</span></span><span class="text_2"><br class="calibre2" /><span class="calibre3">    </span></span><span class="text_9"># Chúng ta đã để lại 1 file để test trong mỗi folder. giờ thì ta sử dụng file đó để tính độ chính xác của model<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_2">test_files=[]<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_">for </span><span class="text_2">root</span><span class="text_">,</span><span class="text_2">dirs</span><span class="text_">,</span><span class="text_2">files </span><span class="text_">in </span><span class="text_2">os.walk(input_folder):<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_">for </span><span class="text_2">filename </span><span class="text_">in</span><span class="text_2">(x </span><span class="text_">for </span><span class="text_2">x </span><span class="text_">in </span><span class="text_2">files </span><span class="text_">if </span><span class="text_3">'15' </span><span class="text_">in </span><span class="text_2">x):<br class="calibre2" /><span class="calibre3">            filepath=os.path.join(root</span></span><span class="text_">,</span><span class="text_2">filename)<br class="calibre2" /><span class="calibre3">            test_files.append(filepath)</span></span><span class="text_2"><br class="calibre2" /><span class="calibre3">    run_test(test_files)</span></span></p><p class="block_8"></p></div>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_2">Kết quả đầu ra:</p>
+	<p class="block_10">datafolder../data/chap12/speech_audio</p>
+	<p class="block_11">Tên gốc: apple</p>
+	<p class="block_11"><span class="calibre3">Tên dự đoán:  apple</span></p>
+	<p class="block_11">Tên gốc: banana</p>
+	<p class="block_11"><span class="calibre3">Tên dự đoán:  banana</span></p>
+	<p class="block_11">Tên gốc: kiwi</p>
+	<p class="block_11"><span class="calibre3">Tên dự đoán:  kiwi</span></p>
+	<p class="block_11">Tên gốc: lime</p>
+	<p class="block_11"><span class="calibre3">Tên dự đoán:  lime</span></p>
+	<p class="block_11">Tên gốc: orange</p>
+	<p class="block_11"><span class="calibre3">Tên dự đoán:  orange</span></p>
+	<p class="block_11">Tên gốc: peach</p>
+	<p class="block_11"><span class="calibre3">Tên dự đoán:  peach</span></p>
+	<p class="block_11">Tên gốc: pineapple</p>
+	<p class="block_12"><span class="calibre3">Tên dự đoán:  pineapple</span></p>
+	<p class="block_2">Như bạn đã thấy mô hình dự đoán khá chính xác.</p>
+	<p class="block_6">Tổng kết</p>
+	<p class="block_2">Vậy là chúng ta kết thúc chương 12 về nhận dạng giọng nói. Điểm cần chú ý trong chương này là xử lý tín hiệu âm thanh , tổng hợp âm thanh và sử dụng mô hình MFFC để train một hệ thống tự động nhận dạng giọng nói cơ bản.</p>
+	<p class="block_2">Trong chương tiếp theo chúng t aasex học về nhận diện vật thể và theo dõi nó.</p>
+	<p class="block_2"> </p>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_1">&nbsp;</p>
+	<p class="block_1">&nbsp;</p>
+
+</div>
+
+</body></html>
+
+<footer class=" footline" >
+	
+</footer>
+
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/ai-with-python/chapter11/" title="C11: Sequential Data"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/ai-with-python/chapter13/" title="C13: Object Detection and Tracking" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1572408723"></script>
+    <script src="/js/perfect-scrollbar.min.js?1572408723"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1572408723"></script>
+    <script src="/js/jquery.sticky.js?1572408723"></script>
+    <script src="/js/featherlight.min.js?1572408723"></script>
+    <script src="/js/highlight.pack.js?1572408723"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1572408723"></script>
+    <script src="/js/learn.js?1572408723"></script>
+    <script src="/js/hugo-learn.js?1572408723"></script>
+
+    <link href="/mermaid/mermaid.css?1572408723" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1572408723"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>
+

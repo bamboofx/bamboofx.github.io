@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.57.2" />
+    <meta name="description" content="">
+
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>C13: Object Detection and Tracking :: Bamboofx&#39;s or NTVFX&#39;s Site</title>
+
+    
+    <link href="/css/nucleus.css?1572408723" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1572408723" rel="stylesheet">
+    <link href="/css/hybrid.css?1572408723" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1572408723" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1572408723" rel="stylesheet">
+    <link href="/css/auto-complete.css?1572408723" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1572408723" rel="stylesheet">
+    <link href="/css/theme.css?1572408723" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1572408723" rel="stylesheet">
+    
+      <link href="/css/theme-blue.css?1572408723" rel="stylesheet">
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1572408723"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/ai-with-python/chapter13/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="https://bamboofx.github.io/">
+  <img src="https://bamboofx.github.io/images/logo.png "> </img>
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1572408723"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1572408723"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/bamboofx.github.io\/";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1572408723"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/ai-with-python/" title="AI with Python (Prateek Joshi)" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/ai-with-python/">
+          AI with Python (Prateek Joshi)
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ai-with-python/chapter1/" title="C1: Trí thông minh nhân tạo là gì?" class="dd-item ">
+        <a href="/ai-with-python/chapter1/">
+        C1: Trí thông minh nhân tạo là gì?
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ai-with-python/chapter2/" title="C2: Classification and Regression" class="dd-item ">
+        <a href="/ai-with-python/chapter2/">
+        C2: Classification and Regression
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ai-with-python/chapter3/" title="C3: Ensemble Learing" class="dd-item ">
+        <a href="/ai-with-python/chapter3/">
+        C3: Ensemble Learing
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ai-with-python/chapter4/" title="C4: Detecting Patterns with Unsupervised Learning" class="dd-item ">
+        <a href="/ai-with-python/chapter4/">
+        C4: Detecting Patterns with Unsupervised Learning
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ai-with-python/chapter5/" title="C5: Building Recommender Systems" class="dd-item ">
+        <a href="/ai-with-python/chapter5/">
+        C5: Building Recommender Systems
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ai-with-python/chapter6/" title="C6: Logic Programing" class="dd-item ">
+        <a href="/ai-with-python/chapter6/">
+        C6: Logic Programing
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ai-with-python/chapter7/" title="C7: Tìm kiếm Heuristic" class="dd-item ">
+        <a href="/ai-with-python/chapter7/">
+        C7: Tìm kiếm Heuristic
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ai-with-python/chapter8/" title="C8: Thuật toán di truyền - Genetic Alogrithms" class="dd-item ">
+        <a href="/ai-with-python/chapter8/">
+        C8: Thuật toán di truyền - Genetic Alogrithms
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ai-with-python/chapter9/" title="C9: Xây dựng game cùng với AI" class="dd-item ">
+        <a href="/ai-with-python/chapter9/">
+        C9: Xây dựng game cùng với AI
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ai-with-python/chapter10/" title="C10: Natural Language Processing" class="dd-item ">
+        <a href="/ai-with-python/chapter10/">
+        C10: Natural Language Processing
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ai-with-python/chapter11/" title="C11: Sequential Data" class="dd-item ">
+        <a href="/ai-with-python/chapter11/">
+        C11: Sequential Data
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ai-with-python/chapter12/" title="C12: Speech Recognizer" class="dd-item ">
+        <a href="/ai-with-python/chapter12/">
+        C12: Speech Recognizer
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ai-with-python/chapter13/" title="C13: Object Detection and Tracking" class="dd-item active">
+        <a href="/ai-with-python/chapter13/">
+        C13: Object Detection and Tracking
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/numpy/" title="NumPy cơ bản" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/numpy/">
+          NumPy cơ bản
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/about/" title="about" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/about/">
+          About
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>Site</a> > <a href='/ai-with-python/'>AI with Python (Prateek Joshi)</a> > C13: Object Detection and Tracking
+          
+         
+          
+         
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              C13: Object Detection and Tracking
+            </h1>
+          
+
+        
+
+
+
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=utf-8" /><link href="style.css" rel="stylesheet" type="text/css" /><title>PythonAI Chapter13</title></head><body><div class="calibre" id="calibre_link-0">
+	<p class="block_">13</p>
+	<p class="block_1">Object Detection and Tracking</p>
+	<p class="block_">Nhận diện và theo dõi vật thể</p>
+	<p class="block_2">&nbsp;</p>
+	<p class="block_3"><span class="calibre1">Trong chương này chúng ta sẽ học về  nhận diện vật thể và theo dõi chuyển động của nó. CHúng ta sẽ bắt đầu bằng cách cài đặt thư viện OpenCV, đây là một thư viện rất thông dụng cho công nghệ</span><i class="calibre2"> máy nhìn </i>(computer vision). Chúng ta sẽ thảo luận về sự khác biệt giữa các khung hình để có thể phát hiện các vật thể chuyển động trong video. Chúng ta sẽ học về cách theo đõi các vật thể bằng cách sử dụng không gian màu sắc . Chúng ta sẽ hiểu cách sử dụng loại bỏ neenf để theo dõi vật thể. Chúng ta sẽ xây dựng một bộ theo dõi vật thể động bằng cách sử dụng thuật toán CAMShift. Chúng ta sẽ học cách làm thể nào để xây dựng một bộ theo dõi ánh sang. Chúng ta sẽ thảo luận về phát hiện khuôn mặt và các khái niệm liên quan khác giống như Haar cascades và hình ảnh tích hợp (integral images). Chúng ta sẽ dùng những kỹ thuật đó để tổng hợp lên bộ theo dõi mắt .</p>
+	<p class="block_3">Các phần chúng ta sẽ học trong chương này:</p>
+	<ul class="list_">
+	<li class="block_4">Cài đặt OpenCV</li>
+	<li class="block_5">Phân biệt khung hình (Frame differencing)</li>
+	<li class="block_5">Theo dõi vật thể sử dụng không gian màu(colorspaces)</li>
+	<li class="block_5">Theo dõi vật thể sử dụng cách loại bỏ nền</li>
+	<li class="block_5">Xây dựng một bộ theo dõi động dùng thuật toán CAMShift</li>
+	<li class="block_5">Theo dõi vật thể với optical flow</li>
+	<li class="block_5">Nhận diên khuôn mặt</li>
+	<li class="block_5">Sử dụng Haar cascades để theo dõi vật thể</li>
+	<li class="block_5">Sử dụng tổng hợp hình ảnh để phân tách tính năng</li>
+	<li class="block_6">Phát hiện và theo dõi mắt</li>
+</ul>
+	<p class="block_2">&nbsp;</p>
+	<p class="block_7">Cài đặt OpenCV</p>
+	<p class="block_3">chúng ta sẽ sử dụng thư viện OpenCV trong chương này. Bạn có thể đọc thêm về nó tại trang <a href="http://opencv.org" class="text_">http://opencv.org</a>. Bạn phải cài thư viện này trước khi bắt đầu chuong này. Đây là trangg để install openCV 3,4 chạy cùng với Python 3 trên các hệ điều hành khác nhau</p>
+	<ul class="list_">
+	<li class="block_4"><b class="calibre3">Windows</b>: <a href="https://solarianprogrammer.com/2016/09/17/install-opencv-3-with-python-3-on-windows/" class="text_">https://solarianprogrammer.com/2016/09/17/install-opencv-3-with-python-3-on-windows/</a></li>
+	<li class="block_5"><b class="calibre3">Ubuntu:</b> <a href="https://www.pyimagesearch.com/2015/07/20/install-opencv-3-0-and-python-3-4-on-ubuntu" class="text_">https://www.pyimagesearch.com/2015/07/20/install-opencv-3-0-and-python-3-4-on-ubuntu</a></li>
+	<li class="block_6"><b class="calibre3">Mac:</b> <a href="https://www.pyimagesearch.com/2015/06/29/install-opencv-3-0-and-python-3-4-on-osx" class="text_">https://www.pyimagesearch.com/2015/06/29/install-opencv-3-0-and-python-3-4-on-osx</a></li>
+</ul>
+	<p class="block_7">Phân biệt giữa các khung hình</p>
+	<p class="block_3">Phân biệt các khung hình là một kỹ thuật cơ bản nhất được sử dụng để nhận dạng giữa các vật thể trong một video. Khi chúng ta nhìn vào một video, những khác biệt giữa các khung hình liên tiếp được chụp lại cho chúng ta rất nhiều thông tin. Hãy xem bằng cách nào chúng ta có thể lấy những điểm khác nhau giữa các khung hình và hiển thị những điểm khác biệt đó. Code ở phần này yêu cầu máy bạn phải có webcam. nếu không bạn phải có 1 video để chơi cùng nó ( cuốn sách yêu cầu có webcam mà máy tao méo có nên tao chế thêm ớ).</p>
+	<p class="block_8"><span class="text_1">import </span><span class="text_2">cv2<br class="calibre4" /></span><span class="text_1">import </span><span class="text_2">os.path </span><span class="text_1">as </span><span class="text_2">path<br class="calibre4" /></span><span class="text_3">#Tạo hàm để tính toán khác biệt của các khung hình. Bắt đầu bằng cách tính toán sự khác nhau giữa khung hình hiện tại và khung hình kế tiếp<br class="calibre4" /></span><span class="text_1">def </span><span class="text_4">frame_dif</span><span class="text_2">(prev_frame</span><span class="text_1">,</span><span class="text_2">cur_frame</span><span class="text_1">,</span><span class="text_2">next_frame):<br class="calibre4" /><span class="calibre5">    diff_frames_1=cv2.absdiff(next_frame</span></span><span class="text_1">,</span><span class="text_2">cur_frame)<br class="calibre4" /><span class="calibre5">    </span></span><span class="text_3">#Tính toán sự khác nhau giữa khung hình hiện tại và khung hình trước đó<br class="calibre4" /><span class="calibre5">    </span></span><span class="text_2">diff_frames_2=cv2.absdiff(cur_frame</span><span class="text_1">,</span><span class="text_2">prev_frame)<br class="calibre4" /><span class="calibre5">    </span></span><span class="text_3">#sử dụng phép tính toán trên bit (bitwise) của openCV để tính toán sự khác nhau giữa các frames và trả lại giá trị đó<br class="calibre4" /><span class="calibre5">    </span></span><span class="text_1">return </span><span class="text_2">cv2.bitwise_and(diff_frames_1</span><span class="text_1">,</span><span class="text_2">diff_frames_2)<br class="calibre4" /></span><span class="text_3">#Tạo hàm để lấy khung hình hiện tại từ video.<br class="calibre4" /></span><span class="text_1">def </span><span class="text_4">get_frame</span><span class="text_2">(cap:cv2.VideoCapture</span><span class="text_1">,</span><span class="text_2">scaling_factor):<br class="calibre4" /><br class="calibre4" /><span class="calibre5">    </span></span><span class="text_1">try</span><span class="text_2">:<br class="calibre4" /><span class="calibre5">        _</span></span><span class="text_1">,</span><span class="text_2">frame=cap.read()<br class="calibre4" /><br class="calibre4" /><span class="calibre5">        </span></span><span class="text_3"># thu nhỏ khung hình<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_2">frame=cv2.resize(frame</span><span class="text_1">,None,</span><span class="text_5">fx</span><span class="text_2">=scaling_factor</span><span class="text_1">,</span><span class="text_5">fy</span><span class="text_2">=scaling_factor</span><span class="text_1">,</span><span class="text_5">interpolation</span><span class="text_2">=cv2.INTER_AREA)<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_3"># Chuyển đổi frame sang màu xám<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_2">gray=cv2.cvtColor(frame</span><span class="text_1">,</span><span class="text_2">cv2.COLOR_RGBA2GRAY)<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_6">print</span><span class="text_2">(gray)<br class="calibre4" /><span class="calibre5">    </span></span><span class="text_1">except</span><span class="text_2">:<br class="calibre4" /><span class="calibre5">        gray=</span></span><span class="text_1">None<br class="calibre4" /><span class="calibre5">    return </span></span><span class="text_2">gray<br class="calibre4" /></span><span class="text_3">#Tạo hàm main để lấy video<br class="calibre4" /></span><span class="text_1">if </span><span class="text_2">__name__==</span><span class="text_7">"__main__"</span><span class="text_2">:<br class="calibre4" /><span class="calibre5">    cap=cv2.VideoCapture(path.join(</span></span><span class="text_7">"../data/chap13/congai.mp4"</span><span class="text_2">));<br class="calibre4" /><span class="calibre5">    scaling_factor=</span></span><span class="text_8">1<br class="calibre4" /><span class="calibre5">    </span></span><span class="text_3">#Lấy khung hình hiện tại current frame, khung hình kế tiếp và khung hình trước (prev_frame,next frame)<br class="calibre4" /><span class="calibre5">    </span></span><span class="text_2">prev_frame=get_frame(cap</span><span class="text_1">,</span><span class="text_2">scaling_factor)<br class="calibre4" /><span class="calibre5">    cur_frame=get_frame(cap</span></span><span class="text_1">,</span><span class="text_2">scaling_factor)<br class="calibre4" /><span class="calibre5">    next_frame=get_frame(cap</span></span><span class="text_1">,</span><span class="text_2">scaling_factor)<br class="calibre4" /><span class="calibre5">    </span></span><span class="text_3"># Tạo vòng lặp tới khi kết thúc video<br class="calibre4" /><span class="calibre5">    </span></span><span class="text_1">while </span><span class="text_2">cap.isOpened():<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_3"># đọc khung hình biến đầu tiên là giá trị boolean retval trả về True khi có thể đọc được video<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_2">ret</span><span class="text_1">,</span><span class="text_2">frame=cap.read()<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_6">print</span><span class="text_2">(ret)<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_1">if </span><span class="text_2">ret:<br class="calibre4" /><span class="calibre5">            cv2.imshow(</span></span><span class="text_7">'Theo dõi chuyển động'</span><span class="text_1">,</span><span class="text_2">frame_dif(prev_frame</span><span class="text_1">,</span><span class="text_2">cur_frame</span><span class="text_1">,</span><span class="text_2">next_frame))<br class="calibre4" /><span class="calibre5">            </span></span><span class="text_3">#Cập nhật frame<br class="calibre4" /><span class="calibre5">            </span></span><span class="text_2">prev_frame=cur_frame<br class="calibre4" /><span class="calibre5">            cur_frame=next_frame</span></span><span class="text_2"><br class="calibre4" /><span class="calibre5">            next_frame=get_frame(cap</span></span><span class="text_1">,</span><span class="text_2">scaling_factor)<br class="calibre4" /><span class="calibre5">            </span></span><span class="text_3">#Tạo waitkey để break (27 = keycode escape)<br class="calibre4" /><span class="calibre5">            </span></span><span class="text_2">key=cv2.waitKey(</span><span class="text_8">100</span><span class="text_2">)<br class="calibre4" /><span class="calibre5">            </span></span><span class="text_1">if </span><span class="text_2">key==</span><span class="text_8">27</span><span class="text_2">:<br class="calibre4" /><span class="calibre5">                </span></span><span class="text_1">break<br class="calibre4" /><span class="calibre5">        else</span></span><span class="text_2">:<br class="calibre4" /><span class="calibre5">            </span></span><span class="text_1">break<br class="calibre4" /><span class="calibre5">    </span></span><span class="text_3"># khi hết vòng lặp cần phải đóng video và destroy window<br class="calibre4" /><span class="calibre5">    </span></span><span class="text_2">cap.release()<br class="calibre4" /><span class="calibre5">    cv2.destroyAllWindows()</span></span></p>
+	<p class="block_2">&nbsp;</p>
+	<p class="block_3">Nếu bạn làm đúng video sẽ hiện lên có dạng như sau:</p>
+	<p class="block_9"><img src="images/000006.png" alt="Image" class="calibre6" /></p>
+	<p class="block_2">&nbsp;</p>
+	<p class="block_2">&nbsp;</p>
+	<p class="block_7">Theo dõi vật thể dựa vào màu sắc</p>
+	<p class="block_3">Thông tin lấy được từ việc nhận diện khác biệt giữa các khung hình rất hữ dụng, nhưng chúng ta sẽ không thể xây dựng một bộ theo dõi với nó. Những thông tin này khác nhiễu và nó không thực sự theo dõi một vật thể hoàn toàn. Để xây dựng một bộ theo dõi vật thể chúng ta cần biết được nét đặc trưng của mỗi vật thể và sử dụng nó để theo dõi chính xác hơn. Một hình ảnh có thể có nhiều màu sắc khác nhau. Màu RGB là cơ bản nhất trong những màu không gian cơ bản, nhưng nó không giúp chúng ta nhiều trong việc theo dõi vật thể. Vì thế chúng ta sẽ sử dụng màu HSV. Nó là một mã màu không gian mô phỏng gần với mắt con người nhìn thấy nhất. Bạn có thể đọc thêm về màu HSV ở trang này : <a href="https://en.wikipedia.org/wiki/HSL_and_HSV" class="text_">https://en.wikipedia.org/wiki/HSL_and_HSV</a>. Chúng ta có thể chuyển đổi những khung hình lấy được từ màu RGB và chuyển nó thành HSV, sau đó sử dụng ngưỡng màu ( color thresholding ) để theo dõi bất cứ vật thể nào. Chúng ta cần chú ý sự phân phối màu sắc của vật thể để chúng ta có thể chọn ngưỡng (thresholding) thích hợp.</p>
+	<div class="frame_"><p class="block_10"><span class="text_1">import </span><span class="text_2">cv2<br class="calibre4" /></span><span class="text_1">import </span><span class="text_2">numpy </span><span class="text_1">as </span><span class="text_2">np<br class="calibre4" /><br class="calibre4" /></span><span class="text_3"># Lấy hàm get_frame từ code cũ<br class="calibre4" />#from frame_differencing import get_frame,movie_path<br class="calibre4" />#Tạo hàm để lấy khung hình<br class="calibre4" /></span><span class="text_1">def </span><span class="text_4">get_frame</span><span class="text_2">(cap:cv2.VideoCapture</span><span class="text_1">,</span><span class="text_2">scaling_factor):<br class="calibre4" /><span class="calibre5">    </span></span><span class="text_1">try</span><span class="text_2">:<br class="calibre4" /><span class="calibre5">        _</span></span><span class="text_1">, </span><span class="text_2">frame = cap.read()<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_3"># thu nhỏ khung hình<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_2">frame = cv2.resize(frame</span><span class="text_1">, None, </span><span class="text_5">fx</span><span class="text_2">=scaling_factor</span><span class="text_1">, </span><span class="text_5">fy</span><span class="text_2">=scaling_factor</span><span class="text_1">, </span><span class="text_5">interpolation</span><span class="text_2">=cv2.INTER_AREA)<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_1">return </span><span class="text_2">frame<br class="calibre4" /><span class="calibre5">    </span></span><span class="text_1">except</span><span class="text_2">:<br class="calibre4" /><span class="calibre5">        gray = </span></span><span class="text_1">None<br class="calibre4" /><span class="calibre5">    return </span></span><span class="text_2">gray<br class="calibre4" /></span><span class="text_3"># Tạo hàm main<br class="calibre4" /></span><span class="text_1">if </span><span class="text_2">__name__==</span><span class="text_7">"__main__"</span><span class="text_2">:<br class="calibre4" /><span class="calibre5">    </span></span><span class="text_3">#Lấy video từ file<br class="calibre4" /><span class="calibre5">    </span></span><span class="text_2">cap=cv2.VideoCapture(</span><span class="text_7">"../data/chap13/congai.mp4"</span><span class="text_2">)<br class="calibre4" /><span class="calibre5">    scaling_factor=</span></span><span class="text_8">0.5<br class="calibre4" /><span class="calibre5">    </span></span><span class="text_3"># Tạo vong lặp<br class="calibre4" /><span class="calibre5">    </span></span><span class="text_1">while </span><span class="text_2">cap.isOpened():<br class="calibre4" /><span class="calibre5">        frame=get_frame(cap</span></span><span class="text_1">,</span><span class="text_2">scaling_factor)<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_3">#Chuyển mã màu sử dụng hàm convert của openCV<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_2">hsv=cv2.cvtColor(frame</span><span class="text_1">,</span><span class="text_2">cv2.COLOR_BGR2HSV)<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_3"># Tạo màu gần dúng với màu da của da người<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_2">lower=np.array([</span><span class="text_8">0</span><span class="text_1">,</span><span class="text_8">70</span><span class="text_1">,</span><span class="text_8">60</span><span class="text_2">])<br class="calibre4" /><span class="calibre5">        upper=np.array([</span></span><span class="text_8">50</span><span class="text_1">,</span><span class="text_8">150</span><span class="text_1">,</span><span class="text_8">255</span><span class="text_2">])<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_3">#Tạo ngưỡng màu trong HSV để tạo lớp mask<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_2">mask=cv2.inRange(hsv</span><span class="text_1">,</span><span class="text_2">lower</span><span class="text_1">,</span><span class="text_2">upper)<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_3"># Tính toán sự khác nhau giữa 2 khung hình sử dụng mask và thuật toán bitwise_and cảu openCV<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_2">img_out=cv2.bitwise_and(frame</span><span class="text_1">,</span><span class="text_2">frame</span><span class="text_1">,</span><span class="text_5">mask</span><span class="text_2">=mask)<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_3"># sử dụng median blurring để làm đẹp hình<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_2">img_blurring=cv2.medianBlur(img_out</span><span class="text_1">,</span><span class="text_8">5</span><span class="text_2">)<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_3"># Hiển thị hình ảnh<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_2">cv2.imshow(</span><span class="text_7">"Input"</span><span class="text_1">,</span><span class="text_2">frame)<br class="calibre4" /><span class="calibre5">        cv2.imshow(</span></span><span class="text_7">"Output"</span><span class="text_1">,</span><span class="text_2">img_blurring)<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_3"># Tạo wait key để chờ<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_2">k=cv2.waitKey(</span><span class="text_8">10</span><span class="text_2">)<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_1">if </span><span class="text_2">k==</span><span class="text_8">27</span><span class="text_2">:<br class="calibre4" /><span class="calibre5">            </span></span><span class="text_1">break<br class="calibre4" /><span class="calibre5">    </span></span><span class="text_2">cap.release()<br class="calibre4" /><span class="calibre5">    cv2.destroyAllWindows()</span></span></p><p class="block_11"></p></div>
+	<p class="block_12">&nbsp;</p>
+	<p class="block_9"><img src="images/000008.png" alt="C:\Users\ntvfx\Desktop\captured_img.png" class="calibre7" /></p>
+	<p class="block_2">&nbsp;</p>
+	<p class="block_7">Theo dõi vật thể sử dụng tách nền (background subtraction)</p>
+	<p class="block_3">Tách nền là một kỹ thuật nhận diện hình nền trong một video và sau đó sử dụng nền đó để nhận dạng di chuyển của một vật thể. Kỹ thuật này sử dụng rất nhiều trong việc nén video cũng như kiểm soát nó. Thực iện việc này cũng được hiểu như dạng nhận dạng chuyển động trong một khung tĩnh. Thuật toán làm việc cơ bản là nhận diện nền (background), xây dựng một mô hình trên đó (build a model), và dựa vào đó để tách lấy vật thể tại khung hình hiện tại.</p>
+	<p class="block_3">Bước chính ở đây là xây dựng một mô hình của nền. Nó không giống như là phân biệt khung hình khác nhau bởi chúng ta không có những khung hình liên tiếp. Chúng ta thực sự xây dựng một hình nền và liên tục cập nhật nó, dùng một thuật toán thích hợp có thể điều chỉnh. Đây là lý do vì sao nó thực hiện tốt hơn nhiều so với phân biệt khung hình.</p>
+	<div class="frame_"><p class="block_10"><span class="text_1">import </span><span class="text_3">cv2<br class="calibre4" /></span><span class="text_1">import </span><span class="text_3">numpy </span><span class="text_1">as </span><span class="text_3">np<br class="calibre4" /><br class="calibre4" /></span><span class="text_9"># Lấy hàm getframe của phần trước<br class="calibre4" /></span><span class="text_1">from </span><span class="text_3">object_tracking_withcolor </span><span class="text_1">import </span><span class="text_3">get_frame<br class="calibre4" /><br class="calibre4" /></span><span class="text_9">#Tạo hàm main<br class="calibre4" /></span><span class="text_1">if </span><span class="text_3">__name__==</span><span class="text_7">"__main__"</span><span class="text_3">:<br class="calibre4" /><span class="calibre5">    cap=cv2.VideoCapture(</span></span><span class="text_7">"../data/chap13/congai.mp4"</span><span class="text_3">)<br class="calibre4" /><span class="calibre5">    </span></span><span class="text_9"># Tạo object background subtractor lấy từ OpenCV<br class="calibre4" /><span class="calibre5">    </span></span><span class="text_3">bg_sub=cv2.createBackgroundSubtractorMOG2()<br class="calibre4" /><span class="calibre5">    </span></span><span class="text_9"># Tạo một lịch sử hình ảnh để học<br class="calibre4" /><span class="calibre5">    </span></span><span class="text_3">history=</span><span class="text_8">100<br class="calibre4" /><span class="calibre5">    </span></span><span class="text_9"># Tạo một số của những khung hình trước để học, yếu tố này kiểm soát việc tần suất học của thuật toán.<br class="calibre4" /><span class="calibre5">    # Tần suất học là tần suất mà mô hình của bạn sẽ học về hình nền. Giá tị cao đồng nghĩa với việc tần suất học chậm</span></span><span class="text_9"><br class="calibre4" /><span class="calibre5">    # Bạn có thể thay đổi giá trị để xem sự khác biệt của việc tách nền.</span></span><span class="text_9"><br class="calibre4" /><span class="calibre5">    </span></span><span class="text_3">learning_rate=</span><span class="text_8">1.0</span><span class="text_3">/history<br class="calibre4" /><span class="calibre5">    </span></span><span class="text_9"># Tạo vòng lặp<br class="calibre4" /><span class="calibre5">    </span></span><span class="text_1">while </span><span class="text_3">cap.isOpened():<br class="calibre4" /><span class="calibre5">        frame=get_frame(cap</span></span><span class="text_1">,</span><span class="text_8">0.5</span><span class="text_3">)<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_9"># Tính toán mask sử dụng object tách nền đã định nghĩa ở trên<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_3">mask=bg_sub.apply(frame</span><span class="text_1">,</span><span class="text_5">learningRate</span><span class="text_3">=learning_rate)<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_9"># Mask ở đây là dạng màu xám chúng ta cần chuyển nó lại thành dạng RGB<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_3">mask=cv2.cvtColor(mask</span><span class="text_1">,</span><span class="text_3">cv2.COLOR_GRAY2BGR)<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_9"># Hiển thị kết quả<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_3">cv2.imshow(</span><span class="text_7">"Input"</span><span class="text_1">,</span><span class="text_3">frame)<br class="calibre4" /><span class="calibre5">        cv2.imshow(</span></span><span class="text_7">"Output"</span><span class="text_1">,</span><span class="text_3">mask&amp;frame)<br class="calibre4" /><span class="calibre5">        k=cv2.waitKey(</span></span><span class="text_8">10</span><span class="text_3">)<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_1">if </span><span class="text_3">k==</span><span class="text_8">27</span><span class="text_3">:<br class="calibre4" /><span class="calibre5">            </span></span><span class="text_1">break<br class="calibre4" /><span class="calibre5">    </span></span><span class="text_3">cap.release()<br class="calibre4" /><span class="calibre5">    cv2.destroyAllWindows()</span></span></p><p class="block_11"></p></div>
+	<p class="block_3"><img src="images/000002.png" alt="C:\Users\ntvfx\Desktop\captured_img.png" class="calibre8" /></p>
+	<p class="block_2">&nbsp;</p>
+	<p class="block_7">Xây dựng bộ nhận diện chuyển động sử dụng thuật toán CAMShift</p>
+	<p class="block_3">Theo dõi khoảng không gian màu giúp chúng ta có thể theo dõi những vật thể có màu, nhưng chúng ta phải định nghĩa theo dõi màu nào trước. Nó có vẻ có khá nhiều hạn chế. Giờ thì hãy xem làm cách nào chúng ta có thể chọn một vật thể trong một video và sau đó bộ theo dõi tự động sẽ theo dõi vật thể đó. Đây là lúc chúng ta sử dụng thuật toán CAMShift, nó có nghĩa là sự thay đổi trung bình liên tục (Continuously Adaptive Mean Shift). Về cơ bản đây là một dạng của thuật toán Mean Shift.</p>
+	<p class="block_3">Để hiểu về CAMShift chúng ta cần phải biết Mean Shift làm việc thế nào. Giả sử một vùng được đưa ra trong một khung hình , chúng ta chọn vùng này bởi vì nó chứa vật thể chúng ta muốn theo dõi. Vì chúng ta cần theo dõi vật thể này nên chúng ta phải vẽ một khung xung quanh nó ( cái này được gọi là "vùng chọn"-region interest). Chúng ta muốn bộ theo dõi vật thể của chúng ta theo dõi vật thể này di chuyển thế nào trong video của chúng ta. Để làm việc này, chúng ta chọn một bộ dữ liệu gồm nhiều điểm dựa trên biểu đồ màu (color histogram) của vùng đó và sau đó tính toán điểm trung tâm. Nếu vị trí của điểm trung tâm tại trọng tâm của vùng đó thì ta biết hiện tại nó không di chuyển. Nhưng nếu vị trí trung tâm đó không phải là trọng tâm của vùng chọn thì có nghĩa là nó đã di chuyển. Điều đó có nghĩa là chúng ta cần di chuyển khung theo điểm trung tâm, sao cho trọng tâm của khung cũng là trọng tâm của vùng chọn. Chúng ta tiếp tục làm điều này theo nhiều khung hình và theo dõi vật thể theo thời gian thực. Vì thế thuật toán này được gọi Mean Shift bởi vì số mean ( điểm trọng tâm) liên tục di chuyển và chúng ta theo dõi vật thể sử dụng nó.</p>
+	<p class="block_3">Giờ chúng ta hãy xem cách sử dụng CAMShift. Một vấn đề xảy ra với Mean Shiift là cỡ của vật thể không được thay đổi theo thời gian. Khi chúng ta vẽ một khung giới hạn nó sẽ giữ nguyên không thay đổi hình dạng dù ở gần hay xa camera, vì thế chúng ta cần phải sử dụng CAMShift bởi vì nó có thể đáp ứng việc thay đổi kích cỡ của khung giới hạn dựa trên kích cỡ của vật thể.</p>
+	<p class="block_3">Đọc thêm về meanshift CamShift tại trang chủ của openCV: <a href="https://docs.opencv.org/4.1.2/d7/d00/tutorial_meanshift.html" class="text_">https://docs.opencv.org/4.1.2/d7/d00/tutorial_meanshift.html</a></p>
+	<p class="block_2">&nbsp;</p>
+	<div class="frame_"><p class="block_10"><span class="text_1">import </span><span class="text_2">cv2<br class="calibre4" /></span><span class="text_1">import </span><span class="text_2">numpy </span><span class="text_1">as </span><span class="text_2">np<br class="calibre4" /><br class="calibre4" /></span><span class="text_3">#Tạo một class để quản lý tất cả các hàm sử dụng để theo dõi vật thể:<br class="calibre4" /></span><span class="text_1">class </span><span class="text_2">ObjectTracker(</span><span class="text_6">object</span><span class="text_2">):<br class="calibre4" /><span class="calibre5">    </span></span><span class="text_1">def </span><span class="text_10">__init__</span><span class="text_2">(</span><span class="text_11">self</span><span class="text_1">,</span><span class="text_2">scaling_factor=</span><span class="text_8">0.5</span><span class="text_2">):<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_3">#Tạo object cap để lấy video source<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_11">self</span><span class="text_2">.cap=cv2.VideoCapture(</span><span class="text_7">"../data/chap13/sample.mp4"</span><span class="text_2">)<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_11">self</span><span class="text_2">.startTrack=</span><span class="text_1">False<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_3"># Lấy khung hình hiện tại<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_2">_</span><span class="text_1">,</span><span class="text_11">self</span><span class="text_2">.frame=</span><span class="text_11">self</span><span class="text_2">.cap.read()<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_11">self</span><span class="text_2">.scaling_factor=scaling_factor<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_3"># Resize khung hình dựa trên scaling_factor<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_11">self</span><span class="text_2">.frame=cv2.resize(</span><span class="text_11">self</span><span class="text_2">.frame</span><span class="text_1">,None,</span><span class="text_5">fx</span><span class="text_2">=</span><span class="text_11">self</span><span class="text_2">.scaling_factor</span><span class="text_1">,</span><span class="text_5">fy</span><span class="text_2">=</span><span class="text_11">self</span><span class="text_2">.scaling_factor</span><span class="text_1">,</span><span class="text_5">interpolation</span><span class="text_2">=cv2.INTER_AREA)<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_3"># Tạo một cửa sổ để hiển thị khung hình<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_2">cv2.namedWindow(</span><span class="text_7">"Object Tracker"</span><span class="text_2">)<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_3"># Tạo hàm callback để lẩy dữ liệu hoạt động của mouse<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_2">cv2.setMouseCallback(</span><span class="text_7">"Object Tracker"</span><span class="text_1">,</span><span class="text_11">self</span><span class="text_2">.mouse_event)<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_3"># Tạo các biến cho class để theo dõi select của mouse<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_11">self</span><span class="text_2">.selection=</span><span class="text_1">None<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_11">self</span><span class="text_2">.drag_start=</span><span class="text_1">None<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_11">self</span><span class="text_2">.tracking_state=</span><span class="text_8">0<br class="calibre4" /><br class="calibre4" /><br class="calibre4" /><br class="calibre4" /><span class="calibre5">    </span></span><span class="text_3">#Tạo hàm lấy event của mouse<br class="calibre4" /><span class="calibre5">    </span></span><span class="text_1">def </span><span class="text_4">mouse_event</span><span class="text_2">(</span><span class="text_11">self</span><span class="text_1">,</span><span class="text_2">event</span><span class="text_1">,</span><span class="text_2">x</span><span class="text_1">,</span><span class="text_2">y</span><span class="text_1">,</span><span class="text_2">flags</span><span class="text_1">,</span><span class="text_3">param</span><span class="text_2">):<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_3"># Chuyển đổi giá trị tọa độ x,y của mouse thành dạng 16 bit<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_2">x</span><span class="text_1">,</span><span class="text_2">y=np.int16([x</span><span class="text_1">,</span><span class="text_2">y])<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_3"># khi chúng ta bấm chuột có nghĩa là bắt đầu lựa chọn khung để chọn vật thể<br class="calibre4" /><span class="calibre5">        #if event==cv2.EVENT_LBUTTONUP:</span></span><span class="text_3"><br class="calibre4" /><br class="calibre4" /><span class="calibre5">        </span></span><span class="text_1">if </span><span class="text_2">event==cv2.EVENT_LBUTTONDOWN:<br class="calibre4" /><span class="calibre5">            </span></span><span class="text_11">self</span><span class="text_2">.drag_start=(x</span><span class="text_1">,</span><span class="text_2">y)<br class="calibre4" /><span class="calibre5">            </span></span><span class="text_11">self</span><span class="text_2">.tracking_state=</span><span class="text_8">0<br class="calibre4" /><br class="calibre4" /><span class="calibre5">        </span></span><span class="text_1">if </span><span class="text_11">self</span><span class="text_2">.drag_start:<br class="calibre4" /><span class="calibre5">            </span></span><span class="text_1">if </span><span class="text_2">flags&amp;cv2.EVENT_FLAG_LBUTTON:<br class="calibre4" /><span class="calibre5">                </span></span><span class="text_3">#Lấy chiều dài,rộng của khung hình hiện tại<br class="calibre4" /><span class="calibre5">                </span></span><span class="text_2">h</span><span class="text_1">,</span><span class="text_2">w=</span><span class="text_11">self</span><span class="text_2">.frame.shape[:</span><span class="text_8">2</span><span class="text_2">]<br class="calibre4" /><span class="calibre5">                </span></span><span class="text_3"># Tính điểm tọa độ X,Y của khung hình<br class="calibre4" /><span class="calibre5">                </span></span><span class="text_2">xi</span><span class="text_1">,</span><span class="text_2">yi=</span><span class="text_11">self</span><span class="text_2">.drag_start<br class="calibre4" /><span class="calibre5">                </span></span><span class="text_3"># Tính toán vị trí nhỏ nhất và lớn nhất của vị trí kéo chuột dựa trên trục tọa độ để tính vùng chọn<br class="calibre4" /><span class="calibre5">                </span></span><span class="text_2">x0</span><span class="text_1">,</span><span class="text_2">y0=np.maximum(</span><span class="text_8">0</span><span class="text_1">,</span><span class="text_2">np.minimum([xi</span><span class="text_1">,</span><span class="text_2">yi]</span><span class="text_1">,</span><span class="text_2">[x</span><span class="text_1">,</span><span class="text_2">y]))<br class="calibre4" /><span class="calibre5">                x1</span></span><span class="text_1">,</span><span class="text_2">y1=np.minimum([w</span><span class="text_1">,</span><span class="text_2">h]</span><span class="text_1">,</span><span class="text_2">np.maximum([xi</span><span class="text_1">,</span><span class="text_2">yi]</span><span class="text_1">,</span><span class="text_2">[x</span><span class="text_1">,</span><span class="text_2">y]))<br class="calibre4" /><span class="calibre5">                </span></span><span class="text_11">self</span><span class="text_2">.selection=</span><span class="text_1">None<br class="calibre4" /><span class="calibre5">                if </span></span><span class="text_2">x1-x0&gt;</span><span class="text_8">0 </span><span class="text_1">and </span><span class="text_2">y1-y0&gt;</span><span class="text_8">0</span><span class="text_2">:<br class="calibre4" /><span class="calibre5">                    </span></span><span class="text_11">self</span><span class="text_2">.selection=(x0</span><span class="text_1">,</span><span class="text_2">y0</span><span class="text_1">,</span><span class="text_2">x1</span><span class="text_1">,</span><span class="text_2">y1)<br class="calibre4" /><span class="calibre5">                </span></span><span class="text_3"># Sao khi hoàn tất tính toán vị trí của vùng chọn thì đặt flag và chúng ta bắt đầu theo dõi vật thể dựa theo vùng chọn<br class="calibre4" /><span class="calibre5">            </span></span><span class="text_1">else</span><span class="text_2">:<br class="calibre4" /><span class="calibre5">                </span></span><span class="text_11">self</span><span class="text_2">.drag_start=</span><span class="text_1">None<br class="calibre4" /><span class="calibre5">                if </span></span><span class="text_11">self</span><span class="text_2">.selection </span><span class="text_1">is not None</span><span class="text_2">:<br class="calibre4" /><span class="calibre5">                    </span></span><span class="text_11">self</span><span class="text_2">.tracking_state=</span><span class="text_8">1<br class="calibre4" /><span class="calibre5">    </span></span><span class="text_3"># Tạo hàm theo dõi vật thể:<br class="calibre4" /><span class="calibre5">    </span></span><span class="text_1">def </span><span class="text_4">start_tracking</span><span class="text_2">(</span><span class="text_11">self</span><span class="text_2">):<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_1">while True</span><span class="text_2">:<br class="calibre4" /><span class="calibre5">            _</span></span><span class="text_1">,</span><span class="text_11">self</span><span class="text_2">.frame=</span><span class="text_11">self</span><span class="text_2">.cap.read()<br class="calibre4" /><span class="calibre5">            </span></span><span class="text_11">self</span><span class="text_2">.frame=cv2.resize(</span><span class="text_11">self</span><span class="text_2">.frame</span><span class="text_1">,None,</span><span class="text_5">fx</span><span class="text_2">=</span><span class="text_11">self</span><span class="text_2">.scaling_factor</span><span class="text_1">,</span><span class="text_5">fy</span><span class="text_2">=</span><span class="text_11">self</span><span class="text_2">.scaling_factor</span><span class="text_1">,</span><span class="text_5">interpolation</span><span class="text_2">=cv2.INTER_AREA)<br class="calibre4" /><span class="calibre5">            </span></span><span class="text_3"># Tạo một bản sao cho khung hình hiện tại chúng ta sẽ sử dụng nó sau<br class="calibre4" /><span class="calibre5">            </span></span><span class="text_2">vis=</span><span class="text_11">self</span><span class="text_2">.frame.copy()<br class="calibre4" /><span class="calibre5">            </span></span><span class="text_3"># Chuyển đổi màu từ RGB thành HSV<br class="calibre4" /><span class="calibre5">            </span></span><span class="text_2">hsv=cv2.cvtColor(</span><span class="text_11">self</span><span class="text_2">.frame</span><span class="text_1">,</span><span class="text_2">cv2.COLOR_BGR2HSV)<br class="calibre4" /><span class="calibre5">            </span></span><span class="text_3"># Tạo mask dựa trên ngưỡng màu xác định trước<br class="calibre4" /><span class="calibre5">            </span></span><span class="text_2">lower=np.array((</span><span class="text_8">0.</span><span class="text_1">,</span><span class="text_8">0.</span><span class="text_1">,</span><span class="text_8">0.</span><span class="text_2">))<br class="calibre4" /><span class="calibre5">            upper=np.array((</span></span><span class="text_8">255.</span><span class="text_1">,</span><span class="text_8">255.</span><span class="text_1">,</span><span class="text_8">255.</span><span class="text_2">))<br class="calibre4" /><span class="calibre5">            mask=cv2.inRange(hsv</span></span><span class="text_1">,</span><span class="text_5">lowerb</span><span class="text_2">=lower</span><span class="text_1">,</span><span class="text_5">upperb</span><span class="text_2">=upper)<br class="calibre4" /><span class="calibre5">            </span></span><span class="text_3">#Kiểm tra xem người dùng đã chọn vùng chọn chưa : ?<br class="calibre4" /><br class="calibre4" /><span class="calibre5">            </span></span><span class="text_1">if </span><span class="text_11">self</span><span class="text_2">.selection:<br class="calibre4" /><span class="calibre5">                x0</span></span><span class="text_1">,</span><span class="text_2">y0</span><span class="text_1">,</span><span class="text_2">x1</span><span class="text_1">,</span><span class="text_2">y1=</span><span class="text_11">self</span><span class="text_2">.selection<br class="calibre4" /><span class="calibre5">                </span></span><span class="text_3"># tạo vùng chọn<br class="calibre4" /><br class="calibre4" /><span class="calibre5">                </span></span><span class="text_11">self</span><span class="text_2">.track_window=(x0</span><span class="text_1">,</span><span class="text_2">y0</span><span class="text_1">,</span><span class="text_2">x1-x0</span><span class="text_1">,</span><span class="text_2">y1-y0)<br class="calibre4" /><span class="calibre5">                </span></span><span class="text_3"># Tạo vùng chọn từ hình HSV như là một mask. Tính toán biểu đồ màu dựa trên vùng đó<br class="calibre4" /><span class="calibre5">                </span></span><span class="text_2">hsv_roi=hsv[y0:y1</span><span class="text_1">,</span><span class="text_2">x0:x1]<br class="calibre4" /><span class="calibre5">                mask_roi=mask[y0:y1</span></span><span class="text_1">,</span><span class="text_2">x0:x1]<br class="calibre4" /><span class="calibre5">                histogram=cv2.calcHist([hsv_roi]</span></span><span class="text_1">,</span><span class="text_2">[</span><span class="text_8">0</span><span class="text_2">]</span><span class="text_1">,</span><span class="text_2">mask_roi</span><span class="text_1">,</span><span class="text_2">[</span><span class="text_8">16</span><span class="text_2">]</span><span class="text_1">,</span><span class="text_2">[</span><span class="text_8">0</span><span class="text_1">,</span><span class="text_8">180</span><span class="text_2">])<br class="calibre4" /><span class="calibre5">                cv2.normalize(histogram</span></span><span class="text_1">,</span><span class="text_2">histogram</span><span class="text_1">,</span><span class="text_8">0</span><span class="text_1">,</span><span class="text_8">255</span><span class="text_1">,</span><span class="text_2">cv2.NORM_MINMAX)<br class="calibre4" /><span class="calibre5">                </span></span><span class="text_11">self</span><span class="text_2">.hist=histogram.reshape(-</span><span class="text_8">1</span><span class="text_2">)<br class="calibre4" /><span class="calibre5">                vis_roi=vis[y0:y1</span></span><span class="text_1">,</span><span class="text_2">x0:x1]<br class="calibre4" /><span class="calibre5">                </span></span><span class="text_3"># Tính toán sử dụng bitwise_not của vùng chọn<br class="calibre4" /><span class="calibre5">                </span></span><span class="text_2">cv2.bitwise_not(vis_roi</span><span class="text_1">,</span><span class="text_2">vis_roi)<br class="calibre4" /><span class="calibre5">                vis[mask==</span></span><span class="text_8">0</span><span class="text_2">]=</span><span class="text_8">0<br class="calibre4" /><span class="calibre5">            </span></span><span class="text_1">if </span><span class="text_11">self</span><span class="text_2">.tracking_state==</span><span class="text_8">1</span><span class="text_2">:<br class="calibre4" /><span class="calibre5">                </span></span><span class="text_11">self</span><span class="text_2">.selection=</span><span class="text_1">None<br class="calibre4" /><span class="calibre5">                </span></span><span class="text_2">hsv_backproj=cv2.calcBackProject([hsv]</span><span class="text_1">,</span><span class="text_2">[</span><span class="text_8">0</span><span class="text_2">]</span><span class="text_1">,</span><span class="text_11">self</span><span class="text_2">.hist</span><span class="text_1">,</span><span class="text_2">[</span><span class="text_8">0</span><span class="text_1">,</span><span class="text_8">180</span><span class="text_2">]</span><span class="text_1">,</span><span class="text_8">1</span><span class="text_2">)<br class="calibre4" /><span class="calibre5">                hsv_backproj&amp;=mask</span></span><span class="text_2"><br class="calibre4" /><span class="calibre5">                </span></span><span class="text_3"># Chấm dứt theo dõi<br class="calibre4" /><span class="calibre5">                </span></span><span class="text_2">term_crit=(cv2.TERM_CRITERIA_EPS|cv2.TermCriteria_COUNT</span><span class="text_1">,</span><span class="text_8">10</span><span class="text_1">,</span><span class="text_8">1</span><span class="text_2">)<br class="calibre4" /><span class="calibre5">                </span></span><span class="text_3">#Áp dụng thuật toán CamShift<br class="calibre4" /><span class="calibre5">                </span></span><span class="text_2">track_box</span><span class="text_1">,</span><span class="text_11">self</span><span class="text_2">.track_window=cv2.CamShift(hsv_backproj</span><span class="text_1">,</span><span class="text_11">self</span><span class="text_2">.track_window</span><span class="text_1">,</span><span class="text_2">term_crit)<br class="calibre4" /><span class="calibre5">                </span></span><span class="text_3"># Vẽ hình ellip xung quanh vật theo dõi và hiển thị nó lên một cửa số<br class="calibre4" /><span class="calibre5">                </span></span><span class="text_2">cv2.ellipse(vis</span><span class="text_1">,</span><span class="text_2">track_box</span><span class="text_1">,</span><span class="text_2">(</span><span class="text_8">0</span><span class="text_1">,</span><span class="text_8">255</span><span class="text_1">,</span><span class="text_8">0</span><span class="text_2">)</span><span class="text_1">,</span><span class="text_5">thickness</span><span class="text_2">=</span><span class="text_8">2</span><span class="text_2">)<br class="calibre4" /><span class="calibre5">            cv2.imshow(</span></span><span class="text_7">"Object Tracker"</span><span class="text_1">,</span><span class="text_2">vis)<br class="calibre4" /><span class="calibre5">            </span></span><span class="text_3"># Tạo escape<br class="calibre4" /><span class="calibre5">            </span></span><span class="text_2">k=cv2.waitKey(</span><span class="text_8">30</span><span class="text_2">)<br class="calibre4" /><span class="calibre5">            </span></span><span class="text_1">if </span><span class="text_2">k==</span><span class="text_8">27</span><span class="text_2">:<br class="calibre4" /><span class="calibre5">                </span></span><span class="text_1">break<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_11">self</span><span class="text_2">.cap.release()<br class="calibre4" /><span class="calibre5">        cv2.destroyAllWindows()</span></span><span class="text_2"><br class="calibre4" /><br class="calibre4" /></span><span class="text_3"># Tạo hàm main để chạy<br class="calibre4" /></span><span class="text_1">if </span><span class="text_2">__name__==</span><span class="text_7">"__main__"</span><span class="text_2">:<br class="calibre4" /><span class="calibre5">    ob=ObjectTracker(</span></span><span class="text_8">1</span><span class="text_2">)<br class="calibre4" /><span class="calibre5">    ob.start_tracking()</span></span></p><p class="block_11"></p></div>
+	<p class="block_2">&nbsp;</p>
+	<p class="block_3">Hình bên trái phía dưới là hình khi ta chọn màu sẽ được chuyển đổi thành màu âm bản. Hình bên phải là khi detect object :D. Nói chung là detect theo màu của object khá là không chính xác. Muốn detect object một cách chính xác thì còn phải thêm nhiều thứ chứ không chỉ đơn giản làm theo cách trên .</p>
+	<p class="block_3"><img src="images/000009.png" alt="Image" class="calibre9" /><img src="images/000001.png" alt="Image" class="calibre9" /></p>
+	<p class="block_2">&nbsp;</p>
+	<p class="block_7">Theo dõi vật thể với Optical Flow</p>
+	<p class="block_3"><b class="calibre3">Optical flow:</b> Dự đoán chuyển động hình ảnh ở mỗi pixel từ các biến đổi độ sáng của hình ảnh theo thời gian.( Vì nó dài dòng cũng ko biết dịch sang tiếng Đông Lào thế nào nên để TA luôn)</p>
+	<p class="block_3">Optical flow là một kỹ thuật rất hữu dụng được sử sụng nhiều trong Computer vision. Nó dùng những thay đổi điểm ảnh để theo dõi vật thể. Những điểm ảnh đặc trưng riêng được theo dõi liên tục qua những khung hình video. Khi chúng ta tìm ra một bộ điểm vector trong một khung hình, chúng ta sẽ tính toán sự thay đổi của những vector đó và theo dõi nó. Chúng ta sẽ biểu diễn di chuyển của những điểm vector đó thông qua các khung hình. Những vector đó được hiểu là những vector chuyển động. Có rất nhiều cách để biểu diễn được optical fllow, nhưng cách của <b class="calibre3">Lucas-Kanade</b> có lẽ là một trong những thứ thông dụng nhất. Các bạn có thẻ đọc thêm về nó ở đây: <a href="http://cseweb.ucsd.edu/classes/sp02/cse252/lucaskanade81.pdf" class="text_">http://cseweb.ucsd.edu/classes/sp02/cse252/lucaskanade81.pdf</a></p>
+	<p class="block_3">Bước đầu tiên là lựa chọn những điểm vector tính năng từ khung hình hiện tại. Với mỗi điểm đặc trưng được lựa chọn là một bộ điểm 3x3 (tính theo pixel) được tao ra với điểm đặc trưng được đặt ở trung tâm. Chúng ta giả sử rằng tất cả các điểm trong mỗi bộ điểm 3x3 có sự di chuyển giống nhau. Kích thước của window có thể thay đổi dựa theo biến đổi khung hình.</p>
+	<p class="block_3">Trong mỗi bộ điểm, chúng ta sẽ tìm điểm giống nhau trong khung hình trước. Chúng ta sẽ chọn những điểm giống nhau nhất dựa trên một bộ số liệu. Diện tích tìm kiếm lớn hơn 3x3 bởi vì chúng ta tìm kiếm một loạt các bộ điểm 3x3 khác nhau để có được một bộ điểm gần nhất với bộ điểm hiện tại. Một khi chúng ta đạt được điều này đường dẫn từ điểm trung tâm của bộ điểm hiện tại và điểm trung tâm bộ điểm được tìm thấy sẽ trở thành vector chuyển động. Chúng ta làm điều tương tự để tính toán các vector chuyển động cho tất cả các bộ điểm khác.</p>
+	<div class="frame_"><p class="block_10"><span class="text_3"> </span><span class="text_1">import </span><span class="text_2">cv2<br class="calibre4" /></span><span class="text_1">import </span><span class="text_2">numpy </span><span class="text_1">as </span><span class="text_2">np<br class="calibre4" /><br class="calibre4" /></span><span class="text_3"># Tạo một hàm bắt đầu để theo dõi vật thể sự dụng optical flow.<br class="calibre4" /></span><span class="text_1">def </span><span class="text_4">start_tracking</span><span class="text_2">():<br class="calibre4" /><span class="calibre5">    cap=cv2.VideoCapture(</span></span><span class="text_7">"../data/chap13/sample.mp4"</span><span class="text_2">)<br class="calibre4" /><span class="calibre5">    scaling_factor=</span></span><span class="text_8">0.5<br class="calibre4" /><span class="calibre5">    </span></span><span class="text_3">#Tạo số frame sẽ theo dõi và số frames bỏ qua<br class="calibre4" /><span class="calibre5">    </span></span><span class="text_2">num_frames_to_track=</span><span class="text_8">5<br class="calibre4" /><span class="calibre5">    </span></span><span class="text_2">num_frames_jump=</span><span class="text_8">2<br class="calibre4" /><span class="calibre5">    </span></span><span class="text_3"># Tạo biến đường theo dõi và frame index:<br class="calibre4" /><span class="calibre5">    </span></span><span class="text_2">tracking_paths=[]<br class="calibre4" /><span class="calibre5">    frame_index=</span></span><span class="text_8">0<br class="calibre4" /><span class="calibre5">    </span></span><span class="text_3">#tạo các tham số dùng để theo dõi sử dụng thuật toán calcOpticalFlowPyrLK của openCV<br class="calibre4" /><span class="calibre5">    #* window size: kích cỡ ô theo dõi</span></span><span class="text_3"><br class="calibre4" /><span class="calibre5">    #* maxLevel</span></span><span class="text_3"><br class="calibre4" /><span class="calibre5">    #* (temrmination criteria)</span></span><span class="text_3"><br class="calibre4" /><span class="calibre5">    </span></span><span class="text_2">tracking_params=</span><span class="text_6">dict</span><span class="text_2">(</span><span class="text_5">winSize</span><span class="text_2">=(</span><span class="text_8">6</span><span class="text_1">,</span><span class="text_8">6</span><span class="text_2">)</span><span class="text_1">,</span><span class="text_5">maxLevel</span><span class="text_2">=</span><span class="text_8">5</span><span class="text_1">,</span><span class="text_5">criteria</span><span class="text_2">=(cv2.TERM_CRITERIA_EPS|cv2.TERM_CRITERIA_COUNT</span><span class="text_1">,</span><span class="text_8">10</span><span class="text_1">,</span><span class="text_8">0.03</span><span class="text_2">))<br class="calibre4" /><span class="calibre5">    </span></span><span class="text_3"># Tạo vòng Lặp<br class="calibre4" /><span class="calibre5">    </span></span><span class="text_1">while True</span><span class="text_2">:<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_3"># Lấy khung hình<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_2">_</span><span class="text_1">,</span><span class="text_2">frame=cap.read()<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_3"># Resize<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_2">frame=cv2.resize(frame</span><span class="text_1">,None,</span><span class="text_5">fx</span><span class="text_2">=scaling_factor</span><span class="text_1">,</span><span class="text_5">fy</span><span class="text_2">=scaling_factor</span><span class="text_1">,</span><span class="text_5">interpolation</span><span class="text_2">=cv2.INTER_AREA)<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_3"># đổi màu<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_2">frame_gray=cv2.cvtColor(frame</span><span class="text_1">,</span><span class="text_2">cv2.COLOR_BGR2GRAY)<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_3">#Tạo một copy của khung hình<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_2">output_img=frame.copy()<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_3"># Kiểm tra xem độ dài của path đã tạo có lớn hơn 0 thì lấy hình ảnh<br class="calibre4" /><br class="calibre4" /><span class="calibre5">        </span></span><span class="text_1">if </span><span class="text_6">len</span><span class="text_2">(tracking_paths)&gt;</span><span class="text_8">0</span><span class="text_2">:<br class="calibre4" /><span class="calibre5">            prev_img</span></span><span class="text_1">,</span><span class="text_2">current_img=prev_gray</span><span class="text_1">,</span><span class="text_2">frame_gray<br class="calibre4" /><span class="calibre5">            </span></span><span class="text_3"># Tạo các điểm đặc trưng:<br class="calibre4" /><span class="calibre5">            </span></span><span class="text_2">feature_points_0=np.float32([tp[-</span><span class="text_8">1</span><span class="text_2">] </span><span class="text_1">for </span><span class="text_2">tp </span><span class="text_1">in </span><span class="text_2">tracking_paths]).reshape(-</span><span class="text_8">1</span><span class="text_1">,</span><span class="text_8">1</span><span class="text_1">,</span><span class="text_8">2</span><span class="text_2">)<br class="calibre4" /><span class="calibre5">            </span></span><span class="text_3"># Tính optical flow dựa trên những khung hình trước và khung hình hiện tại sử dụng các điểm đặc trưng và các tham số đã tạo<br class="calibre4" /><span class="calibre5">            </span></span><span class="text_2">feature_points_1</span><span class="text_1">,</span><span class="text_2">_</span><span class="text_1">,</span><span class="text_2">_=cv2.calcOpticalFlowPyrLK(prev_img</span><span class="text_1">,</span><span class="text_2">current_img</span><span class="text_1">,</span><span class="text_2">feature_points_0</span><span class="text_1">,None,</span><span class="text_2">**tracking_params)<br class="calibre4" /><span class="calibre5">            </span></span><span class="text_3"># Tạo một hàm tính ngược optical flow<br class="calibre4" /><span class="calibre5">            </span></span><span class="text_2">feature_points_0_rev</span><span class="text_1">,</span><span class="text_2">_</span><span class="text_1">,</span><span class="text_2">_=cv2.calcOpticalFlowPyrLK(current_img</span><span class="text_1">,</span><span class="text_2">prev_img</span><span class="text_1">,</span><span class="text_2">feature_points_1</span><span class="text_1">,None,</span><span class="text_2">**tracking_params)<br class="calibre4" /><span class="calibre5">            </span></span><span class="text_3"># Tính toán điểm khác nhau giữa 2 phép tính optical flow lấy số dương<br class="calibre4" /><span class="calibre5">            </span></span><span class="text_2">diff_feature_points=</span><span class="text_6">abs</span><span class="text_2">(feature_points_1-feature_points_0_rev).reshape(-</span><span class="text_8">1</span><span class="text_1">,</span><span class="text_8">2</span><span class="text_2">).max(-</span><span class="text_8">1</span><span class="text_2">)<br class="calibre4" /><span class="calibre5">            </span></span><span class="text_3"># Lấy những điểm có giá trị tốt<br class="calibre4" /><span class="calibre5">            </span></span><span class="text_2">good_points=diff_feature_points&lt;</span><span class="text_8">1<br class="calibre4" /><span class="calibre5">            </span></span><span class="text_3">#Tạo tracking path mới<br class="calibre4" /><span class="calibre5">            </span></span><span class="text_2">new_tracking_paths=[]<br class="calibre4" /><span class="calibre5">            </span></span><span class="text_3"># Lặp mảng good_points để vẽ hình lên đó<br class="calibre4" /><span class="calibre5">            </span></span><span class="text_1">for </span><span class="text_2">tp</span><span class="text_1">,</span><span class="text_2">(x</span><span class="text_1">,</span><span class="text_2">y)</span><span class="text_1">,</span><span class="text_2">good_points_flag </span><span class="text_1">in </span><span class="text_6">zip</span><span class="text_2">(tracking_paths</span><span class="text_1">,</span><span class="text_2">feature_points_1.reshape(-</span><span class="text_8">1</span><span class="text_1">,</span><span class="text_8">2</span><span class="text_2">)</span><span class="text_1">,</span><span class="text_2">good_points):<br class="calibre4" /><span class="calibre5">                </span></span><span class="text_1">if not </span><span class="text_2">good_points_flag:<br class="calibre4" /><span class="calibre5">                    </span></span><span class="text_1">continue<br class="calibre4" /><span class="calibre5">                </span></span><span class="text_2">tp.append((x</span><span class="text_1">,</span><span class="text_2">y))<br class="calibre4" /><span class="calibre5">                </span></span><span class="text_1">if </span><span class="text_6">len</span><span class="text_2">(tp)&gt;num_frames_to_track:<br class="calibre4" /><span class="calibre5">                    </span></span><span class="text_1">del </span><span class="text_2">tp[</span><span class="text_8">0</span><span class="text_2">]<br class="calibre4" /><span class="calibre5">                new_tracking_paths.append(tp)</span></span><span class="text_2"><br class="calibre4" /><span class="calibre5">                </span></span><span class="text_3"># Vẽ hình<br class="calibre4" /><span class="calibre5">                </span></span><span class="text_2">cv2.circle(output_img</span><span class="text_1">,</span><span class="text_2">(x</span><span class="text_1">,</span><span class="text_2">y)</span><span class="text_1">,</span><span class="text_8">1</span><span class="text_1">,</span><span class="text_2">(</span><span class="text_8">0</span><span class="text_1">,</span><span class="text_8">255</span><span class="text_1">,</span><span class="text_8">0</span><span class="text_2">)</span><span class="text_1">,</span><span class="text_2">-</span><span class="text_8">1</span><span class="text_2">)<br class="calibre4" /><span class="calibre5">                </span></span><span class="text_3"># cập nhật tracking path<br class="calibre4" /><span class="calibre5">            </span></span><span class="text_2">tracking_paths=new_tracking_paths<br class="calibre4" /><span class="calibre5">            </span></span><span class="text_3"># Vẽ đường thằng nối các điểm<br class="calibre4" /><span class="calibre5">            </span></span><span class="text_2">cv2.polylines(output_img</span><span class="text_1">,</span><span class="text_2">[np.int32(tp) </span><span class="text_1">for </span><span class="text_2">tp </span><span class="text_1">in </span><span class="text_2">tracking_paths]</span><span class="text_1">,False,</span><span class="text_2">(</span><span class="text_8">0</span><span class="text_1">,</span><span class="text_8">150</span><span class="text_1">,</span><span class="text_8">0</span><span class="text_2">))<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_1">if not </span><span class="text_2">frame_index%num_frames_jump:<br class="calibre4" /><span class="calibre5">            </span></span><span class="text_3"># Tạo mask và vẽ vòng tròn<br class="calibre4" /><span class="calibre5">            </span></span><span class="text_2">mask=np.zeros_like(frame_gray)<br class="calibre4" /><span class="calibre5">            mask[:]=</span></span><span class="text_8">255<br class="calibre4" /><span class="calibre5">            </span></span><span class="text_1">for </span><span class="text_2">x</span><span class="text_1">,</span><span class="text_2">y </span><span class="text_1">in</span><span class="text_2">[np.int32(tp[-</span><span class="text_8">1</span><span class="text_2">]) </span><span class="text_1">for </span><span class="text_2">tp </span><span class="text_1">in </span><span class="text_2">tracking_paths]:<br class="calibre4" /><span class="calibre5">                cv2.circle(mask</span></span><span class="text_1">,</span><span class="text_2">(x</span><span class="text_1">,</span><span class="text_2">y)</span><span class="text_1">,</span><span class="text_8">6</span><span class="text_1">,</span><span class="text_8">0</span><span class="text_1">,</span><span class="text_2">-</span><span class="text_8">1</span><span class="text_2">)<br class="calibre4" /><span class="calibre5">                </span></span><span class="text_3"># Sử dụng hàm có sẵn của openCV đỉ tính các điểm đặc trưng<br class="calibre4" /><span class="calibre5">            </span></span><span class="text_2">feature_points=cv2.goodFeaturesToTrack(frame_gray</span><span class="text_1">,</span><span class="text_5">mask</span><span class="text_2">=mask</span><span class="text_1">,</span><span class="text_5">maxCorners</span><span class="text_2">=</span><span class="text_8">100</span><span class="text_1">,</span><span class="text_5">qualityLevel</span><span class="text_2">=</span><span class="text_8">0.3</span><span class="text_1">,</span><span class="text_5">minDistance</span><span class="text_2">=</span><span class="text_8">5</span><span class="text_1">,</span><span class="text_5">blockSize</span><span class="text_2">=</span><span class="text_8">3</span><span class="text_2">)<br class="calibre4" /><br class="calibre4" /><span class="calibre5">            </span></span><span class="text_3"># Nếu có những điểm đặc trưng giá trị tốt thì thêm nó vào tracking path<br class="calibre4" /><span class="calibre5">            </span></span><span class="text_1">if </span><span class="text_2">feature_points </span><span class="text_1">is not None</span><span class="text_2">:<br class="calibre4" /><span class="calibre5">                </span></span><span class="text_1">for </span><span class="text_2">m</span><span class="text_1">,</span><span class="text_2">n </span><span class="text_1">in </span><span class="text_2">np.float32(feature_points).reshape(-</span><span class="text_8">1</span><span class="text_1">,</span><span class="text_8">2</span><span class="text_2">):<br class="calibre4" /><span class="calibre5">                    tracking_paths.append([(m</span></span><span class="text_1">,</span><span class="text_2">n)])<br class="calibre4" /><span class="calibre5">        frame_index+=</span></span><span class="text_8">1<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_2">prev_gray=frame_gray<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_3"># Hiển thị hình ảnh<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_2">cv2.imshow(</span><span class="text_7">"Optical Flow"</span><span class="text_1">, </span><span class="text_2">output_img)<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_3"># Tạo waitKey<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_2">k=cv2.waitKey(</span><span class="text_8">1</span><span class="text_2">)<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_1">if </span><span class="text_2">k==</span><span class="text_8">27</span><span class="text_2">:<br class="calibre4" /><span class="calibre5">            </span></span><span class="text_1">break<br class="calibre4" /><br class="calibre4" />if </span><span class="text_2">__name__ == </span><span class="text_7">'__main__'</span><span class="text_2">:<br class="calibre4" /><span class="calibre5">    start_tracking()</span></span><span class="text_2"><br class="calibre4" /><span class="calibre5">    cv2.destroyAllWindows()</span></span><span class="text_2"><br class="calibre4" />&nbsp;</span></p><p class="block_11"></p></div>
+	<p class="block_2">&nbsp;</p>
+	<p class="block_9"><img src="images/000007.png" alt="Image" class="calibre10" /><img src="images/000003.png" alt="Image" class="calibre10" /></p>
+	<p class="block_2">&nbsp;</p>
+	<p class="block_7">Phát hiện và theo dõi khuôn mặt</p>
+	<p class="block_3">Phát hiện khuôn mặt là phát hiện vị trí của một khuôn mặt trong một khung hình. Nó thường gây nhầm lẫn với nhận diện gương mặt &ndash; đây là quá trình xử lý để nhận diện khuôn mặt đó thuộc về người nào. Một hệ thống sinh trắc học (biometric system) thường sử dụng cả nhận diện khuôn mặt và nhận dạng khuôn mặt để thực hiện nhiệm vụ. Nó sử dụng phát hiện khuôn mặt để tìm vị trí của khuôn mặt và sau đó dùng nhận dạng khuôn mặt để nhận dạng người đó là ai. Trong phần này chúng ta sẽ học cách tự động phát hiện vị trí của khuôn mặt trong một đoạn video và theo dõi khuôn mặt đó.</p>
+	<p class="block_7">Sử dụng Haar cascades để nhận dạng vật thể</p>
+	<p class="block_3">Chúng ta sẽ sử dụng Haar cascades để phát hiện khuôn mặt trong một video. Haar cascades có nghĩa là một bộ  tầng(cascades) phân loại dựa trên đặc tính Haar. Paul viola và Michael Jones lần đầu tiên giới thiệu về phương pháp phát hiện đối tượng trong tài liệu nghiên cứu của họ vào năm 2001. Bạn có thể xem tài liệu đó ở đây: <a href="https://www.cs.cmu.edu/~efros/courses/LBMV07/Papers/viola-cvpr-01.pdf" class="text_">https://www.cs.cmu.edu/~efros/courses/LBMV07/Papers/viola-cvpr-01.pdf</a> Trong báo cáo của họ, họ  mô tả một kỹ thuật Machine Learning hiệu quả có thể sử dụng để phát hiện bất cứ vật thể nào.</p>
+	<p class="block_3">Họ sử dụng các tầng(cascade) của bộ phân loại đơn giản. Các tầng (cascades) này được xếp chồng lên để tổng hợp xây dựng một vài bộ phân loại hiệu quả với độ chính xác cao. Chúng ta sử dụng nó vì nó giúp chúng ta bỏ qua quy trình xây dựng bộ phân loại và lại có độ chính xác cao. Xây dựng một bộ phân loại mạnh mẽ như thế là một quá trình tính toán phức tạp.</p>
+	<p class="block_3">Hãy xem xét một vài ví dụ mà chúng ta phải phát hiện một số vật thể như quả bóng đá . Để xây dựng một bộ phát hiện chúng ta cần một hế thống có thể học quả bóng nhìn giống như thế nào. Chúng ta cần train hệ thống đó sử dụng rất nhiều hình ảnh về quả bóng đa. và chúng ta cũng cần rất nhiều hình ảnh không chứa quả bóng luôn :D. Nó sẽ giúp hệ thống học điểm khác nhau giữa các vật thể.</p>
+	<p class="block_3">Nếu chúng ta xây dựng một mô hình chính xác cao thì sẽ rất phức tạp. Vì thế chúng ta sẽ không thể tốn quá nhiều thời gian vì nó. nếu quá đơn giản thì hệ thống sẽ không chính xác. Sự đánh dổi giữa tốc độ và độ chính xác thường xuyên gặp phải trong thế giới của Machine Learning. Phương pháp của Viola-Jones khắc phục vấn đề này bằng cách xây dựng một bộ phân loại đơn giản. Những phân loại này sau đó được xếp thành các tầng (cascade) để tạo thành một bộ phân loại thống nhất, mạnh mẽ và chính xác.</p>
+	<p class="block_3">Hãy xem thử áp dụng vào phát hiện khuôn mặt. Để xây dựng một hệ thống ML để phát hiện khuôn mặt, trước hết trúng ta cần xây dựng một bộ phân tách đặc điểm. Các thuật toán ML sẽ sử dụng các đặc điểm này để hiểu khuôn mặt trông như thế nào. Đây là lúc chúng ta sử dụng đặc điểm của Haar( Haar features). Chúng đơn giản chỉ là tổng kết tóm tắt đơn giản và sự khác biệt của các phần trên khung hình (hoặc bức ảnh). Những đặc điểm của Haar thật sự dễ dành để tính toán. Để làm nó dễ dàng và phát triển, chúng ta cần làm việc này ở nhiều cỡ hình ảnh khác nhau. Nếu bạn muốn học thêm về Haar features thì có thể xem tiếp ở đây : <a href="https://www.cs.ubc.ca/~lowe/425/slides/13-ViolaJones.pdf" class="text_">https://www.cs.ubc.ca/~lowe/425/slides/13-ViolaJones.pdf</a></p>
+	<p class="block_3">Mỗi một đặc điểm được chọn ra, chúng ta cho nó vào các tầng (cascades) tăng cường của bộ phân loại. Chúng ta sẽ kiểm tra các vùng hình chữ nhật khác nhau và loại bỏ những vùng không chứa khuôn mặt. Nó sẽ giúp chúng ta tìm được câu trả lời nhanh hơn. Để làm việc tính toán các đặc điểm nhanh hơn, họ sử dụng một phương pháp được gọi là tích hợp hình ảnh (integral images)</p>
+	<p class="block_7">Sử dụng tích hợp hình ảnh để rút ra đặc điểm</p>
+	<p class="block_3">Để tính toán các đặc điểm của Haar, chúng ta phải tính toán diện tích và khác biệt của rất nhiều khung hình nhỏ trong một bức ảnh. Chúng ta cần tính những diện tích và khác tại nhiều mức đo khác nhau.<span class="calibre1">  </span></p>
+	<p class="block_3">Xem hình dưới đây</p>
+	<p class="block_9"><img src="images/000004.png" alt="Image" class="calibre11" /></p>
+	<p class="block_3">Nếu chúng ta muốn tính diện tích hình chữ nhật ABCD trong hình trên, chúng ta không cần phải biết từng pixel của hình. Giả sử ta có OP là diện tích hình chữ nhật lớn với điểm P tại góc dưới cùng bên phải . Để tích diện tích của hình chữ nhật ABCD chúng ta có thể sử dụng công thức sau: ABCD=OC-(OB+OD-OA)</p>
+	<p class="block_3">Có điều gì đặc biệt trong công thức này ? Nếu bạn chú ý thì bạn có thể thấy chúng ta không phải lặp lại bất cứ ddieuf gì hoặc tính toán tại bất kỳ diện tích hình chữ nhật nào. Tất cả giá trị bên bên tay phải đã được tính bởi vì chúng đã được tính trong các phần trước. Chúng ta sử dụng chúng một cách trực tiếp để tính toán diện tích hình chữ nhật được đặt ra.</p>
+	<p class="block_3">Giờ thì code bộ nhận diện khuôn mặt:</p>
+	<div class="frame_"><p class="block_10"><span class="text_1">import </span><span class="text_2">cv2<br class="calibre4" /><br class="calibre4" /></span><span class="text_3"># Load dữ liệu Haar cascade xml<br class="calibre4" /></span><span class="text_2">face_cascade=cv2.CascadeClassifier(</span><span class="text_7">'../data/chap13/haarcascade/haarcascade_frontalface_default.xml'</span><span class="text_2">)<br class="calibre4" /></span><span class="text_3"># Kiểm tra xem file xml đã đc load hay chưa<br class="calibre4" /></span><span class="text_1">if </span><span class="text_2">face_cascade.empty():<br class="calibre4" /><span class="calibre5">    </span></span><span class="text_1">raise </span><span class="text_6">IOError</span><span class="text_2">(</span><span class="text_7">'Méo có file'</span><span class="text_2">)<br class="calibre4" /><br class="calibre4" /></span><span class="text_3">#Khởi tạo các thông số video<br class="calibre4" /></span><span class="text_2">cap=cv2.VideoCapture(</span><span class="text_7">'../data/chap13/sample.mp4'</span><span class="text_2">)<br class="calibre4" />scale_factor=</span><span class="text_8">1<br class="calibre4" /><br class="calibre4" /></span><span class="text_3"># Tạo vòng lặp để lấy video<br class="calibre4" /></span><span class="text_1">while True</span><span class="text_2">:<br class="calibre4" /><span class="calibre5">    _</span></span><span class="text_1">,</span><span class="text_2">frame=cap.read()<br class="calibre4" /><span class="calibre5">    frame=cv2.resize(frame</span></span><span class="text_1">,None,</span><span class="text_5">fx</span><span class="text_2">=scale_factor</span><span class="text_1">,</span><span class="text_5">fy</span><span class="text_2">=scale_factor</span><span class="text_1">,</span><span class="text_5">interpolation</span><span class="text_2">=cv2.INTER_AREA)<br class="calibre4" /><span class="calibre5">    </span></span><span class="text_3"># đổi khung hình thành màu xám<br class="calibre4" /><span class="calibre5">    </span></span><span class="text_2">gray=cv2.cvtColor(frame</span><span class="text_1">,</span><span class="text_2">cv2.COLOR_BGR2GRAY)<br class="calibre4" /><span class="calibre5">    </span></span><span class="text_3"># Chạy hàm nhận diện khuôn mặt dựa trên khung hình màu xám<br class="calibre4" /><span class="calibre5">    </span></span><span class="text_2">face_rects=face_cascade.detectMultiScale(gray</span><span class="text_1">,</span><span class="text_8">1.3</span><span class="text_1">,</span><span class="text_8">5</span><span class="text_2">)<br class="calibre4" /><span class="calibre5">    </span></span><span class="text_3">#Tạo vòng lặp để vẽ hình chữ nhật lên trên khuôn mặt đã phát hiện<br class="calibre4" /><span class="calibre5">    </span></span><span class="text_1">for </span><span class="text_2">(x</span><span class="text_1">,</span><span class="text_2">y</span><span class="text_1">,</span><span class="text_2">w</span><span class="text_1">,</span><span class="text_2">h) </span><span class="text_1">in </span><span class="text_2">face_rects:<br class="calibre4" /><span class="calibre5">        cv2.rectangle(frame</span></span><span class="text_1">,</span><span class="text_2">(x</span><span class="text_1">,</span><span class="text_2">y)</span><span class="text_1">,</span><span class="text_2">(x+w</span><span class="text_1">,</span><span class="text_2">y+h)</span><span class="text_1">,</span><span class="text_2">(</span><span class="text_8">0</span><span class="text_1">,</span><span class="text_8">255.0</span><span class="text_1">,</span><span class="text_8">0</span><span class="text_2">)</span><span class="text_1">,</span><span class="text_8">2</span><span class="text_2">)<br class="calibre4" /><span class="calibre5">    </span></span><span class="text_3">#Hiển thị hình ảnh video<br class="calibre4" /><span class="calibre5">    </span></span><span class="text_2">cv2.imshow(</span><span class="text_7">"Face detect"</span><span class="text_1">,</span><span class="text_2">frame)<br class="calibre4" /><span class="calibre5">    k=cv2.waitKey(</span></span><span class="text_8">30</span><span class="text_2">)<br class="calibre4" /><span class="calibre5">    </span></span><span class="text_1">if </span><span class="text_2">k==</span><span class="text_8">27</span><span class="text_2">:<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_1">break<br class="calibre4" /></span><span class="text_2">cap.release()<br class="calibre4" />cv2.destroyAllWindows()<br class="calibre4" />&nbsp;</span></p><p class="block_11"></p></div>
+	<p class="block_2">&nbsp;</p>
+	<p class="block_9"><img src="images/000005.png" alt="Image" class="calibre6" /></p>
+	<p class="block_2">&nbsp;</p>
+	<p class="block_7">Nhận dạng mắt và theo dõi</p>
+	<p class="block_3">Giống như những gì ta đã làm bên trên thôi ngoài ra thêm một cascade eye xml</p>
+	<div class="frame_"><p class="block_10"><span class="text_1">import </span><span class="text_2">cv2<br class="calibre4" /><br class="calibre4" /></span><span class="text_9"># Load dữ liệu Haar cascade xml<br class="calibre4" /></span><span class="text_2">face_cascade=cv2.CascadeClassifier(</span><span class="text_3">'../data/chap13/haarcascade/haarcascade_frontalface_default.xml'</span><span class="text_2">)<br class="calibre4" /></span><span class="text_9"># Load dữ liệu eye xml<br class="calibre4" /></span><span class="text_2">eyes_cascade=cv2.CascadeClassifier(</span><span class="text_3">'../data/chap13/haarcascade/haarcascade_eye_tree_eyeglasses.xml'</span><span class="text_2">)<br class="calibre4" /></span><span class="text_9"># Kiểm tra xem file xml face đã đc load hay chưa<br class="calibre4" /></span><span class="text_1">if </span><span class="text_2">face_cascade.empty():<br class="calibre4" /><span class="calibre5">    </span></span><span class="text_1">raise </span><span class="text_6">IOError</span><span class="text_2">(</span><span class="text_3">'Méo có file'</span><span class="text_2">)<br class="calibre4" /></span><span class="text_9"># Kiểm tra xem file xml face đã đc load hay chưa<br class="calibre4" /></span><span class="text_1">if </span><span class="text_2">eyes_cascade.empty():<br class="calibre4" /><span class="calibre5">    </span></span><span class="text_1">raise </span><span class="text_6">IOError</span><span class="text_2">(</span><span class="text_3">'Méo có file eye xml'</span><span class="text_2">)<br class="calibre4" /></span><span class="text_9">#Khởi tạo các thông số video<br class="calibre4" /></span><span class="text_2">cap=cv2.VideoCapture(</span><span class="text_3">'../data/chap13/congai.mp4'</span><span class="text_2">)<br class="calibre4" />scale_factor=</span><span class="text_8">1<br class="calibre4" /><br class="calibre4" /></span><span class="text_9"># Tạo vòng lặp để lấy video<br class="calibre4" /></span><span class="text_1">while True</span><span class="text_2">:<br class="calibre4" /><span class="calibre5">    _</span></span><span class="text_1">,</span><span class="text_2">frame=cap.read()<br class="calibre4" /><span class="calibre5">    </span></span><span class="text_2">frame=cv2.resize(frame</span><span class="text_1">,None,</span><span class="text_5">fx</span><span class="text_2">=scale_factor</span><span class="text_1">,</span><span class="text_5">fy</span><span class="text_2">=scale_factor</span><span class="text_1">,</span><span class="text_5">interpolation</span><span class="text_2">=cv2.INTER_AREA)<br class="calibre4" /><span class="calibre5">    </span></span><span class="text_9"># đổi khung hình thành màu xám<br class="calibre4" /><span class="calibre5">    </span></span><span class="text_2">gray=cv2.cvtColor(frame</span><span class="text_1">,</span><span class="text_2">cv2.COLOR_BGR2GRAY)<br class="calibre4" /><span class="calibre5">    </span></span><span class="text_9"># Chạy hàm nhận diện khuôn mặt dựa trên khung hình màu xám<br class="calibre4" /><span class="calibre5">    </span></span><span class="text_2">face_rects=face_cascade.detectMultiScale(gray</span><span class="text_1">,</span><span class="text_8">1.1</span><span class="text_1">,</span><span class="text_8">3</span><span class="text_2">)<br class="calibre4" /><span class="calibre5">    </span></span><span class="text_9">#Tạo vòng lặp để vẽ hình chữ nhật lên trên khuôn mặt đã phát hiện<br class="calibre4" /><span class="calibre5">    </span></span><span class="text_1">for </span><span class="text_2">(x</span><span class="text_1">,</span><span class="text_2">y</span><span class="text_1">,</span><span class="text_2">w</span><span class="text_1">,</span><span class="text_2">h) </span><span class="text_1">in </span><span class="text_2">face_rects:<br class="calibre4" /><span class="calibre5">        cv2.rectangle(frame</span></span><span class="text_1">,</span><span class="text_2">(x</span><span class="text_1">,</span><span class="text_2">y)</span><span class="text_1">,</span><span class="text_2">(x+w</span><span class="text_1">,</span><span class="text_2">y+h)</span><span class="text_1">,</span><span class="text_2">(</span><span class="text_8">0</span><span class="text_1">,</span><span class="text_8">255.0</span><span class="text_1">,</span><span class="text_8">0</span><span class="text_2">)</span><span class="text_1">,</span><span class="text_8">2</span><span class="text_2">)<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_9"># Dựa vào vị trí của face để lấy vị trí của mắt dựa trên face - ĐỔi màu face thành gray luôn<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_2">face_gray=gray[y:y+h</span><span class="text_1">,</span><span class="text_2">x:x+w]<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_9"># Lấy mặt có màu<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_2">face_color=frame[y:y+h</span><span class="text_1">,</span><span class="text_2">x:x+w]<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_9">#TÌm vị trí của mắt<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_2">eyes=eyes_cascade.detectMultiScale(face_gray)<br class="calibre4" /><span class="calibre5">    </span></span><span class="text_9"># Vẽ vòng tròn quanh mắt<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_1">for </span><span class="text_2">(x_eye</span><span class="text_1">,</span><span class="text_2">y_eye</span><span class="text_1">,</span><span class="text_2">w_eye</span><span class="text_1">,</span><span class="text_2">h_eye) </span><span class="text_1">in </span><span class="text_2">eyes:<br class="calibre4" /><span class="calibre5">            center=(</span></span><span class="text_6">int</span><span class="text_2">(x_eye+w_eye/</span><span class="text_8">2</span><span class="text_2">)</span><span class="text_1">,</span><span class="text_6">int</span><span class="text_2">(y_eye+h_eye/</span><span class="text_8">2</span><span class="text_2">))<br class="calibre4" /><span class="calibre5">            radius=</span></span><span class="text_6">int</span><span class="text_2">(</span><span class="text_8">0.3</span><span class="text_2">*(w_eye+h_eye))<br class="calibre4" /><span class="calibre5">            color=(</span></span><span class="text_8">255</span><span class="text_1">,</span><span class="text_8">0</span><span class="text_1">,</span><span class="text_8">0</span><span class="text_2">)<br class="calibre4" /><span class="calibre5">            cv2.circle(face_color</span></span><span class="text_1">,</span><span class="text_5">center</span><span class="text_2">=center</span><span class="text_1">,</span><span class="text_5">radius</span><span class="text_2">=radius</span><span class="text_1">,</span><span class="text_5">color</span><span class="text_2">=color</span><span class="text_1">,</span><span class="text_5">thickness</span><span class="text_2">=</span><span class="text_8">2</span><span class="text_2">)<br class="calibre4" /><span class="calibre5">    </span></span><span class="text_9">#Hiển thị hình ảnh video<br class="calibre4" /><span class="calibre5">    </span></span><span class="text_2">cv2.imshow(</span><span class="text_3">"Face detect"</span><span class="text_1">,</span><span class="text_2">frame)<br class="calibre4" /><span class="calibre5">    k=cv2.waitKey(</span></span><span class="text_8">20</span><span class="text_2">)<br class="calibre4" /><span class="calibre5">    </span></span><span class="text_1">if </span><span class="text_2">k==</span><span class="text_8">27</span><span class="text_2">:<br class="calibre4" /><span class="calibre5">        </span></span><span class="text_1">break<br class="calibre4" /></span><span class="text_2">cap.release()<br class="calibre4" />cv2.destroyAllWindows()<br class="calibre4" />&nbsp;</span></p><p class="block_11"></p></div>
+	<p class="block_9"><img src="images/000000.png" alt="Image" class="calibre9" /></p>
+	<p class="block_2">&nbsp;</p>
+	<p class="block_7">Tổng kết:</p>
+	<p class="block_3">Trong chương này chúng ta đã tìm hiểu về object detection và tracking nó sử dụng bộ thư viện OpenCV.</p>
+	<p class="block_3">Trong chương tiếp theo chúng ta sẽ thảo luận về mạng lưới thần kinh nhân tạo :D (nghe tởm vãi lái ) artificial neural network và sử dụng những kỹ thuật đó để xây dựng một bộ nhận diện chữ viết (OCR &ndash; Optical character recognition)</p>
+	<p class="block_2">&nbsp;</p>
+	<p class="block_2">&nbsp;</p>
+	<p class="block_2">&nbsp;</p>
+	<p class="block_2">&nbsp;</p>
+	<p class="block_2">&nbsp;</p>
+	<p class="block_2">&nbsp;</p>
+	<p class="block_2">&nbsp;</p>
+	<p class="block_2">&nbsp;</p>
+	<p class="block_2">&nbsp;</p>
+
+</div>
+
+</body></html>
+
+<footer class=" footline" >
+	
+</footer>
+
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/ai-with-python/chapter12/" title="C12: Speech Recognizer"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/numpy/" title="NumPy cơ bản" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1572408723"></script>
+    <script src="/js/perfect-scrollbar.min.js?1572408723"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1572408723"></script>
+    <script src="/js/jquery.sticky.js?1572408723"></script>
+    <script src="/js/featherlight.min.js?1572408723"></script>
+    <script src="/js/highlight.pack.js?1572408723"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1572408723"></script>
+    <script src="/js/learn.js?1572408723"></script>
+    <script src="/js/hugo-learn.js?1572408723"></script>
+
+    <link href="/mermaid/mermaid.css?1572408723" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1572408723"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>
+

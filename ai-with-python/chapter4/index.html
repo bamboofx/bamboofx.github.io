@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.57.2" />
+    <meta name="description" content="">
+
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>C4: Detecting Patterns with Unsupervised Learning :: Bamboofx&#39;s or NTVFX&#39;s Site</title>
+
+    
+    <link href="/css/nucleus.css?1572408723" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1572408723" rel="stylesheet">
+    <link href="/css/hybrid.css?1572408723" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1572408723" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1572408723" rel="stylesheet">
+    <link href="/css/auto-complete.css?1572408723" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1572408723" rel="stylesheet">
+    <link href="/css/theme.css?1572408723" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1572408723" rel="stylesheet">
+    
+      <link href="/css/theme-blue.css?1572408723" rel="stylesheet">
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1572408723"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/ai-with-python/chapter4/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="https://bamboofx.github.io/">
+  <img src="https://bamboofx.github.io/images/logo.png "> </img>
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1572408723"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1572408723"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/bamboofx.github.io\/";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1572408723"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/ai-with-python/" title="AI with Python (Prateek Joshi)" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/ai-with-python/">
+          AI with Python (Prateek Joshi)
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ai-with-python/chapter1/" title="C1: Trí thông minh nhân tạo là gì?" class="dd-item ">
+        <a href="/ai-with-python/chapter1/">
+        C1: Trí thông minh nhân tạo là gì?
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ai-with-python/chapter2/" title="C2: Classification and Regression" class="dd-item ">
+        <a href="/ai-with-python/chapter2/">
+        C2: Classification and Regression
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ai-with-python/chapter3/" title="C3: Ensemble Learing" class="dd-item ">
+        <a href="/ai-with-python/chapter3/">
+        C3: Ensemble Learing
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ai-with-python/chapter4/" title="C4: Detecting Patterns with Unsupervised Learning" class="dd-item active">
+        <a href="/ai-with-python/chapter4/">
+        C4: Detecting Patterns with Unsupervised Learning
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ai-with-python/chapter5/" title="C5: Building Recommender Systems" class="dd-item ">
+        <a href="/ai-with-python/chapter5/">
+        C5: Building Recommender Systems
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ai-with-python/chapter6/" title="C6: Logic Programing" class="dd-item ">
+        <a href="/ai-with-python/chapter6/">
+        C6: Logic Programing
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ai-with-python/chapter7/" title="C7: Tìm kiếm Heuristic" class="dd-item ">
+        <a href="/ai-with-python/chapter7/">
+        C7: Tìm kiếm Heuristic
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ai-with-python/chapter8/" title="C8: Thuật toán di truyền - Genetic Alogrithms" class="dd-item ">
+        <a href="/ai-with-python/chapter8/">
+        C8: Thuật toán di truyền - Genetic Alogrithms
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ai-with-python/chapter9/" title="C9: Xây dựng game cùng với AI" class="dd-item ">
+        <a href="/ai-with-python/chapter9/">
+        C9: Xây dựng game cùng với AI
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ai-with-python/chapter10/" title="C10: Natural Language Processing" class="dd-item ">
+        <a href="/ai-with-python/chapter10/">
+        C10: Natural Language Processing
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ai-with-python/chapter11/" title="C11: Sequential Data" class="dd-item ">
+        <a href="/ai-with-python/chapter11/">
+        C11: Sequential Data
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ai-with-python/chapter12/" title="C12: Speech Recognizer" class="dd-item ">
+        <a href="/ai-with-python/chapter12/">
+        C12: Speech Recognizer
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ai-with-python/chapter13/" title="C13: Object Detection and Tracking" class="dd-item ">
+        <a href="/ai-with-python/chapter13/">
+        C13: Object Detection and Tracking
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/numpy/" title="NumPy cơ bản" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/numpy/">
+          NumPy cơ bản
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/about/" title="about" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/about/">
+          About
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>Site</a> > <a href='/ai-with-python/'>AI with Python (Prateek Joshi)</a> > C4: Detecting Patterns with Unsupervised Learning
+          
+         
+          
+         
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              C4: Detecting Patterns with Unsupervised Learning
+            </h1>
+          
+
+        
+
+
+
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=utf-8" /><link href="style.css" rel="stylesheet" type="text/css" /><title>PythonAI Chapter4</title></head><body><div class="calibre" id="calibre_link-0">
+	<p class="block_">4</p>
+	<p class="block_">Phát hiện mẫu (Detecting Patterns) với <br class="calibre1" />Học không giám sát (Unsupervised Learning)</p>
+	<p class="block_1">Trong chương này chúng ta sẽ học về học không giám sát và cách sử dụng nó trong thực tế. Khi học hết chương này thì chúng ta sẽ biết các kiến thức như sau:</p>
+	<ul class="list_">
+	<li class="block_2">Học không giám sát là gì?</li>
+	<li class="block_3">Phân nhóm dữ liệu(Clustering data) cùng với thuật toán K-Means</li>
+	<li class="block_3">Tính toán số nhóm (cluster) cùng với thuật toán Mean Shift</li>
+	<li class="block_3">Dự toán chất lượng của tổ hợp cùng với silhouette scores</li>
+	<li class="block_3">Mô hình Gaussian Mixture là gì ?</li>
+	<li class="block_3">Xây dựng mô hình phân loại dựa trên Gaussian Mixture Models</li>
+	<li class="block_3">Tìm kiếm phân nhóm trong thị trường chứng khoán sử dụng mô hình Affinity Propagation</li>
+	<li class="block_4">Phân khúc thị trường chứng khoán dựa trên mô hình mua sắm (shopping patterns !?)</li>
+</ul>
+	<p class="block_5">Học không giám sát là gì (what's unsupervised learning)?</p>
+	<p class="block_1">Học không giám sát là cách xây dựng một mô hình machine learning mà không sử dụng tới tập nhãn trong tập dữ liệu training. Học không giám sát được tìm thấy trong các ứng dụng khác nhau trong lĩnh vực học tập, kể cả phân khúc thị trường, thị trường chứng khoán, xử lý ngôn ngữ, computer vision, và nhiều thứ khác tương tụ thế.</p>
+	<p class="block_1">Trong chương trước chúng ta đã làm việc cùng với những dữ liệu mà nó đã được dán nhãn (labeled) sẵn. Khi chúng ta có các nhãn dán trong dữ liệu training, thuật toán học cách phân loại dựa trên những nhãn đó. Nhưng trong thực tế, chúng ta không phải lúc nào cũng có những dữ liệu được dán nhãn sẵn. Đôi khi chúng ta có cả đống dữ liệu và chúng ta cần phải phân loại nó bằng một cách nào đó. Đây là lúc cần để cho <b class="calibre2">Học Không giám sát </b>thể hiện khả năng. Học không giám sát là thuật toán cố gắng xây dựng một mô hình học mà nó có thể tìm các nhóm nhỏ trong tập dữ liệu được cho sử dụng một số số liệu tương tự.</p>
+	<p class="block_1">Hãy xem làm thế nào mà chúng ta xây dựng công thức vấn đề học tập trong học không giám sát. Khi chúng ta có một tập dữ liệu mà nó không có một nhãn nào trong đó, chúng ta giả định rằng dữ liệu đã được tạo ra bởi các biến được phân phối theo một cách nào đó. Quá trình học có thể tiến hành theo cách phân cấp. Bắt đầu từ những điểm dữ liệu chúng ta tạo ra. Chúng ta có thể xây dựng lên những lớp sâu hơn đại điện cho dữ liệu đó.</p>
+	<p class="block_5">Phân nhóm dữ liệu cùng với thuật toán K-Means</p>
+	<p class="block_1">Phân nhóm là một trong những thứ thông dụng nhất trong kỹ thuật học không giám sát. Kỹ thuật này được sử dụng để phân tích dữ liệu và tìm những nhóm bên trong trong bộ dữ liệu đó. Để tìm những nhóm chúng ta sử dụng một vài thứ như tính toán khoảng cách Euclidean ( Euclidean distance), để tìm nhóm nhỏ hơn. Biện pháp này cũng tương tự có thể ước tính độ chặt chẽ của một nhóm. Chúng ta có thể gọi cách phân nhóm này là quá trình tổ chức dữ liệu của chúng ta thành các nhóm nhỏ nơi mà những thành phần trong đó giống với nhau.</p>
+	<p class="block_1">Mục đích của chúng ta là xác định các thuộc tính của các điểm dữ liệu và làm cho chúng thuộc về chung một nhóm. Không có một hàm phổ cập hay thuật toán nào có thể sử dụng cho tất cả các trường hợp. Nó dựa trên vấn đề mà chúng ta đang có. Ví dụ, chúng ta có thể thích tìm những điểm dữ liệu trùng hợp trong tập dữ liệu hoặc chúng ta có thể thích tìm những trường hợp ngoại lệ trong tập dữ liệu của chúng ta. Tùy tình hình mà chúng ta sẽ quyết định chọn những thước đo phù hợp.</p>
+	<p class="block_1">K-means là một thuật toán nổi tiếng trong việc phân nhóm dữ liệu. Để dùng thuật toán này, chúng ta cần phải giả định số của những nhóm này được biết trước. Sau đó chúng ta phân chia dữ liệu vào trong K-nhóm sử dụng những thuộc tính dữ liệu khác nhau. Chúng ta bắt đầu bằng việc cố định số nhóm và phân loại dữ liệu của chúng ta dựa trên đó. Ý tưởng chính ở đây là chúng ta cần cập nhật vị trí của trọng tâm K bằng cách lặp đi lặp lại liên tục cho tới khi chúng ta có một chỗ đặt tối ưu nhất cho nó.</p>
+	<p class="block_1"><span class="calibre3">Chúng ta có thể thấy vị trí đặt ban đầu của trọng tâm (centroid) là quan trọng nhất trong thuật toán. Những trọng tâm (centroids) nên được đặt một cách thông minh, bởi vì nó sẽ tác động trực tiếp đến kết quả.  </span>Cách tốt nhất là chúng ta nên đặt nó cách xa nhau. Về cơ bản thuật toán K-Means đặt những trọng tâm này một cách ngẫu nhiên nơi K-Means++ chọn những điểm thuật toán từ những điểm dữ liệu của danh sách input. Nó sẽ cố đặt những điểm trọng tâm cách xa nhau và gộp lại nhanh chóng. Sau đó chúng ta xét qua tập dữ liệu training và đặt những điểm dữ liệu này gần điểm trọng tâm.</p>
+	<p class="block_1">Khi chúng ta duyệt qua toàn bộ dữ liệu, chúng ta gọi đó là lần lặp đầu tiên đã kết thúc. Chúng ta có những điểm được nhóm lại dựa trên những trọng tâm đã được khởi tạo. Giờ thì chúng ta cần tính lại vị trí của những điểm trọng tâm dựa trên những nhóm mới mà chúng ta có được ở lần lặp lại đầu tiên. Khi chúng ta có được bộ điểm trọng tâm K mới, chúng ta lặp lại việc xử lý một lần nữa, chúng ta lặp lại tập dữ liệu và gán những điểm mới thành điểm trọng tâm.</p>
+	<p class="block_1">Bằng cách lặp lại các bước như thế, Điểm trọng tâm di chuyển dần tới vị trí cân bằng. Sau một số lần lặp nhất định, điểm trung tâm sẽ không thay đổi vị trí của nó nữa. Điều đó có nghĩa là chúng ta đã tìm được vị trí cuối cùng của điểm trọng tâm. Những điểm trọng tâm K này là những điểm K-Means mà chúng ta sẽ sử dụng để kết luận.</p>
+	<p class="block_1">Giờ thì đặt những nhóm K-Means này vào mảng dữ liệu hai chiều và xem nó làm việc như thế nào. CHúng ta sẽ sử dụng dữ liệu ở trong file data/chap4/data_clustering.txt. Mỗi dòng có 2 số được phân tách với nhau bởi dấu ','.</p>
+	<p class="block_1">Tạo 1 file python mới và đặt tên là kmeans.py</p>
+	<div class="frame_"><p class="block_6"><span class="text_"><span class="calibre4">import  </span></span><span class="text_1">numpy </span><span class="text_">as </span><span class="text_1">np<br class="calibre5" /></span><span class="text_">import </span><span class="text_1">matplotlib.pyplot </span><span class="text_">as </span><span class="text_1">plt<br class="calibre5" /></span><span class="text_"><span class="calibre4">from  </span></span><span class="text_1">sklearn.cluster </span><span class="text_">import </span><span class="text_1">KMeans<br class="calibre5" /></span><span class="text_">from </span><span class="text_1">sklearn </span><span class="text_">import </span><span class="text_1">metrics<br class="calibre5" /><br class="calibre5" /></span><span class="text_2"># Load dữ liệu<br class="calibre5" /></span><span class="text_1">input_file=</span><span class="text_3">"data/chap4/data_clustering.txt"<br class="calibre5" /></span><span class="text_1">X=np.loadtxt(input_file</span><span class="text_">,</span><span class="text_4">delimiter</span><span class="text_1">=</span><span class="text_3">","</span><span class="text_1">)<br class="calibre5" /></span><span class="text_2"># Thử biểu diễn dữ liệu input để xem chúng hỗn loạn thế nào<br class="calibre5" /></span><span class="text_1">plt.figure()<br class="calibre5" />plt.scatter(X[:</span><span class="text_">,</span><span class="text_5">0</span><span class="text_1">]</span><span class="text_">,</span><span class="text_1">X[:</span><span class="text_">,</span><span class="text_5">1</span><span class="text_1">]</span><span class="text_">,</span><span class="text_4">marker</span><span class="text_1">=</span><span class="text_3">'o'</span><span class="text_">,</span><span class="text_4">facecolors</span><span class="text_1">=</span><span class="text_3">'gray'</span><span class="text_">,</span><span class="text_4">edgecolors</span><span class="text_1">=</span><span class="text_3">'black'</span><span class="text_">,</span><span class="text_4">s</span><span class="text_1">=</span><span class="text_5">80</span><span class="text_1">)<br class="calibre5" /></span><span class="text_2">#print((X[:,0]))<br class="calibre5" /></span><span class="text_1">x_min</span><span class="text_">,</span><span class="text_1">x_max=X[:</span><span class="text_">,</span><span class="text_5">0</span><span class="text_1">].min()-</span><span class="text_5">1</span><span class="text_">,</span><span class="text_1">X[:</span><span class="text_">,</span><span class="text_5">0</span><span class="text_1">].max()+</span><span class="text_5">1<br class="calibre5" /></span><span class="text_2">#print(x_min,x_max)<br class="calibre5" /></span><span class="text_1">y_min</span><span class="text_">,</span><span class="text_1">y_max =X[:</span><span class="text_">,</span><span class="text_5">1</span><span class="text_1">].min()-</span><span class="text_5">1</span><span class="text_">,</span><span class="text_1">X[:</span><span class="text_">,</span><span class="text_5">1</span><span class="text_1">].max()+</span><span class="text_5">1<br class="calibre5" /></span><span class="text_1">plt.title(</span><span class="text_3">'Dữ liệu nhập'</span><span class="text_1">)<br class="calibre5" />plt.xlim(x_min</span><span class="text_">,</span><span class="text_1">x_max)<br class="calibre5" />plt.ylim(y_min</span><span class="text_">,</span><span class="text_1">y_max)<br class="calibre5" />plt.xticks()<br class="calibre5" />plt.yticks()<br class="calibre5" />plt.show()<br class="calibre5" /></span><span class="text_2"># Chạy thử code ở đoạn này bạn sẽ thấy dữ liệu input được phân thành 5 nhóm. Tạo 1 K-Means Object sử dụng các tham số khai báo init,n_clusters,n_init.<br class="calibre5" /># Tham số init đại diện cho phương thức của phép khởi tạo để khởi tạo vị trí trung tâm của trọng tâm, thay vì chọn chúng một cách ngẫu nhiên chúng ta chọn sử dụng 'k-means++' để chọn vị trí trung tâm một cách tốt hơn<br class="calibre5" /># Tham số n_cluslters chỉ số nhóm sẽ tạo<br class="calibre5" /># Tham số n_init chỉ ra số lần thuật toán sẽ chạy trước khi quyết định ra số outcome tốt nhất.<br class="calibre5" /></span><span class="text_1">kmeans=KMeans(</span><span class="text_4">init</span><span class="text_1">=</span><span class="text_3">'k-means++'</span><span class="text_">,</span><span class="text_4">n_clusters</span><span class="text_1">=</span><span class="text_5">5</span><span class="text_">,</span><span class="text_4">n_init</span><span class="text_1">=</span><span class="text_5">10</span><span class="text_1">)<br class="calibre5" /></span><span class="text_2"># Train K-means với dữ liệu input<br class="calibre5" /></span><span class="text_1">model=kmeans.fit(X)<br class="calibre5" /></span><span class="text_2"># Để biểu diễn vòng bao quanh dữ liệu chúng ta cần tạo một lưới gồm những điểm và đánh giá mô hình trên những điểm đó,<br class="calibre5" /># Define các bước của grid này:<br class="calibre5" /></span><span class="text_1">step_size=</span><span class="text_5">0.01<br class="calibre5" /></span><span class="text_2">#Chúng ta định nghĩa lưới điểm này và đảm bảo chúng ta đã bọc tất cả những giá trị dữ liệu input<br class="calibre5" /><br class="calibre5" /></span><span class="text_1">x_vals</span><span class="text_">,</span><span class="text_1">y_vals=np.meshgrid(np.arange(x_min</span><span class="text_">,</span><span class="text_1">x_max</span><span class="text_">,</span><span class="text_1">step_size)</span><span class="text_">,</span><span class="text_1">np.arange(y_min</span><span class="text_">,</span><span class="text_1">y_max</span><span class="text_">,</span><span class="text_1">step_size))<br class="calibre5" /></span><span class="text_2"># Dự đoán kết quả output cho tất cả các điểm trên lưới sử dụng mô hình K-means đã train;<br class="calibre5" /></span><span class="text_1">output=kmeans.predict(np.c_[x_vals.ravel()</span><span class="text_">,</span><span class="text_1">y_vals.ravel()])<br class="calibre5" /></span><span class="text_2"># Biểu diễn tất cả các giá trị ouput và đổ màu cho mõi nhóm:<br class="calibre5" /></span><span class="text_1">output=output.reshape(x_vals.shape)<br class="calibre5" />plt.figure()<br class="calibre5" />plt.clf()<br class="calibre5" />plt.imshow(output</span><span class="text_">,</span><span class="text_4">interpolation</span><span class="text_1">=</span><span class="text_3">'nearest'</span><span class="text_">,</span><span class="text_4">extent</span><span class="text_1">=(x_vals.min()</span><span class="text_">,</span><span class="text_1">x_vals.max()</span><span class="text_">,</span><span class="text_1">y_vals.min()</span><span class="text_">,</span><span class="text_1">y_vals.max())</span><span class="text_">,</span><span class="text_4">cmap</span><span class="text_1">=plt.cm.Paired</span><span class="text_">,</span><span class="text_4">aspect</span><span class="text_1">=</span><span class="text_3">'auto'</span><span class="text_">,</span><span class="text_4">origin</span><span class="text_1">=</span><span class="text_3">'lower'</span><span class="text_1">)<br class="calibre5" /></span><span class="text_2"># Chồng những điểm dữ liệu input lên trên những vùng được tô màu:<br class="calibre5" /></span><span class="text_1">plt.scatter(X[:</span><span class="text_">,</span><span class="text_5">0</span><span class="text_1">]</span><span class="text_">,</span><span class="text_1">X[:</span><span class="text_">,</span><span class="text_5">1</span><span class="text_1">]</span><span class="text_">,</span><span class="text_4">marker</span><span class="text_1">=</span><span class="text_3">'o'</span><span class="text_">,</span><span class="text_4">facecolors</span><span class="text_1">=</span><span class="text_3">'none'</span><span class="text_">,</span><span class="text_4">edgecolors</span><span class="text_1">=</span><span class="text_3">'gray'</span><span class="text_">,</span><span class="text_4">facecolor</span><span class="text_1">=</span><span class="text_3">'gray'</span><span class="text_">,</span><span class="text_4">s</span><span class="text_1">=</span><span class="text_5">50</span><span class="text_1">)<br class="calibre5" /></span><span class="text_2"># Vẽ điểm trọng tâm của nhóm có được sử dụng thuật toán K-means<br class="calibre5" /></span><span class="text_1">cluster_centers=kmeans.cluster_centers_<br class="calibre5" />plt.scatter(cluster_centers[:</span><span class="text_">,</span><span class="text_5">0</span><span class="text_1">]</span><span class="text_">,</span><span class="text_1">cluster_centers[:</span><span class="text_">,</span><span class="text_5">1</span><span class="text_1">]</span><span class="text_">,</span><span class="text_4">marker</span><span class="text_1">=</span><span class="text_3">'X'</span><span class="text_">,</span><span class="text_4">s</span><span class="text_1">=</span><span class="text_5">200</span><span class="text_">,</span><span class="text_4">edgecolors</span><span class="text_1">=</span><span class="text_3">'red'</span><span class="text_1">)<br class="calibre5" /><br class="calibre5" /><br class="calibre5" />plt.title(</span><span class="text_3">"Vùng bao quanh của nhóm"</span><span class="text_1">)<br class="calibre5" />plt.xlim(x_min</span><span class="text_">,</span><span class="text_1">x_max)<br class="calibre5" />plt.ylim(y_min</span><span class="text_">,</span><span class="text_1">y_max)<br class="calibre5" />plt.xticks()<br class="calibre5" />plt.yticks()<br class="calibre5" />plt.show()</span></p><p class="block_7"></p></div>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_1">Chạy file python trên ta có 2 hình như sau </p>
+	<p class="block_9"><img alt="Image" src="images/000005.png" class="calibre6" /></p>
+	<p class="block_9">Đây là hình dữ liệu đầu vào </p>
+	<p class="block_9"><img alt="Image" src="images/000004.png" class="calibre6" /></p>
+	<p class="block_1">Và đây là hình sau khi đã được phân nhóm sau khi sử dụng thuật toán KMeans. Dấu <span class="text_6">X</span><b class="calibre2"> </b>màu xanh viền đỏ đại diện cho điểm trọng tâm của nhóm đó.</p>
+	<p class="block_5">Tính toán số của nhóm bằng thuật toán Mean Shift.</p>
+	<p class="block_1"><b class="calibre2">Mean Shift </b>là một thuật toán rất mạnh được sử dụng nhiều trong unsupervised learning. Nó là một thuật toán thống kê phi tham số được sử dụng thường xuyên cho phân nhóm. (Phi tham số là gì thì các thím tìm sách thông kê đọc tiếp nhé). ở đây mình chỉ xét Mean Shift không cần phải đưa cho nó số nhóm mà nó sẽ tự tìm ra số nhóm. Mean Shift được ứng dụng rất nhiều trong nhiều lĩnh vực khác nhau như Theo dõi vật thể hay xử lý dữ liệu trong thời gian thực.</p>
+	<p class="block_1">Mục đích của Mean Shift là tìm điểm trọng tâm. Trên mỗi điểm dữ liệu trong tập dữ liệu training nó sẽ định nghĩa một vùng window xung quanh đó. Sau đó nó sẽ tính điểm trọng tâm cho vùng window này và cập nhật vị trí trọng tâm. Nó sẽ lặp lại việc này với vị trí mới bằng cách định nghĩa một vùng window khác xung quanh nó. bằng cách lặp đi lặp lại như thế chúng ta sẽ tiến dần tới trọng tâm của nhóm. Mỗi điểm dữ liệu sẽ di chuyển tới nhóm mà nó thuộc về. Những điểm này sẽ di chuyển dần tới những vùng có mật độ cao hơn. Và vùng window này là vùng quét để tính mean</p>
+	<p class="block_1">Chúng tiếp tục di chuyển những điểm trọng tâm một khoảng cách và nó được gọi là (means). Khi di chuyển (shifting) một khoảng (means) nên nó được gọi là Mean Shift! Chúng tiếp tục di chuyển cho tới khi thuật toán dừng lại và các điểm trọng tâm không di chuyển nữa. </p>
+	<p class="block_1">Nói nhiều cũng méo hiểu mấy vì kiến thức về xác suất thống kê thủng một lỗ to đùng :D xem code thế nào nào:</p>
+	<p class="block_1">tạo 1 file đặt tên là mean_shift.py</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<div class="frame_"><p class="block_6"><span class="text_"><span class="calibre4">import  </span></span><span class="text_1">numpy </span><span class="text_">as </span><span class="text_1">np<br class="calibre5" /></span><span class="text_">import </span><span class="text_1">matplotlib.pyplot </span><span class="text_">as </span><span class="text_1">plt<br class="calibre5" /></span><span class="text_">from </span><span class="text_1">sklearn.cluster </span><span class="text_">import </span><span class="text_1">MeanShift</span><span class="text_">,</span><span class="text_1">estimate_bandwidth<br class="calibre5" /><br class="calibre5" /></span><span class="text_2"># load dữ liệu làm dữ liệu đầu vào<br class="calibre5" /></span><span class="text_1">X=np.loadtxt(</span><span class="text_3">"data/chap4/data_clustering.txt"</span><span class="text_">,</span><span class="text_4">delimiter</span><span class="text_1">=</span><span class="text_3">','</span><span class="text_1">)<br class="calibre5" /></span><span class="text_2"># Ước tính mật độ của dữ liệu đầu vào ( Bandwidth of input data).<br class="calibre5" /># Tham số bandwidth là tham số cơ sở ước tính mật độ hạt nhân (kernel estimation) được sử dụng bởi thuật toán Mean Shift<br class="calibre5" /># Băng thông ( mật độ ) ảnh hưởng đến tốc độ di chuyển của thuật toán và số lượng nhóm<br class="calibre5" /># vì thế đây làm một tham số quan trọng. Nếu số bandwidth nhỏ, nó sẽ tạo ra kết quả là có quá nhiều nhóm, nếu giá trị của bandwidth lớn thì nó sẽ nhập những nhóm khác biệt vào với nhau<br class="calibre5" /># Tham số quantile ảnh hưởng tới tham số bandwidth, nếu số quantile lớn nó sẽ làm tăng số bandwidth<br class="calibre5" /></span><span class="text_1">bandwidth_X=estimate_bandwidth(X</span><span class="text_">,</span><span class="text_4">quantile</span><span class="text_1">=</span><span class="text_5">0.1</span><span class="text_">,</span><span class="text_4">n_samples</span><span class="text_1">=</span><span class="text_7">len</span><span class="text_1">(X))<br class="calibre5" /></span><span class="text_2"># Train mô hình MeanShift sử dụng số bandwidth bên trên<br class="calibre5" /></span><span class="text_1">meanshift_model=MeanShift(</span><span class="text_4">bandwidth</span><span class="text_1">=bandwidth_X</span><span class="text_">,</span><span class="text_4">bin_seeding</span><span class="text_1">=</span><span class="text_">True</span><span class="text_1">)<br class="calibre5" />meanshift_model.fit(X)<br class="calibre5" /></span><span class="text_2"># Tìm những điểm trung tâm của tất cả các nhóm<br class="calibre5" /></span><span class="text_1">cluster_centers=meanshift_model.cluster_centers_<br class="calibre5" /></span><span class="text_7">print</span><span class="text_1">(</span><span class="text_3">"</span><span class="text_">\n</span><span class="text_3"> Các điểm trọng tâm: "</span><span class="text_">,</span><span class="text_1">cluster_centers)<br class="calibre5" /></span><span class="text_2"># Tìm những số của nhóm<br class="calibre5" /></span><span class="text_1">labels=meanshift_model.labels_<br class="calibre5" />num_clusters=</span><span class="text_7">len</span><span class="text_1">(np.unique(labels))<br class="calibre5" /></span><span class="text_7">print</span><span class="text_1">(</span><span class="text_3">"</span><span class="text_">\n</span><span class="text_3"> Số nhóm được phân chia ="</span><span class="text_">,</span><span class="text_1">num_clusters)<br class="calibre5" /></span><span class="text_2">#biểu diễn dữ liệu thành hình ảnh<br class="calibre5" /></span><span class="text_1">plt.figure()<br class="calibre5" />markers=</span><span class="text_3">'o*xvs'<br class="calibre5" /></span><span class="text_">for </span><span class="text_1">i</span><span class="text_">,</span><span class="text_1">markers </span><span class="text_">in </span><span class="text_7">zip</span><span class="text_1">(</span><span class="text_7">range</span><span class="text_1">(num_clusters)</span><span class="text_">,</span><span class="text_1">markers):<br class="calibre5" /><span class="calibre4">    plt.scatter(X[labels==i</span></span><span class="text_">,</span><span class="text_5">0</span><span class="text_1">]</span><span class="text_">,</span><span class="text_1">X[labels==i</span><span class="text_">,</span><span class="text_5">1</span><span class="text_1">]</span><span class="text_">,</span><span class="text_4">marker</span><span class="text_1">=markers</span><span class="text_">,</span><span class="text_4">color</span><span class="text_1">=</span><span class="text_3">'gray'</span><span class="text_1">)<br class="calibre5" /><span class="calibre4">    cluster_center=cluster_centers[i]</span></span><span class="text_1"><br class="calibre5" /><span class="calibre4">    plt.plot(cluster_center[</span></span><span class="text_5">0</span><span class="text_1">]</span><span class="text_">,</span><span class="text_1">cluster_center[</span><span class="text_5">1</span><span class="text_1">]</span><span class="text_">,</span><span class="text_4">marker</span><span class="text_1">=</span><span class="text_3">'X'</span><span class="text_">,</span><span class="text_4">markerfacecolor</span><span class="text_1">=</span><span class="text_3">'red'</span><span class="text_">,</span><span class="text_4">markersize</span><span class="text_1">=</span><span class="text_5">15</span><span class="text_1">)<br class="calibre5" />plt.title(</span><span class="text_3">'Phân nhóm với Mean Shift'</span><span class="text_1">)<br class="calibre5" />plt.show()</span></p><p class="block_7"></p></div>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_1">Kết quả thu được</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_1"><img alt="Image" src="images/000002.png" class="calibre7" /></p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_1">Terminal :</p>
+	<p class="block_10">[7.20690909 2.20836364]</p>
+	<p class="block_11"> [2.17603774 8.03283019]</p>
+	<p class="block_11"> [5.97960784 8.39078431]</p>
+	<p class="block_12"> [4.99466667 4.65844444]]</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_5">Ước tính chất lượng của nhóm cùng với điểm silhouette:</p>
+	<p class="block_1">Nếu dữ liệu được tổ chức tự nhiên thành những nhóm riêng biệt thì nó quá dễ để hình dung và rút ra được kết luận. Nhưng nó rất hiếm khi xảy ra trong thực tế. Dữ liệu thực tế rất lớn và xáo trộn. Vì vậy chúng ta cần phải định nghĩa veefchaats lượng của các nhóm.</p>
+	<p class="block_1">Số Silhouette là một phương thức sử dụng để kiểm tra tính chắc chắn của nhóm trong dữ liệu của chúng ta. Nó đưa ra một ước tính về mỗi điểm dữ liệu có phù hợp với nhóm nó thuộc về không. Điểm Silhouette là một số liệu để đo điểm dữ liệu có phù hợp với một nhóm, cũng như so sánh với các nhóm khác. </p>
+	<p class="block_1">Trên mỗi điểm dữ liệu điểm silhouette score được tính dựa trên công thức:</p>
+	<p class="block_1">silhouette score=(p-q)/max(p,q)</p>
+	<p class="block_1">ở đây </p>
+	<ul class="list_">
+	<li class="block_2">số q là khoảng cách trung bình (mean) đến tất cả các điểm trong nhóm mà điểm dữ liệu đang xét thuộc về nhóm đó</li>
+	<li class="block_4">số p là khoảng cách trung bình (mean) tới các điểm gần nhất trong các nhóm khác .</li>
+</ul>
+	<p class="block_1">Giá trị của số silhouette nằm trong khoảng từ -1 -&gt; 1. Điểm số càng gần với 1 thì có nghĩa là điểm dữ liệu đó giống với các điểm dữ liệu thuộc nhóm đó. Nếu bạn có quá nhiều ddiemr âm silhouette thì có nghĩa là chúng ta có thể có quá nhiều nhóm trong dữ liệu của chúng ta. Chúng ta cần chạy thuật toán phân nhóm một lần nữa để tìm số nhóm tối ưu hơn.</p>
+	<p class="block_1">Giờ thì thử đoạn code sau với silhouette score nào. File python -&gt; ten là silhouette_scores.py</p>
+	<div class="frame_"><p class="block_6"><span class="text_">import </span><span class="text_1">numpy </span><span class="text_">as </span><span class="text_1">np<br class="calibre5" /></span><span class="text_">import </span><span class="text_1">matplotlib.pyplot </span><span class="text_">as </span><span class="text_1">plt<br class="calibre5" /></span><span class="text_">from </span><span class="text_1">sklearn.cluster </span><span class="text_">import </span><span class="text_1">KMeans<br class="calibre5" /></span><span class="text_">from </span><span class="text_1">sklearn </span><span class="text_">import </span><span class="text_1">metrics<br class="calibre5" /><br class="calibre5" />X=np.loadtxt(</span><span class="text_3">"data/chap4/data_quality.txt"</span><span class="text_">,</span><span class="text_4">delimiter</span><span class="text_1">=</span><span class="text_3">','</span><span class="text_1">)<br class="calibre5" />scores=[]<br class="calibre5" /></span><span class="text_2"># Khởi tạo giá trị. values array là một danh sách dữ liệu mà chúng ta muốn lặp để tìm số nhóm tối ưu<br class="calibre5" /></span><span class="text_1">values=np.arange(</span><span class="text_5">2</span><span class="text_">,</span><span class="text_5">10</span><span class="text_1">)<br class="calibre5" /></span><span class="text_2"># Lặp tất cả các giá trị và xây dựng một mô hình KMeans trong mỗi lần lặp:<br class="calibre5" /></span><span class="text_">for </span><span class="text_1">num_clusters </span><span class="text_">in </span><span class="text_1">values:<br class="calibre5" /><span class="calibre4">    kmeans=KMeans(</span></span><span class="text_4">init</span><span class="text_1">=</span><span class="text_3">'k-means++'</span><span class="text_">,</span><span class="text_4">n_clusters</span><span class="text_1">=num_clusters</span><span class="text_">,</span><span class="text_4">n_init</span><span class="text_1">=</span><span class="text_5">6</span><span class="text_1">)<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_2"># Train Kmeans model<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_1">kmeans.fit(X)<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_2">#Ước tính số điểm silhouette cho mô hình bên trên sử dụng phép tính khoảng cách Euclidean<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_1">score=metrics.silhouette_score(X</span><span class="text_">,</span><span class="text_1">kmeans.labels_</span><span class="text_">,</span><span class="text_4">metric</span><span class="text_1">=</span><span class="text_3">'euclidean'</span><span class="text_">,</span><span class="text_4">sample_size</span><span class="text_1">=</span><span class="text_7">len</span><span class="text_1">(X))<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_7">print</span><span class="text_1">(</span><span class="text_3">"Số nhóm ="</span><span class="text_">,</span><span class="text_1">num_clusters)<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_7">print</span><span class="text_1">(</span><span class="text_3">"Điểm silhouette: "</span><span class="text_">,</span><span class="text_7">round</span><span class="text_1">(score</span><span class="text_">,</span><span class="text_5">3</span><span class="text_1">))<br class="calibre5" /><span class="calibre4">    scores.append(score)</span></span><span class="text_1"><br class="calibre5" /></span><span class="text_2">#Biểu diễn điểm số silhouette cho những giá trị khác nhau<br class="calibre5" /></span><span class="text_1">plt.figure()<br class="calibre5" />plt.bar(values</span><span class="text_">,</span><span class="text_1">scores</span><span class="text_">,</span><span class="text_4">width</span><span class="text_1">=</span><span class="text_5">0.8</span><span class="text_">,</span><span class="text_4">color</span><span class="text_1">=</span><span class="text_3">'blue'</span><span class="text_1">)<br class="calibre5" />plt.title(</span><span class="text_3">'Điểm số Silhouette dựa trên số nhóm'</span><span class="text_1">)<br class="calibre5" />plt.show()<br class="calibre5" /><br class="calibre5" /></span><span class="text_2"># Lấy Số nhóm tương ứng tốt nhất dựa trên điểm Silhouette<br class="calibre5" /></span><span class="text_1">num_clusters=np.argmax(scores)+values[</span><span class="text_5">0</span><span class="text_1">]<br class="calibre5" /></span><span class="text_7">print</span><span class="text_1">(</span><span class="text_3">" Số nhóm tối ưu nhất: "</span><span class="text_">,</span><span class="text_1">num_clusters)<br class="calibre5" /></span><span class="text_2"># Train lại dữ liệu với số nhóm tối ưu nhất để vẽ ra màn hình<br class="calibre5" /></span><span class="text_1">kmeans.n_clusters=num_clusters<br class="calibre5" />kmeans.fit(X)<br class="calibre5" /></span><span class="text_2"># Biểu diễn lại dữ liệu input với số nhóm được chia<br class="calibre5" /><br class="calibre5" />#visualize_clusters(X,kmeans.labels_,'Phân nhóm tối ưu dữ liệu Input')<br class="calibre5" /></span><span class="text_1">labels=kmeans.labels_<br class="calibre5" />plt.figure()<br class="calibre5" />colors = </span><span class="text_3">'rgbcmykw'<br class="calibre5" /></span><span class="text_1">markers = </span><span class="text_3">'.,ov^&lt;&gt;12348spP*hH+xXdD|_'<br class="calibre5" /></span><span class="text_1">num_clusters = </span><span class="text_7">len</span><span class="text_1">(np.unique(labels))<br class="calibre5" />markers = markers[</span><span class="text_5">0</span><span class="text_1">:num_clusters]<br class="calibre5" />colors = colors[</span><span class="text_5">0</span><span class="text_1">:num_clusters]<br class="calibre5" /></span><span class="text_">for </span><span class="text_1">i</span><span class="text_">, </span><span class="text_1">marker </span><span class="text_">in </span><span class="text_7">zip</span><span class="text_1">(</span><span class="text_7">range</span><span class="text_1">(num_clusters)</span><span class="text_">, </span><span class="text_1">markers):<br class="calibre5" /><span class="calibre4">    plt.scatter(X[labels == i</span></span><span class="text_">, </span><span class="text_5">0</span><span class="text_1">]</span><span class="text_">, </span><span class="text_1">X[labels == i</span><span class="text_">, </span><span class="text_5">1</span><span class="text_1">]</span><span class="text_">, </span><span class="text_4">marker</span><span class="text_1">=marker</span><span class="text_">, </span><span class="text_4">color</span><span class="text_1">=colors[i])<br class="calibre5" />x_min</span><span class="text_">, </span><span class="text_1">x_max = X[:</span><span class="text_">, </span><span class="text_5">0</span><span class="text_1">].min() - </span><span class="text_5">1</span><span class="text_">, </span><span class="text_1">X[:</span><span class="text_">, </span><span class="text_5">0</span><span class="text_1">].max() + </span><span class="text_5">1<br class="calibre5" /></span><span class="text_2"># print(x_min,x_max)<br class="calibre5" /></span><span class="text_1">y_min</span><span class="text_">, </span><span class="text_1">y_max = X[:</span><span class="text_">, </span><span class="text_5">1</span><span class="text_1">].min() - </span><span class="text_5">1</span><span class="text_">, </span><span class="text_1">X[:</span><span class="text_">, </span><span class="text_5">1</span><span class="text_1">].max() + </span><span class="text_5">1<br class="calibre5" /></span><span class="text_1">plt.title = </span><span class="text_3">'Phân nhóm tối ưu với Silhouette Scores'<br class="calibre5" /></span><span class="text_1">plt.xlim(x_min</span><span class="text_">, </span><span class="text_1">x_max)<br class="calibre5" />plt.ylim(y_min</span><span class="text_">, </span><span class="text_1">y_max)<br class="calibre5" />plt.xticks()<br class="calibre5" />plt.yticks()<br class="calibre5" />plt.show()</span></p><p class="block_7"></p></div>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_1">Kết quả :</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_10">Số nhóm = 2</p>
+	<p class="block_11"><span class="calibre4">Điểm silhouette:  0.478</span></p>
+	<p class="block_11">Số nhóm = 3</p>
+	<p class="block_11"><span class="calibre4">Điểm silhouette:  0.547</span></p>
+	<p class="block_11">Số nhóm = 4</p>
+	<p class="block_11"><span class="calibre4">Điểm silhouette:  0.579</span></p>
+	<p class="block_11">Số nhóm = 5</p>
+	<p class="block_11"><span class="calibre4">Điểm silhouette:  0.589</span></p>
+	<p class="block_11">Số nhóm = 6</p>
+	<p class="block_11"><span class="calibre4">Điểm silhouette:  0.61</span></p>
+	<p class="block_11">Số nhóm = 7</p>
+	<p class="block_11"><span class="calibre4">Điểm silhouette:  0.554</span></p>
+	<p class="block_11">Số nhóm = 8</p>
+	<p class="block_11"><span class="calibre4">Điểm silhouette:  0.498</span></p>
+	<p class="block_11">Số nhóm = 9</p>
+	<p class="block_11"><span class="calibre4">Điểm silhouette:  0.445</span></p>
+	<p class="block_12"> Số nhóm tối ưu nhất:</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_9"><img alt="Image" src="images/000000.png" class="calibre6" /></p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_1"><img alt="Image" src="images/000008.png" class="calibre7" /></p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_1">Bạn cũng có thể thay dữ liệu đầu vào bằng file <i class="calibre8">data_clustering.txt </i>sẽ có kết quả phân nhóm tối ưu là 5</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_5">Mô hình Gaussian Mixture là gì ?</p>
+	<p class="block_1">Trước khi chúng ta nói về mô hình <b class="calibre2">Gaussian Mixture</b> chúng ta cần phải hiểu mô hình <b class="calibre2">Mixture</b> là gì. Một mô hình <b class="calibre2">Mixture </b>là một dạng mô hình tính mật độ xác suất, chúng ta giả định những dữ liệu được điều chỉnh bởi một ố thành phần phân phối. Nếu những thành phần phân phối đó là Gaussian, thì nhưng mô hình đó được gọi là mô hình <b class="calibre2">Gaussian Mixture</b>. Những thành phần phân phối này được kết hợp theo thứ tự để tạo thành một hàm mật độ đa phương thức (multi-modal) thứ mà sẽ trở thành mô hình hỗn hợp (mixture model).</p>
+	<p class="block_1">Hãy thử xem một ví dụ để hiểu cách làm việc của mô hình hỗn hợp <b class="calibre2">(Mixture Model). </b> Chúng ta muốn xây dựng một mô hình thói quem mua sắm của tất cả người dân ở Nam Mỹ. Có một cách đó là tìm tất cả thói quen mua sắm của cả lục địa nam mỹ vào trong một mô hình. Nhưng ta cũng biết là mỗi người ở mỗi nước có những thói quen mua sắm khác nhau. Chúng ta cần hiểu cách mọi người trong mỗi quốc gia mua sắm như thế nào. Nếu chúng ta muốn có được một mô hình tiêu biểu, chúng ta cần phải tính cho tất cả những thay đổi trong lục địa Nam mỹ. Trong trường hợp này chúng ta có thể dùng mixture models để xây dựng mô hình thói quen mua sắm của từng nước và sau đó kết hợp chúng lại thành một mô hình lớn Mixture Models. Bằng cách này chúng ta sẽ không bị thiếu các hành vi cơ bản của từng nước. Bằng cách không bắt tất cả các nước dùng chung một mô hình, chúng ta có thể trích xuất dữ liệu chính xác hơn.</p>
+	<p class="block_1">Một thứ thú vị được chú ý ở đây mixture models là một bán tham số, nó có nghĩa là chúng phụ thuộc một phần vào một tập hợp các hàm xác định trước (predefied functions). Chúng cũng có thể cung cấp xác suất tốt hơn trong mô hình hóa các phân phối cơ bản trong dữ liệu của chúng ta. Chúng có thể lấp đầy các khoảng trống trong một bộ dữ liệu thưa thớt.</p>
+	<p class="block_1">Nếu chúng ta định nghĩa hàm, thì mixture model sẽ biến từ bán-tham số (semi-parametric) thành tham số (prametric). Mô hình bao gồm cả tham số có số chiều hữu hạn và tham số có số chiều vô hạn thường được gọi là mô hình bán tham số. Vì thế <b class="calibre2">Gaussian Mixture Model (GMM) </b>là một mô hình tham số đại diện như một trọng số của hàm Gaussian ( Tìm hiểu thêm hàm Gaussian trên google nhé).. Chúng ta giả định những dữ liệu đó được tao ra bởi một bộ của mô hình Gaussian và kết hợp với nhau bằng cách nào đó. GMM rất mạnh và thường được ứng dụng trong rất nhiều lĩnh vực. Tham số của GMM được ước tính từ dữ liệu training sử dụng các thuật toán như (Expectation-maximization (EM) hay Maximum A-posteriori(MAP). Một vài ứng dụng thông dụng của GMM như là truy suất cơ sở dữ liệu hình ảnh, mô hình biến động thị trường chứng khoán, xác minh sinh trắc, và nhiều thứ nữa.</p>
+	<p class="block_5">Xây dựng một bộ phân loại dựa trên GMM</p>
+	<p class="block_1">Giờ thì dùng Python làm một mô hình GMM để xem thử. Tạo một file Python đặt tên là Gaussian_mixture.py:</p>
+	<div class="frame_"><p class="block_6"><span class="text_">import </span><span class="text_1">numpy </span><span class="text_">as </span><span class="text_1">np<br class="calibre5" /></span><span class="text_">import </span><span class="text_1">matplotlib.pyplot </span><span class="text_">as </span><span class="text_1">plt<br class="calibre5" /></span><span class="text_">from </span><span class="text_1">matplotlib </span><span class="text_">import </span><span class="text_1">patches<br class="calibre5" /><br class="calibre5" /></span><span class="text_">from </span><span class="text_1">sklearn </span><span class="text_">import </span><span class="text_1">datasets<br class="calibre5" /></span><span class="text_">from </span><span class="text_1">sklearn.mixture </span><span class="text_">import </span><span class="text_1">GaussianMixture<br class="calibre5" /></span><span class="text_">from </span><span class="text_1">sklearn.model_selection </span><span class="text_">import </span><span class="text_1">StratifiedKFold<br class="calibre5" /><br class="calibre5" /></span><span class="text_2"># Lấy bộ dữ liệu iris trong scikit-learn để làm dữ liệu phân tích:<br class="calibre5" /></span><span class="text_1">iris=datasets.load_iris()<br class="calibre5" /></span><span class="text_2"># Chia dữ liệu thành 2 bộ dữ liệu Training và testing với tỉ lệ 8/2.<br class="calibre5" />#Tham số n_folds là số tập hợp con bạn sẽ có được. Chúng ta gán cho nó giá trị 5 có nghĩa <span class="calibre4">là  bộ</span></span><span class="text_2"> dữ liệu sẽ được chia thành 5 phần. Chúng ta sẽ dùng 4 phần để training và một phần còn lại để test:<br class="calibre5" /></span><span class="text_1">indices=StratifiedKFold(</span><span class="text_4">n_splits</span><span class="text_1">=</span><span class="text_5">5</span><span class="text_1">)<br class="calibre5" />train_index</span><span class="text_">, </span><span class="text_1">test_index = </span><span class="text_7">next</span><span class="text_1">(</span><span class="text_7">iter</span><span class="text_1">(indices.split(iris.data</span><span class="text_">, </span><span class="text_1">iris.target)))<br class="calibre5" /></span><span class="text_2"># chia dữ liệu train và test:<br class="calibre5" /></span><span class="text_1">X_train</span><span class="text_">,</span><span class="text_1">y_train=iris.data[train_index]</span><span class="text_">,</span><span class="text_1">iris.target[train_index]<br class="calibre5" />X_test</span><span class="text_">,</span><span class="text_1">y_test=iris.data[test_index]</span><span class="text_">,</span><span class="text_1">iris.target[test_index]<br class="calibre5" /></span><span class="text_2"># Phân chia số lớp trong dữ liệu train<br class="calibre5" /></span><span class="text_1">num_classes=</span><span class="text_7">len</span><span class="text_1">(np.unique(y_train))<br class="calibre5" /></span><span class="text_2"># Xây dựng một bộ phân loại GMM sử dụng những tham số thích hợp<br class="calibre5" /># Tham số n_components là số thành phần trong phân phối cơ bản. Trong trường hợp này nó sẽ là số lớp riêng biệt trong dữ liệu của chúng ta.<br class="calibre5" /># Tham số coveriance_type, Chúng ta cần chỉ rõ kiểu (type) của phương sai. mặc định là 'full'<br class="calibre5" /># Tham số init_params điều khiển số tham số cần đề cập nhật trong suốt quá trình training. chúng ta dùng tham trị là 'wc' (mặc định là kmeans) có nghĩa là trọng số và hiệu phương sai được cập nhật liên tục trong quá trình training<br class="calibre5" /># Tham só max_iter là số lần lặp Expectation_Maximization sẽ thực hiện trong suốt quá trình training<br class="calibre5" /></span><span class="text_1">classifier=GaussianMixture(</span><span class="text_4">n_components</span><span class="text_1">=num_classes</span><span class="text_">,</span><span class="text_4">covariance_type</span><span class="text_1">=</span><span class="text_3">'full'</span><span class="text_">,</span><span class="text_4">max_iter</span><span class="text_1">=</span><span class="text_5">20</span><span class="text_1">)<br class="calibre5" /><br class="calibre5" /></span><span class="text_2"># Khởi tạo means (trung bình) của classifier:<br class="calibre5" /></span><span class="text_1">classifier.means_init=np.array([X_train[y_train==i].mean(</span><span class="text_4">axis</span><span class="text_1">=</span><span class="text_5">0</span><span class="text_1">) </span><span class="text_">for </span><span class="text_1">i </span><span class="text_">in </span><span class="text_7">range</span><span class="text_1">(num_classes)])<br class="calibre5" /></span><span class="text_2"># Train mô hình GMM sử dụng dữ liệu training<br class="calibre5" /><br class="calibre5" /></span><span class="text_1">model=classifier.fit(X_train)<br class="calibre5" /></span><span class="text_2"># Vẽ biểu đồ bao quanh cho classifier. Chúng ta cần phân chia giá trị vùng (eigenvalues) và vector vùng (eigenvectors) để vẽ hình elip bao quanh những nhóm đó.<br class="calibre5" /></span><span class="text_1">plt.figure()<br class="calibre5" />colors=</span><span class="text_3">'rgb'<br class="calibre5" /></span><span class="text_1">markers=</span><span class="text_3">'ox*'<br class="calibre5" /><br class="calibre5" /></span><span class="text_">for </span><span class="text_1">i</span><span class="text_">,</span><span class="text_1">color </span><span class="text_">in </span><span class="text_7">enumerate</span><span class="text_1">(colors):<br class="calibre5" /><span class="calibre4">    covariances=classifier.covariances_[i][:</span></span><span class="text_5">2</span><span class="text_">,</span><span class="text_1">:</span><span class="text_5">2</span><span class="text_1">]<br class="calibre5" /><span class="calibre4">    eigenvalues</span></span><span class="text_">,</span><span class="text_1">eigenvectors=np.linalg.eig(covariances)<br class="calibre5" /></span><span class="text_2"># Normalize eigenvector đầu tiên:<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_1">norm_vec=eigenvectors[</span><span class="text_5">1</span><span class="text_1">]/np.linalg.norm(eigenvectors[</span><span class="text_5">0</span><span class="text_1">])<br class="calibre5" /></span><span class="text_2"># Hình elip cần phải xoay chính xác để chỉ ra vùng phân chia : ước tính góc:<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_1">angle=np.arctan2(norm_vec[</span><span class="text_5">1</span><span class="text_1">]</span><span class="text_">,</span><span class="text_1">norm_vec[</span><span class="text_5">0</span><span class="text_1">])<br class="calibre5" /><span class="calibre4">    angle=</span></span><span class="text_5">180</span><span class="text_1">*angle/np.pi<br class="calibre5" /></span><span class="text_2"># Phóng to hình eclipse để biểu diễn. số eigenvalues tượng trưng cho cỡ của hình eclipse<br class="calibre5" /><span class="calibre4">    #scaling_factor=8</span></span><span class="text_2"><br class="calibre5" /><span class="calibre4">    #eigenvalues*=scaling_factor</span></span><span class="text_2"><br class="calibre5" /><span class="calibre4">    </span></span><span class="text_1">eigenvalues = </span><span class="text_5">2. </span><span class="text_1">* np.sqrt(</span><span class="text_5">2.</span><span class="text_1">) * np.sqrt(eigenvalues)<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_2"># Vẽ hình eclipse<br class="calibre5" /><br class="calibre5" /><span class="calibre4">    </span></span><span class="text_1">eclipse=patches.Ellipse(classifier.means_[i</span><span class="text_">,</span><span class="text_1">:</span><span class="text_5">2</span><span class="text_1">]</span><span class="text_">,</span><span class="text_1">eigenvalues[</span><span class="text_5">0</span><span class="text_1">]</span><span class="text_">,</span><span class="text_1">eigenvalues[</span><span class="text_5">1</span><span class="text_1">]</span><span class="text_">,</span><span class="text_5">180</span><span class="text_1">+angle</span><span class="text_">,</span><span class="text_4">color</span><span class="text_1">=color)<br class="calibre5" /><span class="calibre4">    axis_handle=plt.subplot(</span></span><span class="text_5">1</span><span class="text_">,</span><span class="text_5">1</span><span class="text_">,</span><span class="text_5">1</span><span class="text_1">)<br class="calibre5" /><span class="calibre4">    eclipse.set_clip_box(axis_handle.bbox)</span></span><span class="text_1"><br class="calibre5" /><span class="calibre4">    eclipse.set_alpha(</span></span><span class="text_5">0.5</span><span class="text_1">)<br class="calibre5" /><span class="calibre4">    axis_handle.add_artist(eclipse)</span></span><span class="text_1"><br class="calibre5" /><br class="calibre5" /><span class="calibre4">    </span></span><span class="text_2"># vẽ dữ liệu input<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_1">curr_data=iris.data[iris.target==i]<br class="calibre5" /><span class="calibre4">    plt.scatter(curr_data[:</span></span><span class="text_">,</span><span class="text_5">0</span><span class="text_1">]</span><span class="text_">,</span><span class="text_1">curr_data[:</span><span class="text_">,</span><span class="text_5">1</span><span class="text_1">]</span><span class="text_">,</span><span class="text_4">marker</span><span class="text_1">=</span><span class="text_3">'&gt;'</span><span class="text_">,</span><span class="text_4">facecolors</span><span class="text_1">=</span><span class="text_3">'c'</span><span class="text_">,</span><span class="text_4">s</span><span class="text_1">=</span><span class="text_5">10</span><span class="text_">,</span><span class="text_4">label</span><span class="text_1">=iris.target_names[i])<br class="calibre5" /><span class="calibre4">    test_data=X_test[y_test==i]</span></span><span class="text_1"><br class="calibre5" /><span class="calibre4">    plt.scatter(test_data[:</span></span><span class="text_">,</span><span class="text_5">0</span><span class="text_1">]</span><span class="text_">,</span><span class="text_1">test_data[:</span><span class="text_">,</span><span class="text_5">1</span><span class="text_1">]</span><span class="text_">,</span><span class="text_4">marker</span><span class="text_1">=markers[i]</span><span class="text_">,</span><span class="text_4">facecolors</span><span class="text_1">=color</span><span class="text_">,</span><span class="text_4">s</span><span class="text_1">=</span><span class="text_5">50</span><span class="text_">,</span><span class="text_4">label</span><span class="text_1">=iris.target_names[i])<br class="calibre5" /></span><span class="text_2"># Tính toán dự đoán cho dữ liệu train và dữ liệu test<br class="calibre5" /></span><span class="text_1">y_train_pred=classifier.predict(X_train)<br class="calibre5" />accuracy_training=np.mean(y_train_pred.ravel()==y_train.ravel())*</span><span class="text_5">100<br class="calibre5" /></span><span class="text_7">print</span><span class="text_1">(</span><span class="text_3">"Độ chính xác của training data: "</span><span class="text_">,</span><span class="text_1">accuracy_training)<br class="calibre5" />y_test_pred=classifier.predict(X_test)<br class="calibre5" />accuracy_test=np.mean(y_test_pred.ravel()==y_test.ravel())*</span><span class="text_5">100<br class="calibre5" /></span><span class="text_7">print</span><span class="text_1">(</span><span class="text_3">"Độ chính xác của test data: "</span><span class="text_">,</span><span class="text_1">accuracy_test)<br class="calibre5" /><br class="calibre5" />plt.title(</span><span class="text_3">' Phân loại GMM '</span><span class="text_1">)<br class="calibre5" />plt.xticks()<br class="calibre5" />plt.yticks()<br class="calibre5" />plt.show()</span></p><p class="block_7"></p></div>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_1">Kết quả được in ra :</p>
+	<p class="block_9"><img alt="Image" src="images/000007.png" class="calibre9" /></p>
+	<p class="block_1">Terminal:</p>
+	<p class="block_10"><span class="calibre4">Độ chính xác của training data:  95.83333333333334</span></p>
+	<p class="block_12"><span class="calibre4">Độ chính xác của test data:  100.0</span></p>
+	<p class="block_5">Tìm nhóm trong thị trường chứng khoán sử dụng Affinity Propagation model</p>
+	<p class="block_1"><b class="calibre2">Affinity Propagation </b>(lan truyền mối quan hệ) là một thuật toán phân nhóm không bắt buộc chúng ta phải chỉ định số nhóm trước. Bởi vì tính chất chung của nó và dễ dàng thực hiện, nó được tìm thấy rất nhiều trong các ứng dụng ở nhiều lĩnh vực. Nó tìm ra những đại diện của các nhóm được gọi là các chuẩn mực ( exemplars) sử dụng một kỹ thuật gọi là truyền <span class="calibre3">thông tin (message passing). Chúng ta bắt đầu bằng cách chỉ định những biện pháp tương tự mà chúng ta muốn nó xem xét.  Nó sẽ đồng thời xem xét tất cả nhũng dữ liệu training như là một chuẩn mực có khả năng. Sau đó nó sẽ truyền những gói thông tin giữa các điểm dữ liệu cho tới khi nó tìm thấy một bộ chuẩn mực riêng.</span></p>
+	<p class="block_1">Những thông tin được truyền trong 2 bước luân phiên được gọi là responsibility (trách nhiệm) và avaibility (khả dụng). Responsibility là tin được gửi từ các thành phần trong nhóm tới thành phần chuẩn được chọn làm "ứng cử viên" ( candidate exemplars), cho biết mức độ phù hợp của điểm dữ liệu này như là một vật mẫu của nhóm. Avaibility là tin nhắn được gửi từ các ứng cử viên tới các thành phần khác của nhóm cho biết nó phù hợp thế nào ở vai trò của một ứng cử viên ( as an exemplar). Thuật toán sẽ làm như thế cho tới khi một ứng cử viên tối ưu nhất.</p>
+	<p class="block_1">Cũng có một tham số được gọi là số ứng cử viên được ưu tiên tìm thấy. Nếu ta chọn một số có giá trị lớn , nó sẽ làm thuật toán của chúng ta tìm quá nhiều nhóm. Nếu ta chọn số có giá trị thấp nó sẽ làm cho số nhóm nhỏ. Một giá trị phù hợp là một giá trị trung bình giữa 2 số.</p>
+	<p class="block_1">Sử dụng Affinity Propagation </p>
+	<div class="frame_"><p class="block_6"><span class="text_2"># Author: Gael Varoquaux gael.varoquaux@normalesup.org<br class="calibre5" /># License: BSD 3 clause<br class="calibre5" /><br class="calibre5" /></span><span class="text_">import </span><span class="text_1">sys<br class="calibre5" /><br class="calibre5" /></span><span class="text_">import </span><span class="text_1">numpy </span><span class="text_">as </span><span class="text_1">np<br class="calibre5" /></span><span class="text_">import </span><span class="text_1">matplotlib.pyplot </span><span class="text_">as </span><span class="text_1">plt<br class="calibre5" /></span><span class="text_">from </span><span class="text_1">matplotlib.collections </span><span class="text_">import </span><span class="text_1">LineCollection<br class="calibre5" /><br class="calibre5" /></span><span class="text_">import </span><span class="text_1">pandas </span><span class="text_">as </span><span class="text_1">pd<br class="calibre5" /><br class="calibre5" /></span><span class="text_">from </span><span class="text_1">sklearn </span><span class="text_">import </span><span class="text_1">cluster</span><span class="text_">, </span><span class="text_1">covariance</span><span class="text_">, </span><span class="text_1">manifold<br class="calibre5" /><br class="calibre5" /></span><span class="text_7">print</span><span class="text_1">(__doc__)<br class="calibre5" /><br class="calibre5" /><br class="calibre5" /></span><span class="text_2"># #############################################################################<br class="calibre5" /># Lấy dữ liệu từ internet<br class="calibre5" /><br class="calibre5" /># Dữ liệu này từ năm 2003 - 2008. Dữ liệu này dễ xử lý để so sánh: (không quá lâu vì thì chúng ta có thể lấy dữ liệu về các công ty công nghệ và không sup đổ trước năm 2008<br class="calibre5" /><span class="calibre4">#  Đây là dữ liệu lịch sử có thể dễ dàng lấy được từ các API như quandl.com và alphavantage.co</span></span><span class="text_2"><br class="calibre5" /><br class="calibre5" /><br class="calibre5" /></span><span class="text_1">symbol_dict = {<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_3">'TOT'</span><span class="text_1">: </span><span class="text_3">'Total'</span><span class="text_">,<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_3">'XOM'</span><span class="text_1">: </span><span class="text_3">'Exxon'</span><span class="text_">,<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_3">'CVX'</span><span class="text_1">: </span><span class="text_3">'Chevron'</span><span class="text_">,<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_3">'COP'</span><span class="text_1">: </span><span class="text_3">'ConocoPhillips'</span><span class="text_">,<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_3">'VLO'</span><span class="text_1">: </span><span class="text_3">'Valero Energy'</span><span class="text_">,<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_3">'MSFT'</span><span class="text_1">: </span><span class="text_3">'Microsoft'</span><span class="text_">,<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_3">'IBM'</span><span class="text_1">: </span><span class="text_3">'IBM'</span><span class="text_">,<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_3">'TWX'</span><span class="text_1">: </span><span class="text_3">'Time Warner'</span><span class="text_">,<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_3">'CMCSA'</span><span class="text_1">: </span><span class="text_3">'Comcast'</span><span class="text_">,<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_3">'CVC'</span><span class="text_1">: </span><span class="text_3">'Cablevision'</span><span class="text_">,<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_3">'YHOO'</span><span class="text_1">: </span><span class="text_3">'Yahoo'</span><span class="text_">,<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_3">'DELL'</span><span class="text_1">: </span><span class="text_3">'Dell'</span><span class="text_">,<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_3">'HPQ'</span><span class="text_1">: </span><span class="text_3">'HP'</span><span class="text_">,<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_3">'AMZN'</span><span class="text_1">: </span><span class="text_3">'Amazon'</span><span class="text_">,<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_3">'TM'</span><span class="text_1">: </span><span class="text_3">'Toyota'</span><span class="text_">,<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_3">'CAJ'</span><span class="text_1">: </span><span class="text_3">'Canon'</span><span class="text_">,<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_3">'SNE'</span><span class="text_1">: </span><span class="text_3">'Sony'</span><span class="text_">,<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_3">'F'</span><span class="text_1">: </span><span class="text_3">'Ford'</span><span class="text_">,<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_3">'HMC'</span><span class="text_1">: </span><span class="text_3">'Honda'</span><span class="text_">,<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_3">'NAV'</span><span class="text_1">: </span><span class="text_3">'Navistar'</span><span class="text_">,<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_3">'NOC'</span><span class="text_1">: </span><span class="text_3">'Northrop Grumman'</span><span class="text_">,<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_3">'BA'</span><span class="text_1">: </span><span class="text_3">'Boeing'</span><span class="text_">,<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_3">'KO'</span><span class="text_1">: </span><span class="text_3">'Coca Cola'</span><span class="text_">,<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_3">'MMM'</span><span class="text_1">: </span><span class="text_3">'3M'</span><span class="text_">,<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_3">'MCD'</span><span class="text_1">: </span><span class="text_3">'McDonald</span><span class="text_">\'</span><span class="text_3">s'</span><span class="text_">,<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_3">'PEP'</span><span class="text_1">: </span><span class="text_3">'Pepsi'</span><span class="text_">,<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_3">'K'</span><span class="text_1">: </span><span class="text_3">'Kellogg'</span><span class="text_">,<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_3">'UN'</span><span class="text_1">: </span><span class="text_3">'Unilever'</span><span class="text_">,<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_3">'MAR'</span><span class="text_1">: </span><span class="text_3">'Marriott'</span><span class="text_">,<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_3">'PG'</span><span class="text_1">: </span><span class="text_3">'Procter Gamble'</span><span class="text_">,<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_3">'CL'</span><span class="text_1">: </span><span class="text_3">'Colgate-Palmolive'</span><span class="text_">,<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_3">'GE'</span><span class="text_1">: </span><span class="text_3">'General Electrics'</span><span class="text_">,<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_3">'WFC'</span><span class="text_1">: </span><span class="text_3">'Wells Fargo'</span><span class="text_">,<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_3">'JPM'</span><span class="text_1">: </span><span class="text_3">'JPMorgan Chase'</span><span class="text_">,<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_3">'AIG'</span><span class="text_1">: </span><span class="text_3">'AIG'</span><span class="text_">,<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_3">'AXP'</span><span class="text_1">: </span><span class="text_3">'American express'</span><span class="text_">,<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_3">'BAC'</span><span class="text_1">: </span><span class="text_3">'Bank of America'</span><span class="text_">,<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_3">'GS'</span><span class="text_1">: </span><span class="text_3">'Goldman Sachs'</span><span class="text_">,<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_3">'AAPL'</span><span class="text_1">: </span><span class="text_3">'Apple'</span><span class="text_">,<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_3">'SAP'</span><span class="text_1">: </span><span class="text_3">'SAP'</span><span class="text_">,<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_3">'CSCO'</span><span class="text_1">: </span><span class="text_3">'Cisco'</span><span class="text_">,<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_3">'TXN'</span><span class="text_1">: </span><span class="text_3">'Texas Instruments'</span><span class="text_">,<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_3">'XRX'</span><span class="text_1">: </span><span class="text_3">'Xerox'</span><span class="text_">,<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_3">'WMT'</span><span class="text_1">: </span><span class="text_3">'Wal-Mart'</span><span class="text_">,<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_3">'HD'</span><span class="text_1">: </span><span class="text_3">'Home Depot'</span><span class="text_">,<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_3">'GSK'</span><span class="text_1">: </span><span class="text_3">'GlaxoSmithKline'</span><span class="text_">,<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_3">'PFE'</span><span class="text_1">: </span><span class="text_3">'Pfizer'</span><span class="text_">,<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_3">'SNY'</span><span class="text_1">: </span><span class="text_3">'Sanofi-Aventis'</span><span class="text_">,<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_3">'NVS'</span><span class="text_1">: </span><span class="text_3">'Novartis'</span><span class="text_">,<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_3">'KMB'</span><span class="text_1">: </span><span class="text_3">'Kimberly-Clark'</span><span class="text_">,<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_3">'R'</span><span class="text_1">: </span><span class="text_3">'Ryder'</span><span class="text_">,<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_3">'GD'</span><span class="text_1">: </span><span class="text_3">'General Dynamics'</span><span class="text_">,<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_3">'RTN'</span><span class="text_1">: </span><span class="text_3">'Raytheon'</span><span class="text_">,<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_3">'CVS'</span><span class="text_1">: </span><span class="text_3">'CVS'</span><span class="text_">,<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_3">'CAT'</span><span class="text_1">: </span><span class="text_3">'Caterpillar'</span><span class="text_">,<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_3">'DD'</span><span class="text_1">: </span><span class="text_3">'DuPont de Nemours'</span><span class="text_1">}<br class="calibre5" /><br class="calibre5" /><br class="calibre5" />symbols</span><span class="text_">, </span><span class="text_1">names = np.array(</span><span class="text_7">sorted</span><span class="text_1">(symbol_dict.items())).T<br class="calibre5" /><br class="calibre5" />quotes = []<br class="calibre5" /><br class="calibre5" /></span><span class="text_">for </span><span class="text_1">symbol </span><span class="text_">in </span><span class="text_1">symbols:<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_7">print</span><span class="text_1">(</span><span class="text_3">'Fetching quote history for %r' </span><span class="text_1">% symbol</span><span class="text_">, </span><span class="text_4">file</span><span class="text_1">=sys.stderr)<br class="calibre5" /><span class="calibre4">    url = (</span></span><span class="text_3">'https://raw.githubusercontent.com/scikit-learn/examples-data/'<br class="calibre5" /><span class="calibre4">           'master/financial-data/{}.csv'</span></span><span class="text_1">)<br class="calibre5" /><span class="calibre4">    quotes.append(pd.read_csv(url.format(symbol)))</span></span><span class="text_1"><br class="calibre5" /><br class="calibre5" />close_prices = np.vstack([q[</span><span class="text_3">'close'</span><span class="text_1">] </span><span class="text_">for </span><span class="text_1">q </span><span class="text_">in </span><span class="text_1">quotes])<br class="calibre5" />open_prices = np.vstack([q[</span><span class="text_3">'open'</span><span class="text_1">] </span><span class="text_">for </span><span class="text_1">q </span><span class="text_">in </span><span class="text_1">quotes])<br class="calibre5" /><br class="calibre5" /></span><span class="text_2">#Các thay đổi hàng ngày được để trong dấu ngoặc kép là những thứ mang nhiều thông tin nhất<br class="calibre5" /></span><span class="text_1">variation = close_prices - open_prices<br class="calibre5" /><br class="calibre5" /><br class="calibre5" /></span><span class="text_2"># #############################################################################<br class="calibre5" /># Tìm hiểu cấu trúc đồ họa từ các mối tương quan<br class="calibre5" /></span><span class="text_1">edge_model = covariance.GraphicalLassoCV(</span><span class="text_4">cv</span><span class="text_1">=</span><span class="text_5">5</span><span class="text_1">)<br class="calibre5" /><br class="calibre5" /></span><span class="text_2"># chuẩn hóa chuỗi thời gian: sử dụng correlations thay vì covariance hiệu quả hơn đề phục hồi cấu trúc<br class="calibre5" />#<br class="calibre5" /></span><span class="text_1">X = variation.copy().T<br class="calibre5" />X /= X.std(</span><span class="text_4">axis</span><span class="text_1">=</span><span class="text_5">0</span><span class="text_1">)<br class="calibre5" />edge_model.fit(X)<br class="calibre5" /><br class="calibre5" /></span><span class="text_2"># #############################################################################<br class="calibre5" /># Nhóm các nhóm sử dụng affinity propagation<br class="calibre5" /><br class="calibre5" /></span><span class="text_1">_</span><span class="text_">, </span><span class="text_1">labels = cluster.affinity_propagation(edge_model.covariance_)<br class="calibre5" />n_labels = labels.max()<br class="calibre5" /><br class="calibre5" /></span><span class="text_">for </span><span class="text_1">i </span><span class="text_">in </span><span class="text_7">range</span><span class="text_1">(n_labels + </span><span class="text_5">1</span><span class="text_1">):<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_7">print</span><span class="text_1">(</span><span class="text_3">'Cluster %i: %s' </span><span class="text_1">% ((i + </span><span class="text_5">1</span><span class="text_1">)</span><span class="text_">, </span><span class="text_3">', '</span><span class="text_1">.join(names[labels == i])))<br class="calibre5" /><br class="calibre5" /></span><span class="text_2"># #############################################################################<br class="calibre5" /># Tìm một chiều thấp nhỏ(low - dimension) để hiển thị biểu đồ. Tìm vị trí tốt nhất của các điểm ( the stocks) trên mặt phẳng 2D<br class="calibre5" /><br class="calibre5" /><br class="calibre5" /># chúng ta sử dụng tham giá trị dense( dày đặc) cho tham số eigen_solver ( là khởi tạo một tập hợp các vector ngẫu nhiên mà chúng ta không kiểm soát)<br class="calibre5" /># ngoài ra chúng ta sử dụng một số lớn cho tham số neighbors để nắm bắt được những cấu trúc lớn<br class="calibre5" /><br class="calibre5" /></span><span class="text_1">node_position_model = manifold.LocallyLinearEmbedding(<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_4">n_components</span><span class="text_1">=</span><span class="text_5">2</span><span class="text_">, </span><span class="text_4">eigen_solver</span><span class="text_1">=</span><span class="text_3">'dense'</span><span class="text_">, </span><span class="text_4">n_neighbors</span><span class="text_1">=</span><span class="text_5">6</span><span class="text_1">)<br class="calibre5" /><br class="calibre5" />embedding = node_position_model.fit_transform(X.T).T<br class="calibre5" /><br class="calibre5" /></span><span class="text_2"># #############################################################################<br class="calibre5" /># Vẽ đồ thị<br class="calibre5" /></span><span class="text_1">plt.figure(</span><span class="text_5">1</span><span class="text_">, </span><span class="text_4">facecolor</span><span class="text_1">=</span><span class="text_3">'w'</span><span class="text_">, </span><span class="text_4">figsize</span><span class="text_1">=(</span><span class="text_5">10</span><span class="text_">, </span><span class="text_5">8</span><span class="text_1">))<br class="calibre5" />plt.clf()<br class="calibre5" />ax = plt.axes([</span><span class="text_5">0.</span><span class="text_">, </span><span class="text_5">0.</span><span class="text_">, </span><span class="text_5">1.</span><span class="text_">, </span><span class="text_5">1.</span><span class="text_1">])<br class="calibre5" />plt.axis(</span><span class="text_3">'off'</span><span class="text_1">)<br class="calibre5" /><br class="calibre5" /></span><span class="text_2"><span class="calibre4"># Biểu diễn đồ thị  các mối tương quan</span></span><span class="text_2"><br class="calibre5" /></span><span class="text_1">partial_correlations = edge_model.precision_.copy()<br class="calibre5" />d = </span><span class="text_5">1 </span><span class="text_1">/ np.sqrt(np.diag(partial_correlations))<br class="calibre5" />partial_correlations *= d<br class="calibre5" />partial_correlations *= d[:</span><span class="text_">, </span><span class="text_1">np.newaxis]<br class="calibre5" />non_zero = (np.abs(np.triu(partial_correlations</span><span class="text_">, </span><span class="text_4">k</span><span class="text_1">=</span><span class="text_5">1</span><span class="text_1">)) &gt; </span><span class="text_5">0.02</span><span class="text_1">)<br class="calibre5" /><br class="calibre5" /></span><span class="text_2"># Plot the nodes using the coordinates of our embedding<br class="calibre5" /></span><span class="text_1">plt.scatter(embedding[</span><span class="text_5">0</span><span class="text_1">]</span><span class="text_">, </span><span class="text_1">embedding[</span><span class="text_5">1</span><span class="text_1">]</span><span class="text_">, </span><span class="text_4">s</span><span class="text_1">=</span><span class="text_5">100 </span><span class="text_1">* d ** </span><span class="text_5">2</span><span class="text_">, </span><span class="text_4">c</span><span class="text_1">=labels</span><span class="text_">,<br class="calibre5" /><span class="calibre4">            </span></span><span class="text_4">cmap</span><span class="text_1">=plt.cm.nipy_spectral)<br class="calibre5" /><br class="calibre5" /></span><span class="text_2"># Phác họa các cạnh<br class="calibre5" /></span><span class="text_1">start_idx</span><span class="text_">, </span><span class="text_1">end_idx = np.where(non_zero)<br class="calibre5" /></span><span class="text_2"># a sequence of (*line0*, *line1*, *line2*), where::<br class="calibre5" /><span class="calibre4">#            linen = (x0, y0), (x1, y1), ... (xm, ym)</span></span><span class="text_2"><br class="calibre5" /></span><span class="text_1">segments = [[embedding[:</span><span class="text_">, </span><span class="text_1">start]</span><span class="text_">, </span><span class="text_1">embedding[:</span><span class="text_">, </span><span class="text_1">stop]]<br class="calibre5" /><span class="calibre4">            </span></span><span class="text_">for </span><span class="text_1">start</span><span class="text_">, </span><span class="text_1">stop </span><span class="text_">in </span><span class="text_7">zip</span><span class="text_1">(start_idx</span><span class="text_">, </span><span class="text_1">end_idx)]<br class="calibre5" />values = np.abs(partial_correlations[non_zero])<br class="calibre5" />lc = LineCollection(segments</span><span class="text_">,<br class="calibre5" /><span class="calibre4">                    </span></span><span class="text_4">zorder</span><span class="text_1">=</span><span class="text_5">0</span><span class="text_">, </span><span class="text_4">cmap</span><span class="text_1">=plt.cm.hot_r</span><span class="text_">,<br class="calibre5" /><span class="calibre4">                    </span></span><span class="text_4">norm</span><span class="text_1">=plt.Normalize(</span><span class="text_5">0</span><span class="text_">, </span><span class="text_5">.7 </span><span class="text_1">* values.max()))<br class="calibre5" />lc.set_array(values)<br class="calibre5" />lc.set_linewidths(</span><span class="text_5">15 </span><span class="text_1">* values)<br class="calibre5" />ax.add_collection(lc)<br class="calibre5" /><br class="calibre5" /></span><span class="text_2"># Biểu hiện các nhãn. Điều khó ở đây là chúng ta muốn xác định các vị trí nhãn để tránh trùng lặp với các nhãn khác<br class="calibre5" /><br class="calibre5" /></span><span class="text_">for </span><span class="text_1">index</span><span class="text_">, </span><span class="text_1">(name</span><span class="text_">, </span><span class="text_1">label</span><span class="text_">, </span><span class="text_1">(x</span><span class="text_">, </span><span class="text_1">y)) </span><span class="text_">in </span><span class="text_7">enumerate</span><span class="text_1">(<br class="calibre5" /><span class="calibre4">        </span></span><span class="text_7">zip</span><span class="text_1">(names</span><span class="text_">, </span><span class="text_1">labels</span><span class="text_">, </span><span class="text_1">embedding.T)):<br class="calibre5" /><br class="calibre5" /><span class="calibre4">    dx = x - embedding[</span></span><span class="text_5">0</span><span class="text_1">]<br class="calibre5" /><span class="calibre4">    dx[index] = </span></span><span class="text_5">1<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_1">dy = y - embedding[</span><span class="text_5">1</span><span class="text_1">]<br class="calibre5" /><span class="calibre4">    dy[index] = </span></span><span class="text_5">1<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_1">this_dx = dx[np.argmin(np.abs(dy))]<br class="calibre5" /><span class="calibre4">    this_dy = dy[np.argmin(np.abs(dx))]</span></span><span class="text_1"><br class="calibre5" /><span class="calibre4">    </span></span><span class="text_">if </span><span class="text_1">this_dx &gt; </span><span class="text_5">0</span><span class="text_1">:<br class="calibre5" /><span class="calibre4">        horizontalalignment = </span></span><span class="text_3">'left'<br class="calibre5" /><span class="calibre4">        </span></span><span class="text_1">x = x + </span><span class="text_5">.002<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_">else</span><span class="text_1">:<br class="calibre5" /><span class="calibre4">        horizontalalignment = </span></span><span class="text_3">'right'<br class="calibre5" /><span class="calibre4">        </span></span><span class="text_1">x = x - </span><span class="text_5">.002<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_">if </span><span class="text_1">this_dy &gt; </span><span class="text_5">0</span><span class="text_1">:<br class="calibre5" /><span class="calibre4">        verticalalignment = </span></span><span class="text_3">'bottom'<br class="calibre5" /><span class="calibre4">        </span></span><span class="text_1">y = y + </span><span class="text_5">.002<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_">else</span><span class="text_1">:<br class="calibre5" /><span class="calibre4">        verticalalignment = </span></span><span class="text_3">'top'<br class="calibre5" /><span class="calibre4">        </span></span><span class="text_1">y = y - </span><span class="text_5">.002<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_1">plt.text(x</span><span class="text_">, </span><span class="text_1">y</span><span class="text_">, </span><span class="text_1">name</span><span class="text_">, </span><span class="text_4">size</span><span class="text_1">=</span><span class="text_5">10</span><span class="text_">,<br class="calibre5" /><span class="calibre4">             </span></span><span class="text_4">horizontalalignment</span><span class="text_1">=horizontalalignment</span><span class="text_">,<br class="calibre5" /><span class="calibre4">             </span></span><span class="text_4">verticalalignment</span><span class="text_1">=verticalalignment</span><span class="text_">,<br class="calibre5" /><span class="calibre4">             </span></span><span class="text_4">bbox</span><span class="text_1">=</span><span class="text_7">dict</span><span class="text_1">(</span><span class="text_4">facecolor</span><span class="text_1">=</span><span class="text_3">'w'</span><span class="text_">,<br class="calibre5" /><span class="calibre4">                       </span></span><span class="text_4">edgecolor</span><span class="text_1">=plt.cm.nipy_spectral(label / </span><span class="text_7">float</span><span class="text_1">(n_labels))</span><span class="text_">,<br class="calibre5" /><span class="calibre4">                       </span></span><span class="text_4">alpha</span><span class="text_1">=</span><span class="text_5">.6</span><span class="text_1">))<br class="calibre5" /><br class="calibre5" />plt.xlim(embedding[</span><span class="text_5">0</span><span class="text_1">].min() - </span><span class="text_5">.15 </span><span class="text_1">* embedding[</span><span class="text_5">0</span><span class="text_1">].ptp()</span><span class="text_">,<br class="calibre5" /><span class="calibre4">         </span></span><span class="text_1">embedding[</span><span class="text_5">0</span><span class="text_1">].max() + </span><span class="text_5">.10 </span><span class="text_1">* embedding[</span><span class="text_5">0</span><span class="text_1">].ptp()</span><span class="text_">,</span><span class="text_1">)<br class="calibre5" />plt.ylim(embedding[</span><span class="text_5">1</span><span class="text_1">].min() - </span><span class="text_5">.03 </span><span class="text_1">* embedding[</span><span class="text_5">1</span><span class="text_1">].ptp()</span><span class="text_">,<br class="calibre5" /><span class="calibre4">         </span></span><span class="text_1">embedding[</span><span class="text_5">1</span><span class="text_1">].max() + </span><span class="text_5">.03 </span><span class="text_1">* embedding[</span><span class="text_5">1</span><span class="text_1">].ptp())<br class="calibre5" /><br class="calibre5" />plt.show()</span></p><p class="block_7"></p></div>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_1">Đồ thị được vẽ </p>
+	<p class="block_1"><img alt="Image" src="images/000006.png" class="calibre10" /></p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_1">Output ở Terminal </p>
+	<p class="block_10">Cluster 1: Apple, Amazon, Yahoo</p>
+	<p class="block_11">Cluster 2: Comcast, Cablevision, Time Warner</p>
+	<p class="block_11">Cluster 3: ConocoPhillips, Chevron, Total, Valero Energy, Exxon</p>
+	<p class="block_11">Cluster 4: Cisco, Dell, HP, IBM, Microsoft, SAP, Texas Instruments</p>
+	<p class="block_11">Cluster 5: Boeing, General Dynamics, Northrop Grumman, Raytheon</p>
+	<p class="block_11">Cluster 6: AIG, American express, Bank of America, Caterpillar, CVS, DuPont de Nemours, Ford, General Electrics, Goldman Sachs, Home Depot, JPMorgan Chase, Marriott, 3M, Ryder, Wells Fargo, Wal-Mart</p>
+	<p class="block_11">Cluster 7: McDonald's</p>
+	<p class="block_11">Cluster 8: GlaxoSmithKline, Novartis, Pfizer, Sanofi-Aventis, Unilever</p>
+	<p class="block_11">Cluster 9: Kellogg, Coca Cola, Pepsi</p>
+	<p class="block_11">Cluster 10: Colgate-Palmolive, Kimberly-Clark, Procter Gamble</p>
+	<p class="block_12">Cluster 11: Canon, Honda, Navistar, Sony, Toyota, Xerox</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_5">Phân khúc thị trường dựa trên mô hình thói quen mua sắm.</p>
+	<p class="block_1">Hãy xem làm sao để chúng ta có thể áp dụng học koong giám sát vào phân khúc thị trường dựa trên thói quen mua sắm. Bạn được cung cấp một file gọi là sales.csv trong thư mục data/chap4. File này chưa các mua bán chi tiết của trên cùng từ những cửa hàng bán lé quần áo. Nhiệm vụ của chúng ta cần đạt được là xác định các mẫu và phân khúc thị trường dựa trên số đơn vị bán ra trong cửa hàng.</p>
+	<div class="frame_"><p class="block_6"><span class="text_">import </span><span class="text_1">csv<br class="calibre5" /></span><span class="text_">import </span><span class="text_1">numpy </span><span class="text_">as </span><span class="text_1">np<br class="calibre5" /></span><span class="text_">import </span><span class="text_1">matplotlib.pyplot </span><span class="text_">as </span><span class="text_1">plt<br class="calibre5" /></span><span class="text_">from </span><span class="text_1">sklearn.cluster </span><span class="text_">import </span><span class="text_1">MeanShift</span><span class="text_">,</span><span class="text_1">estimate_bandwidth<br class="calibre5" /></span><span class="text_">from </span><span class="text_1">mpl_toolkits.mplot3d </span><span class="text_">import </span><span class="text_1">Axes3D<br class="calibre5" /></span><span class="text_2"># Load dữ liệu từ file csv. Chúng ta sử dụng csv reader trong python để đọc dữ liệu từ file và chuyển nó thành numpy array<br class="calibre5" /></span><span class="text_1">input_file=</span><span class="text_3">"data/chap4/sales.csv"<br class="calibre5" /></span><span class="text_1">file_reader=csv.reader(open(input_file</span><span class="text_">,</span><span class="text_3">'r'</span><span class="text_1">)</span><span class="text_">,</span><span class="text_1">delimiter=</span><span class="text_3">','</span><span class="text_1">)<br class="calibre5" />X=[]<br class="calibre5" /></span><span class="text_">for </span><span class="text_1">count</span><span class="text_">,</span><span class="text_1">row </span><span class="text_">in </span><span class="text_1">enumerate(file_reader):<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_">if not </span><span class="text_1">count:<br class="calibre5" /><span class="calibre4">        names=row[</span></span><span class="text_5">1</span><span class="text_1">:]<br class="calibre5" /><span class="calibre4">        </span></span><span class="text_">continue<br class="calibre5" /><span class="calibre4">    </span></span><span class="text_1">X.append([float(x) </span><span class="text_">for </span><span class="text_1">x </span><span class="text_">in </span><span class="text_1">row[</span><span class="text_5">1</span><span class="text_1">:]])<br class="calibre5" />X=np.array(X)<br class="calibre5" /></span><span class="text_2"># Tình băng thông của dữ liệu input<br class="calibre5" /></span><span class="text_1">bandwidth=estimate_bandwidth(X</span><span class="text_">,</span><span class="text_1">quantile=</span><span class="text_5">0.8</span><span class="text_">,</span><span class="text_1">n_samples=len(X))<br class="calibre5" /></span><span class="text_2"># Train một mô hình mean shift dựa trên số bandwidth<br class="calibre5" /></span><span class="text_1">meanshift_model=MeanShift(bandwidth=bandwidth</span><span class="text_">,</span><span class="text_1">bin_seeding=</span><span class="text_">True</span><span class="text_1">)<br class="calibre5" />meanshift_model.fit(X)<br class="calibre5" /></span><span class="text_2"># Tách nhãn và tất cả các điểm trung tâm của nhóm:<br class="calibre5" /></span><span class="text_1">labels=meanshift_model.labels_<br class="calibre5" />cluster_centers=meanshift_model.cluster_centers_<br class="calibre5" />num_cluster=len(np.unique(labels))<br class="calibre5" /></span><span class="text_2"># In ra terminal các số để kiểm tra<br class="calibre5" /></span><span class="text_1">print(</span><span class="text_3">"Số nhóm của dữ liệu nhập: "</span><span class="text_">,</span><span class="text_1">num_cluster)<br class="calibre5" />print(</span><span class="text_3">"Điểm trung tâm của các nhóm: "</span><span class="text_1">)<br class="calibre5" /><br class="calibre5" />print(</span><span class="text_3">'</span><span class="text_">\t</span><span class="text_3">'</span><span class="text_1">.join([name[:</span><span class="text_5">5</span><span class="text_1">] </span><span class="text_">for </span><span class="text_1">name </span><span class="text_">in </span><span class="text_1">names]))<br class="calibre5" /></span><span class="text_">for </span><span class="text_1">cluster_center </span><span class="text_">in </span><span class="text_1">cluster_centers:<br class="calibre5" /><span class="calibre4">    print(</span></span><span class="text_3">"</span><span class="text_">\t</span><span class="text_3">"</span><span class="text_1">.join([str(int(x)) </span><span class="text_">for </span><span class="text_1">x </span><span class="text_">in </span><span class="text_1">cluster_center]))<br class="calibre5" /></span><span class="text_2"><span class="calibre4"># chúng ta làm việc với dữ liệu 6 chiều. Lần lượt hiển thị dữ liệu, chúng ta lấy dữ liệu 2 chiều sử dụng  chiều thứ 2 và thứ 3:</span></span><span class="text_2"><br class="calibre5" /></span><span class="text_1">cluster_centers_2d=cluster_centers[:</span><span class="text_">,</span><span class="text_5">0</span><span class="text_1">:</span><span class="text_5">2</span><span class="text_1">]<br class="calibre5" /></span><span class="text_2"># phác họa các điểm trung tâm của nhóm trên biểu đồ<br class="calibre5" /></span><span class="text_1">fig=plt.figure()<br class="calibre5" />ax=fig.add_subplot(</span><span class="text_5">111</span><span class="text_">,</span><span class="text_1">projection=</span><span class="text_3">'3d'</span><span class="text_1">)<br class="calibre5" />x=cluster_centers[:</span><span class="text_">,</span><span class="text_5">0</span><span class="text_1">]<br class="calibre5" />y=cluster_centers[:</span><span class="text_">,</span><span class="text_5">1</span><span class="text_1">]<br class="calibre5" />z=cluster_centers[:</span><span class="text_">,</span><span class="text_5">2</span><span class="text_1">]<br class="calibre5" />c=cluster_centers[:</span><span class="text_">,</span><span class="text_5">3</span><span class="text_1">]<br class="calibre5" />ax.scatter(x</span><span class="text_">,</span><span class="text_1">y</span><span class="text_">,</span><span class="text_1">z</span><span class="text_">,</span><span class="text_1">c=c</span><span class="text_">,</span><span class="text_1">cmap=plt.hot())<br class="calibre5" /></span><span class="text_2">#plt.scatter(cluster_centers_2d[:,0],cluster_centers_2d[:,1],s=120,edgecolors='r',facecolors='none')<br class="calibre5" />##offset=0.25<br class="calibre5" />#plt.xlim(cluster_centers_2d[:,0].min() - offset * cluster_centers_2d[:,0].ptp(),<br class="calibre5" /><span class="calibre4"> #        cluster_centers_2d[:,0].max() + offset * cluster_centers_2d[:,0].ptp(),)</span></span><span class="text_2"><br class="calibre5" />#plt.ylim(cluster_centers_2d[:,1].min() - offset * cluster_centers_2d[:,1].ptp(),<br class="calibre5" /><span class="calibre4"> #        cluster_centers_2d[:,1].max() + offset * cluster_centers_2d[:,1].ptp())</span></span><span class="text_2"><br class="calibre5" />#for i,name in enumerate(names):<br class="calibre5" /><span class="calibre4"> #   plt.text(cluster_centers_2d[i,0],cluster_centers_2d[i,1],name)</span></span><span class="text_2"><br class="calibre5" /></span><span class="text_1">print(cluster_centers_2d[:</span><span class="text_">,</span><span class="text_5">0</span><span class="text_1">])<br class="calibre5" />plt.title(</span><span class="text_3">'các điểm trung tâm'</span><span class="text_1">)<br class="calibre5" />plt.show()</span></p><p class="block_7"></p></div>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_1">plot thể hiện ra đồ thị :</p>
+	<p class="block_1"><img alt="Image" src="images/000003.png" class="calibre7" /></p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_10"><span class="calibre4">Số nhóm của dữ liệu nhập:  9</span></p>
+	<p class="block_11">Điểm trung tâm của các nhóm: </p>
+	<p class="block_13"><span class="text_8">Tshir<span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Tank </span><span class="text_8"><span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Halte</span><span class="text_8"><span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Turtl</span><span class="text_8"><span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Tube </span><span class="text_8"><span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Sweat</span></p>
+	<p class="block_13"><span class="text_8">9823<span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>4637</span><span class="text_8"><span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>6539</span><span class="text_8"><span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>2607</span><span class="text_8"><span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>2228</span><span class="text_8"><span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>1239</span></p>
+	<p class="block_13"><span class="text_8">38589<span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>44199</span><span class="text_8"><span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>56158</span><span class="text_8"><span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>5030</span><span class="text_8"><span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>24674</span><span class="text_8"><span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>4125</span></p>
+	<p class="block_13"><span class="text_8">104972<span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>29186</span><span class="text_8"><span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>19415</span><span class="text_8"><span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>16016</span><span class="text_8"><span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>5060</span><span class="text_8"><span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>9372</span></p>
+	<p class="block_13"><span class="text_8">38741<span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>40539</span><span class="text_8"><span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>20120</span><span class="text_8"><span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>35059</span><span class="text_8"><span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>255</span><span class="text_8"><span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>50710</span></p>
+	<p class="block_13"><span class="text_8">35314<span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>16745</span><span class="text_8"><span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>12775</span><span class="text_8"><span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>66900</span><span class="text_8"><span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>1298</span><span class="text_8"><span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>5613</span></p>
+	<p class="block_13"><span class="text_8">28333<span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>34263</span><span class="text_8"><span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>24065</span><span class="text_8"><span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>5575</span><span class="text_8"><span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>4229</span><span class="text_8"><span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>18076</span></p>
+	<p class="block_13"><span class="text_8">22617<span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>77873</span><span class="text_8"><span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>32543</span><span class="text_8"><span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>1005</span><span class="text_8"><span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>21035</span><span class="text_8"><span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>837</span></p>
+	<p class="block_13"><span class="text_8">14987<span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>46397</span><span class="text_8"><span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>97393</span><span class="text_8"><span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>1127</span><span class="text_8"><span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>37315</span><span class="text_8"><span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>3235</span></p>
+	<p class="block_14"><span class="text_8">7852<span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>4939</span><span class="text_8"><span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>63081</span><span class="text_8"><span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>134</span><span class="text_8"><span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>40066</span><span class="text_8"><span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>1332</span></p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_5">Tổng kết chương :</p>
+	<p class="block_1">Trong chương này chúng ta đã bắt đầu bằng cách thảo luận về học không giám sát và ứng dụng của nó. Chúng ta học về nhóm dữ liệu và cách nhóm dữ liệu sử dụng thuật toán K-Means. Chúng ta thảo luận về cách dự toán số lượng nhóm cùng với thuật toán Mean Shift. Chúng ta bàn về silhouete scores và cách tính toán chất lượng của nhóm. Chúng ta học về mô hình Gaussian Mixture và cách xây dựng một bộ phân loại dựa trên nó. Chúng ta cũng thảo luận về mô hình Affinity Propagation và cách sử dụng nó để phân nhóm những nhóm nhỏ trong thị trường chứng khoán. Sau đó chúng ta ứng dụng thuật toán Mean Shift để phân loại thì trường dựa trên thói quen mua sắm. Trong chapter tiếp theo chúng ta sẽ học về cách xây dựng một recommendation engine.</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+
+</div>
+
+</body></html>
+
+<footer class=" footline" >
+	
+</footer>
+
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/ai-with-python/chapter3/" title="C3: Ensemble Learing"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/ai-with-python/chapter5/" title="C5: Building Recommender Systems" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1572408723"></script>
+    <script src="/js/perfect-scrollbar.min.js?1572408723"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1572408723"></script>
+    <script src="/js/jquery.sticky.js?1572408723"></script>
+    <script src="/js/featherlight.min.js?1572408723"></script>
+    <script src="/js/highlight.pack.js?1572408723"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1572408723"></script>
+    <script src="/js/learn.js?1572408723"></script>
+    <script src="/js/hugo-learn.js?1572408723"></script>
+
+    <link href="/mermaid/mermaid.css?1572408723" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1572408723"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>
+

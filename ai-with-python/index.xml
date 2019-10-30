@@ -11,7 +11,7 @@
     
     
     <item>
-      <title>Chapter 1</title>
+      <title>C1: Trí thông minh nhân tạo là gì?</title>
       <link>https://bamboofx.github.io/ai-with-python/chapter1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -21,7 +21,7 @@ Trí thông minh nhân tạo(AI) là một cách mà làm cho những cái máy 
     </item>
     
     <item>
-      <title>Chapter 2</title>
+      <title>C2: Classification and Regression</title>
       <link>https://bamboofx.github.io/ai-with-python/chapter2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -29,6 +29,137 @@ Trí thông minh nhân tạo(AI) là một cách mà làm cho những cái máy 
       <description>PythonAI chapter2Classification and Regression Using Spervisised Learning
 Trong chương này , chúng ta sẽ học về phân loại và quy hợp của dữ liệu sử dụng kỹ thuật học giám sát. Học hết chương này bạn sẽ biết về các chủ đề sau:
 Sự khác nhau giữa học giám sát và học không giám sát? Hồi quy là cái gì? Làm sao để sử lý thô dữ liệu sử dụng những thuật toán.</description>
+    </item>
+    
+    <item>
+      <title>C3: Ensemble Learing</title>
+      <link>https://bamboofx.github.io/ai-with-python/chapter3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bamboofx.github.io/ai-with-python/chapter3/</guid>
+      <description>PythonAI Chapter33
+Phân tích dự đoán cùng với Ensemble Learing
+Trong chương này chúng ta học về Ensemble Learning and cách sử dụng nó để làm phân tích dự đoán. Kết thúc chương này chúng ta sẽ hiểu các vấn đều sau:
+Xây dựng nguyên mẫu (models) cùng với Ensemble Learning Mô hình cây quyết định ( Decision Trees) và làm thế nào để xây dựng một Hàm phân loại Cây quyết định ( Decision Tree Classifier) Cái gì là Random Forests và Extremely Random Forests, và cách làm thế nào để xây dựng một bộ phân loại dựa trên nó Ước tính độ tin cậy của các dự đoán Xử lý sự mất cân bằng của các lớp Tìm tham số tối ưu cho training bằng cách xử dụng tìm kiếm lưới Tính toán tính năng quan trọng tương đối Dự đoán tình hình giao thông dựa trên Extremely Random Forests regressor  Ensemble Learing là gì ?</description>
+    </item>
+    
+    <item>
+      <title>C4: Detecting Patterns with Unsupervised Learning</title>
+      <link>https://bamboofx.github.io/ai-with-python/chapter4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bamboofx.github.io/ai-with-python/chapter4/</guid>
+      <description>PythonAI Chapter44
+Phát hiện mẫu (Detecting Patterns) với Học không giám sát (Unsupervised Learning)
+Trong chương này chúng ta sẽ học về học không giám sát và cách sử dụng nó trong thực tế. Khi học hết chương này thì chúng ta sẽ biết các kiến thức như sau:
+Học không giám sát là gì? Phân nhóm dữ liệu(Clustering data) cùng với thuật toán K-Means Tính toán số nhóm (cluster) cùng với thuật toán Mean Shift Dự toán chất lượng của tổ hợp cùng với silhouette scores Mô hình Gaussian Mixture là gì ?</description>
+    </item>
+    
+    <item>
+      <title>C5: Building Recommender Systems</title>
+      <link>https://bamboofx.github.io/ai-with-python/chapter5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bamboofx.github.io/ai-with-python/chapter5/</guid>
+      <description>PythonAI Chapter55
+Xây dựng hệ thống gợi ý, giới thiệu
+&amp;nbsp;
+&amp;nbsp;
+Trong chương này chúng ta sẽ học về các xây dựng một hệ thống gợi ý video. Chúng ta sẽ thảo luận về cách xây dựng một đường ống training (training pipeline) có thể train cùng với tham số tùy biến. Chúng ta sẽ học về bộ phân loại Nearest Neighbors và xem làm thế nào để thực hiện nó.</description>
+    </item>
+    
+    <item>
+      <title>C6: Logic Programing</title>
+      <link>https://bamboofx.github.io/ai-with-python/chapter6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bamboofx.github.io/ai-with-python/chapter6/</guid>
+      <description>PythonAI Chapter66
+Logic Programing
+Trong chương này chúng ta sẽ học về làm thế nào để viết một chương trình sử dụng logic programing. Chúng ta sẽ bàn luận về nhiều kiểu mẫu lập trình khác nhau và xem làm thế nào để xây dựng chương trình cùng với logic programing. Chúng ta sẽ học về xây dựng những khối (building blocks) cho lập trình logic ,cách giải quyết vấn đề trong lĩnh vực này.</description>
+    </item>
+    
+    <item>
+      <title>C7: Tìm kiếm Heuristic</title>
+      <link>https://bamboofx.github.io/ai-with-python/chapter7/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bamboofx.github.io/ai-with-python/chapter7/</guid>
+      <description>PythonAI Chapter77
+Tìm kiếm Heuristic
+Trong chương này chúng ta sẽ tìm hiểu về kỹ thuật tìm kiếm heuristic. Kỹ thuật tìm kiếm heuristic sử dụng để tìm kiếm những không gian giải pháp để đưa ra kết quả. Các tìm kiếm được tiến hành bằng cách sử dụng sử dụng phương pháp phỏng đoán(heuristic còn có nghĩa là phỏng đoán, khám phá)để hướng dẫn thuật toán tìm kiếm. Những khám phá (heuristic) này cho phép thuật toán có thể tăng tốc quá trình xử lý, nếu không có nó sẽ mất rất nhiều thời gian và giải pháp.</description>
+    </item>
+    
+    <item>
+      <title>C8: Thuật toán di truyền - Genetic Alogrithms</title>
+      <link>https://bamboofx.github.io/ai-with-python/chapter8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bamboofx.github.io/ai-with-python/chapter8/</guid>
+      <description>PythonAI Chapter88
+Thuật toán di truyền
+(Genetic Alogrithms)
+Trong chương này chúng ta sẽ học về thuật toán di truyền. Chúng ta sẽ thảo luận về khái niệm của thuật toán tiến hóa và lập trình di truyên, và xem làm thế nào mà chúng được gọi là thuật toán di truyền. Chúng ta sẽ học về các khối xây dựng cơ bản lên thuật toán di truyền như: di truyền chéo(crossover), đột biến(mutation) và hàm thích nghi (fitness functions).</description>
+    </item>
+    
+    <item>
+      <title>C9: Xây dựng game cùng với AI</title>
+      <link>https://bamboofx.github.io/ai-with-python/chapter9/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bamboofx.github.io/ai-with-python/chapter9/</guid>
+      <description>PythonAI Chapter99
+Xây dựng game cùng với AI
+Trong chương này chúng ta học cách xây dựng một game cùng với Artificial Intelligence. Chúng ta sẽ học cách sử dụng thuật toán tìm kiếm để đưa ra các chiến lược hiệu quả để thắng trò chơi. Chúng ta sẽ sử dụng những thuật toán đó để xây dựng một con bot cho những game khác nhau.
+Nội dung chính trong chương này:</description>
+    </item>
+    
+    <item>
+      <title>C10: Natural Language Processing</title>
+      <link>https://bamboofx.github.io/ai-with-python/chapter10/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bamboofx.github.io/ai-with-python/chapter10/</guid>
+      <description>PythonAI Chapter1010
+Xử lý ngôn ngữ tự nhiên
+Natural Language Processing
+Xử lý ngôn ngữ tự nhiên (natural language processing &amp;ndash;NLP) là một một phương pháp kỹ thuật xử lý các ngôn ngữ tự nhiên bằng máy tính. Ở đây có vấn đề cần làm rõ là Natural Language &amp;ndash; ngôn ngữ giao tiếp giữa người với người, và ngôn ngữ máy móc ( program language, machine language). NLP có 2 điều cơ bản cần nghiên cứu và phát triển là xử lý từ ngữ bằng máy và làm cho máy hiểu được những từ ngữ này.</description>
+    </item>
+    
+    <item>
+      <title>C11: Sequential Data</title>
+      <link>https://bamboofx.github.io/ai-with-python/chapter11/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bamboofx.github.io/ai-with-python/chapter11/</guid>
+      <description>PythonAI Chapter1111
+Lý luận xác suất cho dữ liệu liên tục
+Trong chương này chúng ta sẽ học về cách xây dựng một mô hình học liên tục. Chúng ta sẽ học cách xử lý dữ liệu chuỗi trong Pandas. Chúng ta sẽ biết được cách chia dữ liệu chuỗi và biểu diễn hoạt động của nó. Chúng ta sẽ thảo luận về cách tách những số liệu thống kê khác nhau từ một dữ liệu chuỗi.</description>
+    </item>
+    
+    <item>
+      <title>C12: Speech Recognizer</title>
+      <link>https://bamboofx.github.io/ai-with-python/chapter12/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bamboofx.github.io/ai-with-python/chapter12/</guid>
+      <description>PythonAI Chapter1212
+Xây dựng hệ thống nhận dạng giọng nói(Speech Recognizer)
+&amp;nbsp;
+Trong chương này chúng ta sẽ học về nhận dạng giọng nói. Chúng ta sẽ thảo luận làm thế nào để làm việc cùng với những tín hiệu giọng nói và hiểu cách làm sao để biểu diễn những song âm này. Bằng cách tận dụng những kỹ thuật khác nhau để xử lý tín hiệu giọng nói, Chúng ta sẽ học cách làm sao để xây dựng một hệ thống nhận dạng giọng nói.</description>
+    </item>
+    
+    <item>
+      <title>C13: Object Detection and Tracking</title>
+      <link>https://bamboofx.github.io/ai-with-python/chapter13/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bamboofx.github.io/ai-with-python/chapter13/</guid>
+      <description>PythonAI Chapter1313
+Object Detection and Tracking
+Nhận diện và theo dõi vật thể
+&amp;nbsp;
+Trong chương này chúng ta sẽ học về nhận diện vật thể và theo dõi chuyển động của nó. CHúng ta sẽ bắt đầu bằng cách cài đặt thư viện OpenCV, đây là một thư viện rất thông dụng cho công nghệmáy nhìn (computer vision). Chúng ta sẽ thảo luận về sự khác biệt giữa các khung hình để có thể phát hiện các vật thể chuyển động trong video.</description>
     </item>
     
   </channel>

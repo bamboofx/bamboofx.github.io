@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.57.2" />
+    <meta name="description" content="">
+
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>C9: Xây dựng game cùng với AI :: Bamboofx&#39;s or NTVFX&#39;s Site</title>
+
+    
+    <link href="/css/nucleus.css?1572408723" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1572408723" rel="stylesheet">
+    <link href="/css/hybrid.css?1572408723" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1572408723" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1572408723" rel="stylesheet">
+    <link href="/css/auto-complete.css?1572408723" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1572408723" rel="stylesheet">
+    <link href="/css/theme.css?1572408723" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1572408723" rel="stylesheet">
+    
+      <link href="/css/theme-blue.css?1572408723" rel="stylesheet">
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1572408723"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/ai-with-python/chapter9/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="https://bamboofx.github.io/">
+  <img src="https://bamboofx.github.io/images/logo.png "> </img>
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1572408723"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1572408723"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/bamboofx.github.io\/";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1572408723"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/ai-with-python/" title="AI with Python (Prateek Joshi)" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/ai-with-python/">
+          AI with Python (Prateek Joshi)
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ai-with-python/chapter1/" title="C1: Trí thông minh nhân tạo là gì?" class="dd-item ">
+        <a href="/ai-with-python/chapter1/">
+        C1: Trí thông minh nhân tạo là gì?
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ai-with-python/chapter2/" title="C2: Classification and Regression" class="dd-item ">
+        <a href="/ai-with-python/chapter2/">
+        C2: Classification and Regression
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ai-with-python/chapter3/" title="C3: Ensemble Learing" class="dd-item ">
+        <a href="/ai-with-python/chapter3/">
+        C3: Ensemble Learing
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ai-with-python/chapter4/" title="C4: Detecting Patterns with Unsupervised Learning" class="dd-item ">
+        <a href="/ai-with-python/chapter4/">
+        C4: Detecting Patterns with Unsupervised Learning
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ai-with-python/chapter5/" title="C5: Building Recommender Systems" class="dd-item ">
+        <a href="/ai-with-python/chapter5/">
+        C5: Building Recommender Systems
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ai-with-python/chapter6/" title="C6: Logic Programing" class="dd-item ">
+        <a href="/ai-with-python/chapter6/">
+        C6: Logic Programing
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ai-with-python/chapter7/" title="C7: Tìm kiếm Heuristic" class="dd-item ">
+        <a href="/ai-with-python/chapter7/">
+        C7: Tìm kiếm Heuristic
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ai-with-python/chapter8/" title="C8: Thuật toán di truyền - Genetic Alogrithms" class="dd-item ">
+        <a href="/ai-with-python/chapter8/">
+        C8: Thuật toán di truyền - Genetic Alogrithms
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ai-with-python/chapter9/" title="C9: Xây dựng game cùng với AI" class="dd-item active">
+        <a href="/ai-with-python/chapter9/">
+        C9: Xây dựng game cùng với AI
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ai-with-python/chapter10/" title="C10: Natural Language Processing" class="dd-item ">
+        <a href="/ai-with-python/chapter10/">
+        C10: Natural Language Processing
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ai-with-python/chapter11/" title="C11: Sequential Data" class="dd-item ">
+        <a href="/ai-with-python/chapter11/">
+        C11: Sequential Data
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ai-with-python/chapter12/" title="C12: Speech Recognizer" class="dd-item ">
+        <a href="/ai-with-python/chapter12/">
+        C12: Speech Recognizer
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ai-with-python/chapter13/" title="C13: Object Detection and Tracking" class="dd-item ">
+        <a href="/ai-with-python/chapter13/">
+        C13: Object Detection and Tracking
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/numpy/" title="NumPy cơ bản" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/numpy/">
+          NumPy cơ bản
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/about/" title="about" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/about/">
+          About
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>Site</a> > <a href='/ai-with-python/'>AI with Python (Prateek Joshi)</a> > C9: Xây dựng game cùng với AI
+          
+         
+          
+         
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              C9: Xây dựng game cùng với AI
+            </h1>
+          
+
+        
+
+
+
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=utf-8" /><link href="style.css" rel="stylesheet" type="text/css" /><title>PythonAI Chapter9</title></head><body><div class="calibre" id="calibre_link-0">
+	<p class="block_">9</p>
+	<p class="block_">Xây dựng game cùng với AI</p>
+	<p class="block_1">Trong chương này chúng ta học cách xây dựng một game cùng với Artificial Intelligence. Chúng ta sẽ học cách sử dụng thuật toán tìm kiếm để đưa ra các chiến lược hiệu quả để thắng trò chơi. Chúng ta sẽ sử dụng những thuật toán đó để xây dựng một con bot cho những game khác nhau.</p>
+	<p class="block_1">Nội dung chính trong chương này:</p>
+	<ul class="list_">
+	<li class="block_2">Sử dụng thuật toán tìm kiếm trong games</li>
+	<li class="block_3">Tổ hợp tìm kiếm</li>
+	<li class="block_3">Thuật toán Minimax</li>
+	<li class="block_3">Giải thuật cắt tỉa Alpha-beta</li>
+	<li class="block_3">Thuật toán Negamax</li>
+	<li class="block_3">Xây dựng bot cho game Last Coin Standing</li>
+	<li class="block_3">Xây dựng bot cho Tic Tac Toe</li>
+	<li class="block_3">Xây dựng hai bot chơi với nhau bằng game Connect Four</li>
+	<li class="block_4">Xây dựng 2 bot chơi game Hexapawn với nhau</li>
+</ul>
+	<p class="block_5">Sử dụng thuật toán tìm kiếm trong Games</p>
+	<p class="block_1">Thuật toán tìm kiếm được sử dụng trong game để tìm ra một chiến lược. Thuật toán sẽ tìm kiếm tất cả các khả năng và chọn ra hướng đi tốt nhất. Có những tham số khác nhau như &ndash; tốc độ, độ chính xác, độ phức tạp, và những thứ tương tự vậy. Những thuật toán sẽ xem xét tất cả các hành động có khả năng trong cùng một thời điểm và sau đó sẽ đánh giá các khả năng di chuyển dựa trên những lựa chọn. Mục đích của tất cả những thuật toán này là tìm những bộ phương pháp tối ưu để di chuyển sẽ giúp nhân vật đến được trạng thái cuối cùng. Mỗi game khác nhau đều có một điều kiện để chiến thắng khác nhau. Những thuật toán sử dụng những điều kiện này để tìm ra các bước di chuyển chính xác nhất.</p>
+	<p class="block_1">Những mô tả bên trên là lý tưởng nếu không có người chơi đối đầu. Mọi thứ không đơn giản nếu trò chơi có nhiều người chư. Hãy thử xem xét một trò chơi có 2 người chơi. Vỡi mỗi lần di chuyển bởi một người chơi, đối thủ sẽ tạo một hướng đi đối nghich để chống lại người kia đến được đích. Vì thế khi một thuật toán tìm kiếm tìm được đường đi tốt nhất cho tình trạng hiện tại thì sau bước đi đó lại không còn đúng nữa bởi vì đối thủ đã chặn đứng nó. Về cơ bản nghĩa là thuật toán tìm kiếm cần phải làm việc liên tục sau mỗi bước đi.</p>
+	<p class="block_1">Hãy thảo luận về về cách một chiếc máy tính nhìn nhận mỗi game thế nào. Chúng ta có thể nghĩ mỗi game là một cây tìm kiếm. Tại mỗi node trên cái cây là một trạng thái gặp phải trong tương lai. Ví dụ bạn đang chơi game Tic-Tac-Toe, bạn có thể xây dựng cái cây này dựa trên tất cả các bước đi có thể. Chúng ta bắt đầu từ gốc của cây, đây là điểm bắt đầu của Game. Tại điểm này chúng ta có một vài điểm con là các bước đi có thể. Những ddiemr con này sau mỗi lượt lại có thêm vài điểm con là những trạng thái của game sau khi đã có vài bước di chuyển tiếp theo. Những điểm cuối cùng của cây đại diện cho kết quả cuối cùng của game sau khi đã thực hiện các bước di chuyển. Game có thể kết thúc với kết quả hòa hoặc một người chơi nào đó chiến thắng. Những thuật toán tìm kiếm thông qua cái cây này để quyết định mỗi bước đi của game.</p>
+	<p class="block_5">Tổ hợp tìm kiếm (Combinatorial Search)</p>
+	<p class="block_1">Những thuật toán tìm kiếm xuất hiện để giải quyết vấn đề về thêm sự thông minh cho game, Nhưng nó có một hạn chế. Những thuật toán sử dụng một dạng tìm kiếm được gọi là tìm kiếm tổng quát. Nó cũng được biết đến như là tìm kiếm bắt buộc (brute force search). Cơ bản là nó sẽ khám phá toàn bộ không gian tìm kiếm và kiểm tra tất cả khả năng có thể. Nghĩa là trong trường hợp tồi tệ nhất chúng ta phải đi lòng vòng khắp nơi trước khi chúng ta tìm được hướng đi đúng.</p>
+	<p class="block_1">Trong những game phức tạp, chúng ta không thể bỏ mặc nó muốn tìm gì thì tìm vì số lượng hướng đi nó tìm ra sẽ là ác mộng. Để giải quyết ván đề này chúng ta phải dùng tổ hợp tìm kiếm (combinatorial search) để giairquyeets vấn đề. Đây là một lĩnh vực nghiên cứu nơi các thuật toán tìm kiếm khám phá tất cả các không gian giải pháp sử dụng phương pháp phỏng đoán (heuristic) hoặc đơn giản là giảm kích cỡ không gian tìm kiếm. Nó rất hữu dụng trong games như Chess or go. Tổ hợp tìm kiếm làm việc hiệu quả bằng cách sử dụng các chiến lược cắt tỉa cây tìm kiếm. Những chiến lược này giúp nó tránh thử nghiệm tất cả các khả năng có thể bằng cách loại bỏ những nhánh chắc chắn sai, nó giúp tiết kiệm thời gian và công sức.</p>
+	<p class="block_5">Thuật toán Minimax</p>
+	<p class="block_1">Giờ chúng ta thảo luận tóm tắt về tổ hợp tìm kiếm, Hãy nói về hàm lượng giá (heuristic)được sử dụng bởi thuật toán tổ hợp tìm kiếm. Những hàm lượng giá (heuristic) được sử dụng để tăng tông những chiến lược tìm kiếm và thuật toán Minimax là một trong những chiến lược được dùng bởi tổ hợp tìm kiếm. Khi 2 người chơi đối đầu với nhau trong một game, họ sẽ ngăn cản đối thủ đến được đích trước. Vì thế mỗi bên cần dự đoán xem đối thủ sẽ làm gì để thắng game. Dựa trên những điều này Minimax cố gắng giảm thiểu (minimize) khả năng đối thủ đạt được khả năng tối đa(maximize). Hai đối thủ trong trò này được gọi là Min và Max đi theo lượt. Max thể hiện là người quyeests dành thắng lợi và cố gắng tối đa hóa ưu thế của mình, Min là người cố gắng làm giảm điểm số của Max và cố làm cho điểm số của mình theo chiều âm.</p>
+	<p class="block_1">Như chúng ta đã biết tìm kiếm tất cả khả năng(burte forcing the solutions) không phải là một lựa chọn tối ưu. Máy tính không thể thử tất cả các trạng thái có thể và đưa ra bước đi tốt nhất để thắng game. Myas tính chỉ có thể tối ưu những bước ddi dựa trên trạng thái cụ thể của trò chơi dựa trên một phỏng đoán (heuristic). Máy tính sẽ xây dựng một cây và bắt đầu từ gốc(Max) và nhánh tiếp theo sẽ là Min. Nó đánh giá bước đi nào sẽ có lợi cho đối thủ của nó. Cơ bản nó biết bước đi nào đối thủ sẽ đi dựa vào việc bước đi đó sẽ tốt nhất cho họ, và do đó nó sẽ ít có lợi hơn. Kết quả này là điểm cuối cùng của cây và máy tính sẽ dùng vị trí này để tính ngược lại. </p>
+	<ul class="list_">
+	<li class="block_2">Max là tối đa hàm lợi ích</li>
+	<li class="block_3">Min là tối thiểu lợi ích</li>
+	<li class="block_4">Chiến lược của Max phụ thuộc vào Min ở bước kế tiếp</li>
+</ul>
+	<p class="block_5">Giải thuật cắt tỉa Alpha-Beta</p>
+	<p class="block_1">Giải thuật tìm kiếm Minimax là một chiến lược hiệu quả. Nhưng nó vẫn tìm kiếm tất cả các phần của cây và sẽ có những trường hợp không liên quan gặp phải. Hãy xem xét một cái cây nơi chúng ta tìm kiếm các giải pháp. Mỗi lần chúng ta tìm được một chỉ số tại một node trên cây và tại node này sẽ cho chúng ta biết giải pháp sẽ không tồn tại ở node con của nó và chúng ta không cần phải xem xét node con. Nhưng giải thuật Minimax thì vẫn tìm kiếm giải pháp ở node con. Vì thế nên chúng ta cần trách tìm kiếm tại các phần của cây mà không cần thiết tìm kiếm. Quá trình xử lý này được gọi là cắt tỉa (pruning) và cắt tỉa Alpha-Beta là một dạng chiến lược tránh tìm kiếm những phần của cây không chứa giải pháp.</p>
+	<p class="block_1">Tham số Alpha và Beta trong giải thuật cắt tỉa alpha-beta là hai giới hạn được sử dụng trong quá trình tính toán. Những tham số này là những giá trị sẽ từ chối những giải pháp không cần thiết. Nó dựa trên những phần của cây đã được khám phá. Alpha là giới hạn dưới tối đa (&lt; maximum) của số lượng các giải pháp có thể và Beta là giới hạn trên tối thiểu (&gt; min) của các số lượng giải pháp cố thể.</p>
+	<p class="block_1">Như chúng ta đã nói ở trên mỗi node có thể chứa một giá trị dựa trên trạng thái hiện tại của game. Khi thuật toán xem xét một node mới tiềm năng của giải pháp, nó có thể là khả thi nếu giái trị của node đó nằm trong vùng an toàn beta&lt;node&lt;alpha. Đó là cách làm việc của cắt tỉa.</p>
+	<p class="block_5">Thuật toán Negamax</p>
+	<p class="block_1">Thuật toán Negamax là một biến thể của giải thuật Minimax, nó thường được dùng trong thực tế. Một game 2 người chơi thường là một trò có tổng bằng không, nghĩa là lợi ích của người này là thiệt hại của người kia và ngược lại. Negamax sử dụng điều này và mở rộng một cách chuyên sâu để đưa ra một chiến lược tăng cô hội chiến thắng game.</p>
+	<p class="block_1">Về mặt game, giá trị của một vị trí nhất định cho người chơi thứ 1 là sự phủ định (negation) của người chơi thứ 2. Mỗi người chơi tìm kiếm bước di chuyển sẽ làm đối thủ mất nhiều điểm nhất. Giá trị cuối cùng từ những bước đi phải làm sao cho đối thủ có giá trị nhỏ nhất. Đây là các nó có tính ưu việt hơn thuật toán Minimax về sự đơn giản. Minimax yêu cầu người chơi đầu tiên chọn một bước đi có giá trị lớn nhất(maximum), và người chơi thứ hai phải chọn bước đi với giá trị nhỏ nhất (minimum). Thuật toán cắt tỉa Alpha-Beta cũng sử dụng giải pháp này.</p>
+	<p class="block_5">Xây dựng một con bot để chơi game Last Coin Stand</p>
+	<p class="block_1">Đây là một game bắt đầu với 1 đống coin và mỗi người chơi sẽ lấy một số coin từ đống này. Có giá trị giới hạn thấp nhất và cao nhất số lượn coin mà mỗi người lấy từ đống coin. Người lấy những đồng coin cuối cùng trong đống coin đó là người thua. Đây là một biến thể của game Game of Bones trong thư viện easyAI. </p>
+	<p class="block_1"><i class="calibre1">Để cài thư viện easyAI các bạn xem lại bài trước về cách install thư viện cho Python với địa chỉ github của easyAI là : </i><a href="https://github.com/Zulko/easyAI" class="text_">https://github.com/Zulko/easyAI</a></p>
+	<p class="block_1">Tạo file Python sau khi đã install easyAI</p>
+	<div class="frame_"><p class="block_6"><span class="text_1">from </span><span class="text_2">easyAI </span><span class="text_1">import </span><span class="text_2">TwoPlayersGame</span><span class="text_1">,</span><span class="text_2">id_solve</span><span class="text_1">,</span><span class="text_2">Human_Player</span><span class="text_1">,</span><span class="text_2">AI_Player<br class="calibre2" /></span><span class="text_1">from </span><span class="text_2">easyAI.AI </span><span class="text_1">import </span><span class="text_2">TT<br class="calibre2" /></span><span class="text_3">#Tạo một class ddeer quản lý các phép toán trong game. Chúng sẽ thừa kế từ class TwoPlayerGame trong thư viện eassyAI. Chúng có 2 tham số được định nghĩa<br class="calibre2" /># Tham số thứ 1 là player chúng ta sẽ nói về giá trị của object player sau<br class="calibre2" /></span><span class="text_1">class </span><span class="text_2">LastCoinStand(TwoPlayersGame):<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_1">def </span><span class="text_4">__init__</span><span class="text_2">(</span><span class="text_5">self</span><span class="text_1">,</span><span class="text_2">players):<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_3">#Tạo tham số player. đây là tham số bắt buộc<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_5">self</span><span class="text_2">.players=players<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_3"># Để định nghĩa ai là người bắt đầu trò chơi thì số người chơi bắt đầu từ 1. nên người bắt đầu trò chơi sẽ là 1<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_5">self</span><span class="text_2">.nplayer=</span><span class="text_6">1<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_3"># tạo số lượng coin để chơi. Bạn có thể chọn tùy ý ở đây tôi chọn 27<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_5">self</span><span class="text_2">.num_coin=</span><span class="text_6">27<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_3"># Tạo số coin lớn nhất có thể lấy đi trong mỗi bước đi. có thể chọn tùy ý và tôi chọn là 4<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_5">self</span><span class="text_2">.max_coin=</span><span class="text_6">13<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_3"># tạo số nước đi có thể. trong trường hợp này người chơi có thể lấy đi 1,2,3,4 coin trong mỗi nước đi<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_1">def </span><span class="text_7">possible_moves</span><span class="text_2">(</span><span class="text_5">self</span><span class="text_2">):<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_1">return </span><span class="text_2">[</span><span class="text_8">str</span><span class="text_2">(x) </span><span class="text_1">for </span><span class="text_2">x </span><span class="text_1">in </span><span class="text_8">range</span><span class="text_2">(</span><span class="text_6">1</span><span class="text_1">,</span><span class="text_5">self</span><span class="text_2">.max_coin+</span><span class="text_6">1</span><span class="text_2">)]<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_3"># Tạo một hàm để loại bỏ số coin đã được lấy và tính số lượng coin còn lại trong đống coin<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_1">def </span><span class="text_7">make_move</span><span class="text_2">(</span><span class="text_5">self</span><span class="text_1">,</span><span class="text_2">move):<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_5">self</span><span class="text_2">.num_coin-=</span><span class="text_8">int</span><span class="text_2">(move)<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_3"># Kiểm tra nếu có người nào đó thắng game bằng cách kiểm tra số lượng coin còn lại<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_1">def </span><span class="text_7">win</span><span class="text_2">(</span><span class="text_5">self</span><span class="text_2">):<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_1">return </span><span class="text_5">self</span><span class="text_2">.num_coin&lt;=</span><span class="text_6">0<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_3"># Dừng game nếu có ai đã thắng<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_1">def </span><span class="text_7">is_over</span><span class="text_2">(</span><span class="text_5">self</span><span class="text_2">):<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_1">return </span><span class="text_5">self</span><span class="text_2">.win()<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_1">def </span><span class="text_7">scoring</span><span class="text_2">(</span><span class="text_5">self</span><span class="text_2">):<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_1">return </span><span class="text_6">100 </span><span class="text_1">if </span><span class="text_5">self</span><span class="text_2">.win() </span><span class="text_1">else </span><span class="text_6">0<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_3"># Tạo hàm để xem trạng thái hiện tại của đống coin:<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_1">def </span><span class="text_7">show</span><span class="text_2">(</span><span class="text_5">self</span><span class="text_2">):<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_8">print</span><span class="text_2">(</span><span class="text_9">'Số lượng coin còn lại là: '</span><span class="text_1">,</span><span class="text_5">self</span><span class="text_2">.num_coin)<br class="calibre2" /></span><span class="text_3">#Tạo hàm main và khởi tạo bảng chuyển vị TT (transposition table). TT được sử dụng trong game để lưu trữ vị trí và bước đi để tăng tốc cho thuật toán<br class="calibre2" /></span><span class="text_1">if </span><span class="text_2">__name__==</span><span class="text_9">"__main__"</span><span class="text_2">:<br class="calibre2" /><span class="calibre3">    tt=TT()</span></span><span class="text_2"><br class="calibre2" /><span class="calibre3">    </span></span><span class="text_3">#Tạo hàm ttentry để lấy số lượng coin. Đây là một hàm tùy chọn được sử dụng để tạo chuỗi diễn tả tình trạng game<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_2">LastCoinStand.ttentry=</span><span class="text_1">lambda </span><span class="text_2">self:self.num_coin<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_3"><span class="calibre3"># Giải quyết vấn đề của game này sử dụng AI. hàm id_solve được sử dụng để giải quyết game đã cho bằng cách lặp sâu (iterative deepening). Về cơ bản  thì nó xác định ai là người có thể thắng game sử dụng tất cả các trường hợp</span></span><span class="text_3"><br class="calibre2" /><span class="calibre3">    # Nó tìm kiếm các câu trả lời giống như là: player 1 có thể thắng bằng cách chơi hoàn hảo không ? Máy tính sẽ luôn thua trước đối thủ ?</span></span><span class="text_3"><br class="calibre2" /><span class="calibre3">    # Hàm id_solver khám phá tất cả những lựa chọn khác nhau trong game sử dụng thuật toán Negamax vài lần. Nó luôn luôn bắt đầu tại điểm khởi tạo game và đào sâu liên tục. Nó sẽ làm điều đó cho tới khi điểm số của một người thắng hoặc thua</span></span><span class="text_3"><br class="calibre2" /><span class="calibre3">    # Tham số thứ 2 là một list độ sâu mà nó sẽ đào. Trong trường hợp này tôi chọn giá trị từ 2-&gt;20</span></span><span class="text_3"><br class="calibre2" /><span class="calibre3">    </span></span><span class="text_2">result</span><span class="text_1">,</span><span class="text_2">depth</span><span class="text_1">,</span><span class="text_2">move=id_solve(LastCoinStand</span><span class="text_1">,</span><span class="text_8">range</span><span class="text_2">(</span><span class="text_6">2</span><span class="text_1">,</span><span class="text_6">20</span><span class="text_2">)</span><span class="text_1">,</span><span class="text_10">win_score</span><span class="text_2">=</span><span class="text_6">100</span><span class="text_1">,</span><span class="text_10">scoring</span><span class="text_2">=</span><span class="text_1">None,</span><span class="text_10">tt</span><span class="text_2">=tt)<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_3">#print(result,depth,move)<br class="calibre2" /><span class="calibre3">    # Bắt đầu game</span></span><span class="text_3"><br class="calibre2" /><span class="calibre3">    </span></span><span class="text_2">game=LastCoinStand([AI_Player(tt)</span><span class="text_1">,</span><span class="text_2">Human_Player()])<br class="calibre2" /><span class="calibre3">    game.play()</span></span></p><p class="block_7"></p></div>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_1">Trong trò chơi này người đi trước luôn thắng nên bạn có thay đổi tham số num_coin và max_coin thế nào thì người lấy đồng xu cuối cùng vẫn là bạn:</p>
+	<p class="block_9">d:2, a:0, m:1</p>
+	<p class="block_10">d:3, a:0, m:1</p>
+	<p class="block_10">d:4, a:100, m:12</p>
+	<p class="block_10"><span class="calibre3">Số lượng coin còn lại là:  27</span></p>
+	<p class="block_11">&nbsp;</p>
+	<p class="block_10">Move #1: player 1 plays 12 :</p>
+	<p class="block_10">Số lượng coin còn lại là<span class="calibre3">:  15</span></p>
+	<p class="block_11">&nbsp;</p>
+	<p class="block_10">Player 2 what do you play ? 1</p>
+	<p class="block_11">&nbsp;</p>
+	<p class="block_10">Move #2: player 2 plays 1 :</p>
+	<p class="block_10"><span class="calibre3">Số lượng coin còn lại là:  14</span></p>
+	<p class="block_11">&nbsp;</p>
+	<p class="block_10">Move #3: player 1 plays 13 :</p>
+	<p class="block_10"><span class="calibre3">Số lượng coin còn lại là:  1</span></p>
+	<p class="block_11">&nbsp;</p>
+	<p class="block_10">Player 2 what do you play ? 1</p>
+	<p class="block_11">&nbsp;</p>
+	<p class="block_10">Move #4: player 2 plays 1 :</p>
+	<p class="block_10"><span class="calibre3">Số lượng coin còn lại là:  0</span></p>
+	<p class="block_11">&nbsp;</p>
+	<p class="block_12">Process finished with exit code 0</p>
+	<p class="block_1">Đây là game interactive trong terminal nên bạn phải nhập số lượng coin mình muốn lấy sau mỗi lần chơi.</p>
+	<p class="block_5">Xây dựng bot để chơi Tic-Tac-Toe (cờ caro)</p>
+	<p class="block_1">Tic-Tac-Toe hay chơi cờ caro là một game nổi tiếng từ thới naponeon còn chưa đẻ. Giờ thì chúng ta thử xây dựng một con bot chơi Tic-Tac-Toe dựa trên thư viện easyAI.</p>
+	<p class="block_13"><span class="text_1">from </span><span class="text_3">easyAI </span><span class="text_1">import </span><span class="text_3">TwoPlayersGame</span><span class="text_1">,</span><span class="text_3">AI_Player</span><span class="text_1">,</span><span class="text_3">Negamax</span><span class="text_1">,</span><span class="text_3">SSS<br class="calibre2" /></span><span class="text_1">from </span><span class="text_3">easyAI.Player </span><span class="text_1">import </span><span class="text_3">Human_Player<br class="calibre2" /></span><span class="text_11"># Tạo class chứa các method thừa kế class TwoPlayerGame và chọn người bắt đầu.<br class="calibre2" /></span><span class="text_1">class </span><span class="text_3">GameController(TwoPlayersGame):<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_1">def </span><span class="text_4">__init__</span><span class="text_3">(</span><span class="text_5">self</span><span class="text_1">,</span><span class="text_3">players):<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_5">self</span><span class="text_3">.players=players<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_5">self</span><span class="text_3">.nplayer=</span><span class="text_6">1<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_11"># Chúng ta sử dụng một bảng game 3x3 từ một hàng 9<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_5">self</span><span class="text_3">.board=[</span><span class="text_6">0</span><span class="text_3">]*</span><span class="text_6">9<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_11"># Tạo hàm để tính toán tất cả các bước đi có thể:<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_1">def </span><span class="text_7">possible_moves</span><span class="text_3">(</span><span class="text_5">self</span><span class="text_3">):<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_1">return </span><span class="text_3">[a+</span><span class="text_6">1 </span><span class="text_1">for </span><span class="text_3">a</span><span class="text_1">,</span><span class="text_3">b </span><span class="text_1">in </span><span class="text_8">enumerate</span><span class="text_3">(</span><span class="text_5">self</span><span class="text_3">.board) </span><span class="text_1">if </span><span class="text_3">b==</span><span class="text_6">0</span><span class="text_3">]<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_11"># Tạo bảng để update lại bảng sau mỗi bước đi<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_1">def </span><span class="text_7">make_move</span><span class="text_3">(</span><span class="text_5">self</span><span class="text_1">,</span><span class="text_3">move):<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_5">self</span><span class="text_3">.board[</span><span class="text_8">int</span><span class="text_3">(move)-</span><span class="text_6">1</span><span class="text_3">]=</span><span class="text_5">self</span><span class="text_3">.nplayer<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_11"># Tạo hàm để xem nếu người nào thua. Chúng ta sẽ kiểm tra xem ai có 3 hàng trước<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_1">def </span><span class="text_7">loss_condition</span><span class="text_3">(</span><span class="text_5">self</span><span class="text_3">):<br class="calibre2" /><span class="calibre3">        possible_combinations=[[</span></span><span class="text_6">1</span><span class="text_1">,</span><span class="text_6">2</span><span class="text_1">,</span><span class="text_6">3</span><span class="text_3">]</span><span class="text_1">, </span><span class="text_3">[</span><span class="text_6">4</span><span class="text_1">,</span><span class="text_6">5</span><span class="text_1">,</span><span class="text_6">6</span><span class="text_3">]</span><span class="text_1">, </span><span class="text_3">[</span><span class="text_6">7</span><span class="text_1">,</span><span class="text_6">8</span><span class="text_1">,</span><span class="text_6">9</span><span class="text_3">]</span><span class="text_1">,<br class="calibre2" /><span class="calibre3">                               </span></span><span class="text_3">[</span><span class="text_6">1</span><span class="text_1">,</span><span class="text_6">4</span><span class="text_1">,</span><span class="text_6">7</span><span class="text_3">]</span><span class="text_1">, </span><span class="text_3">[</span><span class="text_6">2</span><span class="text_1">,</span><span class="text_6">5</span><span class="text_1">,</span><span class="text_6">8</span><span class="text_3">]</span><span class="text_1">, </span><span class="text_3">[</span><span class="text_6">3</span><span class="text_1">,</span><span class="text_6">6</span><span class="text_1">,</span><span class="text_6">9</span><span class="text_3">]</span><span class="text_1">,<br class="calibre2" /><span class="calibre3">                               </span></span><span class="text_3">[</span><span class="text_6">1</span><span class="text_1">,</span><span class="text_6">5</span><span class="text_1">,</span><span class="text_6">9</span><span class="text_3">]</span><span class="text_1">, </span><span class="text_3">[</span><span class="text_6">3</span><span class="text_1">,</span><span class="text_6">5</span><span class="text_1">,</span><span class="text_6">7</span><span class="text_3">]]<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_1">return </span><span class="text_8">any</span><span class="text_3">([</span><span class="text_8">all</span><span class="text_3">([(</span><span class="text_5">self</span><span class="text_3">.board[i - </span><span class="text_6">1</span><span class="text_3">] == </span><span class="text_5">self</span><span class="text_3">.nopponent) </span><span class="text_1">for </span><span class="text_3">i </span><span class="text_1">in </span><span class="text_3">combination]) </span><span class="text_1">for </span><span class="text_3">combination </span><span class="text_1">in </span><span class="text_3">possible_combinations])<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_11"># Kiểm tra xem game kết thúc chưa sử dụng hàm loss_condition<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_1">def </span><span class="text_7">is_over</span><span class="text_3">(</span><span class="text_5">self</span><span class="text_3">):<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_1">return </span><span class="text_3">(</span><span class="text_5">self</span><span class="text_3">.possible_moves()==[]) </span><span class="text_1">or </span><span class="text_5">self</span><span class="text_3">.loss_condition()<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_11">#Tạo hàm để hiển thị quá trình xử lý<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_1">def </span><span class="text_7">show</span><span class="text_3">(</span><span class="text_5">self</span><span class="text_3">):<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_8">print</span><span class="text_3">(</span><span class="text_5">self</span><span class="text_3">.board)<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_8">print</span><span class="text_3">(</span><span class="text_9">'</span><span class="text_1">\n</span><span class="text_9">' </span><span class="text_3">+ </span><span class="text_9">'</span><span class="text_1">\n</span><span class="text_9">'</span><span class="text_3">.join([</span><span class="text_9">' '</span><span class="text_3">.join([[</span><span class="text_9">'. '</span><span class="text_1">, </span><span class="text_9">'O'</span><span class="text_1">, </span><span class="text_9">'X'</span><span class="text_3">][</span><span class="text_5">self</span><span class="text_3">.board[</span><span class="text_6">3 </span><span class="text_3">* j + i]] </span><span class="text_1">for </span><span class="text_3">i </span><span class="text_1">in </span><span class="text_8">range</span><span class="text_3">(</span><span class="text_6">3</span><span class="text_3">)]) </span><span class="text_1">for </span><span class="text_3">j </span><span class="text_1">in </span><span class="text_8">range</span><span class="text_3">(</span><span class="text_6">3</span><span class="text_3">)]))<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_11">#Tính điểm sử dụng hàm loss_condition<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_1">def </span><span class="text_7">scoring</span><span class="text_3">(</span><span class="text_5">self</span><span class="text_3">):<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_1">return </span><span class="text_3">-</span><span class="text_6">100 </span><span class="text_1">if </span><span class="text_5">self</span><span class="text_3">.loss_condition() </span><span class="text_1">else </span><span class="text_6">0<br class="calibre2" /></span><span class="text_11"># Bắt đầu với hàm main và sử dụng thuật toán để giải quyết vấn đề.<br class="calibre2" /></span><span class="text_1">if </span><span class="text_3">__name__==</span><span class="text_9">"__main__"</span><span class="text_3">:<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_11"># Thuật toán sử dụng ở đây là Negamax. Chúng ta có thể chỉ định số bước mà thuật toán có thể nghĩ ở đây tôi sử dụng 5<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_3">algorithm=Negamax(</span><span class="text_6">5</span><span class="text_3">)<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_11"># hoặc thêm thuật toán nữa để cho 2 con AI đối đầu với nhau xem nếu thông minh hơn thì có chiến thắng ?<br class="calibre2" /><span class="calibre3">    # SSS là một thuật toán tìm kiếm không gian trạng thái trên cây với tất cả những nhánh đầu tiên tốt nhất.</span></span><span class="text_11"><br class="calibre2" /><span class="calibre3">    </span></span><span class="text_3">algorithm2=SSS(</span><span class="text_6">5</span><span class="text_3">)<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_11"># bắt đầu game<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_3">game=GameController([AI_Player(algorithm2)</span><span class="text_1">,</span><span class="text_3">AI_Player(algorithm)])<br class="calibre2" /><span class="calibre3">    game.play()</span></span><span class="text_3"><br class="calibre2" /><span class="calibre3">    </span></span><span class="text_1">if </span><span class="text_3">game.loss_condition():<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_8">print</span><span class="text_3">(</span><span class="text_9">"Người thắng: "</span><span class="text_1">,</span><span class="text_3">game.nopponent)<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_1">else</span><span class="text_3">:<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_8">print</span><span class="text_3">(</span><span class="text_9">"Kết quả: Hòa"</span><span class="text_3">)</span></p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_14">&nbsp;</p>
+	<p class="block_10"><span class="calibre3">.  .  . </span></p>
+	<p class="block_10"><span class="calibre3">.  .  . </span></p>
+	<p class="block_10"><span class="calibre3">.  .  . </span></p>
+	<p class="block_11">&nbsp;</p>
+	<p class="block_10">Player 1 what do you play ? 5</p>
+	<p class="block_10">Move #1: player 1 plays 5 :</p>
+	<p class="block_10"><span class="calibre3">.  .  . </span></p>
+	<p class="block_10"><span class="calibre3">.  O . </span></p>
+	<p class="block_10"><span class="calibre3">.  .  . </span></p>
+	<p class="block_11">&nbsp;</p>
+	<p class="block_10">Move #2: player 2 plays 1 :</p>
+	<p class="block_11">&nbsp;</p>
+	<p class="block_10"><span class="calibre3">X .  . </span></p>
+	<p class="block_10"><span class="calibre3">.  O . </span></p>
+	<p class="block_10"><span class="calibre3">.  .  . </span></p>
+	<p class="block_11">&nbsp;</p>
+	<p class="block_10">Player 1 what do you play ? 3</p>
+	<p class="block_11">&nbsp;</p>
+	<p class="block_10">Move #3: player 1 plays 3 :</p>
+	<p class="block_11">&nbsp;</p>
+	<p class="block_10"><span class="calibre3">X .  O</span></p>
+	<p class="block_10"><span class="calibre3">.  O . </span></p>
+	<p class="block_10"><span class="calibre3">.  .  . </span></p>
+	<p class="block_11">&nbsp;</p>
+	<p class="block_10">Move #4: player 2 plays 7 :</p>
+	<p class="block_11">&nbsp;</p>
+	<p class="block_10"><span class="calibre3">X .  O</span></p>
+	<p class="block_10"><span class="calibre3">.  O . </span></p>
+	<p class="block_10"><span class="calibre3">X .  . </span></p>
+	<p class="block_11">&nbsp;</p>
+	<p class="block_10">Player 1 what do you play ? 4</p>
+	<p class="block_11">&nbsp;</p>
+	<p class="block_10">Move #5: player 1 plays 4 :</p>
+	<p class="block_11">&nbsp;</p>
+	<p class="block_10"><span class="calibre3">X .  O</span></p>
+	<p class="block_10">O O . </p>
+	<p class="block_10"><span class="calibre3">X .  . </span></p>
+	<p class="block_11">&nbsp;</p>
+	<p class="block_10">Move #6: player 2 plays 6 :</p>
+	<p class="block_11">&nbsp;</p>
+	<p class="block_10"><span class="calibre3">X .  O</span></p>
+	<p class="block_10">O O X</p>
+	<p class="block_10"><span class="calibre3">X .  . </span></p>
+	<p class="block_11">&nbsp;</p>
+	<p class="block_10">Player 1 what do you play ? 2</p>
+	<p class="block_11">&nbsp;</p>
+	<p class="block_10">Move #7: player 1 plays 2 :</p>
+	<p class="block_11">&nbsp;</p>
+	<p class="block_10">X O O</p>
+	<p class="block_10">O O X</p>
+	<p class="block_10"><span class="calibre3">X .  . </span></p>
+	<p class="block_11">&nbsp;</p>
+	<p class="block_10">Move #8: player 2 plays 8 :</p>
+	<p class="block_11">&nbsp;</p>
+	<p class="block_10">X O O</p>
+	<p class="block_10">O O X</p>
+	<p class="block_10">X X . </p>
+	<p class="block_11">&nbsp;</p>
+	<p class="block_10">Player 1 what do you play ? 9</p>
+	<p class="block_11">&nbsp;</p>
+	<p class="block_10">Move #9: player 1 plays 9 :</p>
+	<p class="block_11">&nbsp;</p>
+	<p class="block_10">X O O</p>
+	<p class="block_10">O O X</p>
+	<p class="block_12">X X O</p>
+	<p class="block_5">Xây dựng 2 bot chơi game Connect Four</p>
+	<p class="block_1">Connect Four là game 2 người chơi được bán dưới thương hiệu Milton Bradley. về code tương tự như bài trên nên sẽ không giải thích lại nhiều. Luật chơi là thả từng đĩa chồng lên nhau ai có 4 kết nối theo hàng dọc ngang hoặc chéo trước thì thắng kiểu caro. Luật chơi ở đây có thể tìm hiểu thêm trên youtube hoặc wiki với từ khóa connect Four</p>
+	<div class="frame_"><p class="block_6"><span class="text_1">import </span><span class="text_3">numpy </span><span class="text_1">as </span><span class="text_3">np<br class="calibre2" /></span><span class="text_1">from </span><span class="text_3">easyAI </span><span class="text_1">import </span><span class="text_3">TwoPlayersGame</span><span class="text_1"><span class="calibre3">,  </span></span><span class="text_3">AI_Player</span><span class="text_1">, </span><span class="text_3">\<br class="calibre2" /><span class="calibre3">        Negamax</span></span><span class="text_1">, </span><span class="text_3">SSS<br class="calibre2" /><br class="calibre2" /></span><span class="text_1">class </span><span class="text_3">GameController(TwoPlayersGame):<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_1">def </span><span class="text_4">__init__</span><span class="text_3">(</span><span class="text_5">self</span><span class="text_1">, </span><span class="text_3">players</span><span class="text_1">, </span><span class="text_3">board = </span><span class="text_1">None</span><span class="text_3">):<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_11"># Tạo players<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_5">self</span><span class="text_3">.players = players<br class="calibre2" /><br class="calibre2" /><span class="calibre3">        </span></span><span class="text_11"># Tạo board<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_5">self</span><span class="text_3">.board = board </span><span class="text_1">if </span><span class="text_3">(board != </span><span class="text_1">None</span><span class="text_3">) </span><span class="text_1">else </span><span class="text_3">(<br class="calibre2" /><span class="calibre3">            np.array([[</span></span><span class="text_6">0 </span><span class="text_1">for </span><span class="text_11">i </span><span class="text_1">in </span><span class="text_8">range</span><span class="text_3">(</span><span class="text_6">7</span><span class="text_3">)] </span><span class="text_1">for </span><span class="text_11">j </span><span class="text_1">in </span><span class="text_8">range</span><span class="text_3">(</span><span class="text_6">6</span><span class="text_3">)]))<br class="calibre2" /><br class="calibre2" /><span class="calibre3">        </span></span><span class="text_11"># Thằng nào đi trước tính từ 1 không phải từ 0 như array<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_5">self</span><span class="text_3">.nplayer = </span><span class="text_6">1<br class="calibre2" /><br class="calibre2" /><span class="calibre3">        </span></span><span class="text_11"># Tạo bảng vị trí<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_5">self</span><span class="text_3">.pos_dir = np.array([[[i</span><span class="text_1">, </span><span class="text_6">0</span><span class="text_3">]</span><span class="text_1">, </span><span class="text_3">[</span><span class="text_6">0</span><span class="text_1">, </span><span class="text_6">1</span><span class="text_3">]] </span><span class="text_1">for </span><span class="text_3">i </span><span class="text_1">in </span><span class="text_8">range</span><span class="text_3">(</span><span class="text_6">6</span><span class="text_3">)] +<br class="calibre2" /><span class="calibre3">                   [[[</span></span><span class="text_6">0</span><span class="text_1">, </span><span class="text_3">i]</span><span class="text_1">, </span><span class="text_3">[</span><span class="text_6">1</span><span class="text_1">, </span><span class="text_6">0</span><span class="text_3">]] </span><span class="text_1">for </span><span class="text_3">i </span><span class="text_1">in </span><span class="text_8">range</span><span class="text_3">(</span><span class="text_6">7</span><span class="text_3">)] +<br class="calibre2" /><span class="calibre3">                   [[[i</span></span><span class="text_1">, </span><span class="text_6">0</span><span class="text_3">]</span><span class="text_1">, </span><span class="text_3">[</span><span class="text_6">1</span><span class="text_1">, </span><span class="text_6">1</span><span class="text_3">]] </span><span class="text_1">for </span><span class="text_3">i </span><span class="text_1">in </span><span class="text_8">range</span><span class="text_3">(</span><span class="text_6">1</span><span class="text_1">, </span><span class="text_6">3</span><span class="text_3">)] +<br class="calibre2" /><span class="calibre3">                   [[[</span></span><span class="text_6">0</span><span class="text_1">, </span><span class="text_3">i]</span><span class="text_1">, </span><span class="text_3">[</span><span class="text_6">1</span><span class="text_1">, </span><span class="text_6">1</span><span class="text_3">]] </span><span class="text_1">for </span><span class="text_3">i </span><span class="text_1">in </span><span class="text_8">range</span><span class="text_3">(</span><span class="text_6">4</span><span class="text_3">)] +<br class="calibre2" /><span class="calibre3">                   [[[i</span></span><span class="text_1">, </span><span class="text_6">6</span><span class="text_3">]</span><span class="text_1">, </span><span class="text_3">[</span><span class="text_6">1</span><span class="text_1">, </span><span class="text_3">-</span><span class="text_6">1</span><span class="text_3">]] </span><span class="text_1">for </span><span class="text_3">i </span><span class="text_1">in </span><span class="text_8">range</span><span class="text_3">(</span><span class="text_6">1</span><span class="text_1">, </span><span class="text_6">3</span><span class="text_3">)] +<br class="calibre2" /><span class="calibre3">                   [[[</span></span><span class="text_6">0</span><span class="text_1">, </span><span class="text_3">i]</span><span class="text_1">, </span><span class="text_3">[</span><span class="text_6">1</span><span class="text_1">, </span><span class="text_3">-</span><span class="text_6">1</span><span class="text_3">]] </span><span class="text_1">for </span><span class="text_3">i </span><span class="text_1">in </span><span class="text_8">range</span><span class="text_3">(</span><span class="text_6">3</span><span class="text_1">, </span><span class="text_6">7</span><span class="text_3">)])<br class="calibre2" /><br class="calibre2" /><span class="calibre3">    </span></span><span class="text_11"># Những nước đi có thể<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_1">def </span><span class="text_7">possible_moves</span><span class="text_3">(</span><span class="text_5">self</span><span class="text_3">):<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_1">return </span><span class="text_3">[i </span><span class="text_1">for </span><span class="text_3">i </span><span class="text_1">in </span><span class="text_8">range</span><span class="text_3">(</span><span class="text_6">7</span><span class="text_3">) </span><span class="text_1">if </span><span class="text_3">(</span><span class="text_5">self</span><span class="text_3">.board[:</span><span class="text_1">, </span><span class="text_3">i].min() == </span><span class="text_6">0</span><span class="text_3">)]<br class="calibre2" /><br class="calibre2" /><span class="calibre3">    </span></span><span class="text_11"># tạo nước đi<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_1">def </span><span class="text_7">make_move</span><span class="text_3">(</span><span class="text_5">self</span><span class="text_1">, </span><span class="text_3">column):<br class="calibre2" /><span class="calibre3">        line = np.argmin(</span></span><span class="text_5">self</span><span class="text_3">.board[:</span><span class="text_1">, </span><span class="text_3">column] != </span><span class="text_6">0</span><span class="text_3">)<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_5">self</span><span class="text_3">.board[line</span><span class="text_1">, </span><span class="text_3">column] = </span><span class="text_5">self</span><span class="text_3">.nplayer<br class="calibre2" /><br class="calibre2" /><span class="calibre3">    </span></span><span class="text_11"># Biểu diễn trạng thái hiện tại<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_1">def </span><span class="text_7">show</span><span class="text_3">(</span><span class="text_5">self</span><span class="text_3">):<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_8">print</span><span class="text_3">(</span><span class="text_9">'</span><span class="text_1">\n</span><span class="text_9">' </span><span class="text_3">+ </span><span class="text_9">'</span><span class="text_1">\n</span><span class="text_9">'</span><span class="text_3">.join(<br class="calibre2" /><span class="calibre3">                [</span></span><span class="text_9">'0 1 2 3 4 5 6'</span><span class="text_1">, </span><span class="text_6">13 </span><span class="text_3">* </span><span class="text_9">'-'</span><span class="text_3">] +<br class="calibre2" /><span class="calibre3">                [</span></span><span class="text_9">' '</span><span class="text_3">.join([[</span><span class="text_9">'.'</span><span class="text_1">, </span><span class="text_9">'O'</span><span class="text_1">, </span><span class="text_9">'X'</span><span class="text_3">][</span><span class="text_5">self</span><span class="text_3">.board[</span><span class="text_6">5 </span><span class="text_3">- j][i]]<br class="calibre2" /><span class="calibre3">                </span></span><span class="text_1">for </span><span class="text_3">i </span><span class="text_1">in </span><span class="text_8">range</span><span class="text_3">(</span><span class="text_6">7</span><span class="text_3">)]) </span><span class="text_1">for </span><span class="text_3">j </span><span class="text_1">in </span><span class="text_8">range</span><span class="text_3">(</span><span class="text_6">6</span><span class="text_3">)]))<br class="calibre2" /><br class="calibre2" /><span class="calibre3">    </span></span><span class="text_11"># điều kiện thắng thua<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_1">def </span><span class="text_7">loss_condition</span><span class="text_3">(</span><span class="text_5">self</span><span class="text_3">):<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_1">for </span><span class="text_3">pos</span><span class="text_1">, </span><span class="text_3">direction </span><span class="text_1">in </span><span class="text_5">self</span><span class="text_3">.pos_dir:<br class="calibre2" /><span class="calibre3">            streak = </span></span><span class="text_6">0<br class="calibre2" /><span class="calibre3">            </span></span><span class="text_1">while </span><span class="text_3">(</span><span class="text_6">0 </span><span class="text_3">&lt;= pos[</span><span class="text_6">0</span><span class="text_3">] &lt;= </span><span class="text_6">5</span><span class="text_3">) </span><span class="text_1">and </span><span class="text_3">(</span><span class="text_6">0 </span><span class="text_3">&lt;= pos[</span><span class="text_6">1</span><span class="text_3">] &lt;= </span><span class="text_6">6</span><span class="text_3">):<br class="calibre2" /><span class="calibre3">                </span></span><span class="text_1">if </span><span class="text_5">self</span><span class="text_3">.board[pos[</span><span class="text_6">0</span><span class="text_3">]</span><span class="text_1">, </span><span class="text_3">pos[</span><span class="text_6">1</span><span class="text_3">]] == </span><span class="text_5">self</span><span class="text_3">.nopponent:<br class="calibre2" /><span class="calibre3">                    streak += </span></span><span class="text_6">1<br class="calibre2" /><span class="calibre3">                    </span></span><span class="text_1">if </span><span class="text_3">streak == </span><span class="text_6">4</span><span class="text_3">:<br class="calibre2" /><span class="calibre3">                        </span></span><span class="text_1">return True<br class="calibre2" /><span class="calibre3">                else</span></span><span class="text_3">:<br class="calibre2" /><span class="calibre3">                    streak = </span></span><span class="text_6">0<br class="calibre2" /><br class="calibre2" /><span class="calibre3">                </span></span><span class="text_3">pos = pos + direction<br class="calibre2" /><br class="calibre2" /><span class="calibre3">        </span></span><span class="text_1">return False<br class="calibre2" /><br class="calibre2" /><span class="calibre3">    </span></span><span class="text_11"># Kiểm tra game hết chưa<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_1">def </span><span class="text_7">is_over</span><span class="text_3">(</span><span class="text_5">self</span><span class="text_3">):<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_1">return </span><span class="text_3">(</span><span class="text_5">self</span><span class="text_3">.board.min() &gt; </span><span class="text_6">0</span><span class="text_3">) </span><span class="text_1">or </span><span class="text_5">self</span><span class="text_3">.loss_condition()<br class="calibre2" /><br class="calibre2" /><span class="calibre3">    </span></span><span class="text_11"># Tính điểm<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_1">def </span><span class="text_7">scoring</span><span class="text_3">(</span><span class="text_5">self</span><span class="text_3">):<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_1">return </span><span class="text_3">-</span><span class="text_6">100 </span><span class="text_1">if </span><span class="text_5">self</span><span class="text_3">.loss_condition() </span><span class="text_1">else </span><span class="text_6">0<br class="calibre2" /><br class="calibre2" /></span><span class="text_1">if </span><span class="text_3">__name__ == </span><span class="text_9">'__main__'</span><span class="text_3">:<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_11"># Tạo thuật toán Negamax cho thằng đầu tiên để tham số depth là 5 cho nó ngu ngu tí<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_3">algo_neg = Negamax(</span><span class="text_6">5</span><span class="text_3">)<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_11"># Tạo thuật toán SSS cho thằng thứ 2 nếu để depth càng cao thì thường kết quả sẽ là hòa và nó tính toán khá lâu.<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_3">algo_sss = SSS(</span><span class="text_6">5</span><span class="text_3">)<br class="calibre2" /><br class="calibre2" /><span class="calibre3">    </span></span><span class="text_11"># Start the game<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_3">game = GameController([AI_Player(algo_neg)</span><span class="text_1">, </span><span class="text_3">AI_Player(algo_sss)])<br class="calibre2" /><span class="calibre3">    game.play()</span></span><span class="text_3"><br class="calibre2" /><br class="calibre2" /><span class="calibre3">    </span></span><span class="text_11"># In kết quả<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_1">if </span><span class="text_3">game.loss_condition():<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_8">print</span><span class="text_3">(</span><span class="text_9">'</span><span class="text_1">\n</span><span class="text_9">Người thắng: '</span><span class="text_1">, </span><span class="text_3">game.nopponent)<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_1">else</span><span class="text_3">:<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_8">print</span><span class="text_3">(</span><span class="text_9">"</span><span class="text_1">\n</span><span class="text_9">Kết quả Hòa"</span><span class="text_3">)</span></p><p class="block_7"></p></div>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_9">0 1 2 3 4 5 6</p>
+	<p class="block_10">-------------</p>
+	<p class="block_10">. . . . . . .</p>
+	<p class="block_10">. . . . . . .</p>
+	<p class="block_10">. . . . . . .</p>
+	<p class="block_10">. . . . . . .</p>
+	<p class="block_10">. . . . . . .</p>
+	<p class="block_10">. . . . . . .</p>
+	<p class="block_10">Move #2: player 2 plays 0 :</p>
+	<p class="block_11">&nbsp;</p>
+	<p class="block_10">0 1 2 3 4 5 6</p>
+	<p class="block_10">-------------</p>
+	<p class="block_10">. . . . . . .</p>
+	<p class="block_10">. . . . . . .</p>
+	<p class="block_10">. . . . . . .</p>
+	<p class="block_10">. . . . . . .</p>
+	<p class="block_10">X . . . . . .</p>
+	<p class="block_10">O . . . . . .</p>
+	<p class="block_10">Move #36: player 2 plays 6 :</p>
+	<p class="block_11">&nbsp;</p>
+	<p class="block_10">0 1 2 3 4 5 6</p>
+	<p class="block_10">-------------</p>
+	<p class="block_10">X X O O X . .</p>
+	<p class="block_10">O O X X O . .</p>
+	<p class="block_10">X X O O X X .</p>
+	<p class="block_10">O O X X O O .</p>
+	<p class="block_10">X X O X X X X</p>
+	<p class="block_10">O O O X O O O</p>
+	<p class="block_11">&nbsp;</p>
+	<p class="block_12"><span class="calibre3">Người thắng:  2</span></p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_5">Xây dựng 2 con bots chơi game Hexapawn</p>
+	<p class="block_1"><b class="calibre4">Hexapawn </b>là một game 2 người chơi trên một bàn cờ có kích cỡ là NxM. Chúng ta có mỗi con tốt (pawns, hoặc còn gọi là con chốt) với số lượng là N ở mỗi bên của bàn cờ. Và chiến thắng khi khi tiến hết được 1 tốt sang phía đối thủ hoặc đối thủ không thể di chuyển. Luật chơi ở mỗi bước đi thì cũng giống như nước đi của con tốt ở bàn cờ tướng, đi thẳng &ndash; ăn chéo.</p>
+	<div class="frame_"><p class="block_6"><span class="text_1">from </span><span class="text_2">easyAI </span><span class="text_1">import </span><span class="text_2">TwoPlayersGame</span><span class="text_1">,</span><span class="text_2">AI_Player</span><span class="text_1">,</span><span class="text_2">Human_Player</span><span class="text_1">,</span><span class="text_2">Negamax<br class="calibre2" /></span><span class="text_3"># tạo class để control game. Bắt đầu bằng cách định nghĩa số lượng tốt ở mỗi bên và độ dài rộng của bàn cờ. Tạo một list tuples chứa vị trí<br class="calibre2" /></span><span class="text_1">class </span><span class="text_2">GameController(TwoPlayersGame):<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_1">def </span><span class="text_4">__init__</span><span class="text_2">(</span><span class="text_5">self</span><span class="text_1">,</span><span class="text_2">players</span><span class="text_1">,</span><span class="text_2">size=(</span><span class="text_6">4</span><span class="text_1">,</span><span class="text_6">4</span><span class="text_2">)):<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_5">self</span><span class="text_2">.size=size<br class="calibre2" /><span class="calibre3">        num_pawns</span></span><span class="text_1">,</span><span class="text_2">len_board=size<br class="calibre2" /><span class="calibre3">        p = [[(i</span></span><span class="text_1">, </span><span class="text_2">j) </span><span class="text_1">for </span><span class="text_2">j </span><span class="text_1">in </span><span class="text_8">range</span><span class="text_2">(len_board)] </span><span class="text_1">for </span><span class="text_2">i </span><span class="text_1">in </span><span class="text_2">[</span><span class="text_6">0</span><span class="text_1">, </span><span class="text_2">num_pawns - </span><span class="text_6">1</span><span class="text_2">]]<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_8">print</span><span class="text_2">(p</span><span class="text_1">,</span><span class="text_2">num_pawns</span><span class="text_1">,</span><span class="text_2">len_board)<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_3">#Tạo hướng đi, đích đến và gắn những con chốt cho mỗi player"<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_1">for </span><span class="text_2">i</span><span class="text_1">, </span><span class="text_2">d</span><span class="text_1">, </span><span class="text_2">goal</span><span class="text_1">, </span><span class="text_2">pawn </span><span class="text_1">in </span><span class="text_2">[(</span><span class="text_6">0</span><span class="text_1">, </span><span class="text_6">1</span><span class="text_1">, </span><span class="text_2">num_pawns - </span><span class="text_6">1</span><span class="text_1">, </span><span class="text_2">p[</span><span class="text_6">0</span><span class="text_2">])</span><span class="text_1">, </span><span class="text_2">(</span><span class="text_6">1</span><span class="text_1">, </span><span class="text_2">-</span><span class="text_6">1</span><span class="text_1">, </span><span class="text_6">0</span><span class="text_1">, </span><span class="text_2">p[</span><span class="text_6">1</span><span class="text_2">])]:<br class="calibre2" /><span class="calibre3">            </span></span><span class="text_8">print</span><span class="text_2">(i)<br class="calibre2" /><span class="calibre3">            </span></span><span class="text_8">print</span><span class="text_2">(</span><span class="text_9">'d='</span><span class="text_1">,</span><span class="text_2">d)<br class="calibre2" /><span class="calibre3">            </span></span><span class="text_8">print</span><span class="text_2">(goal)<br class="calibre2" /><span class="calibre3">            </span></span><span class="text_8">print</span><span class="text_2">(pawn)<br class="calibre2" /><span class="calibre3">            players[i].direction=d</span></span><span class="text_2"><br class="calibre2" /><span class="calibre3">            players[i].goal_line=goal</span></span><span class="text_2"><br class="calibre2" /><span class="calibre3">            players[i].pawns=pawn</span></span><span class="text_2"><br class="calibre2" /><span class="calibre3">        </span></span><span class="text_5">self</span><span class="text_2">.players=players<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_5">self</span><span class="text_2">.nplayer=</span><span class="text_6">1<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_3"># Tạo bảng chữ cái để dễ xác định vị trí quân cờ (giống bàn cờ vua A1-A2...<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_5">self</span><span class="text_2">.alphabets=</span><span class="text_9">'ABCDEFGHIJ'<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_3"># tạo 2 hàm lambda để chuyển đổi string &lt;-&gt; tuples<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_5">self</span><span class="text_2">.to_tuples = </span><span class="text_1">lambda </span><span class="text_2">s: (</span><span class="text_5">self</span><span class="text_2">.alphabets.index(s[</span><span class="text_6">0</span><span class="text_2">])</span><span class="text_1">, </span><span class="text_8">int</span><span class="text_2">(s[</span><span class="text_6">1</span><span class="text_2">:]) - </span><span class="text_6">1</span><span class="text_2">)<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_5">self</span><span class="text_2">.to_string = </span><span class="text_1">lambda </span><span class="text_2">move: </span><span class="text_9">' '</span><span class="text_2">.join([</span><span class="text_5">self</span><span class="text_2">.alphabets[move[i][</span><span class="text_6">0</span><span class="text_2">]] + </span><span class="text_8">str</span><span class="text_2">(move[i][</span><span class="text_6">1</span><span class="text_2">] + </span><span class="text_6">1</span><span class="text_2">) </span><span class="text_1">for </span><span class="text_2">i </span><span class="text_1">in </span><span class="text_2">(</span><span class="text_6">0</span><span class="text_1">, </span><span class="text_6">1</span><span class="text_2">)])<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_1">def </span><span class="text_7">possible_moves</span><span class="text_2">(</span><span class="text_5">self</span><span class="text_2">):<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_3"># Tạo hàm move để tính những bước đi có thể:<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_2">moves=[]<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_3"># Vị trí quân tốt của đối thủ<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_2">opponent_pawns=</span><span class="text_5">self</span><span class="text_2">.opponent.pawns<br class="calibre2" /><span class="calibre3">        d=</span></span><span class="text_5">self</span><span class="text_2">.player.direction<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_3"># Khi không nhìn thấy quân tốt của đối thủ ở một vị trí thì có nghĩa đó là nơi có thể đi:<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_1">for </span><span class="text_2">i</span><span class="text_1">,</span><span class="text_2">j </span><span class="text_1">in </span><span class="text_5">self</span><span class="text_2">.player.pawns:<br class="calibre2" /><span class="calibre3">            </span></span><span class="text_1">if</span><span class="text_2">(i+d</span><span class="text_1">,</span><span class="text_2">j) </span><span class="text_1">not in </span><span class="text_2">opponent_pawns:<br class="calibre2" /><span class="calibre3">                moves.append(((i</span></span><span class="text_1">,</span><span class="text_2">j)</span><span class="text_1">,</span><span class="text_2">(i+d</span><span class="text_1">,</span><span class="text_2">j)))<br class="calibre2" /><span class="calibre3">            </span></span><span class="text_1">if</span><span class="text_2">(i+d</span><span class="text_1">,</span><span class="text_2">j+</span><span class="text_6">1</span><span class="text_2">) </span><span class="text_1">in </span><span class="text_2">opponent_pawns:<br class="calibre2" /><span class="calibre3">                moves.append(((i</span></span><span class="text_1">,</span><span class="text_2">j)</span><span class="text_1">,</span><span class="text_2">(i+d</span><span class="text_1">,</span><span class="text_2">j+</span><span class="text_6">1</span><span class="text_2">)))<br class="calibre2" /><span class="calibre3">            </span></span><span class="text_1">if</span><span class="text_2">(i+d</span><span class="text_1">,</span><span class="text_2">j-</span><span class="text_6">1</span><span class="text_2">) </span><span class="text_1">in </span><span class="text_2">opponent_pawns:<br class="calibre2" /><span class="calibre3">                moves.append(((i</span></span><span class="text_1">,</span><span class="text_2">j)</span><span class="text_1">,</span><span class="text_2">(i+d</span><span class="text_1">,</span><span class="text_2">j-</span><span class="text_6">1</span><span class="text_2">)))<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_1">return </span><span class="text_8">list</span><span class="text_2">(</span><span class="text_8">map</span><span class="text_2">(</span><span class="text_5">self</span><span class="text_2">.to_string</span><span class="text_1">,</span><span class="text_2">[(i</span><span class="text_1">,</span><span class="text_2">j) </span><span class="text_1">for </span><span class="text_2">i</span><span class="text_1">,</span><span class="text_2">j </span><span class="text_1">in </span><span class="text_2">moves]))<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_1">def </span><span class="text_7">make_move</span><span class="text_2">(</span><span class="text_5">self</span><span class="text_1">,</span><span class="text_2">move):<br class="calibre2" /><span class="calibre3">        move=</span></span><span class="text_8">list</span><span class="text_2">(</span><span class="text_8">map</span><span class="text_2">(</span><span class="text_5">self</span><span class="text_2">.to_tuples</span><span class="text_1">,</span><span class="text_2">move.split(</span><span class="text_9">' '</span><span class="text_2">)))<br class="calibre2" /><span class="calibre3">        ind=</span></span><span class="text_5">self</span><span class="text_2">.player.pawns.index(move[</span><span class="text_6">0</span><span class="text_2">])<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_5">self</span><span class="text_2">.player.pawns[ind]=move[</span><span class="text_6">1</span><span class="text_2">]<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_3"># Loại bỏ tốt của đối thủ khi thấy nó trên đường đi:<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_1">if </span><span class="text_2">move[</span><span class="text_6">1</span><span class="text_2">] </span><span class="text_1">in </span><span class="text_5">self</span><span class="text_2">.opponent.pawns:<br class="calibre2" /><span class="calibre3">            </span></span><span class="text_5">self</span><span class="text_2">.opponent.pawns.remove(move[</span><span class="text_6">1</span><span class="text_2">])<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_1">def </span><span class="text_7">loss_condition</span><span class="text_2">(</span><span class="text_5">self</span><span class="text_2">):<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_1">return </span><span class="text_2">(</span><span class="text_8">any</span><span class="text_2">([i==</span><span class="text_5">self</span><span class="text_2">.opponent.goal_line </span><span class="text_1">for </span><span class="text_2">i</span><span class="text_1">,</span><span class="text_2">j </span><span class="text_1">in </span><span class="text_5">self</span><span class="text_2">.opponent.pawns])) </span><span class="text_1">or</span><span class="text_2">(</span><span class="text_5">self</span><span class="text_2">.possible_moves()==[])<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_1">def </span><span class="text_7">is_over</span><span class="text_2">(</span><span class="text_5">self</span><span class="text_2">):<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_1">return </span><span class="text_5">self</span><span class="text_2">.loss_condition()<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_1">def </span><span class="text_7">show</span><span class="text_2">(</span><span class="text_5">self</span><span class="text_2">):<br class="calibre2" /><span class="calibre3">        f=</span></span><span class="text_1">lambda </span><span class="text_2">x:</span><span class="text_9">'x' </span><span class="text_1">if </span><span class="text_2">x </span><span class="text_1">in </span><span class="text_5">self</span><span class="text_2">.players[</span><span class="text_6">0</span><span class="text_2">].pawns </span><span class="text_1">else</span><span class="text_2">(</span><span class="text_9">'o' </span><span class="text_1">if </span><span class="text_2">x </span><span class="text_1">in </span><span class="text_5">self</span><span class="text_2">.players[</span><span class="text_6">1</span><span class="text_2">].pawns </span><span class="text_1">else </span><span class="text_9">'.'</span><span class="text_2">)<br class="calibre2" /><span class="calibre3">        </span></span><span class="text_8">print</span><span class="text_2">(</span><span class="text_9">'</span><span class="text_1">\n</span><span class="text_9">'</span><span class="text_2">.join([</span><span class="text_9">" "</span><span class="text_2">.join([f((i</span><span class="text_1">,</span><span class="text_2">j))<br class="calibre2" /><span class="calibre3">                         </span></span><span class="text_1">for </span><span class="text_2">j </span><span class="text_1">in </span><span class="text_8">range</span><span class="text_2">(</span><span class="text_5">self</span><span class="text_2">.size[</span><span class="text_6">1</span><span class="text_2">])])<br class="calibre2" /><span class="calibre3">                         </span></span><span class="text_1">for </span><span class="text_2">i </span><span class="text_1">in </span><span class="text_8">range</span><span class="text_2">(</span><span class="text_5">self</span><span class="text_2">.size[</span><span class="text_6">0</span><span class="text_2">])]))<br class="calibre2" /><br class="calibre2" /></span><span class="text_3"># Hàm khởi tạo<br class="calibre2" /></span><span class="text_1">if </span><span class="text_2">__name__==</span><span class="text_9">"__main__"</span><span class="text_2">:<br class="calibre2" /><span class="calibre3">    scoring=</span></span><span class="text_1">lambda </span><span class="text_2">game:-</span><span class="text_6">100 </span><span class="text_1">if </span><span class="text_2">game.loss_condition() </span><span class="text_1">else </span><span class="text_6">0<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_2">algorithm = Negamax(</span><span class="text_6">12</span><span class="text_1">,</span><span class="text_2">scoring)<br class="calibre2" /><span class="calibre3">    game=GameController([Human_Player()</span></span><span class="text_1">,</span><span class="text_2">AI_Player(algorithm)])<br class="calibre2" /><span class="calibre3">    game.play()</span></span><span class="text_2"><br class="calibre2" /><span class="calibre3">    symbol=</span></span><span class="text_9">"XO"<br class="calibre2" /><span class="calibre3">    </span></span><span class="text_8">print</span><span class="text_2">(</span><span class="text_9">"Kết quả: "</span><span class="text_1">,</span><span class="text_2">symbol[game.nopponent-</span><span class="text_6">1</span><span class="text_2">]</span><span class="text_1">, </span><span class="text_9">" Thắng sau"</span><span class="text_1">,</span><span class="text_2">game.nmove</span><span class="text_1">,</span><span class="text_9">"bước"</span><span class="text_2">)</span></p><p class="block_7"></p></div>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_1"># Có thể thay Human_Player thành AI_Player với thuật toán bạn tùy chọn như SSS hoặc Negamax</p>
+	<p class="block_1">Mấy game kiểu này thường người đi trước sẽ thắng</p>
+	<p class="block_9">[[(0, 0), (0, 1), (0, 2), (0, 3)], [(3, 0), (3, 1), (3, 2), (3, 3)]] 4 4</p>
+	<p class="block_10">0</p>
+	<p class="block_10">d= 1</p>
+	<p class="block_10">3</p>
+	<p class="block_10">[(0, 0), (0, 1), (0, 2), (0, 3)]</p>
+	<p class="block_10">1</p>
+	<p class="block_10">d= -1</p>
+	<p class="block_10">0</p>
+	<p class="block_10">[(3, 0), (3, 1), (3, 2), (3, 3)]</p>
+	<p class="block_10">x x x x</p>
+	<p class="block_10">. . . .</p>
+	<p class="block_10">. . . .</p>
+	<p class="block_10">o o o o</p>
+	<p class="block_11">&nbsp;</p>
+	<p class="block_10">Player 1 what do you play ? A1 B1</p>
+	<p class="block_11">&nbsp;</p>
+	<p class="block_10">Move #1: player 1 plays A1 B1 :</p>
+	<p class="block_10">. x x x</p>
+	<p class="block_10">x . . .</p>
+	<p class="block_10">. . . .</p>
+	<p class="block_10">o o o o</p>
+	<p class="block_11">&nbsp;</p>
+	<p class="block_10">Move #2: player 2 plays D1 C1 :</p>
+	<p class="block_10">. x x x</p>
+	<p class="block_10">x . . .</p>
+	<p class="block_10">o . . .</p>
+	<p class="block_10">. o o o</p>
+	<p class="block_11">&nbsp;</p>
+	<p class="block_10">Player 1 what do you play ? A2 B2</p>
+	<p class="block_11">&nbsp;</p>
+	<p class="block_10">Move #3: player 1 plays A2 B2 :</p>
+	<p class="block_10">. . x x</p>
+	<p class="block_10">x x . .</p>
+	<p class="block_10">o . . .</p>
+	<p class="block_10">. o o o</p>
+	<p class="block_11">&nbsp;</p>
+	<p class="block_10">Move #4: player 2 plays D2 C2 :</p>
+	<p class="block_10">. . x x</p>
+	<p class="block_10">x x . .</p>
+	<p class="block_10">o o . .</p>
+	<p class="block_10">. . o o</p>
+	<p class="block_11">&nbsp;</p>
+	<p class="block_10">Player 1 what do you play ? B2 C1</p>
+	<p class="block_11">&nbsp;</p>
+	<p class="block_10">Move #5: player 1 plays B2 C1 :</p>
+	<p class="block_10">. . x x</p>
+	<p class="block_10">x . . .</p>
+	<p class="block_10">x o . .</p>
+	<p class="block_10">. . o o</p>
+	<p class="block_11">&nbsp;</p>
+	<p class="block_10">Move #6: player 2 plays C2 B1 :</p>
+	<p class="block_10">. . x x</p>
+	<p class="block_10">o . . .</p>
+	<p class="block_10">x . . .</p>
+	<p class="block_10">. . o o</p>
+	<p class="block_11">&nbsp;</p>
+	<p class="block_10">Player 1 what do you play ? C1 D1</p>
+	<p class="block_11">&nbsp;</p>
+	<p class="block_10">Move #7: player 1 plays C1 D1 :</p>
+	<p class="block_10">. . x x</p>
+	<p class="block_10">o . . .</p>
+	<p class="block_10">. . . .</p>
+	<p class="block_10">x . o o</p>
+	<p class="block_12"><span class="calibre3">Kết quả:  X  Thắng sau 8 bước</span></p>
+	<p class="block_5">Tổng kết:</p>
+	<p class="block_1">Trong chương này chúng ta đã thảo luận về cách xây dựng một game với AI, và cách sử dụng các thuật toán tìm kiếm để áp dụng vào các chiến lược của game để chiến thắng. Về các thuật toán như Minimax, Negamax, cắt tỉa Alpha-Beta…</p>
+	<p class="block_1">Ở chương tiếp theo chúng ta sẽ thảo luận về quá trình xử lý ngôn ngữ tự nhiên và sử dụng nó để phân tích dữ liệu text bằng cách mô hình và phân loại nó.</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+	<p class="block_8">&nbsp;</p>
+
+</div>
+
+</body></html>
+
+<footer class=" footline" >
+	
+</footer>
+
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/ai-with-python/chapter8/" title="C8: Thuật toán di truyền - Genetic Alogrithms"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/ai-with-python/chapter10/" title="C10: Natural Language Processing" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1572408723"></script>
+    <script src="/js/perfect-scrollbar.min.js?1572408723"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1572408723"></script>
+    <script src="/js/jquery.sticky.js?1572408723"></script>
+    <script src="/js/featherlight.min.js?1572408723"></script>
+    <script src="/js/highlight.pack.js?1572408723"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1572408723"></script>
+    <script src="/js/learn.js?1572408723"></script>
+    <script src="/js/hugo-learn.js?1572408723"></script>
+
+    <link href="/mermaid/mermaid.css?1572408723" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1572408723"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>
+
